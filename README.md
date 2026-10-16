@@ -63,7 +63,8 @@ brasil-project/
 │   ├── README.md                         # Conceituação teórica de populismo e radicalismos
 │   ├── 01_lula_discursos_e_conexoes_comunistas.md
 │   ├── 02_bolsonaro_discursos_e_conexoes_fascistas_autoritarias.md
-│   └── 03_analise_comparativa_ciencia_politica.md
+│   ├── 03_analise_comparativa_ciencia_politica.md
+│   └── 04_lula_e_aliados_casos_autoritarios_instituicoes_imprensa.md
 │
 └── pecs_e_propostas/                     # Reformas legislativas e marcos constitucionais
     ├── README.md

@@ -54,3 +54,11 @@ flowchart TD
 3. **[`03_analise_comparativa_ciencia_politica.md`](file:///Users/rodrigofregonasse/Code/brasil-project/ideologia_e_discursos/03_analise_comparativa_ciencia_politica.md)**
    * Tabela comparativa confrontando a retórica dos dois líderes com os manuais ideológicos do século XX.
    * A função política do uso de símbolos radicais na era da **polarização afetiva** e das redes sociais.
+
+4. **[`04_lula_e_aliados_casos_autoritarios_instituicoes_imprensa.md`](file:///Users/rodrigofregonasse/Code/brasil-project/ideologia_e_discursos/04_lula_e_aliados_casos_autoritarios_instituicoes_imprensa.md)**
+   * Levantamento exaustivo e documentado dos episódios de perfil autoritário de Lula e aliados.
+   * *Ataques à Imprensa:* A ordem de expulsão de Larry Rohter (*The New York Times*, 2004), o projeto do Conselho Federal de Jornalismo (CFJ - PL 3.985/2004) para cassar registros de repórteres, teses de "controle social da mídia" e a PNDD na AGU ("Procuradoria da Verdade").
+   * *Ataques ao Judiciário e BC:* O áudio da "Suprema Corte acovardada" (2016), a manobra da posse na Casa Civil barrada pelo STF por desvio de finalidade (MS 34.070), indicação do advogado pessoal (Cristiano Zanin) e do ministro da Justiça (Flávio Dino) ao STF, defesa de voto secreto de ministros e campanha contra a autonomia do Banco Central (Roberto Campos Neto).
+   * *Hostilidade ao Congresso e Aparelho Policial:* A conclamação a sindicalistas para "mapear e incomodar a casa de deputados" (2022), o Mensalão como coação do Legislativo e o "Dossiê dos Aloprados" (PF - 2006).
+   * *Violação de Direitos Humanos:* A deportação sumária forçada dos pugilistas cubanos (Lara e Rigondeaux) no Pan de 2007, a equiparação de dissidentes políticos a criminosos comuns e a conivência com a fraude eleitoral de Nicolás Maduro na Venezuela (2024).
+
