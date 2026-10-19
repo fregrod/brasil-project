@@ -140,34 +140,36 @@ export function App() {
         onToggleSidebar={() => setIsSidebarOpen((prev) => !prev)}
         isSidebarOpen={isSidebarOpen}
         onNavigateHome={() => navigateTo('README.md')}
-        currentView={currentView}
-        onToggleView={(view) => {
-          setCurrentView(view);
-          window.location.hash = view === 'graph' ? 'grafo' : currentPath;
-        }}
       />
 
-      {currentView === 'graph' ? (
-        <GraphView
+      <div className="flex-1 w-full flex">
+        {/* Sidebar with [ Leitor | Grafo ] on top */}
+        <Sidebar
+          categories={categories}
+          activePath={currentDoc.path}
           onSelectDoc={navigateTo}
-          onClose={() => {
-            setCurrentView('reader');
-            window.location.hash = currentPath;
+          isOpen={isSidebarOpen}
+          onCloseMobile={() => setIsSidebarOpen(false)}
+          currentView={currentView}
+          onToggleView={(view) => {
+            setCurrentView(view);
+            window.location.hash = view === 'graph' ? 'grafo' : currentPath;
           }}
-          isDarkMode={isDarkMode}
         />
-      ) : (
-        <div className="flex-1 max-w-7xl w-full mx-auto flex">
-          {/* Sidebar */}
-          <Sidebar
-            categories={categories}
-            activePath={currentDoc.path}
-            onSelectDoc={navigateTo}
-            isOpen={isSidebarOpen}
-            onCloseMobile={() => setIsSidebarOpen(false)}
-          />
 
-          {/* Main Content Area */}
+        {/* Central Workspace: GraphView or Reader */}
+        {currentView === 'graph' ? (
+          <div className="flex-1 lg:pl-64 xl:pl-72 w-full min-w-0">
+            <GraphView
+              onSelectDoc={navigateTo}
+              onClose={() => {
+                setCurrentView('reader');
+                window.location.hash = currentPath;
+              }}
+              isDarkMode={isDarkMode}
+            />
+          </div>
+        ) : (
           <main className="flex-1 lg:pl-64 xl:pl-72 flex justify-center w-full min-w-0">
             <div className="w-full max-w-4xl px-4 sm:px-8 py-8 sm:py-12">
               {/* Minimalist Breadcrumb & Category Tag */}
@@ -272,8 +274,8 @@ export function App() {
             readTimeMinutes={currentDoc.readTimeMinutes}
           />
         </main>
-      </div>
       )}
+    </div>
 
       {/* Floating Scroll to Top button */}
       {showScrollTop && (

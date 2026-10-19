@@ -16,6 +16,8 @@ import {
   ChevronRight,
   Folder,
   FileText,
+  BookOpen,
+  Network,
 } from 'lucide-react';
 
 interface SidebarProps {
@@ -24,6 +26,8 @@ interface SidebarProps {
   onSelectDoc: (path: string) => void;
   isOpen: boolean;
   onCloseMobile: () => void;
+  currentView: 'reader' | 'graph';
+  onToggleView: (view: 'reader' | 'graph') => void;
 }
 
 const ICON_MAP: Record<string, React.FC<{ size?: number; className?: string }>> = {
@@ -47,6 +51,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
   onSelectDoc,
   isOpen,
   onCloseMobile,
+  currentView,
+  onToggleView,
 }) => {
   // Keep all categories open by default or track open states
   const [openCategories, setOpenCategories] = useState<Record<string, boolean>>(() => {
@@ -80,7 +86,41 @@ export const Sidebar: React.FC<SidebarProps> = ({
           isOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
       >
-        <div className="p-4 space-y-6">
+        {/* View Switcher: Leitor / Grafo */}
+        <div className="sticky top-0 z-20 p-3 bg-surface-light/95 dark:bg-surface-dark/95 backdrop-blur-md border-b border-border-light dark:border-border-dark">
+          <div className="grid grid-cols-2 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/80 text-xs font-medium gap-1">
+            <button
+              onClick={() => {
+                onToggleView('reader');
+                onCloseMobile();
+              }}
+              className={`flex items-center justify-center gap-1.5 py-1.5 px-3 rounded-lg transition-all ${
+                currentView === 'reader'
+                  ? 'bg-white dark:bg-zinc-900 text-zinc-950 dark:text-zinc-50 shadow-sm font-semibold'
+                  : 'text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-300'
+              }`}
+            >
+              <BookOpen size={13} />
+              <span>Leitor</span>
+            </button>
+            <button
+              onClick={() => {
+                onToggleView('graph');
+                onCloseMobile();
+              }}
+              className={`flex items-center justify-center gap-1.5 py-1.5 px-3 rounded-lg transition-all ${
+                currentView === 'graph'
+                  ? 'bg-white dark:bg-zinc-900 text-zinc-950 dark:text-zinc-50 shadow-sm font-semibold'
+                  : 'text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-300'
+              }`}
+            >
+              <Network size={13} />
+              <span>Grafo</span>
+            </button>
+          </div>
+        </div>
+
+        <div className="p-4 pt-3 space-y-6">
           {categories.map((cat) => {
             const Icon = ICON_MAP[cat.icon] || Folder;
             const isCategoryOpen = openCategories[cat.key] !== false;
