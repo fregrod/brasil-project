@@ -66,10 +66,15 @@ brasil-project/
 │   ├── 03_analise_comparativa_ciencia_politica.md
 │   └── 04_lula_e_aliados_casos_autoritarios_instituicoes_imprensa.md
 │
-└── pecs_e_propostas/                     # Reformas legislativas e marcos constitucionais
+├── pecs_e_propostas/                     # Reformas legislativas e marcos constitucionais
+│   ├── README.md
+│   ├── 01_pec_fim_escala_6x1_jornada_trabalho.md
+│   └── 02_linha_historica_teto_orcamento_secreto_arcabouco.md
+│
+└── trabalho_e_leis_trabalhistas/         # Mercado de trabalho, previdência e direito comparado
     ├── README.md
-    ├── 01_pec_fim_escala_6x1_jornada_trabalho.md
-    └── 02_linha_historica_teto_orcamento_secreto_arcabouco.md
+    ├── 01_escandalo_inss_fraudes_descontos_associativos_e_investigacoes.md
+    └── 02_comparativo_leis_trabalhistas_brasil_vs_top25_mundo.md
 ```
 
 ---
