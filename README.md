@@ -28,7 +28,10 @@ brasil-project/
 │   ├── 05_fundacao_tripe_macroeconomico_e_plano_real.md
 │   ├── 06_cenario_global_crises_e_impactos_no_brasil.md
 │   ├── 07_decisoes_economicas_contraditorias_pt_e_bolsonaro.md
-│   └── 08_crise_aviacao_caso_gol_rotas_qav.md
+│   ├── 08_crise_aviacao_caso_gol_rotas_qav.md
+│   └── privatizacoes/                    # Desestatizações, concessões e governança
+│       ├── README.md
+│       └── 01_privatizacao_eletrobras_processo_indicadores_corrupcao_e_impactos.md
 │
 ├── corrupcao_e_investigacoes/            # Operações policiais, escândalos e decisões judiciais
 │   ├── README.md                         # Glossário processual penal (inquérito vs. réu vs. anulação)

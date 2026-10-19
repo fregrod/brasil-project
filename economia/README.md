@@ -78,6 +78,16 @@ flowchart TD
 
 ---
 
+### Módulo Especial: Privatizações e Concessões de Infraestrutura
+📁 **Subpasta:** [`economia/privatizacoes/`](file:///Users/rodrigofregonasse/Code/brasil-project/economia/privatizacoes/README.md)
+* **[`01_privatizacao_eletrobras_processo_indicadores_corrupcao_e_impactos.md`](file:///Users/rodrigofregonasse/Code/brasil-project/economia/privatizacoes/01_privatizacao_eletrobras_processo_indicadores_corrupcao_e_impactos.md):**
+  * Histórico da capitalização da Eletrobras (Lei 14.182/2021), a sangria financeira causada pela MP 579/2012 e a venda de distribuidoras sob Temer.
+  * Indicadores econômico-financeiros antes e depois (lucro líquido, alavancagem Dívida/EBITDA, CAPEX, PDVs e ratings).
+  * Casos de corrupção pré-privatização apurados na Lava Jato (Angra 3 / Eletronuclear com condenação de Othon Pinheiro, propinas de 1% em Belo Monte divididas entre PT e PMDB, feudo de Furnas).
+  * Problemas e controvérsias pós-privatização: R$ 40 bi de "jabutis" termelétricos na CDE, a disputa societária da ADI 7385 no STF sobre o teto de 10% de voto da União (acordo de 2025), o apagão nacional de agosto de 2023 e o aumento de salários de executivos.
+
+---
+
 ## 3. Fontes de Dados Primárias Homologadas
 
 Todas as análises utilizam exclusivamente os dados brutos e séries temporais das seguintes entidades oficiais (detalhadas com códigos em [`BASE_FONTES_OFICIAIS.md`](file:///Users/rodrigofregonasse/Code/brasil-project/BASE_FONTES_OFICIAIS.md)):
