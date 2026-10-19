@@ -16,3 +16,7 @@
 *.log
 scratch/
 tmp/
+
+# Web App build & dependencies
+node_modules/
+dist/

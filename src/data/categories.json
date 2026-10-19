@@ -1,0 +1,513 @@
+[
+  {
+    "key": "",
+    "name": "Visão Geral & Fontes",
+    "order": 1,
+    "icon": "Compass",
+    "documents": [
+      {
+        "id": "README.md",
+        "path": "README.md",
+        "title": "Brasil Project: Repositório de Política, Economia e Instituições Brasileiras",
+        "fileName": "README.md",
+        "readTimeMinutes": 1,
+        "itemOrder": 0,
+        "headingsCount": 4
+      },
+      {
+        "id": "BASE_FONTES_OFICIAIS.md",
+        "path": "BASE_FONTES_OFICIAIS.md",
+        "title": "Base Definitiva de Fontes Oficiais, Indicadores e Fatos Econômicos do Brasil",
+        "fileName": "BASE_FONTES_OFICIAIS.md",
+        "readTimeMinutes": 14,
+        "itemOrder": 1,
+        "headingsCount": 21
+      }
+    ]
+  },
+  {
+    "key": "economia",
+    "name": "Macroeconomia",
+    "order": 2,
+    "icon": "TrendingUp",
+    "documents": [
+      {
+        "id": "economia/README.md",
+        "path": "economia/README.md",
+        "title": "Repositório de Economia Brasileira: Análise Dialética dos Governos Recentes",
+        "fileName": "README.md",
+        "readTimeMinutes": 7,
+        "itemOrder": 0,
+        "headingsCount": 6
+      },
+      {
+        "id": "economia/01_governo_lula_3_analise_economica.md",
+        "path": "economia/01_governo_lula_3_analise_economica.md",
+        "title": "Governo Lula 3 (2023 – 2026): Análise Econômica e Indicadores Reais",
+        "fileName": "01_governo_lula_3_analise_economica.md",
+        "readTimeMinutes": 9,
+        "itemOrder": 2,
+        "headingsCount": 9
+      },
+      {
+        "id": "economia/02_governo_bolsonaro_analise_economica.md",
+        "path": "economia/02_governo_bolsonaro_analise_economica.md",
+        "title": "Governo Jair Bolsonaro (2019 – 2022): Análise Econômica e Indicadores Reais",
+        "fileName": "02_governo_bolsonaro_analise_economica.md",
+        "readTimeMinutes": 8,
+        "itemOrder": 3,
+        "headingsCount": 7
+      },
+      {
+        "id": "economia/03_governo_temer_analise_economica.md",
+        "path": "economia/03_governo_temer_analise_economica.md",
+        "title": "Governo Michel Temer (2016 – 2018): Análise Econômica e Indicadores Reais",
+        "fileName": "03_governo_temer_analise_economica.md",
+        "readTimeMinutes": 6,
+        "itemOrder": 4,
+        "headingsCount": 7
+      },
+      {
+        "id": "economia/04_governos_lula_1_2_e_dilma_analise_economica.md",
+        "path": "economia/04_governos_lula_1_2_e_dilma_analise_economica.md",
+        "title": "Governos Lula 1 & 2 e Dilma Rousseff (2003 – 2016): Análise Econômica e Indicadores Reais",
+        "fileName": "04_governos_lula_1_2_e_dilma_analise_economica.md",
+        "readTimeMinutes": 6,
+        "itemOrder": 5,
+        "headingsCount": 8
+      },
+      {
+        "id": "economia/05_fundacao_tripe_macroeconomico_e_plano_real.md",
+        "path": "economia/05_fundacao_tripe_macroeconomico_e_plano_real.md",
+        "title": "O Marco Fundacional: Plano Real e o Tripé Macroeconômico (1994 – 2002)",
+        "fileName": "05_fundacao_tripe_macroeconomico_e_plano_real.md",
+        "readTimeMinutes": 6,
+        "itemOrder": 6,
+        "headingsCount": 7
+      },
+      {
+        "id": "economia/06_cenario_global_crises_e_impactos_no_brasil.md",
+        "path": "economia/06_cenario_global_crises_e_impactos_no_brasil.md",
+        "title": "Ultradocumento: O Cenário Econômico Global, Grandes Crises e Seus Impactos no Brasil (1994 – 2026)",
+        "fileName": "06_cenario_global_crises_e_impactos_no_brasil.md",
+        "readTimeMinutes": 16,
+        "itemOrder": 7,
+        "headingsCount": 10
+      },
+      {
+        "id": "economia/07_decisoes_economicas_contraditorias_pt_e_bolsonaro.md",
+        "path": "economia/07_decisoes_economicas_contraditorias_pt_e_bolsonaro.md",
+        "title": "Decisões Econômicas Contraditórias: Governos do PT e Governo Bolsonaro",
+        "fileName": "07_decisoes_economicas_contraditorias_pt_e_bolsonaro.md",
+        "readTimeMinutes": 25,
+        "itemOrder": 8,
+        "headingsCount": 17
+      },
+      {
+        "id": "economia/08_crise_aviacao_caso_gol_rotas_qav.md",
+        "path": "economia/08_crise_aviacao_caso_gol_rotas_qav.md",
+        "title": "Relatório Econômico e Setorial: O Caso da Suspensão de Rotas da GOL e a Crise do QAV",
+        "fileName": "08_crise_aviacao_caso_gol_rotas_qav.md",
+        "readTimeMinutes": 7,
+        "itemOrder": 9,
+        "headingsCount": 11
+      }
+    ]
+  },
+  {
+    "key": "economia/privatizacoes",
+    "name": "Privatizações & Concessões",
+    "order": 3,
+    "icon": "Building2",
+    "documents": [
+      {
+        "id": "economia/privatizacoes/README.md",
+        "path": "economia/privatizacoes/README.md",
+        "title": "Privatizações, Concessões e Desestatizações no Brasil",
+        "fileName": "README.md",
+        "readTimeMinutes": 4,
+        "itemOrder": 0,
+        "headingsCount": 4
+      },
+      {
+        "id": "economia/privatizacoes/01_privatizacao_eletrobras_processo_indicadores_corrupcao_e_impactos.md",
+        "path": "economia/privatizacoes/01_privatizacao_eletrobras_processo_indicadores_corrupcao_e_impactos.md",
+        "title": "A Privatização da Eletrobras: Processo Histórico, Indicadores, Corrupção e Impactos Setoriais",
+        "fileName": "01_privatizacao_eletrobras_processo_indicadores_corrupcao_e_impactos.md",
+        "readTimeMinutes": 19,
+        "itemOrder": 2,
+        "headingsCount": 20
+      }
+    ]
+  },
+  {
+    "key": "corrupcao_e_investigacoes",
+    "name": "Corrupção & Operações Judiciais",
+    "order": 4,
+    "icon": "Scale",
+    "documents": [
+      {
+        "id": "corrupcao_e_investigacoes/README.md",
+        "path": "corrupcao_e_investigacoes/README.md",
+        "title": "Repositório de Investigações, Corrupção e Fatos Judiciais da Política Brasileira",
+        "fileName": "README.md",
+        "readTimeMinutes": 6,
+        "itemOrder": 0,
+        "headingsCount": 6
+      },
+      {
+        "id": "corrupcao_e_investigacoes/01_operacao_lava_jato_e_petrolao.md",
+        "path": "corrupcao_e_investigacoes/01_operacao_lava_jato_e_petrolao.md",
+        "title": "Operação Lava Jato e o \"Petrolão\"",
+        "fileName": "01_operacao_lava_jato_e_petrolao.md",
+        "readTimeMinutes": 11,
+        "itemOrder": 2,
+        "headingsCount": 10
+      },
+      {
+        "id": "corrupcao_e_investigacoes/02_governo_bolsonaro_e_investigacoes.md",
+        "path": "corrupcao_e_investigacoes/02_governo_bolsonaro_e_investigacoes.md",
+        "title": "Investigações, Inquéritos e Fatos Judiciais: Governo Jair Bolsonaro e Aliados",
+        "fileName": "02_governo_bolsonaro_e_investigacoes.md",
+        "readTimeMinutes": 10,
+        "itemOrder": 3,
+        "headingsCount": 6
+      },
+      {
+        "id": "corrupcao_e_investigacoes/03_governo_temer_e_mdb.md",
+        "path": "corrupcao_e_investigacoes/03_governo_temer_e_mdb.md",
+        "title": "Investigações, Prisões e Desfechos Judiciais: Governo Michel Temer e MDB",
+        "fileName": "03_governo_temer_e_mdb.md",
+        "readTimeMinutes": 7,
+        "itemOrder": 4,
+        "headingsCount": 4
+      },
+      {
+        "id": "corrupcao_e_investigacoes/04_acao_penal_470_mensalao.md",
+        "path": "corrupcao_e_investigacoes/04_acao_penal_470_mensalao.md",
+        "title": "O Escândalo do \"Mensalão\" (Ação Penal 470 do STF)",
+        "fileName": "04_acao_penal_470_mensalao.md",
+        "readTimeMinutes": 6,
+        "itemOrder": 5,
+        "headingsCount": 6
+      },
+      {
+        "id": "corrupcao_e_investigacoes/05_centrao_orcamento_secreto_e_codevasf.md",
+        "path": "corrupcao_e_investigacoes/05_centrao_orcamento_secreto_e_codevasf.md",
+        "title": "O Centrão, o \"Orçamento Secreto\" e a Codevasf",
+        "fileName": "05_centrao_orcamento_secreto_e_codevasf.md",
+        "readTimeMinutes": 6,
+        "itemOrder": 6,
+        "headingsCount": 6
+      },
+      {
+        "id": "corrupcao_e_investigacoes/06_casos_em_aberto_e_instabilidades_recentes.md",
+        "path": "corrupcao_e_investigacoes/06_casos_em_aberto_e_instabilidades_recentes.md",
+        "title": "Casos em Aberto, Instabilidades Recentes e Procedimentos Não Julgados",
+        "fileName": "06_casos_em_aberto_e_instabilidades_recentes.md",
+        "readTimeMinutes": 6,
+        "itemOrder": 7,
+        "headingsCount": 6
+      },
+      {
+        "id": "corrupcao_e_investigacoes/07_stf_casos_historicos_e_conexoes.md",
+        "path": "corrupcao_e_investigacoes/07_stf_casos_historicos_e_conexoes.md",
+        "title": "Casos Históricos do STF: Linha do Tempo e Conexão de Fatores",
+        "fileName": "07_stf_casos_historicos_e_conexoes.md",
+        "readTimeMinutes": 18,
+        "itemOrder": 8,
+        "headingsCount": 23
+      },
+      {
+        "id": "corrupcao_e_investigacoes/08_escandalos_bndes_operacoes_e_vinculos_lula.md",
+        "path": "corrupcao_e_investigacoes/08_escandalos_bndes_operacoes_e_vinculos_lula.md",
+        "title": "Os Escândalos do BNDES: Investigações, Financiamentos Externos e os Vínculos com Lula",
+        "fileName": "08_escandalos_bndes_operacoes_e_vinculos_lula.md",
+        "readTimeMinutes": 16,
+        "itemOrder": 9,
+        "headingsCount": 22
+      }
+    ]
+  },
+  {
+    "key": "politica_e_instituicoes",
+    "name": "Política & Instituições",
+    "order": 5,
+    "icon": "Landmark",
+    "documents": [
+      {
+        "id": "politica_e_instituicoes/README.md",
+        "path": "politica_e_instituicoes/README.md",
+        "title": "Política e Instituições: O Poder Real na República Brasileira",
+        "fileName": "README.md",
+        "readTimeMinutes": 2,
+        "itemOrder": 0,
+        "headingsCount": 3
+      },
+      {
+        "id": "politica_e_instituicoes/01_presidencialismo_de_coalizao_e_orcamento_impositivo.md",
+        "path": "politica_e_instituicoes/01_presidencialismo_de_coalizao_e_orcamento_impositivo.md",
+        "title": "A Mutação do Congresso: Do Presidencialismo de Coalizão ao Orçamento Impositivo",
+        "fileName": "01_presidencialismo_de_coalizao_e_orcamento_impositivo.md",
+        "readTimeMinutes": 5,
+        "itemOrder": 2,
+        "headingsCount": 8
+      },
+      {
+        "id": "politica_e_instituicoes/02_forcas_armadas_e_tutela_militar.md",
+        "path": "politica_e_instituicoes/02_forcas_armadas_e_tutela_militar.md",
+        "title": "As Forças Armadas, o Artigo 142 e a Tutela Militar na República",
+        "fileName": "02_forcas_armadas_e_tutela_militar.md",
+        "readTimeMinutes": 5,
+        "itemOrder": 3,
+        "headingsCount": 9
+      }
+    ]
+  },
+  {
+    "key": "pecs_e_propostas",
+    "name": "PECs & Marcos Fiscais",
+    "order": 6,
+    "icon": "ScrollText",
+    "documents": [
+      {
+        "id": "pecs_e_propostas/README.md",
+        "path": "pecs_e_propostas/README.md",
+        "title": "PECs, Propostas Legislativas e Reformas Estruturais do Brasil",
+        "fileName": "README.md",
+        "readTimeMinutes": 3,
+        "itemOrder": 0,
+        "headingsCount": 5
+      },
+      {
+        "id": "pecs_e_propostas/01_pec_fim_escala_6x1_jornada_trabalho.md",
+        "path": "pecs_e_propostas/01_pec_fim_escala_6x1_jornada_trabalho.md",
+        "title": "Proposta de Emenda à Constituição: Fim da Escala 6x1 e Redução da Jornada",
+        "fileName": "01_pec_fim_escala_6x1_jornada_trabalho.md",
+        "readTimeMinutes": 9,
+        "itemOrder": 2,
+        "headingsCount": 14
+      },
+      {
+        "id": "pecs_e_propostas/02_linha_historica_teto_orcamento_secreto_arcabouco.md",
+        "path": "pecs_e_propostas/02_linha_historica_teto_orcamento_secreto_arcabouco.md",
+        "title": "A Linha Histórica do Orçamento Federal: Do Teto de Gastos ao Orçamento Secreto e ao Novo Arcabouço Fiscal",
+        "fileName": "02_linha_historica_teto_orcamento_secreto_arcabouco.md",
+        "readTimeMinutes": 10,
+        "itemOrder": 3,
+        "headingsCount": 12
+      }
+    ]
+  },
+  {
+    "key": "sociedade_e_desenvolvimento",
+    "name": "Sociedade & Indicadores",
+    "order": 7,
+    "icon": "Users",
+    "documents": [
+      {
+        "id": "sociedade_e_desenvolvimento/README.md",
+        "path": "sociedade_e_desenvolvimento/README.md",
+        "title": "Sociedade e Desenvolvimento: Estrutura Social, Demografia e Desafios Estruturais",
+        "fileName": "README.md",
+        "readTimeMinutes": 2,
+        "itemOrder": 0,
+        "headingsCount": 3
+      },
+      {
+        "id": "sociedade_e_desenvolvimento/01_demografia_previdencia_e_produtividade.md",
+        "path": "sociedade_e_desenvolvimento/01_demografia_previdencia_e_produtividade.md",
+        "title": "A Bomba Demográfica, a Previdência Social e o Abismo de Produtividade",
+        "fileName": "01_demografia_previdencia_e_produtividade.md",
+        "readTimeMinutes": 5,
+        "itemOrder": 2,
+        "headingsCount": 8
+      },
+      {
+        "id": "sociedade_e_desenvolvimento/02_seguranca_publica_e_crime_organizado.md",
+        "path": "sociedade_e_desenvolvimento/02_seguranca_publica_e_crime_organizado.md",
+        "title": "Segurança Pública e a Nova Geopolítica do Crime Organizado",
+        "fileName": "02_seguranca_publica_e_crime_organizado.md",
+        "readTimeMinutes": 5,
+        "itemOrder": 3,
+        "headingsCount": 9
+      },
+      {
+        "id": "sociedade_e_desenvolvimento/03_tributacao_regressiva_e_reforma_da_renda.md",
+        "path": "sociedade_e_desenvolvimento/03_tributacao_regressiva_e_reforma_da_renda.md",
+        "title": "Tributação Regressiva, Imposto sobre a Renda e Desigualdade Estrutural",
+        "fileName": "03_tributacao_regressiva_e_reforma_da_renda.md",
+        "readTimeMinutes": 5,
+        "itemOrder": 4,
+        "headingsCount": 9
+      }
+    ]
+  },
+  {
+    "key": "trabalho_e_leis_trabalhistas",
+    "name": "Trabalho & Previdência",
+    "order": 8,
+    "icon": "Briefcase",
+    "documents": [
+      {
+        "id": "trabalho_e_leis_trabalhistas/README.md",
+        "path": "trabalho_e_leis_trabalhistas/README.md",
+        "title": "Trabalho, Legislação Trabalhista e Previdência Social no Brasil",
+        "fileName": "README.md",
+        "readTimeMinutes": 3,
+        "itemOrder": 0,
+        "headingsCount": 5
+      },
+      {
+        "id": "trabalho_e_leis_trabalhistas/01_escandalo_inss_fraudes_descontos_associativos_e_investigacoes.md",
+        "path": "trabalho_e_leis_trabalhistas/01_escandalo_inss_fraudes_descontos_associativos_e_investigacoes.md",
+        "title": "O Escândalo dos Descontos Indevidos no INSS: Fraudes, Auditorias e Repercussões Políticas",
+        "fileName": "01_escandalo_inss_fraudes_descontos_associativos_e_investigacoes.md",
+        "readTimeMinutes": 10,
+        "itemOrder": 2,
+        "headingsCount": 15
+      },
+      {
+        "id": "trabalho_e_leis_trabalhistas/02_comparativo_leis_trabalhistas_brasil_vs_top25_mundo.md",
+        "path": "trabalho_e_leis_trabalhistas/02_comparativo_leis_trabalhistas_brasil_vs_top25_mundo.md",
+        "title": "Comparativo Internacional de Leis Trabalhistas: Brasil vs. Top 25 Economias do Mundo",
+        "fileName": "02_comparativo_leis_trabalhistas_brasil_vs_top25_mundo.md",
+        "readTimeMinutes": 17,
+        "itemOrder": 3,
+        "headingsCount": 16
+      }
+    ]
+  },
+  {
+    "key": "geopolitica_e_energia",
+    "name": "Geopolítica & Soberania",
+    "order": 9,
+    "icon": "Globe",
+    "documents": [
+      {
+        "id": "geopolitica_e_energia/README.md",
+        "path": "geopolitica_e_energia/README.md",
+        "title": "Geopolítica, Energia e Comércio Exterior: O Brasil no Tabuleiro Global",
+        "fileName": "README.md",
+        "readTimeMinutes": 3,
+        "itemOrder": 0,
+        "headingsCount": 3
+      },
+      {
+        "id": "geopolitica_e_energia/01_transicao_energetica_agro_e_margem_equatorial.md",
+        "path": "geopolitica_e_energia/01_transicao_energetica_agro_e_margem_equatorial.md",
+        "title": "Transição Energética, Agronegócio e o Dilema da Margem Equatorial",
+        "fileName": "01_transicao_energetica_agro_e_margem_equatorial.md",
+        "readTimeMinutes": 5,
+        "itemOrder": 2,
+        "headingsCount": 9
+      },
+      {
+        "id": "geopolitica_e_energia/02_politica_externa_brics_e_desdolarizacao.md",
+        "path": "geopolitica_e_energia/02_politica_externa_brics_e_desdolarizacao.md",
+        "title": "Geopolítica, BRICS e o Debate da Desdolarização",
+        "fileName": "02_politica_externa_brics_e_desdolarizacao.md",
+        "readTimeMinutes": 5,
+        "itemOrder": 3,
+        "headingsCount": 10
+      },
+      {
+        "id": "geopolitica_e_energia/03_soberania_nacional_lula_analise_fatos_e_decisoes.md",
+        "path": "geopolitica_e_energia/03_soberania_nacional_lula_analise_fatos_e_decisoes.md",
+        "title": "A Soberania Nacional no Governo Lula: Fatos, Decisões e Análise Dialética",
+        "fileName": "03_soberania_nacional_lula_analise_fatos_e_decisoes.md",
+        "readTimeMinutes": 10,
+        "itemOrder": 4,
+        "headingsCount": 13
+      },
+      {
+        "id": "geopolitica_e_energia/04_soberania_nacional_bolsonaro_analise_fatos_e_decisoes.md",
+        "path": "geopolitica_e_energia/04_soberania_nacional_bolsonaro_analise_fatos_e_decisoes.md",
+        "title": "A Soberania Nacional no Governo Bolsonaro: Fatos, Decisões e Análise Dialética",
+        "fileName": "04_soberania_nacional_bolsonaro_analise_fatos_e_decisoes.md",
+        "readTimeMinutes": 10,
+        "itemOrder": 5,
+        "headingsCount": 13
+      }
+    ]
+  },
+  {
+    "key": "ideologia_e_discursos",
+    "name": "Ideologia & Discursos",
+    "order": 10,
+    "icon": "MessageSquareText",
+    "documents": [
+      {
+        "id": "ideologia_e_discursos/README.md",
+        "path": "ideologia_e_discursos/README.md",
+        "title": "Ideologia, Discursos e Conexões Históricas: Lula e Bolsonaro",
+        "fileName": "README.md",
+        "readTimeMinutes": 5,
+        "itemOrder": 0,
+        "headingsCount": 4
+      },
+      {
+        "id": "ideologia_e_discursos/01_lula_discursos_e_conexoes_comunistas.md",
+        "path": "ideologia_e_discursos/01_lula_discursos_e_conexoes_comunistas.md",
+        "title": "Luiz Inácio Lula da Silva: Conexões, Declarações e Paralelos com Regimes de Esquerda",
+        "fileName": "01_lula_discursos_e_conexoes_comunistas.md",
+        "readTimeMinutes": 9,
+        "itemOrder": 2,
+        "headingsCount": 17
+      },
+      {
+        "id": "ideologia_e_discursos/02_bolsonaro_discursos_e_conexoes_fascistas_autoritarias.md",
+        "path": "ideologia_e_discursos/02_bolsonaro_discursos_e_conexoes_fascistas_autoritarias.md",
+        "title": "Jair Messias Bolsonaro: Discursos, Simbologias e Conexões Autoritárias",
+        "fileName": "02_bolsonaro_discursos_e_conexoes_fascistas_autoritarias.md",
+        "readTimeMinutes": 9,
+        "itemOrder": 3,
+        "headingsCount": 15
+      },
+      {
+        "id": "ideologia_e_discursos/03_analise_comparativa_ciencia_politica.md",
+        "path": "ideologia_e_discursos/03_analise_comparativa_ciencia_politica.md",
+        "title": "Ciência Política Comparada: Retórica Radical vs. Realidade Institucional",
+        "fileName": "03_analise_comparativa_ciencia_politica.md",
+        "readTimeMinutes": 9,
+        "itemOrder": 4,
+        "headingsCount": 12
+      },
+      {
+        "id": "ideologia_e_discursos/04_lula_e_aliados_casos_autoritarios_instituicoes_imprensa.md",
+        "path": "ideologia_e_discursos/04_lula_e_aliados_casos_autoritarios_instituicoes_imprensa.md",
+        "title": "Levantamento Histórico: Atos, Declarações e Posturas Autoritárias de Lula e Aliados",
+        "fileName": "04_lula_e_aliados_casos_autoritarios_instituicoes_imprensa.md",
+        "readTimeMinutes": 28,
+        "itemOrder": 5,
+        "headingsCount": 33
+      }
+    ]
+  },
+  {
+    "key": "economias_internacionais",
+    "name": "Economias Internacionais",
+    "order": 11,
+    "icon": "BarChart3",
+    "documents": [
+      {
+        "id": "economias_internacionais/README.md",
+        "path": "economias_internacionais/README.md",
+        "title": "Economias Internacionais e Estudos de Caso Comparados",
+        "fileName": "README.md",
+        "readTimeMinutes": 3,
+        "itemOrder": 0,
+        "headingsCount": 3
+      },
+      {
+        "id": "economias_internacionais/01_argentina_analise_economica_pre_e_pos_milei.md",
+        "path": "economias_internacionais/01_argentina_analise_economica_pre_e_pos_milei.md",
+        "title": "A Grande Análise da Economia Argentina: O Colapso Pré-Milei, o Choque Libertário e os Impactos na População",
+        "fileName": "01_argentina_analise_economica_pre_e_pos_milei.md",
+        "readTimeMinutes": 17,
+        "itemOrder": 2,
+        "headingsCount": 22
+      }
+    ]
+  }
+]
