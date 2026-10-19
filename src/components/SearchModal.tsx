@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Search, X, CornerDownLeft, FileText, ArrowRight } from 'lucide-react';
-import { searchContent } from '../services/search';
+import { Search, X, CornerDownLeft, FileText } from 'lucide-react';
+import { searchContent, ensureSearchLoaded, documentCount } from '../services/search';
 import { SearchResult } from '../types';
 
 interface SearchModalProps {
@@ -18,6 +18,9 @@ export const SearchModal: React.FC<SearchModalProps> = ({
   const [results, setResults] = useState<SearchResult[]>([]);
   const [selectedIndex, setSelectedIndex] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [loadError, setLoadError] = useState('');
 
   useEffect(() => {
     if (isOpen) {
@@ -30,14 +33,37 @@ export const SearchModal: React.FC<SearchModalProps> = ({
   }, [isOpen]);
 
   useEffect(() => {
-    if (!query.trim()) {
-      setResults([]);
-      return;
-    }
-    const res = searchContent(query, 10);
-    setResults(res);
-    setSelectedIndex(0);
-  }, [query]);
+    if (!isOpen) return;
+    let active = true;
+    setIsLoading(true);
+    setLoadError('');
+    const timer = setTimeout(() => {
+      (query.trim() ? searchContent(query, 10) : ensureSearchLoaded().then(() => [])).then(res => {
+        if (!active) return;
+        setResults(res); setSelectedIndex(0); setIsLoading(false);
+      }).catch(() => {
+        if (active) { setIsLoading(false); setLoadError('Não foi possível carregar a pesquisa. Feche e tente novamente.'); }
+      });
+    }, query.trim() ? 120 : 0);
+    return () => { active = false; clearTimeout(timer); };
+  }, [query, isOpen]);
+
+  useEffect(() => {
+    if (!isOpen) return;
+    const previous = document.activeElement as HTMLElement | null;
+    const overflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    const trap = (event: KeyboardEvent) => {
+      if (event.key !== 'Tab') return;
+      const elements = dialogRef.current?.querySelectorAll<HTMLElement>('input, button, [tabindex="0"]');
+      if (!elements?.length) return;
+      const first = elements[0], last = elements[elements.length - 1];
+      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+    };
+    document.addEventListener('keydown', trap);
+    return () => { document.body.style.overflow = overflow; document.removeEventListener('keydown', trap); previous?.focus(); };
+  }, [isOpen]);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -45,6 +71,8 @@ export const SearchModal: React.FC<SearchModalProps> = ({
 
       if (e.key === 'Escape') {
         onClose();
+      } else if (e.target !== inputRef.current) {
+        return;
       } else if (e.key === 'ArrowDown') {
         e.preventDefault();
         setSelectedIndex((prev) => (prev < results.length - 1 ? prev + 1 : prev));
@@ -67,8 +95,9 @@ export const SearchModal: React.FC<SearchModalProps> = ({
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-start justify-center pt-16 sm:pt-24 px-4 bg-black/40 backdrop-blur-sm animate-in fade-in duration-150">
+    <div onClick={onClose} className="fixed inset-0 z-50 flex items-start justify-center pt-16 sm:pt-24 px-4 bg-black/40 backdrop-blur-sm animate-in fade-in duration-150">
       <div
+        ref={dialogRef} role="dialog" aria-modal="true" aria-label="Pesquisar documentos"
         className="w-full max-w-2xl rounded-xl border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark shadow-2xl overflow-hidden flex flex-col max-h-[80vh]"
         onClick={(e) => e.stopPropagation()}
       >
@@ -78,6 +107,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({
           <input
             ref={inputRef}
             type="text"
+            aria-label="Termos da pesquisa"
             placeholder="Pesquisar em todo o repositório (ex: Petrobras, arcabouço, STF, 6x1)..."
             value={query}
             onChange={(e) => setQuery(e.target.value)}
@@ -86,11 +116,13 @@ export const SearchModal: React.FC<SearchModalProps> = ({
           {query && (
             <button
               onClick={() => setQuery('')}
+              aria-label="Limpar pesquisa"
               className="text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200"
             >
               <X size={16} />
             </button>
           )}
+          <button onClick={onClose} aria-label="Fechar pesquisa"><X size={16} /></button>
           <kbd className="hidden sm:inline-block font-mono text-[10px] uppercase px-1.5 py-0.5 rounded border border-border-light dark:border-border-dark text-zinc-400">
             Esc
           </kbd>
@@ -98,11 +130,11 @@ export const SearchModal: React.FC<SearchModalProps> = ({
 
         {/* Results List */}
         <div className="overflow-y-auto p-2 divide-y divide-border-light/50 dark:divide-border-dark/50">
-          {query.trim() === '' ? (
+          {loadError ? <p role="alert" className="p-6">{loadError}</p> : isLoading ? <p role="status" className="p-6">Carregando pesquisa…</p> : query.trim() === '' ? (
             <div className="py-12 text-center text-zinc-400 dark:text-zinc-500 text-xs">
               <FileText size={28} className="mx-auto mb-2 opacity-40" />
               <p>Digite palavras-chave para busca textual instantânea</p>
-              <p className="mt-1 text-[11px] text-zinc-400">47 documentos indexados localmente no seu navegador</p>
+              <p className="mt-1 text-[11px] text-zinc-400">{documentCount} documentos disponíveis na pesquisa</p>
             </div>
           ) : results.length === 0 ? (
             <div className="py-12 text-center text-zinc-400 dark:text-zinc-500 text-xs">
@@ -115,6 +147,8 @@ export const SearchModal: React.FC<SearchModalProps> = ({
               return (
                 <div
                   key={item.id}
+                  role="button" tabIndex={0}
+                  onKeyDown={(event) => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); event.stopPropagation(); onSelectResult(item.path); onClose(); } }}
                   onClick={() => {
                     onSelectResult(item.path);
                     onClose();
@@ -153,7 +187,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({
         {/* Footer */}
         {results.length > 0 && (
           <div className="px-4 py-2 bg-zinc-50 dark:bg-zinc-900/40 border-t border-border-light dark:border-border-dark flex items-center justify-between text-[11px] text-zinc-400 font-mono">
-            <span>{results.length} resultados encontrados</span>
+            <span>{results.length} resultados exibidos</span>
             <div className="flex items-center gap-3">
               <span>↑↓ para navegar</span>
               <span>↵ para selecionar</span>

@@ -1,209 +1,89 @@
-# A Privatização da Eletrobras: Processo Histórico, Indicadores, Corrupção e Impactos Setoriais
+# Privatização da Eletrobras: processo, indicadores, governança e controvérsias
 
-> **Classificação:** Economia do Setor Público, Regulação Energética, Finanças Corporativas e Relações Institucionais  
-> **Período de Análise:** 2012 – 2026 (Antecedentes da MP 579, Desestatização em 2022 e Desdobramentos no Lula 3)  
-> **Objeto de Estudo:** O processo de capitalização das Centrais Elétricas Brasileiras S.A. (Eletrobras) sob a Lei nº 14.182/2021, confrontando os indicadores operacionais e financeiros pré e pós-privatização, os escândalos históricos de corrupção no setor elétrico e a controvérsia jurídica em torno da governança e dos "jabutis" tarifários.  
-> **Fontes Primárias:** Demonstrações Financeiras Padronizadas (DFP) na CVM/SEC, Acórdãos do Tribunal de Contas da União (TCU), Ação Direta de Inconstitucionalidade (ADI) nº 7385 no STF, Relatórios de Análise de Perturbação (RAP) do ONS e Aneel, e Inquéritos Judiciais da Operação Lava Jato (7ª Vara Federal do RJ).
+> **Revisão editorial:** 19/10/2026.
+> **Recorte da evidência:** antecedentes legais de 2012–2013, capitalização de 2022, dados financeiros identificados de 2024–2025 e acordo judicial de 2025. Não é atualização operacional completa de 2026.
 
----
+## Pergunta e método
 
-## 1. O Processo e o Histórico da Privatização da Eletrobras
+A questão é como a mudança de controle e a modelagem regulatória afetaram desempenho, investimento, governança e consumidores. Uma comparação entre anos de crise e anos posteriores não isola o efeito da propriedade. Exige conciliar perímetro societário, indenizações, preços de energia, receitas não recorrentes e critérios contábeis.
 
-### 1.1. O Peso Estrutural da Companhia
-Fundada em **1962** no governo João Goulart, a Eletrobras consolidou-se como a maior empresa de energia elétrica da América Latina:
-* Detentora histórica de cerca de **30% da capacidade instalada de geração** de energia elétrica do Brasil;
-* Controladora de aproximadamente **40% de todas as linhas de transmissão** da Rede Básica do Sistema Interligado Nacional (SIN);
-* Holding controladora de subsidiárias regionais gigantescas: **Furnas** (Sudeste/Centro-Oeste), **Chesf** (Nordeste), **Eletronorte** (Norte) e **Eletrosul / CGT Eletrosul** (Sul).
+O estudo distingue capitalização, venda de ativos, renovação de concessões e compromissos futuros. Distingue também alegação, investigação, sentença e decisão definitiva: privatização não demonstra ausência de corrupção, e uma denúncia histórica não é condenação atual de todos os envolvidos.
 
-```mermaid
-flowchart TD
-    subgraph LinhaTempo ["Linha do Tempo da Crise e Desestatização da Eletrobras"]
-        A["<b>1962:</b> Criação no governo João Goulart"] --> B["<b>2012: MP 579 (Dilma Rousseff):</b><br>Corte artificial de 20% na tarifa; descapitalização severa"]
-        B --> C["<b>2012–2015: Crise e Sangria Financeira:</b><br>Mais de R$ 30 bilhões em prejuízos acumulados; Dívida explode"]
-        C --> D["<b>2016–2018: Governo Temer / Wilson Ferreira Jr.:</b><br>Venda de 6 distribuidoras deficitárias no Norte/Nordeste"]
-        D --> E["<b>2021: Lei 14.182/2021 (Bolsonaro / Guedes):</b><br>Aprovação do modelo de capitalização e inserção de 'jabutis'"]
-        E --> F["<b>Junho/2022: Oferta Global de Ações na B3/NYSE:</b><br>Arrecadação de R$ 33,7 bi; diluição da União para ~40%"]
-        F --> G["<b>2023–2025: Governo Lula 3 e ADI 7385 no STF:</b><br>Contestação do teto de 10% de voto; acordo homologado no STF"]
-    end
-```
+## Processo histórico e base legal
 
----
+A MP 579 foi convertida na [Lei 12.783/2013](https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/lei/l12783.htm), alterando concessões e condições de renovação no setor elétrico. Pode ser examinada quanto a remuneração, indenizações e tarifas; não se presume que explique sozinha todos os prejuízos posteriores da companhia.
 
-### 1.2. O Ponto de Inflexão Negativo: A MP 579/2012 e a Sangria Financeira
-O estopim para a perda de sustentabilidade econômica da Eletrobras ocorreu em **11 de setembro de 2012**, quando a presidente Dilma Rousseff editou a **Medida Provisória nº 579** (convertida na [Lei nº 12.783/2013](https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/lei/l12783.htm)):
-* **A Promessa Política:** O governo federal anunciou uma redução artificial média de 20% na conta de luz da população e das indústrias para estimular a economia ("canetada tarifária");
-* **O Mecanismo Predatório:** Para baratear a energia no grito, o governo forçou as geradoras estatais a renovarem antecipadamente suas concessões hidrelétricas amortizadas sob o **regime de cotas**, remuneradas apenas por custos de operação e manutenção (O&M), sem direito a margem de lucro de mercado;
-* **O Efeito Colateral Catastrófico:**
-  * Enquanto geradoras privadas e estatais estaduais (como Cesp e Cemig) recusaram os termos em várias de suas usinas, a Eletrobras, por subordinação política direta ao Planalto, foi obrigada a aderir integralmente;
-  * A holding perdeu instantaneamente mais de **60% de sua receita líquida de geração**;
-  * Entre 2012 e 2015, a Eletrobras acumulou **mais de R$ 30 bilhões em prejuízos líquidos**, paralisou investimentos, viu sua dívida líquida atingir patamares insustentáveis e perdeu o grau de investimento pelas agências internacionais de classificação de risco.
+A [Lei 14.182/2021](https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14182.htm) autorizou a desestatização mediante aumento de capital e diluição da participação estatal, com condições de governança e concessões. A capitalização não equivale a venda em bloco a um controlador único. O marco também disciplina atividades que permaneceram vinculadas à União, incluindo energia nuclear e Itaipu; a composição de capital e as obrigações de cada entidade precisam ser examinadas separadamente.
 
----
+A operação de 2022 e a outorga constam da [documentação do TCU, processo de acompanhamento das distribuidoras e desestatização](https://portal.tcu.gov.br/data/files/05/86/81/C3/D48F18102DFE0FF7F18818A8/035.916.pdf). O registro identifica oferta de aproximadamente **R$ 33,7 bilhões** e bônus de outorga total **previsto** de aproximadamente **R$ 25,3 bilhões**. São conceitos distintos; a outorga não deve ser somada a compromissos plurianuais como se todos fossem destino de uma única receita instantânea de oferta.
 
-### 1.3. O Saneamento no Governo Temer (2016–2018)
-Na gestão do presidente Michel Temer, sob o comando do executivo Wilson Ferreira Jr., iniciou-se um plano de emergência para evitar a falência da estatal:
-* **Venda das Distribuidoras Deficitárias:** A Eletrobras carregava seis distribuidoras de energia no Norte e Nordeste que drenavam bilhões de reais em socorros do Tesouro e apresentavam índices de perdas não técnicas (furtos de energia) de até 40%:
-  * *Cepisa* (Piauí) — arrematada pela Equatorial Energia;
-  * *Ceal* (Alagoas) — arrematada pela Equatorial Energia;
-  * *Eletroacre* (Acre) — arrematada pela Energisa;
-  * *Ceron* (Rondônia) — arrematada pela Energisa;
-  * *Amazonas Energia* (Amazonas) — arrematada pelo consórcio Oliveira Energia/ATEM;
-  * *Boa Vista Energia* (Roraima) — arrematada pela Oliveira Energia.
-* **A Extinção do Dreno:** A venda das distribuidoras estancou um rombo anual superior a R$ 4 bilhões, permitindo à holding focar exclusivamente nos segmentos de **geração e transmissão**.
+## Quadro de evidências financeiras
 
----
-
-### 1.4. A Modelagem da Privatização: Lei nº 14.182/2021
-Durante o governo Jair Bolsonaro, sob a liderança do ministro da Economia Paulo Guedes e do ministro de Minas e Energia Bento Albuquerque, foi desenhada a desestatização através da **Medida Provisória nº 1.031/2021**, convertida na [Lei nº 14.182/2021](https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14182.htm):
-
-* **O Modelo de Capitalização (*Follow-on*):**
-  * Não houve venda do controle em leilão tradicional em bloco para um único conglomerado;
-  * A Eletrobras emitiu novas ações ordinárias na B3 (São Paulo) e na Bolsa de Nova York (NYSE);
-  * A União absteve-se de subscrever as novas ações, sendo diluída de cerca de **60% a 70%** (incluindo BNDES e fundos públicos) para aproximadamente **40% a 43%** do capital social total;
-* **A Estrutura de *Corporation* com Limite de Voto (*Voting Cap*):**
-  * Para impedir que um único grupo econômico privado ou a própria União exercesse controle absoluto, o Estatuto Social fixou um **teto de 10% para o exercício de votos** em assembleia para qualquer acionista, independentemente do percentual de ações detido;
-* **Cláusula de *Poison Pill* (Pílula de Veneno):**
-  * Estabeleceu-se que qualquer acionista que ultrapassar 30% a 50% do capital com intuito de assumir o controle é obrigado a realizar uma Oferta Pública de Aquisição (OPA) pagando um prêmio punitivo de **300% sobre a maior cotação de mercado** dos últimos anos;
-* **Cisão Obrigatória de Itaipu e Angra 3:**
-  * Por exigência constitucional (monopólio nuclear da União) e tratados internacionais (Tratado de Itaipu com o Paraguai), a usina nuclear de Angra (Eletronuclear) e a metade brasileira de Itaipu Binacional foram desmembradas e alocadas na nova estatal federal **ENBPar** (Empresa Brasileira de Participações em Energia Nuclear e Binacional);
-* **A Oferta Pública (Junho de 2022):**
-  * A operação movimentou **R$ 33,7 bilhões**, tornando-se a segunda maior oferta pública de ações do planeta em 2022;
-  * Destinação dos recursos: R$ 25,3 bilhões em outorga pagos ao Tesouro Nacional; R$ 29,8 bilhões transferidos para a Conta de Desenvolvimento Energético (CDE) para amortecimento tarifário ao longo dos anos; e R$ 9,7 bilhões para fundos de revitalização das bacias hidrográficas do Rio São Francisco e de Furnas.
-
----
-
-## 2. Indicadores Econômico-Financeiros: Antes e Depois da Privatização
-
-A tabela a seguir confronta os indicadores auditados da Eletrobras no período estatal crítico (2012–2015), no ciclo de reestruturação intermediária (2016–2021) e no período pós-desestatização (2022–2025):
-
-| Indicador Contábil / Operacional | Período Estatal Crítico (2012–2015) | Fase de Saneamento Pré-Venda (2016–2021) | Pós-Privatização (2022–2025) | Variação Estrutural / Impacto |
-| :--- | :--- | :--- | :--- | :--- |
-| **Lucro Líquido Anual** | **Prejuízos gigantescos:**<br>2012: -R$ 6,9 bi<br>2013: -R$ 6,3 bi<br>2014: -R$ 3,0 bi<br>2015: **-R$ 14,4 bi** | Lucros recuperados pós-corte de custos:<br>2018: R$ 13,3 bi<br>2020: R$ 6,4 bi<br>2021: R$ 5,7 bi | 2022: R$ 3,6 bi<br>2023: **R$ 4,4 bi**<br>2024: ~R$ 5,0 bi a R$ 6,0 bi | Fim da sangria de caixa crônica e consolidação de lucratividade recorrente. |
-| **Alavancagem (Dívida Líquida / EBITDA)** | **5,5x a 6,8x** (Risco iminente de insolvência técnica) | 2,5x a 3,2x (Venda de ativos e recebimento de indenizações) | **1,6x a 2,0x** (Intervalo internacionalmente saudável) | Desalavancagem maciça; capacidade de emitir dívida corporativa barata no mercado global. |
-| **Dívida Líquida Total** | Ultrapassou **R$ 45 bilhões** (2015) | ~R$ 35 bilhões a R$ 38 bilhões | ~R$ 30 bilhões (alongada e equalizada) | Redução substancial do custo financeiro de carregamento da dívida. |
-| **Investimentos Anuais (CAPEX)** | **Em colapso:** Incapacidade de aportar garantias em leilões da Aneel; perda de *market share*. | R$ 3,0 bi a R$ 4,5 bi/ano (Foco estrito em manutenção) | **R$ 6,0 bi a R$ 9,0 bi/ano** (Projeção plurianual de R$ 15 bi) | Retomada da vitória em leilões de transmissão estratégicos na Aneel em 2023/2024. |
-| **Quadro de Empregados** | **Mais de 23.000 funcionários** (Folha com penduricalhos históricos) | Redução para ~12.500 funcionários (PDVs pré-privatização) | **Abaixo de 8.000 funcionários** (Sucessivos PDVs em 2022–2024) | Queda de mais de 65% na folha de pessoal; crítica sindical sobre perda de memória técnica. |
-| **Classificação de Risco (Rating)** | **Nível Especulativo (*Junk*):** Rebaixada por Fitch, Moody's e S&P | Nível BB- / BB (Acompanhando o risco soberano do Brasil) | **Grau de Investimento (*Investment Grade*):** AAA em escala nacional | Acesso a financiamentos e debêntures com taxas de juros consideravelmente menores. |
-| **Governança e *Compliance*** | Aparelhamento partidário de diretorias; ausência de auditoria SOX. | Implantação de comitês da Lei das Estatais (Lei 13.303/16). | Padrão Novo Mercado da B3; diretoria e conselho independentes. | Eliminação de ingerência política direta em contratações de empreiteiras. |
-
----
-
-## 3. Relações de Corrupção e Loteamento Político Pré-Privatização
-
-Historicamente, o setor elétrico federal brasileiro funcionou como uma das maiores fontes de financiamento partidário ilícito, loteamento clientelista e propinas corporativas da República. As investigações da **Operação Lava Jato** e processos derivados detalharam o esquema:
-
-```mermaid
-flowchart TD
-    subgraph Corrupcao ["O Esquema Histórico de Corrupção no Setor Elétrico"]
-        A["Partilha Política das Subsidiárias da Eletrobras"] --> B["<b>Furnas:</b> Cota de influência do PMDB (MDB)"]
-        A --> C["<b>Eletronorte e Chesf:</b> Cota do PT e aliados regionais"]
-        A --> D["<b>Eletronuclear (Angra 3):</b> Operação Radioatividade / Pripyat"]
-        
-        B & C & D --> E["Cartel de Empreiteiras (Andrade Gutierrez, Odebrecht, Camargo Corrêa, Engevix)"]
-        E --> F["Cobrança sistemática de 1% a 2% de propina sobre os contratos de obras"]
-        F --> G["Financiamento de campanhas eleitorais e enriquecimento ilícito de dirigentes"]
-    end
-```
-
-### 3.1. O Caso Eletronuclear / Usina de Angra 3 (Operações Radioatividade e Pripyat)
-* **O Fato:** Em 2015, a 16ª fase da Lava Jato (*Operação Radioatividade*) atingiu o coração da Eletronuclear, subsidiária da Eletrobras responsável pelo programa nuclear;
-* **O Almirante Othon Pinheiro:** O presidente da estatal, almirante Othon Luiz Pinheiro da Silva — figura histórica do programa nuclear brasileiro nomeado no governo Lula e mantido por Dilma —, foi preso pela Polícia Federal;
-* **A Sentença Judicial:** Em 2016, o juiz Marcelo Bretas (7ª Vara Federal Criminal do RJ) condenou Othon Pinheiro a **43 anos de prisão** por corrupção passiva, lavagem de dinheiro, evasão de divisas e organização criminosa;
-* **O Mecanismo:** As empreiteiras Andrade Gutierrez e Engevix repassaram milhões de reais em propinas disfarçadas por meio de contratos fictícios de consultoria com a empresa *Aratec*, pertencente à família do almirante, para garantir consórcios bilionários nas obras de Angra 3.
-
----
-
-### 3.2. O Escândalo de Belo Monte e as Doações a Campanhas do PT e MDB
-A Usina Hidrelétrica de Belo Monte (PA) — obra símbolo dos governos petistas orçada inicialmente em R$ 16 bilhões que ultrapassou **R$ 35 bilhões** — teve a Eletrobras como principal acionista (detendo 49,98% do capital através de Furnas, Eletronorte e a holding):
-* **Delações das Empreiteiras:** Em acordos de colaboração premiada homologados pelo STF, executivos da **Andrade Gutierrez**, **Camargo Corrêa** e **Odebrecht** confessaram que o consórcio construtor pagou uma propina fixa de **1% sobre o valor total do contrato de obras civis**;
-* **Destinação Partidária:** Os delatores apresentaram tabelas detalhadas demonstrando que as propinas foram divididas igualmente entre o **Partido dos Trabalhadores (PT)** e o **Partido do Movimento Democrático Brasileiro (PMDB)**;
-* **Campanhas Presidenciais:** Parte expressiva das vantagens indevidas foi direcionada na forma de "doações oficiais registradas" para as campanhas da presidente Dilma Rousseff em 2010 e 2014, além de repasses diretos a parlamentares ligados aos ministros de Minas e Energia da época (como o senador Edison Lobão).
-
----
-
-### 3.3. O Feudo Político de Furnas e a Delação de Delcídio do Amaral
-Durante décadas, Furnas Centrais Elétricas foi utilizada como moeda de troca de sustentação parlamentar:
-* **A Divisão Parlamentar:** Conforme depoimento do ex-senador petista Delcídio do Amaral e investigações da PGR, Furnas era tratada no Congresso como um reduto controlado pela bancada do PMDB na Câmara dos Deputados (com forte liderança do ex-deputado Eduardo Cunha);
-* **O Balcão de Negócios:** Diretorias de planejamento, engenharia e finanças eram distribuídas a apadrinhados políticos com o objetivo de favorecer empresas terceirizadas de informática, vigilância e obras civis, servindo de base de arrecadação informal para deputados da base governista.
-
----
-
-### 3.4. A Operação Descontaminação (2019)
-Em março de 2019, a Operação Descontaminação (desdobramento da Lava Jato) resultou na **prisão preventiva do ex-presidente da República Michel Temer**:
-* As investigações do Ministério Público Federal apontaram que um consórcio contratado pela Eletronuclear (formado pela Engevix e pela empresa AF Consult) repassou propinas estimadas em R$ 1,8 milhão que teriam como destinatário final o ex-presidente Temer, intermediadas por seu operador pessoal, o coronel João Baptista Lima Filho.
-
----
-
-## 4. Problemas e Controvérsias Causados Pós-Privatização
-
-Se por um lado a privatização eliminou o risco de falência e estancou os esquemas tradicionais de corrupção partidária, a modelagem aprovada pelo Congresso Nacional e os anos seguintes geraram severas controvérsias técnicas, tarifárias e institucionais.
-
----
-
-### 4.1. Os "Jabutis" Legislativos e o Impacto na Conta de Luz (CDE)
-Durante a tramitação da Medida Provisória no Congresso Nacional em 2021, parlamentares inseriram dezenas de emendas parlamentares estranhas ao projeto original — conhecidas no jargão político como **"jabutis"**:
-* **Contratação Obrigatória de 8.000 MW de Termelétricas a Gás Natural:** A Lei nº 14.182/2021 obrigou o governo federal a contratar 8 GW de usinas termelétricas a gás, operando na base (ligadas o tempo todo, mesmo quando os reservatórios hidrelétricos estiverem cheios), a serem instaladas obrigatoriamente no Norte, Nordeste e Centro-Oeste — a maioria em regiões **distantes de gasodutos ou sem oferta local de gás**, exigindo a construção de gasodutos bilionários subsidiados;
-* **Prorrogação de Carvão Mineral e PCHs:** Foram incluídas obrigações de compra de pequenas centrais hidrelétricas (PCHs) com reserva de mercado e subsídios para termelétricas a carvão mineral;
-* **O Custo ao Consumidor:** Associações de grandes consumidores industriais (Abrace), o Instituto de Defesa de Consumidores (Idec) e a Frente Nacional dos Consumidores de Energia estimam que esses "jabutis" representarão um sobrecusto tarifário entre **R$ 40 bilhões e R$ 60 bilhões** a serem pagos pelos consumidores de energia brasileiros através da **Conta de Desenvolvimento Energético (CDE)** ao longo de duas décadas.
-
----
-
-### 4.2. A Batalha Societária da ADI 7385 no STF e o Acordo de 2025
-Com a eleição do presidente Lula para o terceiro mandato, o governo federal declarou guerra à estrutura de governança da empresa privatizada:
-* **A Ação no STF (Maio de 2023):** A Advocacia-Geral da União (AGU) ajuizou a **ADI nº 7385** perante o Supremo Tribunal Federal, sustentando que a regra do Estatuto Social que limitava a 10% o poder de voto de qualquer acionista (*voting cap*) era inconstitucional;
-* **O Argumento do Governo:** A União detém cerca de **42% a 43% do capital total** (somando Tesouro e BNDES). O governo argumentou que restringir seus votos a 10% configurava uma "desapropriação indireta" e um atentado ao patrimônio público, transferindo o controle fático da empresa para fundos minoritários (como 3G Radar, GIC de Cingapura e BlackRock) sem que estes tivessem pago pelo controle;
-* **A Conciliação e a Decisão Final do STF (Dezembro de 2025):**
-  * O ministro relator Kassio Nunes Marques remeteu a disputa para a Câmara de Conciliação e Arbitragem da Administração Federal (CCAF);
-  * Em dezembro de 2025, o Plenário do STF **homologou por maioria o acordo consensual** firmado entre o governo federal e a Eletrobras;
-  * *O Termo de Acordo:* Manteve-se a privatização e o modelo de *corporation*, mas a União obteve o direito de indicar **3 dos 10 membros do Conselho de Administração** e **1 membro do Conselho Fiscal**, além de antecipar o aporte de cerca de R$ 26 bilhões para aliviar a CDE e repactuar os investimentos na usina nuclear de Angra 3.
-
----
-
-### 4.3. O Apagão Nacional de 15 de Agosto de 2023
-Em **15 de agosto de 2023**, ocorreu uma perturbação no Sistema Interligado Nacional (SIN) que deixou **25 estados e o Distrito Federal sem energia elétrica**, cortando instantaneamente cerca de 19.000 MW de carga (~27% do consumo nacional):
-* **O Ataque Político:** O ministro de Minas e Energia, Alexandre Silveira, declarou que o evento decorreu de uma falha em uma linha de transmissão da **Chesf** (subsidiária da Eletrobras) em Quixadá (CE), afirmando que a perda de técnicos experientes após a privatização fragilizou o sistema, chegando a acionar a Polícia Federal e a Abin para apurar suspeitas de negligência ou sabotagem;
-* **O Relatório Técnico Oficial (ONS e Aneel):** O Relatório de Análise de Perturbação (RAP) conclusivo do Operador Nacional do Sistema Elétrico (ONS) demonstrou que:
-  * A linha da Chesf desligou por atuação de proteção regular milissegundos após uma oscilação de tensão;
-  * O desbalanceamento sistêmico foi provocado pela **resposta dinâmica incorreta e não parametrizada de inversores de centrais eólicas e solares privadas** de terceiros no Nordeste, que não suportaram a queda de frequência e desligaram em massa, sobrecarregando os troncos de transmissão;
-  * A atuação dos esquemas de corte de carga (ERAC) evitou um blecaute total e restaurou o sistema em poucas horas.
-
----
-
-### 4.4. A Remuneração Astronômica de Executivos e Demissões Técnicas
-* **Salto Salarial da Cúpula:** A primeira assembleia geral pós-privatização aprovou um reajuste maciço na remuneração global dos administradores. O teto de gastos com a diretoria e conselheiros saltou de R$ 15,4 milhões/ano para patamares superiores a **R$ 60 milhões/ano**. A remuneração individual de conselheiros de administração registrou altas superiores a **3.500%** (de ~R$ 5 mil para mais de R$ 200 mil mensais);
-* **Perda de Memória Técnica:** Para enxugar custos, a empresa demitiu mais de 4.000 funcionários através de PDVs sucessivos, focando em técnicos seniores de manutenção com mais de 25 anos de carreira. Sindicatos apontam que a substituição por terceirizados reduziu a agilidade em manutenções preventivas de subestações complexas.
-
----
-
-## 5. Análise dos Dois Lados: O Debate Teórico e Político
-
-| Eixo Temático | Visão Pró-Privatização / Mercado Liberal (Guedes, Investidores, IBP, Ortodoxia) | Visão Crítica / Desenvolvimentista (Lula 3, Sindicatos, Ilumina, Oposição à Venda) |
+| Tema | Evidência identificada | Interpretação e limite |
 | :--- | :--- | :--- |
-| **Sustentabilidade Financeira** | **Salvação da Falência Iminente:** A Eletrobras estava descapitalizada pela MP 579, sem conseguir investir R$ 10 bi/ano necessários para acompanhar o crescimento do país. A privatização estancou prejuízos, reduziu a alavancagem para 1,8x e restaurou o grau de investimento internacional. | **Empresa Estratégica Lucrativa Entregue a Preço Vil:** A empresa já havia se recuperado após 2018 (lucrou R$ 13 bi em 2018 e R$ 6 bi em 2020) com o saneamento das distribuidoras. Vender uma geradora dona de reservatórios hídricos amortizados foi abrir mão de um fluxo perene de dividendos para a União. |
-| **Soberania e Segurança Energética** | **A Regulação Permanece 100% Estatal:** A Aneel continua fixando as regras de concessão, as tarifas da transmissão e a fiscalização. O ONS continua despachando quais usinas ligam ou desligam. Ter capital privado não altera a segurança física do SIN e atrai capital global. | **Perda do Controle sobre a Água e o Clima:** A Eletrobras controla os maiores reservatórios do país (Sobradinho, Furnas, Tucuruí). O regime de vazão e a prioridade de múltiplos usos da água (irrigação, abastecimento humano vs. geração elétrica) ficaram submetidos à lógica do lucro de acionistas privados. |
-| **Governança e Corrupção** | **Fim do Feudo Político e do Mensalão Elétrico:** A transformação em *corporation* sem dono único acabou definitivamente com a partilha criminosa de diretorias de Furnas, Chesf e Eletronuclear entre partidos (Lava Jato, Angra 3 e Belo Monte). A gestão passou a responder a investidores privados sob a lei SOX e CVM. | **Privatização de Lucros e Socialização de Prejuízos:** A lei foi aprovada à base de captura regulatória e concessões fisiológicas ao Centrão, impondo R$ 40 bi de "jabutis" termelétricos na CDE que serão pagos por todos os cidadãos enquanto fundos como 3G Radar capturam os dividendos. |
-| **O Teto de Voto de 10%** | **Proteção Essencial da Corporation:** O teto de voto é a regra de ouro das grandes *corporations* mundiais para evitar que qualquer acionista capture a empresa. Se o governo pudesse votar com seus 43%, a empresa continuaria sendo uma estatal informal sob risco de canetadas populistas. | **Esbulho do Patrimônio da Sociedade Brasileira:** A União é dona de 43% do capital total e mais de 40% das ações com direito a voto, mas tem seu poder rebaixado a 10%, equivalendo-se a fundos com frações mínimas de ações, ferindo o princípio constitucional da razoabilidade. |
+| Lucro líquido reportado | R$ 10.381 milhões em 2024 e R$ 6.560 milhões em 2025 | [Companhia, release 4T25, tabela 3, colunas 12M24/12M25, p. 7 do PDF](https://api.mziq.com/mzfilemanager/v2/d/abb77a17-3348-4bc7-849a-154998e06ca3/092713c2-e089-4dfb-86e6-a9c96891da79?origin=2). Reportado não equivale a ajustado nem a caixa operacional. |
+| Rating internacional em maio/2025 | Fitch BB- | [Comunicado da Fitch arquivado na SEC](https://www.sec.gov/Archives/edgar/data/1439124/000129281425002151/ebr20250519_6k1.htm). Não é grau de investimento internacional. |
+| Rating nacional na mesma comunicação | AA(bra) | [Mesmo documento](https://www.sec.gov/Archives/edgar/data/1439124/000129281425002151/ebr20250519_6k1.htm). Escala relativa nacional, não comparável diretamente à internacional. |
+| Participação da União na disputa judicial | STF identifica participação nas ações ordinárias e limite de voto de 10% | [STF, homologação do acordo](https://noticias.stf.jus.br/postsnoticias/stf-homologa-acordo-sobre-participacao-da-uniao-na-eletrobras/). Capital votante e capital total devem ser separados. |
 
----
+### Memória de cálculo e critérios do antes/depois
 
-## 6. Quadro-Síntese Comparativo dos Principais Fatos
+A comparação anual pode ser reconstruída diretamente do [release da companhia 4T25, tabelas 3 e 12, pp. 7 e 16 do PDF](https://api.mziq.com/mzfilemanager/v2/d/abb77a17-3348-4bc7-849a-154998e06ca3/092713c2-e089-4dfb-86e6-a9c96891da79?origin=2). Valores monetários em **R$ milhões**; fluxos são anuais e dívida é saldo de encerramento. Ajustados são medidas gerenciais, com reconciliação própria.
 
-| Dimensão | Situação Pré-Privatização | Situação Pós-Privatização | Status Atual / Desfecho |
-| :--- | :--- | :--- | :--- |
-| **Controle Societário** | Estatal Federal (União detinha ~60% a 70% das ações). | *Corporation* privada pulverizada na B3/NYSE. | União detém ~42% do capital, com poder de voto equalizado por acordo judicial. |
-| **Resultado Operacional** | Prejuízo de mais de R$ 30 bilhões acumulados (2012–2015). | Lucros consistentes entre R$ 4 bi e R$ 6 bi anuais. | Balanço saneado, dividendos regulares e grau de investimento recuperado. |
-| **Corrupção e Crime** | Lava Jato em Angra 3 (Othon Pinheiro); propinas de 1% em Belo Monte (PT/PMDB). | Fim dos esquemas de propina direta em obras estatais. | Foco de controvérsia deslocou-se para captura regulatória e emendas de "jabutis". |
-| **Tarifa ao Consumidor** | Desastre da MP 579 gerou tarifaço posterior e endividamento da CDE. | Lei 14.182 aportou R$ 29,8 bi na CDE, mas incluiu R$ 40 bi em termelétricas a gás. | Risco estrutural de aumento de encargos da CDE a médio e longo prazo. |
-| **Disputa Judicial (STF)** | Inexistente (empresa subordinada ao Ministério de Minas e Energia). | AGU ajuizou a ADI 7385 para anular o teto de 10% de votos da União. | **Acordo homologado no STF em dez/2025:** Governo obteve 3 vagas no Conselho e 1 no Fiscal. |
+| Indicador e base | 2024 | 2025 |
+| :--- | ---: | ---: |
+| Lucro líquido IFRS reportado | 10.381 | 6.560 |
+| Lucro líquido IFRS ajustado | 8.796 | 4.764 |
+| Investimentos realizados, definição do release | 8.157 | 9.608 |
+| Dívida líquida ajustada, fechamento | 37.671 | 46.484 |
+| Dívida líquida/EBITDA ajustado IFRS dos últimos 12 meses | 1,5× | 2,4× |
+| Dívida líquida/EBITDA regulatório ajustado dos últimos 12 meses | 1,6× | 2,0× |
 
----
+A diferença reportada é `6.560−10.381 = −R$ 3.821 milhões`, ou `(6.560/10.381−1)×100 ≈ −36,8%`. Houve aumento do investimento e da dívida, enquanto ambos os conceitos de lucro caíram. As duas razões de alavancagem diferem pelo denominador; a faixa de 1,6–2,0 não era necessariamente falsa, mas exigia essa identificação. Nenhum desses movimentos isola o efeito da privatização.
 
-## 7. Catálogo de Fontes Oficiais Primárias
+A comparação ainda requer separar ativos fiscais diferidos, provisões, alienações e mudança de perímetro. O reconhecimento de créditos tributários afeta resultado contábil sem equivaler a recebimento imediato; ver a reconciliação e notas do [20-F de 2025, item 5A e nota 12](https://www.sec.gov/Archives/edgar/data/1439124/000143912426000013/ebr-20251231.htm). Para um antes/depois da mudança de controle, faltam os mesmos indicadores conciliados nos exercícios anteriores a 2022; não se deve tomar 2024–2025 como esse contrafactual.
 
-* *Presidência da República:* [Lei nº 14.182, de 12 de julho de 2021](https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14182.htm) (Dispõe sobre a desestatização da empresa Centrais Elétricas Brasileiras S.A. - Eletrobras).
-* *Presidência da República:* [Lei nº 12.783, de 11 de janeiro de 2013](https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/lei/l12783.htm) (Conversão da MP nº 579/2012 sobre concessões de geração, transmissão e distribuição de energia elétrica).
-* *Tribunal de Contas da União (TCU):* [Acórdão nº 1.110/2022 - Plenário](https://portal.tcu.gov.br/) (Aprovação da modelagem e do cálculo do valor de outorga para a desestatização da Eletrobras) e [Acórdão nº 2.709/2021](https://portal.tcu.gov.br/).
-* *Supremo Tribunal Federal (STF):* [Ação Direta de Inconstitucionalidade nº 7385/DF](https://portal.stf.jus.br/) (Relator Min. Kassio Nunes Marques - Contestação da limitação de votos da União e homologação do termo de conciliação).
-* *Comissão de Valores Mobiliários (CVM) / SEC (EUA):* [Demonstrações Financeiras Padronizadas (DFP) da Eletrobras](https://ri.eletrobras.com/) (Séries auditadas de 2012 a 2024: balanços patrimoniais, DRE, Dívida Líquida/EBITDA e despesas de pessoal).
-* *Justiça Federal / 7ª Vara Federal Criminal do RJ:* Ação Penal nº 0510926-86.2015.4.02.5101 (Sentença condenatória da 16ª Fase da Operação Lava Jato - Caso Eletronuclear / Angra 3).
-* *Operador Nacional do Sistema Elétrico (ONS):* [Relatório de Análise de Perturbação (RAP) nº 0163/2023](https://www.ons.org.br/) (Apuração técnica sobre o desligamento ocorrido no SIN em 15 de agosto de 2023).
+## Reestruturação anterior à capitalização
+
+Venda de distribuidoras, indenizações e mudanças de gestão antecederam a capitalização; o acompanhamento do [TCU](https://portal.tcu.gov.br/data/files/05/86/81/C3/D48F18102DFE0FF7F18818A8/035.916.pdf) permite situar a alienação das distribuidoras no processo. Isso impede atribuir toda melhora anterior ou posterior exclusivamente à mudança de controle em 2022. A versão anterior também reconhecia lucros antes da privatização, incompatíveis com a conclusão automática de falência iminente no momento da oferta; essa hipótese exige análise de caixa, vencimentos e capacidade de financiamento.
+
+## Governança, investigações e corrupção
+
+Angra 3/Eletronuclear, Belo Monte, Furnas e a Operação Descontaminação são objetos distintos e não devem ser fundidos em um esquema único sem autos individualizados. A versão anterior citava a ação penal **0510926-86.2015.4.02.5101**, sentença contra Othon Pinheiro, delações sobre Belo Monte e investigação relacionada a Michel Temer. Esses registros devem ser acompanhados na [consulta processual da Justiça Federal da 2ª Região](https://www.trf2.jus.br/jfrj/carta-de-servicos/consulta-processual), com réu, objeto, decisão, recurso e situação atual.
+
+**Estado da validação:** esta revisão não reconstruiu a íntegra e o desfecho atual de cada processo. Por isso, não reapresenta a pena histórica de 43 anos como pena vigente, percentuais de propina e destinação a campanhas como fatos definitivos ou prisão preventiva como condenação. Os casos continuam na agenda de governança, sem apagar sua existência nem preencher lacunas com certeza. A Lei das Estatais já impunha mecanismos de governança antes da oferta; [Lei 13.303/2016](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/lei/l13303.htm).
+
+Há uma evidência primária anterior à capitalização: a [SEC, processo administrativo 3-18962, comunicado de 26/12/2018](https://www.sec.gov/enforcement-litigation/administrative-proceedings/34-84973-s), registrou acordo com multa civil de **US$ 2,5 milhões** por violações de registros contábeis e controles internos, relacionadas a condutas na Eletronuclear entre aproximadamente 2009 e 2015. A companhia aceitou o acordo sem admitir nem negar os achados; a SEC considerou sua cooperação e medidas de remediação. Trata-se de desfecho administrativo documentado, não condenação criminal individual nem prova de saneamento completo.
+
+A antiga oposição entre ausência de auditoria SOX antes e controle pleno depois também não fica demonstrada. Auditoria e compliance precisam ser avaliados por obrigação aplicável, relatórios, deficiências e correções; não há prova de que a mudança acionária tenha eliminado definitivamente corrupção ou ingerência.
+
+## Encargos tarifários e desenho regulatório
+
+A contratação de geração e as demais obrigações inseridas na [Lei 14.182/2021](https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14182.htm) devem ser separadas da decisão de capitalização. Impacto no consumidor exige cronograma, execução, contratos, custo de combustível, despachos e financiamento. O total de R$ 40–60 bilhões anteriormente atribuído aos jabutis não fica como custo realizado nem como perda exclusivamente cobrada pela CDE sem estudo e cálculo identificáveis.
+
+A questão econômica relevante permanece: contratações compulsórias podem ter custo de oportunidade e distribuir benefícios regionalmente, enquanto aportes e mudança de concessões podem afetar tarifas em outros sentidos. O saldo depende do cenário de comparação, não apenas da soma de valores nominais de anos diferentes.
+
+## Disputa sobre voto e acordo de 2025
+
+O STF examinou a limitação de voto na ADI 7385 e homologou acordo que assegurou representação da União no conselho, com condições ligadas à participação acionária. O registro oficial informa **três de dez membros**, ou **dois se a participação cair abaixo de 30%**; o direito se extingue abaixo de 20%. [STF](https://noticias.stf.jus.br/postsnoticias/stf-homologa-acordo-sobre-participacao-da-uniao-na-eletrobras/).
+
+Isso não equivale a restabelecer controle estatal integral nem a equiparar automaticamente poder de voto à participação no capital. Obrigações relativas a Angra e aportes precisam ser lidas no termo homologado; não se conserva uma antecipação de R$ 26 bilhões à CDE como cláusula confirmada sem identificação no acordo.
+
+## Apagão, operação e remuneração
+
+O apagão de agosto de 2023 exige relatório técnico de perturbação, sequência de eventos, responsabilidade das instalações e providências regulatórias. Não se atribui o evento à privatização, nem se absolve toda instalação da companhia, a partir de declaração política ou resumo sem relatório específico. O [ONS, PAR/PEL 2024, capítulo sobre estabilidade](https://www.ons.org.br/paginas/energia-no-futuro/suprimento-eletrico/parpel2024/sumario-executivo/index.html), identifica discrepância entre desempenho modelado e real de fontes conectadas por inversores e referencia o RAP-ONS 00012/2023. Esse diagnóstico sistêmico não isola um efeito causal da propriedade acionária sobre o apagão.
+
+Também permanecem pendentes valores comparáveis de remuneração de executivos e desligamentos: remuneração proposta não é necessariamente paga; conselheiro, diretor e presidente são funções diferentes; perímetro e benefícios precisam ser iguais. Os percentuais de aumento e de redução de pessoal da versão anterior não estão estabelecidos sem formulário e ano respectivos.
+
+## Efeitos distributivos
+
+| Grupo | Canal de impacto | Evidência e limite |
+| :--- | :--- | :--- |
+| União e contribuintes | Diluição, outorga, dividendos e compromissos futuros | [Lei 14.182](https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14182.htm) e [TCU](https://portal.tcu.gov.br/data/files/05/86/81/C3/D48F18102DFE0FF7F18818A8/035.916.pdf); comparar valor presente e risco, não apenas caixa da oferta. |
+| Consumidores | Encargos, contratos e regras das concessões | Lei documenta obrigações; efeito líquido na conta exige modelagem e execução. |
+| Empregados e prestadores | PDVs, terceirização e reorganização podem alterar emprego e conhecimento técnico | Hipótese a quantificar com perímetro anual; desligamentos não provam automaticamente perda de confiabilidade. |
+| Acionistas e credores | Lucro, remuneração do capital e risco financeiro | [20-F](https://www.sec.gov/Archives/edgar/data/1439124/000143912426000013/ebr-20251231.htm) e [rating](https://www.sec.gov/Archives/edgar/data/1439124/000129281425002151/ebr20250519_6k1.htm); ganhos e risco variam entre grupos. |
+
+## Conclusão e limites da evidência
+
+A capitalização e a mudança de governança estão documentadas; a antiga tabela não sustentava todos os ganhos atribuídos à privatização. O grau de investimento internacional foi afirmado incorretamente, e o lucro reportado de 2024 precisava de correção. Ganhos de eficiência, ônus tarifário e perda de capacidade estatal são hipóteses que requerem comparação consistente, não rótulos. Não se conclui que a oferta salvou uma falência inevitável, extinguiu corrupção ou provocou o apagão. O quadro anual de 2024–2025 agora separa resultado reportado, ajustado, investimento e alavancagens. Permanecem lacunas na série financeira anterior a 2022 com o mesmo perímetro, na execução dos compromissos tarifários e na situação processual individualizada.

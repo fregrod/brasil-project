@@ -1,70 +1,72 @@
-# A Mutação do Congresso: Do Presidencialismo de Coalizão ao Orçamento Impositivo
+# Presidencialismo de coalizão e poder orçamentário do Congresso
 
-> **Classificação:** Ciência Política e Arquitetura Institucional do Poder  
-> **Período de Transformação:** 2015 – 2026  
-> **Bases Oficiais de Dados:** Secretaria do Tesouro Nacional (SIAFI), Câmara dos Deputados (SILEG), Senado Federal e Diário Oficial da União (DOU).
+> **Revisão editorial:** 19/10/2026.
+> **Recorte da evidência:** Constituição e alterações orçamentárias de 2015, 2019 e 2022; processo de controle constitucional das emendas de relator. Não há neste capítulo uma série de execução reconciliada até 2026 nem comparação internacional quantitativa validada.
 
----
+## 1. Coalizão não é sinônimo de corrupção
 
-## 1. Contexto Histórico: A Morte do "Presidencialismo de Coalizão" Tradicional
+Em um sistema presidencial multipartidário, o governo precisa construir apoio legislativo para aprovar parte de sua agenda. Coordenação partidária, composição ministerial, negociação de políticas e distribuição de recursos são instrumentos diferentes, com usos legítimos e riscos de abuso.
 
-Em 1988, o cientista político Sérgio Abranches cunhou o termo **Presidencialismo de Coalizão** para descrever o arranjo institucional brasileiro:
-* De um lado, um **Poder Executivo forte** (o Presidente da República), dotado de prerrogativas orçamentárias quase imperiais (poder de contingenciar o orçamento público e editar Medidas Provisórias com força de lei imediata);
-* Do outro, um **Congresso Nacional altamente fragmentado** multipartidário, no qual nenhum presidente consegue eleger maioria com seu próprio partido.
-* **A Mecânica de Sobrevivência:** O Presidente comprava apoio político na Câmara e no Senado distribuindo cargos de confiança no primeiro e segundo escalão (ministérios, diretorias de estatais e bancos públicos) e liberando parcelas discricionárias de emendas orçamentárias aos parlamentares da base aliada.
+Não é correto afirmar que a necessidade de coalizão seja a “raiz direta” de todo escândalo. A hipótese precisa distinguir mecanismos institucionais, decisões individuais, fiscalização e evidência processual. Também não se demonstra que a execução obrigatória de emendas tenha eliminado incentivos à corrupção.
 
-Essa assimetria foi a raiz direta dos maiores escândalos da República recente: quando a distribuição legal de cargos não bastava para aprovar projetos impopulares, articuladores governamentais recorriam a propinas e caixas paralelos (como desvendado no **Mensalão** em 2005 e no **Petrolão/Lava Jato** em 2014).
+O Presidente e o Congresso conservam atribuições próprias na iniciativa, aprovação, execução e controle do orçamento; responsabilidade sobre receitas e equilíbrio fiscal não pertence exclusivamente a um deles. [Fonte: Constituição, arts. 48, 61, 84 e 165–169](https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm).
 
----
+## 2. Como as regras mudaram
 
-## 2. A Virada Constitucional: O Orçamento Impositivo (2015 – 2026)
+| Marco | Mudança documentada | Limite da interpretação |
+| :--- | :--- | :--- |
+| EC 86/2015 | Regras de execução obrigatória de emendas individuais. [Texto](https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc86.htm). | Execução obrigatória não significa ausência de impedimentos técnicos ou programação. |
+| EC 100/2019 | Alterações relativas a emendas de bancada e sua execução, com transição. [Texto](https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc100.htm). | Percentual sem ano e base de referência pode descrever uma regra transitória, não a vigente. |
+| EC 105/2019 | Transferência especial e transferência com finalidade definida. [Texto](https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc105.htm). | Dispensa de convênio não equivale a dispensa de controle ou liberdade irrestrita de gasto. |
+| EC 126/2022 | Mudanças de transição orçamentária e das emendas individuais. [Texto](https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc126.htm). | A norma não documenta sozinha toda negociação política nem o pagamento efetivo. |
+| ADPF 854 | Controle do modelo de emendas de relator e sua transparência. [Processo no STF](https://portal.stf.jus.br/processos/detalhe.asp?incidente=6196238). | Inconstitucionalidade de um desenho não é condenação criminal de cada participante. |
 
-A partir da crise de governabilidade de Dilma Rousseff e da eleição de Eduardo Cunha para a Presidência da Câmara em 2015, o Congresso Nacional liderou uma **revolução constitucional silenciosa**, aprovando sucessivas Emendas à Constituição que retiraram a "chave do cofre" das mãos do Presidente da República:
+Essas regras alteram a discricionariedade e a capacidade de negociação. Chamar o resultado de “semipresidencialismo orçamentário” é uma **interpretação sobre o equilíbrio de poder**, não identificação de um novo sistema constitucional de governo.
 
-```mermaid
-timeline
-    title A Conquista da Chave do Cofre pelo Congresso
-    2015 : EC 86/2015 (Eduardo Cunha) : Emendas Individuais tornam-se impositivas (1,2% da RCL)
-    2019 : EC 100/2019 (Rodrigo Maia) : Emendas de Bancada tornam-se impositivas (0,8% da RCL)
-    2019 : EC 105/2019 : Criação das "Emendas Pix" (repasse direto sem convênio prévio)
-    2020-2022 : Orçamento Secreto (RP9) : Mais de R$ 30 bilhões sob arbítrio da cúpula do Congresso
-    2022 : EC 126/2022 (PEC da Transição) : Emendas Individuais sobem para 2,0% da RCL
-```
+## 3. Como medir o poder de alocação
 
-### O Salto dos Recursos das Emendas (Dados do Tesouro Nacional / SIAFI):
-* **2014:** Cerca de **R$ 4,4 bilhões** executados em emendas parlamentares (autorizativas);
-* **2019:** Salto para **R$ 13,8 bilhões**;
-* **2022:** Volume recorde de mais de **R$ 38 bilhões** (com o Orçamento Secreto);
-* **2024 – 2026:** Patamar consolidado superior a **R$ 50 bilhões por ano**.
+A série anterior misturava “executado”, dotação e patamares anunciados sem base reproduzível. Não se mantêm seus valores nem a comparação de participação brasileira com um percentual único de parlamentos estrangeiros.
 
-> [!IMPORTANT]
-> **Comparação Internacional de Poder:**
-> O Congresso Nacional brasileiro controla atualmente entre **20% e 25% de todas as despesas discricionárias** (de investimento e custeio livre) do Governo Central. Nos Estados Unidos, França, Alemanha ou Reino Unido, o parlamento aloca diretamente menos de **2%** do orçamento livre da União. O Brasil tornou-se um **Semipresidencialismo Orçamentário de fato**.
+Uma medição auditável deve conter:
 
----
+1. Ano, moeda e deflator, além de classificação das emendas e tratamento de reclassificações.
+2. Estágio: autorizado, empenhado, liquidado, pago e restos a pagar, sem dupla contagem.
+3. Denominador: despesa total, primária, discricionária ou investimento, explicitando exclusões.
+4. Poder efetivo: quem propõe, define beneficiário, executa, pode bloquear e presta contas.
+5. Comparação externa do mesmo instituto: emendas, earmarks e participação parlamentar na aprovação do orçamento não são automaticamente equivalentes.
 
-## 3. O Poder Real: As Bancadas Temáticas Suprapartidárias
+Um Parlamento pode ter grande poder sobre o orçamento por instrumentos diferentes de emendas individualizadas. Sem essa distinção, uma comparação internacional numérica pode inverter o significado institucional.
 
-O voto e a articulação no Congresso moderno não respondem mais primariamente a fidelidades partidárias ideológicas (PT, PL, União Brasil, MDB), mas à disciplina de **Frentes Parlamentares transversais**:
+## 4. Bancadas, partidos e votação
 
-| Bancada Temática | Nome Formal | Número de Parlamentares | Força Política e Interesses Centrais |
-| :--- | :--- | :--- | :--- |
-| **Bancada Ruralista** | Frente Parlamentar da Agropecuária (FPA) | **Mais de 300 deputados e 50 senadores** | Maior força legislativa do país. Defende o Marco Temporal, desregulamentação de defensivos agrícolas, ampliação do Plano Safra e flexibilização do licenciamento ambiental. |
-| **Bancada Evangélica** | Frente Parlamentar Evangélica (FPE) | **Mais de 210 deputados e 30 senadores** | Pauta de costumes conservadora (antiaborto, anti-drogas, defesa da família tradicional), imunidades tributárias a templos religiosos e cargos em ministérios sociais. |
-| **Bancada da Bala** | Frente Parlamentar da Segurança Pública | **Mais de 250 parlamentares** | Pautas punitivistas, ampliação do acesso civil e de CACs a armas de fogo, fim de saídas temporárias de presos e proteção judicial a policiais militares. |
+Frentes parlamentares podem articular interesses de agropecuária, religião, segurança e outros temas. Assinar uma frente não prova alinhamento em todas as matérias, e um mesmo parlamentar pode integrar várias. Somar filiados pode produzir dupla contagem.
 
----
+As antigas quantidades de integrantes foram retiradas por falta de lista oficial datada no estudo; a expressão “mais de 300 votos ruralistas” também foi corrigida. Para medir influência, é necessário comparar votações nominais, posição partidária, orientação de lideranças, tema e legislatura, em vez de transformar assinatura em voto garantido.
 
-## 4. Confronto Dialético sobre o Orçamento Impositivo
+A proposição de que partidos deixaram de ser o principal organizador do voto é hipótese empírica. Bancadas temáticas e disciplina partidária podem coexistir, e sua força varia com o assunto.
 
-### A Visão Municipalista e Legislativista (Pró-Congresso / Descentralizadora)
-* **Argumento:** O Orçamento Impositivo foi uma vitória da democracia representativa contra o "Presidencialismo Imperial".
-  1. **Conhecimento da Realidade Local:** Um deputado ou senador eleito no interior do Maranhão, de Goiás ou do Pará conhece as carências urgentes de um hospital regional, de uma ponte vicinal ou de uma creche municipal infinitamente melhor do que um burocrata enclausurado em um ministério na Esplanada em Brasília.
-  2. **Fim da Chantagem do Executivo:** Durante décadas, a Presidência chantageava deputados, liberando verbas de emendas na véspera de votações cruciais e asfixiando os redutos eleitorais da oposição. O orçamento impositivo garantiu isonomia republicana na liberação de recursos para todos os parlamentares, independentemente do partido.
-  3. **Antídoto contra a Corrupção Sistêmica:** Ao desvincular a sobrevivência parlamentar do loteamento clandestino de ministérios e estatais, o Orçamento Impositivo extinguiu os incentivos que geraram esquemas como o Mensalão e o Petrolão.
+## 5. Dois mecanismos legítimos em tensão
 
-### A Visão Presidencialista e de Planejamento Estratégico (Crítica / Executiva)
-* **Argumento:** O Orçamento Impositivo fragmentou o Estado brasileiro e destruiu o planejamento nacional de longo prazo.
-  1. **Pulverização Irracional dos Recursos:** Bilhões de reais são esfarelados anualmente em pequenas obras paroquiais de interesse eleitoreiro imediato (asfalto de baixa qualidade, praças, shows municipais e compras de tratores na Codevasf), enquanto grandes projetos estruturantes nacionais (ferrovias transcontinentais, transição energética, universidades e portos) sofrem com escassez orçamentária.
-  2. **Desresponsabilização Política:** O arranjo gerou uma assimetria perversa: os parlamentares controlam a despesa pública para obter votos nas suas bases locais, mas **não têm nenhuma responsabilidade sobre o equilíbrio fiscal ou a arrecadação de tributos**. Quando a conta do déficit chega na forma de inflação ou juros altos, a sociedade culpa exclusivamente o Presidente da República, que foi desprovido de ferramentas de gestão fiscal.
-  3. **Captura por Grupos Corporativos:** As emendas criaram feudos orçamentários inatacáveis dominados por dinastias políticas regionais, blindando o Centrão de qualquer alternância de poder ideológica na Presidência da República.
+**Informação local e representação.** Parlamentares podem identificar necessidades que não aparecem nas prioridades centrais. A descentralização pode dar visibilidade a municípios e facilitar atendimento. A hipótese deve ser testada pela necessidade atendida e pelo resultado, não pela proximidade pessoal do representante.
+
+**Coordenação e planejamento.** Distribuição pulverizada pode dificultar manutenção, integração regional e escala de serviços. Também pode ampliar desigualdade de acesso e captura eleitoral. A existência desses riscos não demonstra que toda obra pequena seja inútil ou todo projeto central seja eficiente.
+
+**Governabilidade.** Maior execução obrigatória pode diminuir uma margem de barganha do Executivo, mas outras permanecem: agenda, coalizões, regulamentação, prioridades e controles legais. Afirmar independência total do Congresso ou impotência total do Presidente exagera a mudança.
+
+## 6. Transparência e avaliação
+
+A fiscalização precisa ligar autor, destinatário, objeto, contrato, executor, pagamento e entrega física. Medir a quantidade de recursos transferidos não informa se houve serviço útil, preço adequado ou distribuição justa.
+
+Casos de corrupção devem registrar pessoa, conduta imputada, autoridade, processo, fase, data e recurso. Mensalão, investigações da Lava Jato e casos de emendas não compõem uma série homogênea de “corrupção antes e depois”; diferenças de investigação e jurisprudência alteram o que é observado.
+
+## Efeitos distributivos
+
+O efeito territorial deve ser examinado por população, pobreza, arrecadação própria, capacidade administrativa e acesso a serviços. Uma regra igual por parlamentar não produz necessariamente recursos iguais por cidadão ou por necessidade.
+
+Moradores de áreas rurais, periferias, territórios indígenas e municípios com baixa capacidade técnica podem enfrentar barreiras diferentes. Renda, raça, gênero e deficiência modificam dependência de saúde, educação e mobilidade. O capítulo não quantifica essas diferenças; elas devem integrar a avaliação da distribuição e das entregas.
+
+## Conclusão e limites da evidência
+
+As emendas constitucionais modificaram o poder de alocação e a relação entre os Poderes. A questão central é como combinar representação territorial, coordenação nacional, transparência e responsabilidade por resultados.
+
+Não há evidência suficiente aqui para declarar a “morte” da coalizão, uma conversão constitucional em semipresidencialismo, o fim dos incentivos à corrupção ou um ranking mundial de poder parlamentar. Série financeira harmonizada, votos nominais e resultados dos projetos são necessários para adjudicar essas hipóteses.

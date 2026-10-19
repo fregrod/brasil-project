@@ -1,59 +1,63 @@
-# Casos em Aberto, Instabilidades Recentes e Procedimentos Não Julgados
+# Casos recentes: marcos confirmados e pendências documentais
 
-> **Classificação:** Procedimentos Investigatórios em Andamento, Apurações Administrativas e Instabilidades Jurídicas  
-> **Período de Referência:** 2023 – 2026  
-> **Órgãos Atuantes:** Polícia Federal, Ministério Público Federal (PGR/MPF), Controladoria-Geral da União (CGU), Tribunal de Contas da União (TCU) e Banco Central do Brasil.
+> **Revisão editorial:** 19/10/2026.
+> **Recorte da evidência:** Conab em 2024, descontos do INSS e liquidação do Master em 2025, além de decisões selecionadas citadas; cada marco tem data própria e não certifica o andamento completo em 2026.
 
----
+## 1. Leilão de arroz da Conab
 
-## 1. O Caso do Leilão de Arroz da Conab (Governo Lula 3 - Junho de 2024)
+O governo anunciou em **11/06/2024** a anulação do leilão realizado em **06/06/2024**, no qual foram arrematadas cerca de **263 mil toneladas**. A comunicação governamental atribuiu a medida a questionamentos sobre capacidade técnica e financeira das vencedoras, no contexto das enchentes no Rio Grande do Sul. É fonte do ato administrativo e da justificativa oficial, não prova independente de crime. [Agência Gov — anúncio e contexto](https://agenciagov.ebc.com.br/noticias/202406/governo-federal-decide-aperfeicoar-regras-e-anula-leilao-para-compra-de-arroz-importado).
 
-| Aspecto | Fatos Oficiais, Registro e Desfecho Administrativo |
+**Questões em disputa:** habilitação das empresas, intermediação de corretoras, conflito de interesses e adequação do preço. O Congresso solicitou informações específicas sobre anulação e atuação de Neri Geller. Um requerimento parlamentar documenta perguntas, não comprova as acusações nele formuladas. [Câmara — requerimento e tramitação](https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2439894).
+
+**Limite:** não foi confirmado neste recorte o resultado de procedimentos penais ou de controle de cada órgão. Não se afirma ausência de denúncia em 2026 nem prejuízo financeiro integral equivalente ao valor anunciado do leilão. Compra anulada, valor contratado, desembolso e dano são medidas diferentes.
+
+## 2. INSS: benefícios e descontos associativos não são a mesma fraude
+
+A **Operação Sem Desconto**, deflagrada por PF e CGU em **23/04/2025**, investigou possíveis descontos associativos não autorizados em benefícios do INSS. A documentação encaminhada ao Congresso inclui auditorias que embasaram a operação. Uma das pesquisas encontrou **97,6% dos entrevistados** sem autorização dos descontos; esse percentual é da amostra investigada, não de todos os aposentados brasileiros. [Câmara — respostas ministeriais e relatórios](https://www.camara.leg.br/noticias/1176224-ministerio-da-previdencia-revela-dimensao-da-fraude-que-ocorre-desde-2019/).
+
+**Acusação e reparação:** a AGU apresentou ação cautelar para bloqueio patrimonial contra associações suspeitas. Pedidos judiciais são a tese da autora e devem ser diferenciados de bloqueios efetivamente deferidos, condenações e valores devolvidos. O PDF antes vinculado ficou indisponível nesta conferência; a republicação oficial da AGU registra o pedido de R$ 2,56 bilhões contra 12 entidades em 08/05/2025, e não uma ordem de bloqueio já deferida. O acesso à página oficial pode estar temporariamente suspenso no período eleitoral, como ocorreu nesta conferência. [Agência Gov/AGU — pedido de bloqueio](https://agenciagov.ebc.com.br/noticias/202505/agu-pede-bloqueio-de-r-2-56-bilhoes-de-associacoes-suspeitas-de-fraudes-contra-aposentados).
+
+**Outras tipologias preservadas:** vínculos laborais falsos, documentos rurais e concessões indevidas de benefícios exigem séries e operações próprias. Não são automaticamente o mesmo mecanismo dos descontos associativos. Não se mantém sem série verificável a alegação de dezenas de operações mensais ou de economia bilionária causada exclusivamente por um pente-fino.
+
+**Pendências:** individualizar associações e pessoas, período dos descontos, atos autorizadores, contraditório, bloqueios, restituições e desfechos penais. Volume total descontado não equivale automaticamente a dano comprovado de igual valor.
+
+## 3. Fundos de pensão: Postalis, Petros, Funcef e Greenfield
+
+Os fundos e as respectivas carteiras não podem ser agregados como um único caso. A auditoria independente BNDES/J&F menciona operações com participação de fundos e delimita que a investigação Greenfield ali referida não era investigação do BNDES. Esse relatório não certifica toda a gestão de Postalis, Petros ou Funcef. [Auditoria BNDES/J&F, pp. 3–6](https://www.bndes.gov.br/arquivos/agencia/relatorio-auditoria-cleary-gottlieb-resumo.pdf).
+
+| Objeto preservado no inventário | Evidência necessária antes de concluir |
 | :--- | :--- |
-| **Origem e Contexto** | Após a tragédia climática das inundações no Rio Grande do Sul (maior estado produtor de arroz do Brasil), o Governo Federal editou Medida Provisória autorizando a Companhia Nacional de Abastecimento (Conab) a importar até 1 milhão de toneladas de arroz beneficiado para mitigar riscos de desabastecimento e especulação de preços no mercado interno. |
-| **O Leilão e as Irregularidades** | No dia **6 de junho de 2024**, a Conab realizou o leilão público para a compra de 263 mil toneladas de arroz, totalizando **R$ 1,3 bilhão**. Veículos de imprensa e órgãos de controle identificaram imediatamente que as empresas vencedoras dos maiores lotes não possuíam histórico ou capacidade operacional no setor de comércio exterior de grãos: entre as vencedoras estavam uma distribuidora de queijos de Macapá (AP), uma fábrica de sorvetes e empresas de locação de veículos com capital social irrisório. |
-| **Conflito de Interesses e Queda de Secretário** | Revelou-se que a principal corretora que intermediou a vitória de empresas (BSB Corretora) pertencia a Robson Almeida de França, ex-assessor parlamentar de **Neri Geller**, então Secretário de Política Agrícola do Ministério da Agricultura (MAPA). Diante da repercussão, Neri Geller pediu exoneração do cargo em 11 de junho de 2024. |
-| **Desfecho Imediato e Status Processual** | O Ministro da Agricultura, Carlos Fávaro, e o presidente da Conab, Edegar Pretto, **anularam integralmente o leilão** antes de qualquer desembolso de recursos públicos dos cofres da União. A CGU, a Polícia Federal e o TCU instauraram procedimentos formais de fiscalização para apurar direcionamento de leilão e fraude a certame público. **Não há denúncia criminal oferecida ou condenação judicial.** |
+| Postalis: investimentos externos, crédito e equacionamento | Relatório atuarial, operação individual, decisão de controle e decomposição do déficit. |
+| Petros: Sete Brasil e outras participações | Valor aplicado, perdas realizadas, laudo, pessoa imputada e decisão correspondente. |
+| Funcef: Eldorado e imóveis | Distinguir risco de mercado, avaliação econômica, irregularidade administrativa e crime. |
+| Uso de provas da Lava Jato em ações Greenfield | Identificar ação e decisão; não presumir que dezenas de processos tenham sido anulados ou redistribuídos. |
 
----
+**Marco externo sobre Petros:** no caso **20-CR-00365-MKB**, a J&F declarou-se culpada nos EUA em **14/10/2020**; o DOJ registra admissão de propinas superiores a US$ 4,6 milhões em benefício de dirigente da Petros para obter aprovação de uma fusão. É um fato processual empresarial delimitado, não prova de que todo déficit da Petros decorreu desse episódio. [DOJ — resolução e fatos admitidos](https://www.justice.gov/archives/opa/pr/jf-investimentos-sa-pleads-guilty-and-agrees-pay-over-256-million-resolve-criminal-foreign).
 
-## 2. Fraudes Estruturadas na Previdência Social e INSS (Força-Tarefa Previdenciária)
+**Limite:** os autos completos brasileiros e os resultados individuais dessas frentes não foram localizados nesta revisão. As perguntas ficam registradas sem tratar investimentos ruins como prova automática de corrupção ou atribuir todo déficit atuarial a um governo.
 
-| Aspecto | Fatos Oficiais e Panorama Operacional |
-| :--- | :--- |
-| **Mecanismo das Fraudes** | A Polícia Federal, em atuação conjunta permanente com a Coordenação de Inteligência Previdenciária (Coinp) do Ministério da Previdência Social e o Ministério Público Federal, deflagra mensalmente dezenas de operações em todo o território nacional para desarticular quadrilhas especializadas em fraudes contra o INSS. |
-| **Principais Tipologias Apuradas** | 1. Inserção de vínculos empregatícios falsos em sistemas do INSS para concessão irregular de aposentadorias por tempo de contribuição;<br>2. Falsificação de declarações de atividade rural (para obtenção fraudulenta de aposentadorias rurais por intermediários locais);<br>3. Desvio e concessão fraudulenta de parcelas do Benefício de Prestação Continuada (BPC/LOAS) para beneficiários fictícios com documentos falsificados. |
-| **Impacto Orçamentário e Administrativo** | As auditorias e apreensões da Força-Tarefa subsidiaram as medidas do Governo Federal (Ministérios da Fazenda e da Previdência) de implementação do "pente-fino" nas contas públicas a partir de 2024, visando cancelar benefícios pagos indevidamente que geravam prejuízos estimados em bilhões de reais anuais à Seguridade Social. |
+## 4. Banco Master e BRB
 
----
+**Marco regulatório confirmado:** em **18/11/2025**, o Banco Central decretou liquidação extrajudicial do Banco Master S/A (**Ato 1.369**) e de outras instituições do conglomerado; o **Ato 1.370** aplicou regime de administração especial temporária ao Master Múltiplo. Esses atos têm objetos distintos. Liquidação é medida regulatória, não condenação criminal. O DOU de **19/11/2025, Seção 1, p. 278**, publica os atos 1.369–1.373; a cópia integral está hospedada no site da instituição em liquidação e traz o código de autenticação 05152025111900278. O Raet original tinha duração de até 120 dias; não se presume que permaneça sem alteração em outubro de 2026. [DOU — atos originais, cópia disponibilizada pelo Master](https://www.bancomaster.com.br/DOU.pdf); [BC — base normativa](https://www.bcb.gov.br/estabilidadefinanceira/buscanormas?dataFimBusca=21%2F11%2F2025&dataInicioBusca=18%2F11%2F2025&refinadorTipo=Ato+do+Presidente&tipoDocumento=Todos).
 
-## 3. Fundos de Pensão Estatais (Desdobramentos da Operação Greenfield)
+**Frente criminal:** nota do STF registra a **Operação Compliance Zero**, sua chegada ao tribunal em novembro de 2025 e diligências. O registro confirma uma investigação criminal; não prova culpa de toda pessoa ligada ao banco, ao BRB ou ao Banco Central. [STF — nota sobre a operação](https://noticias.stf.jus.br/postsnoticias/nota-do-gabinete-do-ministro-dias-toffoli-2/).
 
-| Fundo de Pensão | Entidade Vinculada | Objeto das Investigações e Instabilidade Atual |
+**Limite:** não se certificam neste recorte todas as fases posteriores, os instrumentos de crédito questionados, responsabilidade individual de Daniel Vorcaro ou gestores do BRB e eventual ação penal. A versão anterior tratava declarações de conformidade das instituições como descrição final do caso; manifestações das partes devem ser identificadas e confrontadas com atos de supervisão e autos.
+
+## 5. Quadro de marcos, sem presumir situação atual universal
+
+| Caso | Marco confirmado | Limite |
 | :--- | :--- | :--- |
-| **Postalis** | Correios (ECT) | Histórico de investimentos temerários em títulos da dívida soberana de países latino-americanos (Argentina, Venezuela) e fundos de crédito privado podres. Conduziu à cobrança de contribuições extraordinárias ("equacionamento") de funcionários dos Correios. Acordos de repactuação e ressarcimento de valores continuam tramitando na Justiça Federal de Brasília. |
-| **Petros** | Petrobras | Apurações sobre aportes bilionários sem fundamentação técnica nas empresas Sete Brasil (sondas de perfuração) e empreendimentos do setor elétrico durante as gestões da década de 2010. |
-| **Funcef** | Caixa Econômica Federal | Investimentos investigados na Operação Greenfield em projetos como a fábrica de celulose Eldorado Brasil e empreendimentos imobiliários que geraram déficits contábeis. |
-| **Situação Jurídica Atual** | Dezenas de ações penais da Operação Greenfield foram redistribuídas ou reanalisadas após decisões do STF sobre a utilização de acordos de leniência e compartilhamento de provas produzidas pela Operação Lava Jato, criando instabilidade sobre a validade das penalidades corporativas. |
+| Vacinação de Bolsonaro | Arquivamento da investigação contra ele em **28/03/2025**. [STF](https://noticias.stf.jus.br/postsnoticias/stf-arquiva-investigacao-contra-ex-presidente-da-republica-por-fraude-em-cartao-de-vacina/). | Não estender a todos os investigados. |
+| Tentativa de golpe, AP 2.668 | Condenação e pena fixada em **11/09/2025**. [STF](https://noticias.stf.jus.br/postsnoticias/stf-fixa-penas-de-16-a-27-anos-para-condenados-por-tentativa-de-golpe-de-estado). | Não continuar chamando de inquérito inconcluso. |
+| Juscelino Filho | Denúncia noticiada em **abril/2025**; exoneração a pedido por decreto de **08/04/2025**, publicado dia 9. [DOU/TSE](https://sintse.tse.jus.br/documentos/2025/Abr/9/para-conhecimento-institucional/decreto-de-8-de-abril-de-2025-exonera-a-pedido-jose-juscelino-dos-santos-rezende-filho-do-cargo-de); [Estadão/UOL](https://noticias.uol.com.br/ultimas-noticias/agencia-estado/2025/04/09/denuncia-de-desvio-de-emendas-derruba-ministro-das-comunicacoes-de-lula.htm). | Decreto prova a exoneração, não recebimento da denúncia ou condenação. |
+| Joias | Indiciamento noticiado em **julho/2024**. [Estadão/UOL](https://noticias.uol.com.br/ultimas-noticias/agencia-estado/2024/07/04/joias-sauditas-pf-indicia-bolsonaro-por-peculato-lavagem-e-associacao-criminosa.htm). | Etapas posteriores não certificadas aqui. |
+| Leniência Novonor | Suspensão e autorização de reavaliação em **fevereiro/2024**. [STF](https://portal.stf.jus.br/noticias/verNoticiaDetalhe.asp?idConteudo=525940&ori=1). | Não presumir extinção de toda obrigação ou vigência inalterada. |
 
----
+## Efeitos distributivos
 
-## 4. Apurações no Sistema Bancário: O Caso Banco Master e BRB
+**Avaliação editorial:** descontos indevidos atingem renda de beneficiários, muitas vezes vulneráveis; falhas financeiras podem transferir custos a credores e mecanismos de garantia; políticas de importação podem beneficiar consumidores e afetar produtores. O saldo distributivo exige medir pagamentos, restituições, preços e perdas efetivas. A identificação desses grupos não estabelece nexo criminal nem estima prejuízo líquido.
 
-| Aspecto | Fatos Oficiais, Registro e Status Processual |
-| :--- | :--- |
-| **Objeto de Apuração Regulatória** | O Banco Central do Brasil (BCB), o Tribunal de Contas do Distrito Federal (TCDF) e o Ministério Público junto ao TCDF abriram procedimentos de fiscalização e auditoria para apurar transações atípicas entre o **Banco Master** (instituição financeira privada controlada pelo empresário Daniel Vorcaro) e o **Banco de Brasília (BRB)** (banco estatal controlado pelo Governo do Distrito Federal). |
-| **Pontos sob Exame dos Órgãos de Controle** | 1. Aquisição pelo BRB de carteiras de crédito, recebíveis e precatórios originados ou custodiados pelo Banco Master com spread e risco questionados por auditores;<br>2. Estruturação de Fundos de Investimento em Participações (FIPs) e operações financeiras com garantias cruzadas;<br>3. Análise da liquidez e do perfil de capital das instituições perante as normas de Basileia regulamentadas pelo Banco Central. |
-| **Status Processual** | As instituições envolvidas informam que todas as operações cumprem com rigor a regulamentação do Conselho Monetário Nacional (CMN) e as regras prudenciais do Banco Central, tendo lastro econômico e aprovação em comitês técnicos de crédito. **Trata-se de procedimento de escrutínio regulatório e auditoria contábil, sem que haja nenhuma condenação judicial ou ação penal proposta.** |
+## Conclusão e limites da evidência
 
----
-
-## 5. Tabela-Síntese de Instabilidades e Processos Pendentes de Julgamento
-
-| Processo / Inquérito | Principais Investigados | Tribunal / Órgão | Status Jurídico Atual | Possíveis Desdobramentos |
-| :--- | :--- | :--- | :--- | :--- |
-| **Caso das Joias Sauditas** | Jair Bolsonaro, Mauro Cid, Bento Albuquerque, assessores. | STF (Min. Alexandre de Moraes) / PGR | Indiciamento concluído pela PF; aguarda manifestação de Paulo Gonet (PGR). | Denúncia ao STF (tornar-se réu), pedido de diligências adicionais ou arquivamento. |
-| **Caso dos Cartões de Vacina** | Jair Bolsonaro, Mauro Cid e assessores. | STF (Min. Alexandre de Moraes) / PGR | Indiciamento concluído pela PF; aguarda manifestação da PGR. | Decisão sobre denúncia penal no STF. |
-| **Desvios de Emendas na Codevasf** | Juscelino Filho (Min. Comunicações), Luanna Rezende. | STF / PGR | Indiciamento concluído pela PF; remetido à PGR para parecer. | Oferecimento de denúncia ao STF ou arquivamento por falta de justa causa. |
-| **Atos Antidemocráticos / 8 de Janeiro** | Núcleo político e militar do governo anterior. | STF (Min. Alexandre de Moraes) / PGR | Inquéritos em fase conclusiva de relatórios da PF. | Julgamentos de ações penais individuais no Plenário do STF. |
-| **Suspensão das Multas da Leniência** | Grupo J&F, Novonor (antiga Odebrecht). | STF (Min. Dias Toffoli) / CGU / AGU | Decisões liminares suspendendo o pagamento das multas; mesa de conciliação aberta. | Repactuação consensual de valores e prazos ou julgamento de mérito pelo Plenário do STF. |
+O título não significa que todos os casos estejam abertos: cada frente tem marco e alcance próprios. A revisão acrescenta Sem Desconto e liquidação do Master e distingue investigação, controle administrativo e julgamento penal. As lacunas nos fundos de pensão, Conab e desdobramentos de bancos impedem conclusões abrangentes de culpa ou inexistência de irregularidade. Hipóteses concorrentes — fraude, falha de governança, risco econômico e desenho regulatório — precisam ser testadas separadamente.

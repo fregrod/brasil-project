@@ -1,70 +1,62 @@
-# Tributação Regressiva, Imposto sobre a Renda e Desigualdade Estrutural
+# Tributação, renda e desigualdade: incidência, reformas e comparação correta
 
-> **Classificação:** Finanças Públicas, Direito Tributário e Economia da Desigualdade  
-> **Período de Referência:** 1995 – 2026  
-> **Bases Oficiais de Dados:** Receita Federal do Brasil (Grandes Números do IRPF e Estudos da Carga Tributária), IPEA, OCDE (*Revenue Statistics*) e Ministério da Fazenda.
+> **Revisão editorial:** 19/10/2026.
+> **Recorte da evidência:** Constituição; reforma do consumo de 2023; Lei 14.754/2023; Lei 15.270, de 26/11/2025, e orientações da Receita em versão de 19/12/2025, sobre efeitos em 2026. Não se apresenta uma estimativa própria da distribuição da carga tributária em 2026.
 
----
+## 1. Regressividade e denominadores
 
-## 1. A Anatomia do Sistema Tributário Brasileiro
+Um tributo é regressivo em relação à renda quando a proporção da renda comprometida diminui à medida que a renda aumenta. Isso não significa que todas as famílias paguem o mesmo valor ou a mesma alíquota sobre cada produto. Incidência econômica depende de preços, repasse, consumo, informalidade e benefícios recebidos.
 
-A comparação entre o perfil de arrecadação do Brasil e a média das economias desenvolvidas da OCDE revela uma distorção estrutural histórica:
+| Pergunta | Medida adequada | Erro a evitar |
+| :--- | :--- | :--- |
+| Como o Estado arrecada? | Participação de cada base no total arrecadado, mesmo ano e classificação | Misturar participação na arrecadação com percentual do PIB. |
+| Quem suporta os tributos? | Tributo estimado por família dividido pela renda definida | Comparar renda disponível de um grupo com renda bruta de outro. |
+| O sistema redistribui? | Renda antes e depois de tributos e transferências, com critérios claros | Julgar o efeito total somente por um imposto. |
+| Como o Brasil se compara? | Mesma base, período, população e tratamento das contribuições | Tratar poupança compulsória e tributo como categorias automaticamente idênticas. |
 
-```mermaid
-graph TD
-    subgraph Brasil ["Composição da Carga Tributária no Brasil"]
-        B1["<b>Consumo (Indireto): 44%</b><br>ICMS, PIS, Cofins, ISS, IPI<br><i>(Recai sobre todos igualmente)</i>"]
-        B2["<b>Folha Salarial: 27%</b><br>INSS, FGTS, Sistema S"]
-        B3["<b>Renda e Lucros: 25%</b><br>IRPF, IRPJ, CSLL"]
-        B4["<b>Patrimônio: 4%</b><br>IPTU, IPVA, ITBI, ITCMD"]
-    end
+Foram retiradas as antigas composições “consumo 44%, folha 27%, renda 25%, patrimônio 4%” e os percentuais para famílias pobres e ricas. Não havia ano, tabela, conceito homogêneo e memória de cálculo suficientes para reproduzi-los. A conclusão sobre incidência precisa de pesquisa orçamentária e modelo de tributação, não apenas da composição agregada.
 
-    subgraph OCDE ["Média dos Países da OCDE"]
-        O1["<b>Renda e Lucros: 34%</b><br><i>(Progressividade na pessoa física)</i>"]
-        O2["<b>Consumo: 32%</b><br><i>(Menor peso no custo de vida básico)</i>"]
-        O3["<b>Folha Salarial: 26%</b>"]
-        O4["<b>Patrimônio: 6%</b>"]
-    end
-```
+## 2. A isenção histórica dos dividendos e a alteração de 2025
 
-### O Conceito de Regressividade Tributária:
-* **Tributação Regressiva:** Ocorre quando quem ganha menos paga proporcionalmente mais impostos sobre a sua renda do que quem ganha mais.
-* Como quase metade dos impostos brasileiros incide sobre o **consumo de mercadorias e serviços** embutido nos preços (e não sobre a renda auferida ou sobre o patrimônio acumulado), o impacto relativo é profundamente desigual:
-  * Uma família que ganha **até 2 salários mínimos** compromete cerca de **26% a 28% de todo o seu orçamento mensal** pagando impostos indiretos embutidos no arroz, feijão, energia elétrica, botijão de gás e transporte (pois gasta 100% do que ganha para sobreviver);
-  * Uma família situada no **1% mais rico**, que consome apenas uma fração de sua renda e poupa/investe o restante no mercado financeiro, gasta proporcionalmente menos de **10% da sua renda total** em tributos sobre o consumo.
+A Lei 9.249/1995 estabeleceu isenção para lucros e dividendos nas condições de seu artigo 10. Essa regra histórica precisa ser lida com as alterações posteriores; não é correto afirmar isenção integral e irrestrita como descrição de 2026. [Fonte: Lei 9.249/1995, texto consolidado](https://www.planalto.gov.br/ccivil_03/leis/l9249.htm).
 
----
+A **Lei 15.270/2025** introduziu, com efeitos a partir de **janeiro de 2026**, retenção de **10% sobre o total** de lucros e dividendos pagos por uma mesma pessoa jurídica a uma mesma pessoa física residente quando o valor mensal supera **R$ 50 mil**. Há regras de transição e exceções que devem ser verificadas conforme a origem e a deliberação de distribuição. [Fonte: Lei 15.270/2025](https://www.presidencia.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15270.htm).
 
-## 2. A Isenção de Lucros e Dividendos (Lei nº 9.249/1995)
+A mesma lei ampliou a desoneração de rendimentos mensais até **R$ 5 mil** e instituiu tributação mínima anual para rendas acima de **R$ 600 mil**, com alíquota que alcança **10% a partir de R$ 1,2 milhão**, sujeita às deduções, exclusões e mecanismos de redução previstos. A apuração anual referente ao ano-calendário de **2026** ocorre no exercício de **2027**. Não se trata da antiga hipótese de alíquota de 35% reproduzida neste estudo. [Fontes: lei, arts. 3º-A e 16-A e seguintes](https://www.presidencia.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15270.htm); [Receita, perguntas e respostas](https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/perguntas-e-respostas/dirf/manual_padrao_rfb_per_tributacao_cotin_v-19-12-2025.pdf/view).
 
-Desde a promulgação da **Lei nº 9.249/1995** (durante o primeiro governo FHC), o Brasil passou a ser um dos raríssimos países do mundo (junto com Estônia e Letônia) que **isenta integralmente de Imposto de Renda a distribuição de lucros e dividendos** a sócios e acionistas de pessoas jurídicas.
+**Retenção mensal, imposto devido na declaração e tributação mínima anual não são a mesma medida.** A avaliação distributiva deve considerar créditos, ajustes e o imposto já pago nas bases previstas em lei.
 
-### A Consequência Revelada pela Receita Federal:
-Dados oficiais dos relatórios anuais da Receita Federal (*Grandes Números do IRPF*) demonstram que:
-1. **O Trabalhador Assalariado:** Um profissional com carteira assinada que ganha R$ 8.000 por mês paga uma alíquota marginal de IRPF de até **27,5%**, retida na fonte;
-2. **O Super-Rico de Renda de Capital:** Os contribuintes situados no topo da pirâmide (que recebem centenas de milhares ou milhões de reais por mês majoritariamente sob a forma de lucros e dividendos distribuídos de suas empresas ou holdings) pagam uma **alíquota efetiva média de IRPF inferior a 5% a 6%**, configurando uma inversão progressiva no topo da curva de rendimentos.
+## 3. Comparar rendimentos do trabalho e do capital
 
----
+Alíquota marginal é a aplicada à última faixa de rendimento; alíquota efetiva é o imposto dividido por uma base de renda explicitada. A comparação anterior entre a marginal de um assalariado e a efetiva de pessoas com dividendos não demonstrava a diferença total de carga.
 
-## 3. O Debate da Reforma Tributária da Renda (2024 – 2026)
+Uma comparação adequada deve explicitar renda anual, deduções, contribuição previdenciária, tributos da pessoa jurídica, regime societário e rendimentos excluídos. Tampouco se deve tratar a alíquota nominal combinada de uma empresa como carga efetiva universal: adicional, base presumida, compensações e regimes especiais podem mudar o resultado.
 
-Após a aprovação da Reforma dos Tributos sobre o Consumo (EC 132/2023), o Congresso e o Ministério da Fazenda colocaram na mesa a segunda etapa constitucional: a **Reforma da Renda**:
-* **Pilar 1: Elevação da Faixa de Isenção do IRPF:** Elevar a isenção de IRPF para salários de até **R$ 5.000 mensais** (desonerando a classe média e os assalariados);
-* **Pilar 2: Compensação no Topo:** Instituir alíquotas de tributação sobre a distribuição de lucros e dividendos acima de determinado piso e criar alíquotas progressivas de 35% para rendas anuais milionárias;
-* **Pilar 3: Tributação de Ativos no Exterior e Fundos Fechados:** Já regulamentada pela **Lei nº 14.754/2023**, que instituiu o regime de tributação periódica (*come-cotas*) para fundos exclusivos de alta renda e investimentos em paraísos fiscais (*offshores*).
+A tributação na empresa e no sócio pode gerar dupla incidência econômica, mas isso não estabelece, por si, ilegalidade nem queda inevitável de investimento. O desenho integrado e os mecanismos de redução importam. Da mesma forma, a redução de desigualdade não decorre automaticamente de elevar uma alíquota: resposta comportamental, administração tributária e uso da receita influenciam o efeito.
 
----
+## 4. Fundos, exterior e reforma do consumo
 
-## 4. Confronto Dialético sobre a Reforma da Renda
+A **Lei 14.754/2023** disciplina aplicações financeiras, entidades controladas no exterior, trusts e fundos de investimento, com regras distintas. “Come-cotas” de fundos e tributação de rendimentos de controladas no exterior não devem ser resumidos como um único regime periódico idêntico. [Fonte: Lei 14.754/2023](https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14754.htm).
 
-### A Visão Desenvolvimentista e de Justiça Fiscal (Progressista)
-* **Argumento:** A regressividade tributária é o principal motor estatal de perpetuação da desigualdade de renda no Brasil:
-  1. **Capacidade Contributiva (Art. 145, § 1º da CF):** O princípio constitucional básico prescreve que os impostos devem ser graduados conforme a capacidade econômica do contribuinte. Isentar os lucros dos bilionários enquanto se tributa o trabalhador da classe média e a cesta básica do pobre é uma aberração moral e econômica que contraria a prática dos países mais ricos da OCDE.
-  2. **Estímulo ao Mercado Consumidor:** Ao isentar a renda de quem ganha até R$ 5.000, o Estado injeta poder de compra direto na economia popular, pois as famílias de classe média e baixa gastam o alívio tributário imediatamente no comércio local e em serviços, dinamizando o PIB.
-  3. **Combate à "Pejotização" Fictícia:** A isenção de dividendos gerou a proliferação artificial de pessoas jurídicas (médicos, advogados, diretores de empresas que abrem empresas individuais apenas para pagar menos imposto do que o assalariado comum), desidratando as receitas da Previdência Social.
+A reforma do consumo criou a arquitetura constitucional do novo sistema e mecanismos de devolução de tributos. Avaliar seu efeito sobre preços e famílias exige acompanhar regulamentação, transição e implementação, em vez de somar benefícios anunciados como resultado já observado. [Fonte: EC 132/2023](https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm).
 
-### A Visão Liberal e de Competitividade do Capital (Mercado / Ortodoxa)
-* **Argumento:** O discurso de taxar os ricos ignora a alta carga tributária que as empresas já pagam na pessoa jurídica e ameaça afugentar o capital produtivo do país:
-  1. **O Risco da Bitributação Econômica:** O lucro das empresas já é pesadamente tributado antes de qualquer distribuição aos sócios: a alíquota combinada de IRPJ (15% + adicional de 10%) somada à CSLL (9%) atinge uma **carga de 34% sobre o lucro das pessoas jurídicas** no Brasil — uma das mais elevadas do mundo. Tributar novamente os dividendos na pessoa física configurará bitributação desmedida e destruirá o retorno do investimento de quem arriscou capital para gerar empregos.
-  2. **Fuga de Capitais e Domicílio Fiscal:** O capital financeiro e produtivo tem mobilidade global instantânea. Criar alíquotas punitivas de 35% ou impostos sobre fortunas incentivará grandes empresários e investidores a transferir seu domicílio fiscal para países vizinhos competitivos (como Uruguai, Paraguai ou Estados Unidos), reduzindo a arrecadação total e secando os investimentos em novas fábricas.
-  3. **A Solução é Cortar Gastos:** O problema do Brasil não é a arrecadação sobre a renda, mas o tamanho desmesurado do gasto público. A verdadeira justiça tributária só existirá quando o Estado enxugar privilégios da burocracia e diminuir o gasto total, permitindo a redução generalizada de impostos para todos os cidadãos.
+## 5. Hipóteses em disputa e como testá-las
+
+| Hipótese | Evidência que pode sustentá-la ou contrariá-la |
+| :--- | :--- |
+| Desonerar renda baixa aumenta consumo | Variação de renda disponível e consumo, controlando inflação, crédito e ciclo. |
+| Tributar dividendos reduz diferenças entre formas de contratação | Carga integrada por regime e mudanças de escolha contratual, separando fraude de atividade empresarial legítima. |
+| A reforma afasta capital | Investimento, mudança de residência, distribuição de lucros e fatores externos; anúncio isolado não prova causalidade. |
+| A receita compensa a desoneração | Arrecadação realizada líquida de ajustes e comportamento, não só projeção inicial. |
+
+## Efeitos distributivos
+
+É necessário avaliar renda, composição familiar, acesso ao emprego formal, raça, gênero e região. Quem não paga IRPF diretamente não recebe o mesmo benefício de uma ampliação da faixa desonerada, embora possa ser atingido por efeitos sobre demanda, preços ou serviços públicos. A incidência sobre dividendos depende de sua concentração e da tributação anterior, que não foram recalculadas aqui.
+
+Comparações devem incluir famílias com rendas semelhantes obtidas por formas distintas, trabalhadores autônomos, pequenos negócios e pessoas com rendimentos variáveis. Não se presume que todo prestador PJ seja fraude nem que todo dividendo pertença a uma pessoa de renda muito alta.
+
+## Conclusão e limites da evidência
+
+O debate passou de proposta à legislação com efeitos em 2026. A correção central é substituir a descrição de isenção universal e de alíquota hipotética de 35% pelas regras efetivamente aprovadas, separando-as de sua execução e de seus efeitos econômicos.
+
+O estudo não estima carga efetiva por faixa, arrecadação adicional realizada ou causalidade sobre investimento e consumo. Essas conclusões dependem de microdados e metodologia de incidência. Justiça distributiva, simplificação, neutralidade entre formas de renda e viabilidade fiscal precisam ser avaliadas conjuntamente.

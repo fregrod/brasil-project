@@ -1,95 +1,30 @@
 import MiniSearch from 'minisearch';
-import { DocumentItem, SearchResult } from '../types';
+import searchManifest from '../data/search.json';
+import { searchOptions } from '../../shared/search.mjs';
+import type { SearchResult } from '../types';
 
-let miniSearchInstance: MiniSearch<any> | null = null;
-let documentsMap = new Map<string, DocumentItem>();
+let indexPromise: Promise<MiniSearch> | null = null;
+export const documentCount = searchManifest.count;
 
-export function initSearch(docs: DocumentItem[]) {
-  miniSearchInstance = new MiniSearch({
-    fields: ['title', 'headingsText', 'category', 'plainText'],
-    storeFields: ['id', 'title', 'category', 'path', 'excerpt'],
-    searchOptions: {
-      prefix: true,
-      fuzzy: 0.2,
-      boost: {
-        title: 4,
-        headingsText: 2.5,
-        category: 1.5,
-        plainText: 1,
-      },
-    },
-  });
-
-  documentsMap.clear();
-
-  const searchRecords = docs.map((doc) => {
-    documentsMap.set(doc.id, doc);
-    return {
-      id: doc.id,
-      title: doc.title,
-      headingsText: doc.headings.map((h) => h.text).join(' '),
-      category: doc.category,
-      path: doc.path,
-      excerpt: doc.excerpt,
-      plainText: doc.plainText,
-    };
-  });
-
-  miniSearchInstance.addAll(searchRecords);
+export function ensureSearchLoaded(): Promise<MiniSearch> {
+  if (!indexPromise) {
+    indexPromise = fetch(`${import.meta.env.BASE_URL}${searchManifest.url.replace(/^\//, '')}`)
+      .then(async response => {
+        if (!response.ok || !response.headers.get('content-type')?.includes('application/json')) throw new Error('Não foi possível carregar o índice de pesquisa.');
+        return MiniSearch.loadJSON(await response.text(), searchOptions);
+      }).catch(error => { indexPromise = null; throw error; });
+  }
+  return indexPromise;
 }
 
-function getHighlightedSnippet(fullText: string, query: string, length = 180): string {
-  if (!query || !fullText) return '';
-  const cleanQuery = query.toLowerCase().trim();
-  const lowerText = fullText.toLowerCase();
-
-  let index = lowerText.indexOf(cleanQuery);
-  if (index === -1) {
-    // try first word
-    const words = cleanQuery.split(/\s+/).filter(Boolean);
-    if (words.length > 0) {
-      index = lowerText.indexOf(words[0]);
-    }
-  }
-
-  if (index === -1) {
-    return fullText.slice(0, length) + '...';
-  }
-
-  const start = Math.max(0, index - 50);
-  const end = Math.min(fullText.length, index + cleanQuery.length + (length - 50));
-  let snippet = fullText.slice(start, end).trim();
-
-  if (start > 0) snippet = '...' + snippet;
-  if (end < fullText.length) snippet = snippet + '...';
-
-  return snippet;
-}
-
-export function searchContent(query: string, limit = 12): SearchResult[] {
-  if (!miniSearchInstance || !query.trim()) {
-    return [];
-  }
-
-  const rawResults = miniSearchInstance.search(query.trim());
-  const results: SearchResult[] = [];
-
-  for (const item of rawResults.slice(0, limit)) {
-    const doc = documentsMap.get(item.id);
-    if (!doc) continue;
-
-    const snippet = getHighlightedSnippet(doc.plainText, query);
-
-    results.push({
-      id: doc.id,
-      title: doc.title,
-      category: doc.category,
-      path: doc.path,
-      snippet,
-      score: item.score,
-      headings: doc.headings,
-    });
-  }
-
-  return results;
+export async function searchContent(query: string, limit = 12): Promise<SearchResult[]> {
+  if (!query.trim()) return [];
+  const index = await ensureSearchLoaded();
+  return index.search(query.trim()).slice(0, limit).map(item => {
+    const fullText = (item.passages as { text: string }[] | undefined)?.map(passage => passage.text).join(' ') || '';
+    const position = fullText.toLocaleLowerCase('pt-BR').indexOf(query.toLocaleLowerCase('pt-BR').trim());
+    const start = Math.max(0, position - 50);
+    return { id: String(item.id), title: item.title, category: item.category, path: item.path,
+      snippet: `${start ? '…' : ''}${fullText.slice(start, start + 180)}…`, score: item.score, headings: [] };
+  });
 }

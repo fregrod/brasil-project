@@ -1,33 +1,20 @@
-# Sociedade e Desenvolvimento: Estrutura Social, Demografia e Desafios Estruturais
+# Sociedade e desenvolvimento: demografia, segurança e tributação
 
-> **Repositório de Estudos Demográficos, Segurança Pública, Produtividade e Tributação**  
-> **Objetivo:** Analisar as forças profundas que moldam a sociedade brasileira: a transição demográfica acelerada, a bomba fiscal da Previdência, a produtividade estagnada, a nova geopolítica do crime organizado e o debate sobre a regressividade do sistema tributário.
+> **Revisão editorial:** 19/10/2026.
+> **Recorte da evidência:** fontes censitárias e educacionais de 2022; estimativa histórica de violência publicada em 2019; alterações tributárias de 2023 e 2025 e orientações de 2026. Cada capítulo explicita seus próprios limites.
 
----
+Esta pasta examina mecanismos sociais e econômicos sem tratar projeções, discursos políticos ou investigações como resultados comprovados. Fontes diretas acompanham as alegações materiais nos capítulos.
 
-## 1. Mapa dos Documentos
+## Estudos
 
-1. **[`01_demografia_previdencia_e_produtividade.md`](file:///Users/rodrigofregonasse/Code/brasil-project/sociedade_e_desenvolvimento/01_demografia_previdencia_e_produtividade.md)**
-   * Dados do Censo IBGE 2022: Queda histórica da fecundidade (1,57 filho por mulher) e envelhecimento acelerado da população ("O Brasil envelhece antes de enriquecer").
-   * O déficit do RGPS e RPPS (Previdência Social) superando R$ 300 bilhões anuais.
-   * O apagão da Produtividade Total dos Fatores (PTF) há 40 anos, evasão escolar e o "Custo Brasil".
-   * Confronto Dialético: A Visão Liberal de Capitalização e Desvinculação do Salário Mínimo vs. A Visão Keynesiana de Seguridade Social Universal e Investimento em Ciência/Educação.
+- [Demografia, previdência e produtividade](01_demografia_previdencia_e_produtividade.md): fecundidade censitária, transição etária, diferenças entre regimes de proteção social, conceitos de produtividade e custos das alternativas de reforma.
+- [Segurança pública e crime organizado](02_seguranca_publica_e_crime_organizado.md): alcance histórico da estimativa de custo da violência, economia do crime, fases das investigações, distinção usuário/tráfico e avaliação de políticas.
+- [Tributação, renda e desigualdade](03_tributacao_regressiva_e_reforma_da_renda.md): incidência e denominadores, alteração da tributação de dividendos, desoneração de renda, tributação mínima e hipóteses sobre consumo e investimento.
 
-2. **[`02_seguranca_publica_e_crime_organizado.md`](file:///Users/rodrigofregonasse/Code/brasil-project/sociedade_e_desenvolvimento/02_seguranca_publica_e_crime_organizado.md)**
-   * A evolução das facções prisionais (PCC e Comando Vermelho) para cartéis multinacionais de logística do narcotráfico.
-   * As Milícias armadas e a infiltração econômica em setores legais: combustíveis, transportes, fintechs e licitações municipais.
-   * O custo macroeconômico da violência (perda estimada em 5,9% do PIB segundo o IPEA).
-   * Confronto Dialético: A Visão de Lei e Ordem / Punitivismo Penal vs. A Visão de Asfixia Financeira e Redução de Danos Sociais.
+## Como ler os estudos
 
-3. **[`03_tributacao_regressiva_e_reforma_da_renda.md`](file:///Users/rodrigofregonasse/Code/brasil-project/sociedade_e_desenvolvimento/03_tributacao_regressiva_e_reforma_da_renda.md)**
-   * A distorção estrutural: O Brasil arrecada 44% no Consumo e apenas 25% na Renda (o inverso da média dos países desenvolvidos da OCDE).
-   * A isenção de lucros e dividendos distribuídos (Lei nº 9.249/1995) e o debate da Reforma da Renda (isenção até R$ 5 mil e alíquotas progressivas no topo).
-   * Confronto Dialético: A Visão Desenvolvimentista de Justiça Fiscal e Tributação dos Super-Ricos vs. A Visão Liberal de Neutralidade Tributária e Aversão à Fuga de Capitais.
+Dados observados, regras legais e hipóteses de impacto são apresentados separadamente. Comparações exigem período e universo comuns; valores investigados não equivalem a prejuízo comprovado. Os capítulos encerram com efeitos distributivos e conclusão sobre o que a evidência permite afirmar.
 
----
+## Agenda de aprofundamento
 
-## 2. Bases Oficiais de Consulta
-* **IBGE:** Censo Demográfico 2022, PNAD Contínua e Estatísticas de Registro Civil.
-* **Secretaria de Previdência / INSS:** Boletim Estatístico da Previdência Social (BEPS).
-* **Fórum Brasileiro de Segurança Pública (FBSP) e IPEA:** Anuário Brasileiro de Segurança Pública e Atlas da Violência.
-* **Receita Federal do Brasil:** Dados de Distribuição do Imposto de Renda da Pessoa Física (Grandes Números do IRPF).
+Os estudos de [desenvolvimento humano e território](../desenvolvimento_humano_e_territorio/README.md) complementam esta pasta com educação, saúde, habitação, desigualdades, clima e inovação. Para previdência e tributação, faltam simulações reproduzíveis com microdados e cenários; para segurança, um painel territorial com definições comuns de vitimização, justiça e resposta estatal.

@@ -4,11 +4,14 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "prebuild": "node scripts/build-content.js",
-    "predev": "node scripts/build-content.js",
+    "predev": "node scripts/build-comparisons.mjs && node scripts/build-content.js",
     "dev": "vite",
-    "build": "node scripts/build-content.js && vite build",
-    "preview": "vite preview"
+    "typecheck": "tsc --noEmit",
+    "test": "node --test scripts/tests/*.test.mjs",
+    "check:content": "node scripts/check-content.mjs",
+    "build": "node scripts/build-comparisons.mjs && node scripts/build-content.js && npm run typecheck && npm run check:content && vite build && node scripts/check-bundle.mjs",
+    "preview": "vite preview",
+    "check:sources": "python3 scripts/check-source-access.py"
   },
   "dependencies": {
     "clsx": "^2.1.1",
@@ -24,7 +27,9 @@
     "rehype-raw": "^7.0.0",
     "remark-gfm": "^4.0.0",
     "remark-math": "^6.0.0",
-    "tailwind-merge": "^2.5.4"
+    "tailwind-merge": "^2.5.4",
+    "unified": "^11.0.5",
+    "remark-parse": "^11.0.0"
   },
   "devDependencies": {
     "@types/d3-force": "^3.0.10",

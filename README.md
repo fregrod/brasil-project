@@ -1,92 +1,54 @@
-# Brasil Project: Repositório de Política, Economia e Instituições Brasileiras
+# Brasil Project: política, economia e desenvolvimento
 
-> **Base Documental Neutra, Analítica e Factual sobre o Brasil Contemporâneo**  
-> **Objetivo:** Fornecer um panorama 360 graus, rigoroso e fundamentado em fontes primárias (leis, acórdãos do STF, auditorias do TCU/CGU, dados do IBGE, Banco Central, Tesouro Nacional e organismos internacionais) sobre a trajetória política e econômica recente do país.
+> **Revisão editorial:** 19/10/2026.
+> **Recorte da evidência:** estudos históricos com datas próprias; comparações macroeconômicas fechadas até 2025, sem projetar o restante de 2026.
 
----
+Uma base de estudos sobre decisões públicas e suas consequências para a vida das pessoas. A linha de análise é: **o que aconteceu → qual evidência sustenta → quais mecanismos podem explicar → quem ganha, perde ou permanece excluído → o que ainda não sabemos**. O objetivo é permitir conclusões proporcionais à evidência e revisão por quem discorda.
 
-## 📌 Compromisso Metodológico e Anti-Desinformação
+## Como ler e conferir
 
-1. **Exclusividade de Fontes Oficiais Primárias:** Nenhuma alegação, indicador ou citação sem referência direta a diários oficiais, acórdãos judiciais, anais legislativos, relatórios técnicos ou séries históricas oficiais (veja [`BASE_FONTES_OFICIAIS.md`](BASE_FONTES_OFICIAIS.md)).
-2. **Análise Dialética e Imparcialidade:** Em temas econômicos e sociais, os fatos são submetidos sistematicamente ao confronto entre a **Visão Liberal / Ortodoxa** (Escola de Chicago, solvência, eficiência de mercado) e a **Visão Keynesiana / Desenvolvimentista** (foco na demanda agregada, inclusão e bem-estar).
-3. **Rigor Terminológico Jurídico:** Distinção técnica estrita entre investigação preliminar, indiciamento, denúncia, condição de réu, sentença, anulação e trânsito em julgado.
+Comece pela [metodologia editorial](METODOLOGIA.md), pelo [catálogo de fontes](BASE_FONTES_OFICIAIS.md) e pelo [dicionário de indicadores](DICIONARIO_INDICADORES.md). A [comparação entre governos](COMPARACOES_GOVERNOS.md) usa a mesma definição por indicador, informa períodos de transição e oferece arquivos e cálculo reproduzível.
 
----
+Fato documentado, interpretação e hipótese devem aparecer diferenciados. Uma crítica pode ser sustentada sem acusar crime; investigação não equivale a condenação. Comparar resultados observados não identifica, sozinho, o efeito de um presidente. O projeto inclui fontes públicas, acadêmicas e privadas identificadas e não promete neutralidade automática ou checagem em tempo real.
 
-## 🗂️ Estrutura do Repositório
+## Estudos por tema
 
-```
-brasil-project/
-├── BASE_FONTES_OFICIAIS.md               # Catálogo de APIs e bases oficiais (IBGE, BCB, Tesouro, FAO)
-│
-├── economia/                             # Análise macroeconômica dos governos recentes
-│   ├── README.md                         # Matriz teórica (Liberal vs. Keynesiano) e índice
-│   ├── 01_governo_lula_3_analise_economica.md
-│   ├── 02_governo_bolsonaro_analise_economica.md
-│   ├── 03_governo_temer_analise_economica.md
-│   ├── 04_governos_lula_1_2_e_dilma_analise_economica.md
-│   ├── 05_fundacao_tripe_macroeconomico_e_plano_real.md
-│   ├── 06_cenario_global_crises_e_impactos_no_brasil.md
-│   ├── 07_decisoes_economicas_contraditorias_pt_e_bolsonaro.md
-│   ├── 08_crise_aviacao_caso_gol_rotas_qav.md
-│   └── privatizacoes/                    # Desestatizações, concessões e governança
-│       ├── README.md
-│       └── 01_privatizacao_eletrobras_processo_indicadores_corrupcao_e_impactos.md
-│
-├── corrupcao_e_investigacoes/            # Operações policiais, escândalos e decisões judiciais
-│   ├── README.md                         # Glossário processual penal (inquérito vs. réu vs. anulação)
-│   ├── 01_operacao_lava_jato_e_petrolao.md
-│   ├── 02_governo_bolsonaro_e_investigacoes.md
-│   ├── 03_governo_temer_e_mdb.md
-│   ├── 04_acao_penal_470_mensalao.md
-│   ├── 05_centrao_orcamento_secreto_e_codevasf.md
-│   ├── 06_casos_em_aberto_e_instabilidades_recentes.md
-│   ├── 07_stf_casos_historicos_e_conexoes.md
-│   └── 08_escandalos_bndes_operacoes_e_vinculos_lula.md
-│
-├── politica_e_instituicoes/              # Funcionamento dos Poderes e governabilidade
-│   ├── README.md
-│   ├── 01_presidencialismo_de_coalizao_e_orcamento_impositivo.md
-│   └── 02_forcas_armadas_e_tutela_militar.md
-│
-├── sociedade_e_desenvolvimento/          # Indicadores sociais, demografia e segurança
-│   ├── README.md
-│   ├── 01_demografia_previdencia_e_produtividade.md
-│   ├── 02_seguranca_publica_e_crime_organizado.md
-│   └── 03_tributacao_regressiva_e_reforma_da_renda.md
-│
-├── geopolitica_e_energia/                # Inserção global, transição verde e soberania
-│   ├── README.md
-│   ├── 01_transicao_energetica_agro_e_margem_equatorial.md
-│   ├── 02_politica_externa_brics_e_desdolarizacao.md
-│   ├── 03_soberania_nacional_lula_analise_fatos_e_decisoes.md
-│   └── 04_soberania_nacional_bolsonaro_analise_fatos_e_decisoes.md
-│
-├── ideologia_e_discursos/                # Análise de discurso e ciência política comparada
-│   ├── README.md                         # Conceituação teórica de populismo e radicalismos
-│   ├── 01_lula_discursos_e_conexoes_comunistas.md
-│   ├── 02_bolsonaro_discursos_e_conexoes_fascistas_autoritarias.md
-│   ├── 03_analise_comparativa_ciencia_politica.md
-│   └── 04_lula_e_aliados_casos_autoritarios_instituicoes_imprensa.md
-│
-├── pecs_e_propostas/                     # Reformas legislativas e marcos constitucionais
-│   ├── README.md
-│   ├── 01_pec_fim_escala_6x1_jornada_trabalho.md
-│   └── 02_linha_historica_teto_orcamento_secreto_arcabouco.md
-│
-├── trabalho_e_leis_trabalhistas/         # Mercado de trabalho, previdência e direito comparado
-│   ├── README.md
-│   ├── 01_escandalo_inss_fraudes_descontos_associativos_e_investigacoes.md
-│   └── 02_comparativo_leis_trabalhistas_brasil_vs_top25_mundo.md
-│
-└── economias_internacionais/             # Estudos macroeconômicos e reformas em outros países
-    ├── README.md
-    └── 01_argentina_analise_economica_pre_e_pos_milei.md
+| Tema | Pergunta central |
+|---|---|
+| [Economia](economia/README.md) | Como inflação, trabalho, renda, crescimento e contas públicas evoluíram, e com quais limites de atribuição? |
+| [Privatizações](economia/privatizacoes/README.md) | Como avaliar investimento, tarifas, governança e transferência de riscos? |
+| [Corrupção e investigações](corrupcao_e_investigacoes/README.md) | O que cada caso documenta, em qual etapa e com qual alcance? |
+| [Política e instituições](politica_e_instituicoes/README.md) | Como orçamento, coalizões e controle civil distribuem poder e responsabilidade? |
+| [Sociedade e desenvolvimento](sociedade_e_desenvolvimento/README.md) | Como demografia, segurança e tributação afetam bem-estar e oportunidades? |
+| [Geopolítica e energia](geopolitica_e_energia/README.md) | Quais são os ganhos, riscos e custos da inserção externa e das escolhas energéticas? |
+| [Ideologia e discursos](ideologia_e_discursos/README.md) | Como confrontar discurso, conceito político e prática institucional sem rótulos automáticos? |
+| [PECs e propostas](pecs_e_propostas/README.md) | O que é proposta, o que virou norma e quais efeitos dependem de implementação? |
+| [Trabalho e leis trabalhistas](trabalho_e_leis_trabalhistas/README.md) | Como comparar proteção social, jornada e direitos sem misturar regimes diferentes? |
+| [Economias internacionais](economias_internacionais/README.md) | O que a experiência argentina permite comparar e o que não permite transferir ao Brasil? |
+| [Desenvolvimento humano e território](desenvolvimento_humano_e_territorio/README.md) | Como educação, saúde, moradia, desigualdades, clima e produtividade se conectam à vida cotidiana? |
+
+## Aplicação e manutenção
+
+O leitor usa React, TypeScript e Vite, com busca local e grafo de relações editoriais. Cada documento é baixado quando aberto. Busca, grafo, fórmulas e diagramas carregam sob demanda. O grafo representa conexões editoriais, sem demonstrar causalidade.
+
+O botão **Consultar documentos**, no topo, abre o painel direito. Ele encontra até dois trechos integrais, com links para a seção, fontes citadas e recorte da evidência. A aba **Nesta página** mantém o sumário do documento. A consulta usa o índice local compartilhado com a pesquisa: não baixa modelo, não chama API de inferência e não envia a pergunta a um serviço externo. O histórico fica apenas na memória da sessão. Perguntas curtas de continuação podem retomar o tema anterior; a compreensão é por termos e relações predefinidas, sem geração de novas análises ou atualização das fontes. Uma resposta vazia indica falta de correspondência suficiente, não inexistência de evidência no mundo.
+
+```bash
+npm ci
+npm run dev
+npm test
+npm run build
+npm run preview
 ```
 
----
+O build gera os metadados, os documentos individuais e o índice de busca a partir dos Markdown. Ele verifica tipos, metadados editoriais, links internos, âncoras e orçamento de carregamento inicial. `npm run check:content` pode ser executado separadamente. Essas verificações detectam regressões estruturais; a revisão factual continua humana e depende das fontes.
 
-## 🛠️ Tecnologias e Formato
+As comparações são regeneradas com `node scripts/build-comparisons.mjs`. Sua atualização exige rever os snapshots, o período e as conclusões. O [registro de verificação dos incrementos](VERIFICACAO_INCREMENTOS.md) descreve o que foi entregue, como foi testado e quais limitações permanecem.
 
-* Documentos estruturados em **GitHub Flavored Markdown (GFM)** com diagramas interativos em **Mermaid** e formulações matemáticas em **LaTeX (KaTeX)**.
-* Hiperlinks cruzados para navegação entre pastas e consulta a fontes originais na web.
+## Efeitos distributivos
+
+Os capítulos perguntam por diferenças entre grupos sociais e territórios, além do resultado agregado. Na ausência de dados compatíveis, a limitação é declarada. Isso evita tratar crescimento, superávit, redução de jornada ou mudança de propriedade como sinônimos automáticos de melhoria para todos.
+
+## Conclusão e limites da evidência
+
+A base permite comparar explicações e acompanhar evidências. Não substitui assessoria jurídica, pesquisa causal específica ou consulta atualizada de um processo. Pontos sem documentação suficiente devem ser corrigidos, retirados ou apresentados como pendências, com o mesmo critério para todos os governos e atores.

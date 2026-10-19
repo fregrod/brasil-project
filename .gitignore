@@ -20,3 +20,25 @@ tmp/
 # Web App build & dependencies
 node_modules/
 dist/
+
+# Environment & Secret files
+.env
+.env.*
+!.env.example
+*.local
+
+# Security & Private Keys
+*.pem
+*.key
+*.cert
+*.crt
+*.pfx
+*.p12
+id_rsa
+id_ed25519
+credentials.json
+service-account*.json
+
+# Audit & Local diagnostics
+.audit/
+.netlify/

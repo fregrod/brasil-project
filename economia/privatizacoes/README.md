@@ -1,52 +1,27 @@
-# Privatizações, Concessões e Desestatizações no Brasil
+# Privatizações, concessões e governança de infraestrutura
 
-> **Classificação Temática:** Economia do Setor Público, Finanças Corporativas, Direito Regulatório e Governança Estatal  
-> **Objetivo:** Analisar a trajetória histórica, os fundamentos microeconômicos, os ganhos de produtividade, os riscos regulatórios e os desfechos concretos dos processos de privatização, concessão e capitalização de empresas estatais no Brasil contemporâneo.  
-> **Compromisso Metodológico:** Avaliação baseada estritamente em demonstrações financeiras auditadas (CVM/SEC), relatórios de auditoria do Tribunal de Contas da União (TCU), marcos regulatórios das agências setoriais (Aneel, ANP, Anatel, ANTT) e acórdãos do Supremo Tribunal Federal (STF).
+> **Revisão editorial:** 19/10/2026.
+> **Recorte da evidência:** marcos institucionais e casos históricos com documentação indicada; o estudo financeiro da Eletrobras usa evidências identificadas até 2025.
 
----
+## Conceitos para comparar
 
-## 1. O Debate Teórico sobre Empresas Estatais e Privatização
+Privatização transfere controle ou propriedade estatal conforme o modelo aplicável; concessão delega a prestação de um serviço por contrato, sem necessariamente privatizar a empresa estatal existente. Capitalização em mercado pode diluir o acionista público sem vender um bloco a um controlador único. O [PND, Lei 9.491/1997](https://www.planalto.gov.br/ccivil_03/leis/l9491.htm), a [Lei de Concessões 8.987/1995](https://www.planalto.gov.br/ccivil_03/leis/l8987cons.htm) e a [Lei da Eletrobras 14.182/2021](https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14182.htm) documentam instrumentos distintos.
 
-A literatura de Economia do Setor Público e Finanças Corporativas estrutura o debate sobre a propriedade estatal através de dois paradigmas clássicos:
+## Índice
 
-```mermaid
-flowchart TD
-    subgraph Paradigmas ["Paradigmas Econômicos da Propriedade Estatal"]
-        P1["<b>Visão Ortodoxa / Teoria da Escolha Pública (Public Choice):</b><br>• Estatais sofrem com o <i>problema do agente-principal</i>: políticos e burocratas perseguem objetivos eleitorais e de poder, não eficiência.<br>• Risco moral e 'restrição orçamentária frouxa' (soft budget constraint): o Tesouro sempre cobre déficits.<br>• Privatização impõe disciplina de mercado, auditoria de investidores privados e atração de capital."]
-        
-        P2["<b>Visão Desenvolvimentista / Bens Públicos e Soberania:</b><br>• Estatais corrigem <i>falhas de mercado</i> em setores de alto investimento de capital (CAPEX) e retorno de longo prazo.<br>• Setores de infraestrutura estratégica (energia, telecom, saneamento) formam monopólios naturais com externalidades sociais.<br>• Risco de privatizações gerarem monopólios privados concentrados que maximizam dividendos à custa da modicidade tarifária."]
-    end
-```
+- [Eletrobras: processo, indicadores, corrupção e impactos](01_privatizacao_eletrobras_processo_indicadores_corrupcao_e_impactos.md) — capitalização, outorga, dados financeiros, escalas de rating, disputa de voto e questões tarifárias.
+- [Economia brasileira: demais estudos](../README.md).
 
----
+## Correções de cronologia e classificação
 
-## 2. A Trajetória Histórica das Privatizações no Brasil
+| Caso | Classificação sustentada | Fonte direta |
+| :--- | :--- | :--- |
+| Cedae | Permanece estatal de economia mista; concessões de serviços não equivalem à privatização da companhia | [Cedae, governança e visão geral](https://ri.cedae.com.br/governanca-corporativa/visao-geral/) |
+| NTS | A venda da participação principal não pode ser atribuída integralmente à gestão iniciada em 2019; proposta de alienação de 90% já estava formalizada em 2016 | [Petrobras, documento arquivado na SEC em outubro/2016](https://www.sec.gov/Archives/edgar/data/1119639/000129281416006460/pbra20161031_6ka.htm); venda residual exige identificação separada. |
+| Eletrobras | Capitalização e governança sob condições legais próprias | [Lei 14.182/2021](https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14182.htm) |
 
-O processo de desestatização no Brasil desenvolveu-se em quatro grandes ciclos institucionais:
+## Método e agenda
 
-1. **Primeira Onda (1990 – 2002 | Collor e FHC): O Programa Nacional de Desestatização (PND)**
-   * Foco na desestatização direta da indústria pesada e telecomunicações: venda da CSN, Usiminas, Embraer, Companhia Vale do Rio Doce (1997), Telebras (1998) e de bancos estaduais insolventes (Banespa, Banerj, Bemge);
-   * Criação do arcabouço das agências reguladoras independentes (Aneel, Anatel, ANP) para fiscalizar os mercados recém-abertos à concorrência.
-2. **Segunda Onda (2003 – 2015 | Lula 1, 2 e Dilma): O Modelo de Concessões com Presença Estatal**
-   * Retórica anti-privatização no discurso político, mas expansão pragmática de concessões de infraestrutura: leilões de grandes rodovias federais, terminais portuários e dos maiores aeroportos do país (Guarulhos, Viracopos, Brasília, Galeão, Confins);
-   * Uso intensivo das estatais (Petrobras e Eletrobras) e do BNDES como instrumentos de política industrial e controle tarifário artificial (especialmente a catastrófica Medida Provisória nº 579/2012 no setor elétrico).
-3. **Terceira Onda (2016 – 2018 | Temer): Saneamento de Balanços e Parcerias de Investimentos**
-   * Criação do Programa de Parcerias de Investimentos (PPI) e aprovação da Lei das Estatais (Lei nº 13.303/2016);
-   * Venda das distribuidoras de energia altamente deficitárias da Eletrobras no Norte e Nordeste (Cepisa, Ceal, Eletroacre, Ceron, Amazonas Energia e Boa Vista Energia), saneando o balanço da holding.
-4. **Quarta Onda (2019 – 2022 | Bolsonaro e Paulo Guedes): Desinvestimentos Corporativos e Capitalizações**
-   * Modelo de alienação de ativos sem entrega direta a um grupo único: venda de subsidiárias maduras da Petrobras via mercado de capitais (BR Distribuidora, TAG, NTS);
-   * Aprovação do Novo Marco Legal do Saneamento Básico (Lei nº 14.026/2020), viabilizando a privatização da Cedae (RJ) e da Sabesp (SP);
-   * A **capitalização da Eletrobras** em junho de 2022 via B3 e NYSE (Lei nº 14.182/2021), transformando a maior geradora e transmissora da América Latina em uma *corporation* privada sem acionista controlador.
+Comparar propriedade pública e privada exige separar cenário econômico, regulação, eficiência operacional e desenho contratual. Receita da oferta, outorga, dívida assumida e compromissos futuros não são uma única grandeza. Lucro reportado, lucro ajustado e caixa também não são equivalentes. Rating nacional não demonstra grau de investimento internacional; a distinção aparece no [comunicado da Fitch sobre a Eletrobras de maio/2025](https://www.sec.gov/Archives/edgar/data/1439124/000129281425002151/ebr20250519_6k1.htm).
 
----
-
-## 3. Mapa dos Estudos Desta Pasta
-
-1. **[`01_privatizacao_eletrobras_processo_indicadores_corrupcao_e_impactos.md`](file:///Users/rodrigofregonasse/Code/brasil-project/economia/privatizacoes/01_privatizacao_eletrobras_processo_indicadores_corrupcao_e_impactos.md)**
-   * **Histórico Completo do Processo:** Da fundação em 1962 ao desastre tarifário da MP 579/2012, o modelo de capitalização da Lei nº 14.182/2021 e a oferta de ações na B3 em junho de 2022 (R$ 33,7 bilhões).
-   * **Indicadores Econômico-Financeiros Antes e Depois:** Comparativo de Lucro Líquido, Dívida Líquida/EBITDA, capacidade de investimento (CAPEX), quadro de pessoal (PDVs) e rating de crédito internacional.
-   * **Relações de Corrupção e Loteamento Político Pré-Privatização:** As investigações da Operação Lava Jato na Usina Nuclear de Angra 3 (Eletronuclear / Operações Radioatividade e Pripyat), o loteamento partidário de Furnas e Eletronorte por alas do PMDB e PT, e os esquemas de propina em Belo Monte e usinas do Rio Madeira.
-   * **Problemas e Controvérsias Pós-Privatização:** Os "jabutis" legislativos (8 GW de termelétricas inflexíveis e impactos na CDE), a batalha jurídica da ADI 7385 no STF sobre o teto de 10% de voto da União, o apagão nacional de agosto de 2023 e o salto milionário na remuneração de executivos e conselheiros.
-   * **Análise dos Dois Lados:** A tese liberal/mercado (salvação da falência e eficiência) versus a tese crítica/desenvolvimentista (perda de soberania e encarecimento da conta de luz).
-   * **Catálogo de Fontes Oficiais Primárias:** Leis, acórdãos do TCU, dados da CVM, processos do STF e relatórios técnicos do ONS/Aneel.
+Cada estudo deve avaliar usuários, contribuintes, empregados, acionistas e credores, com indicadores comparáveis de preço, cobertura, qualidade, investimento e risco. Processos de corrupção devem informar situação jurídica atual; mudança de propriedade não é prova de extinção de irregularidades. A pasta não afirma que toda estimativa esteja auditada: as lacunas e os documentos ainda necessários estão descritos no estudo.

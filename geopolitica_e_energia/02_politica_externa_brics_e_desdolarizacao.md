@@ -1,66 +1,67 @@
-# Geopolítica, BRICS e o Debate da Desdolarização
+# Comércio, BRICS e moedas locais: autonomia e interdependência
 
-> **Classificação:** Relações Internacionais, Diplomacia Econômica e Comércio Global  
-> **Período de Referência:** 2000 – 2026  
-> **Bases Oficiais de Dados:** MDIC (Sistema Comex Stat), Ministério das Relações Exteriores (Itamaraty), Fundo Monetário Internacional (FMI) e Novo Banco de Desenvolvimento (NDB / Banco dos BRICS).
+> **Revisão editorial:** 19/10/2026.
+> **Recorte da evidência:** composição do BRICS indicada pelo MRE em 2025; estratégia NDB 2022–2026; conclusão negocial Mercosul–UE de 06/12/2024, assinatura de 17/01/2026 e aplicação provisória do iTA desde 01/05/2026. Não há extração estatística própria da balança comercial nem avaliação causal dos efeitos do acordo.
 
----
+## 1. Comércio exterior: concentração precisa de ano e produto
 
-## 1. O Mapa do Comércio Exterior: A Dependência da China
+A participação da China deve ser medida em um período definido, separando exportações, importações e saldo. Valor exportado não é saldo comercial nem reserva internacional. Países, blocos e regiões devem ser mutuamente exclusivos quando compõem um gráfico.
 
-Os dados oficiais de comércio exterior compilados pelo Ministério do Desenvolvimento, Indústria, Comércio e Serviços (MDIC / Comex Stat) demonstram uma mudança sísmica no eixo geoeconômico do Brasil nas últimas duas décadas:
+Foi retirado o gráfico “média recente” porque não informava anos, extração e ponderação. Também não se mantêm valores anuais ou percentuais de commodities sem uma consulta reproduzível. O **Comex Stat** é a base de comércio de bens a utilizar, com filtros registrados; ele não substitui estatísticas de serviços e investimento. [Fonte: MDIC, consulta de comércio exterior](https://comexstat.mdic.gov.br/pt/geral).
 
-```mermaid
-pie title Destino das Exportações Brasileiras (Média Recente)
-    "China": 31
-    "União Europeia (27 países)": 13
-    "Estados Unidos": 11
-    "América Latina (Mercosul + Outros)": 12
-    "Resto do Mundo (Ásia, Oriente Médio, África)": 33
-```
+Uma avaliação de dependência deve combinar concentração por produto e comprador, possibilidade de substituição, termos de troca e participação em cadeias produtivas. Não basta observar que um parceiro compra muito; tampouco diversificar significa reduzir mecanicamente vendas a ele.
 
-### O Peso Estratégico do Mercado Chinês:
-* **Volume Financeiro:** A China compra anualmente mais de **US$ 100 a US$ 105 bilhões** em produtos brasileiros — valor que supera a soma de tudo o que os Estados Unidos e a União Europeia inteira adquirem do Brasil juntos;
-* **Superávit Bilateral:** O saldo comercial positivo do Brasil com a China gira em torno de **US$ 50 bilhões anuais**, sendo o principal esteio da estabilidade das contas externas e das reservas cambiais do país;
-* **Concentração de Commodities:** Mais de 70% de toda a soja exportada pelo Brasil, cerca de 65% do minério de ferro e mais de 40% do petróleo bruto têm como destino os portos chineses.
+## 2. BRICS: composição datada, não bloco homogêneo
 
----
+O MRE identifica, em **2025**, o agrupamento com Brasil, Rússia, Índia, China, África do Sul e novos membros, incluindo **Indonésia**, além de Arábia Saudita, Egito, Emirados Árabes Unidos, Etiópia e Irã. A lista é o recorte da fonte; participações econômicas devem usar uma composição e uma edição estatística explícitas. [Fonte: MRE, acompanhamento da presidência brasileira do BRICS, atualizado em 09/09/2025](https://www.gov.br/mre/pt-br/delbrasgen/atividades-e-noticias/acompanhe-a-presidencia-do-brasil-no-brics).
 
-## 2. A Expansão dos BRICS (BRICS+) e o Sistema Financeiro Alternativo
+Participação do grupo no PIB em PPC não é a mesma coisa que participação em dólares correntes. População, produção de petróleo e poder financeiro também têm denominadores diferentes. Foram retiradas proporções agregadas sem composição, ano e memória de cálculo.
 
-Criado em 2006 (originalmente com Brasil, Rússia, Índia e China, incorporando a África do Sul em 2010), o bloco dos **BRICS** protagonizou um salto geopolítico histórico na Cúpula de Joanesburgo (2023), aprovando a adesão de novos membros plenos: **Arábia Saudita, Emirados Árabes Unidos, Irã, Egito e Etiópia**.
+Cooperação entre membros não significa identidade de interesses, união aduaneira ou comando político único. Avaliar capacidade de ação requer examinar compromissos efetivos, financiamento e coordenação, além de declarações diplomáticas.
 
-### O Peso do BRICS+ na Economia Global (Dados do FMI):
-* Responde por cerca de **37% do Produto Interno Bruto mundial** em Paridade de Poder de Compra (PPC), superando a participação do G7 (30%);
-* Concentra cerca de **45% da população global** e mais de **42% de toda a produção mundial de petróleo bruto**.
+## 3. Quatro coisas diferentes chamadas de desdolarização
 
-### A Agenda da "Desdolarização":
-A utilização de sanções financeiras pelo governo dos Estados Unidos (como o congelamento de mais de US$ 300 bilhões em reservas soberanas da Rússia e a exclusão de bancos do sistema de mensagens interbancárias SWIFT) acelerou a busca dos membros dos BRICS por alternativas:
-1. **Acordo Brasil-China de Moedas Locais (2023):** Assinado para permitir a liquidação direta de transações de exportação e importação em **Reais e Renminbi (Yuan)** sem a obrigatoriedade de conversão intermediária em Dólares norte-americanos, operado pelo banco ICBC em São Paulo;
-2. **O Novo Banco de Desenvolvimento (NDB / Xangai):** Presidido pela ex-presidente Dilma Rousseff, o Banco dos BRICS fixou a meta de conceder pelo menos **30% de todos os seus empréstimos em moedas locais** dos países membros, reduzindo a exposição cambial ao dólar e o risco de congelamentos externos.
+| Instrumento | O que pode fazer | O que não garante |
+| :--- | :--- | :--- |
+| Liquidação em moedas locais | Alterar moeda de pagamento e conversão | Preço de referência diferente, hedge barato ou ausência de sanções. |
+| Empréstimo em moeda local | Reduzir descasamento entre dívida e receita do projeto | Ausência de risco de crédito, liquidez ou custo financeiro. |
+| Mudança na composição de reservas | Diversificar ativos e exposições | Substituição imediata de liquidez e funções de uma moeda internacional. |
+| Sistema alternativo de mensagens ou pagamentos | Criar infraestrutura de comunicação ou compensação | Imunidade jurídica a medidas de outras jurisdições ou tarifas comerciais. |
 
----
+O NDB estabeleceu meta de **30% dos compromissos de financiamento em moedas nacionais no ciclo 2022–2026**. É uma **meta de estratégia**, não comprovação de que 30% de todo estoque de empréstimos já seja local. O próprio documento condiciona distribuição a mercados, regulamentação e preços. [Fonte: NDB, estratégia 2022–2026](https://www.ndb.int/wp-content/uploads/2022/07/NDB_StrategyDocument_eVersion.pdf).
 
-## 3. O Impasse do Acordo Mercosul – União Europeia
+Operar em moeda local pode reduzir um risco cambial específico, mas depende de convertibilidade, hedge, liquidez e custos. Tampouco elimina riscos políticos ou sanções. Restrições a reservas, acesso a sistemas e tarifas devem ser atribuídas às autoridades e instrumentos corretos, não genericamente a um único país.
 
-Iniciadas em 1999, as negociações para a criação de uma área de livre comércio entre o Mercosul (Brasil, Argentina, Paraguai e Uruguai) e a União Europeia completaram **mais de 25 anos de atrito diplomático**:
-* **O Tratado de 2019:** Foi anunciado um acordo político preliminar em 2019, mas sua ratificação foi paralisada;
-* **Os Obstáculos Reais:**
-  1. **Protecionismo Agrícola Europeu:** Agricultores franceses, irlandeses e poloneses pressionam seus parlamentos contra o acordo, temendo não conseguir competir com os custos mais baixos da carne e do açúcar sul-americanos;
-  2. **Cartas Adicionais Ambientais (*Side Letters*):** A UE apresentou exigências ambientais com previsão de sanções comerciais unilaterais contra o desmatamento, rejeitadas pelo governo brasileiro por violarem a soberania e a isonomia de acesso a mercados.
+## 4. Como medir a posição do dólar
 
----
+Transações cambiais envolvem duas moedas. Ao somar participações por moeda, o total pode ser **200%**, não 100%; esse denominador não é comparável à participação em reservas de bancos centrais. Dados de reservas também precisam explicitar período e cobertura. [Fontes metodológicas: BIS, pesquisa trienal de câmbio de 2022](https://www.bis.org/statistics/rpfx22_fx.htm); [FMI, COFER](https://data.imf.org/COFER).
 
-## 4. Confronto Dialético sobre a Política Externa Brasileira
+Este estudo não mantém as antigas participações aproximadas do dólar como estatística corrente, porque faltava data comum. Mesmo uma participação elevada não prova que todo arranjo alternativo seja inútil; uma transação bilateral bem-sucedida também não demonstra substituição da moeda dominante.
 
-### A Visão Universalista do Sul Global e da Multipolaridade (Pró-BRICS / Itamaraty)
-* **Argumento:** A política externa de um país de dimensões continentais deve defender a autonomia soberana em um mundo multipolar:
-  1. **Pragmatismo Comercial Irrecusável:** A China é a compradora que sustenta a pujança do agronegócio e a balança comercial brasileira. Transformar o Brasil em satélite ideológico dos Estados Unidos seria um suicídio econômico, prejudicando os próprios produtores rurais que exportam grãos e carne para a Ásia.
-  2. **Poder de Barganha Geopolítico:** Fortalecer os BRICS não significa ser inimigo do Ocidente, mas sim ter uma cadeira à mesa dos países emergentes para reequilibrar organismos como o FMI e o Conselho de Segurança da ONU, tradicionalmente dominados pelas potências do pós-Segunda Guerra.
-  3. **Segurança contra a Arma do Dólar:** Ter canais bilaterais de pagamento em moedas locais protege as empresas brasileiras da arbitrariedade de eventuais sanções financeiras e tarifárias expedidas por governos unilaterais em Washington.
+## 5. Mercosul–União Europeia: a negociação avançou
 
-### A Visão Ocidentalista e Liberal-Democrática (Crítica / Pró-Ocidente)
-* **Argumento:** O alinhamento prioritário com regimes autoritários corrompe os valores da República e afasta o capital ocidental:
-  1. **O Risco da Reputação Democrática:** O Brasil é a maior democracia do hemisfério sul. Fazer coro diplomático com regimes autocráticos e teocráticos como a Rússia de Vladimir Putin, o Irã e a China compromete o *soft power* e a credibilidade institucional brasileira perante o mundo livre.
-  2. **A Ilusão da Desdolarização:** O Dólar americano continua respondendo por cerca de 85% a 90% de todas as transações cambiais globais e por quase 60% das reservas dos bancos centrais do planeta. Desafiar a moeda de reserva global apenas gera ruído político e atrai a desconfiança de investidores internacionais de Wall Street e de Londres.
-  3. **A Prioridade da OCDE e da Tecnologia:** Os BRICS compram commodities brutas (grãos e minérios não refinados), mas quem transfere tecnologia de ponta, patentes, governança corporativa e semicondutores são os Estados Unidos, Japão e Europa. O verdadeiro salto de desenvolvimento viria da entrada formal do Brasil na **OCDE** e do fechamento do acordo com a União Europeia.
+As negociações foram concluídas em **06/12/2024** e os instrumentos **EMPA e iTA foram assinados em 17/01/2026**. A narrativa que parava em 2019 omitia esses marcos. [Fontes: Conselho da UE, decisão sobre assinatura](https://www.consilium.europa.eu/en/press/press-releases/2026/01/09/eu-mercosur-council-greenlights-signature-of-the-comprehensive-partnership-and-trade-agreement/pdf/); [Comissão Europeia, documentos do acordo](https://policy.trade.ec.europa.eu/eu-trade-relationships-country-and-region/countries-and-regions/mercosur/eu-mercosur-agreement_en?prefLang=uk).
+
+A Comissão Europeia registra **aplicação provisória do acordo comercial interino (iTA) desde 01/05/2026**, após os procedimentos internos dos quatro signatários do Mercosul. Esse marco posterior à assinatura precisa aparecer na avaliação feita em outubro de 2026. Aplicação provisória do instrumento comercial não equivale a ratificação integral de todo o acordo de parceria EMPA, nem a conclusão de todos os cronogramas tarifários. [Comissão Europeia — texto e situação jurídica do acordo](https://policy.trade.ec.europa.eu/eu-trade-relationships-country-and-region/countries-and-regions/mercosur/eu-mercosur-agreement/text-agreement_en).
+
+Conclusão política, assinatura, ratificação, aplicação provisória e entrada em vigor são estágios diferentes. Avaliação do conteúdo deve distinguir acesso a mercado, quotas, cronogramas, salvaguardas, compras públicas, regras ambientais e capacidade de adaptação. O início da aplicação não prova benefício líquido já realizado para cada setor; isso exige dados posteriores e comparação apropriada.
+
+Pressões agrícolas e ambientais existem no debate, mas não explicam sozinhas cada obstáculo. Preferências de produtores, indústria, consumidores e governos variam; classificar toda exigência como pretexto ou toda objeção como irracional dispensa indevidamente a análise.
+
+## 6. Critérios para autonomia diplomática
+
+Uma política pode buscar relações com múltiplos parceiros, defender princípios e reduzir vulnerabilidades. É possível avaliar diversificação comercial, investimento, transferência tecnológica, financiamento e compromissos diplomáticos separadamente.
+
+Não se mantém a dicotomia de que BRICS compra apenas commodities e Ocidente fornece toda tecnologia. O efeito depende de setor, empresa, contrato e capacidade brasileira de absorção. Da mesma forma, ingresso em uma organização não garante, por si, produtividade maior ou alinhamento automático.
+
+## Efeitos distributivos
+
+Exportadores e trabalhadores de cadeias integradas podem ganhar com novos mercados; setores expostos à concorrência podem precisar de adaptação. Efeitos por porte de empresa, região, qualificação, gênero e raça dependem de sua inserção produtiva, e não apenas da identidade do parceiro.
+
+Crédito em moeda compatível com a receita pode reduzir exposição de projetos, mas acesso, taxa e garantias determinam quem se beneficia. Consumidores podem ter ganhos de variedade e preço, enquanto ajustes de emprego se concentram territorialmente. Esses são mecanismos a quantificar, não resultados calculados aqui.
+
+## Conclusão e limites da evidência
+
+Autonomia não significa ausência de interdependência. Moedas locais podem ser instrumentos úteis sem substituir todas as funções do dólar; concentração comercial merece gestão sem converter cooperação em subordinação presumida.
+
+Foram atualizados composição do agrupamento e marcos Mercosul–UE e separadas meta financeira, estatística e previsão política. Não há extração de comércio, balanço de pagamentos, COFER ou resultados de financiamento neste capítulo; conclusões quantitativas exigem essas bases e períodos comuns.

@@ -1,78 +1,59 @@
-# Governo Michel Temer (2016 – 2018): Análise Econômica e Indicadores Reais
+# Governo Michel Temer (2016–2018): estabilização, reformas e recuperação
 
-> **Período de Gestão:** 2016 – 2018 (Transição Pós-Impeachment)  
-> **Comando Econômico:** Henrique Meirelles / Eduardo Guardia (Ministério da Fazenda) e Ilan Goldfajn (Banco Central).  
-> **Bases Oficiais de Dados:** IBGE (Contas Nacionais, IPCA, PNADC), Banco Central (SGS, Copom), Secretaria do Tesouro Nacional (RTN) e MTE (CAGED / RAIS).
+> **Revisão editorial:** 19/10/2026.
+> **Recorte da evidência:** decisões de 2016–2018; indicadores de inflação e juros em anos civis. O ano de 2016 inclui duas administrações e não é atribuído integralmente a Temer.
 
----
 
-## 1. Tabela-Síntese de Indicadores Oficiais
+Para uma comparação descritiva uniforme de IPCA, PIB e DBGG, consulte o [quadro reproduzível de períodos de governo](../COMPARACOES_GOVERNOS.md), com durações, fórmulas e lacunas explícitas. Ele complementa este estudo e não identifica efeitos causais.
 
-| Indicador Macroeconômico | Herança Recessiva (2015–2016) | Ponto de Estabilização (2017) | Encerramento (2018) | Fonte Oficial Primária |
+## Quadro de evidências e períodos comparáveis
+
+| Indicador | 2016 | 2017 | 2018 | Fonte |
 | :--- | :--- | :--- | :--- | :--- |
-| **Crescimento do PIB Real** | -3,5% (2015) / -3,3% (2016) | **+1,3%** (2017) | **+1,8%** (2018) | IBGE - Contas Nacionais |
-| **IPCA Anual** | 10,67% (2015) / 6,29% (2016) | **2,95%** (Abaixo do piso da meta) | **3,75%** (2018) | IBGE - Sistema SNIPC |
-| **Taxa Selic Meta** | 14,25% a.a. (Agosto/2016) | 7,00% a.a. | **6,50% a.a.** (Mínima até então) | Banco Central do Brasil (Copom) |
-| **Taxa de Desemprego (PNADC)** | 11,5% (2016) ➔ 13,7% (Pico 2017) | 11,8% (Fim de 2017) | **11,6%** (Fim de 2018) | IBGE - PNAD Contínua (Tabela 4099) |
-| **Dívida Bruta (DBGG % do PIB)** | 69,8% (2016) | 74,0% (2017) | **75,3% do PIB** (2018) | Banco Central do Brasil (Série SGS 4505) |
-| **Resultado Primário Governo Central** | -R$ 161,3 bilhões (2016) | -R$ 124,4 bilhões (2017) | -R$ 120,2 bilhões (2018) | Secretaria do Tesouro Nacional (RTN) |
-| **Injeção de Recursos Extraordinários** | — | **R$ 44,4 bilhões** (FGTS inativo) | — | Caixa Econômica Federal |
+| IPCA anual | 6,29% | 2,95% | 3,75% | [IBGE, série histórica](https://sidra.ibge.gov.br/tabela/1737) |
+| Selic no fechamento do ano | 13,75% | 7,00% | 6,50% | [BCB, histórico das decisões](https://www.bcb.gov.br/controleinflacao/historicotaxasjuros) |
 
----
+A Selic de 14,25% era vigente em parte de 2016, inclusive no início do governo; não era a taxa no encerramento do ano. As duas linhas usam períodos explicitamente diferentes: inflação acumulada no ano e taxa de juros no último dia útil. [BCB](https://www.bcb.gov.br/controleinflacao/historicotaxasjuros); [IBGE](https://sidra.ibge.gov.br/tabela/1737).
 
-## 2. Confronto Dialético por Eixos Temáticos
+### Memória de cálculo
 
-### Eixo 1: O Teto de Gastos Públicos (Emenda Constitucional nº 95/2016)
+A inflação anual de 2016 para 2017 diminuiu `2,95 − 6,29 = −3,34 pontos percentuais`; o nível geral de preços continuou subindo em 2017. Isso evita confundir desinflação com deflação. [Insumos do IBGE](https://sidra.ibge.gov.br/tabela/1737).
 
-#### A Visão Liberal / Ortodoxa (Pró-Governo)
-* **Argumento:** A aprovação do Teto de Gastos (EC 95/2016), limitando a evolução das despesas primárias da União à inflação do ano anterior por 20 anos, foi a âncora de credibilidade que salvou o Brasil da espiral de insolvência herdada da gestão Dilma Rousseff.
-* Ao sinalizar aos investidores internacionais que o crescimento do gasto público seria estancado, o Teto permitiu uma queda histórica no risco-país (CDS) e viabilizou o mais longo ciclo de corte sustentável da taxa Selic (de 14,25% para 6,50% ao ano).
-* A âncora fiscal restaurou a previsibilidade orçamentária e obrigou o Estado a debater a eficiência de cada linha de gasto.
+O quadro reproduzível vinculado acima já compara PIB real e DBGG com definições uniformes. A ampliação para desocupação e resultado primário ainda exige média anual da PNADC e Governo Central em valores comparáveis, sem misturar divulgações. A dívida bruta usa [SGS 13762](https://dadosabertos.bcb.gov.br/dataset/13762-divida-bruta-do-governo-geral--pib---metodologia-utilizada-a-partir-de-2008); a antiga citação 4505 estava incorreta.
 
-#### A Visão Keynesiana / Desenvolvimentista (Crítica)
-* **Argumento:** O Teto de Gastos foi uma camisa de força de austeridade cega e socialmente perversa. Congelar as despesas públicas em termos reais por duas décadas em um país com população crescente e em processo de envelhecimento significou cortes reais por habitante em saúde e educação.
-* O Teto operou o estrangulamento das despesas discricionárias da União, reduzindo o investimento público em infraestrutura a patamares insuficientes para cobrir a depreciação do patrimônio público existente. 
-* Em vez de promover crescimento, a austeridade deprimiu a demanda agregada e prolongou a estagnação.
+## Teto de gastos e capacidade de investimento
 
----
+A [EC 95/2016](https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc95.htm) instituiu limites de despesas primárias federais, correção monetária e exceções. Não impôs congelamento de toda despesa pública de todos os entes. Seu mecanismo pode restringir crescimento real do gasto sujeito ao limite, mas saúde, educação e investimento devem ser avaliados por execução, população, composição e regras específicas.
 
-### Eixo 2: A Reforma Trabalhista (Lei nº 13.467/2017)
+Uma leitura favorável sustenta que uma regra de despesa pode reduzir incerteza e contribuir para expectativas e juros. Uma leitura crítica aponta que, sem acomodar demografia e despesas obrigatórias, o ajuste pode comprimir investimento e serviços. São mecanismos a testar: a sequência temporal entre aprovação do teto e cortes de juros não identifica a contribuição causal de cada política.
 
-#### A Visão Liberal / Ortodoxa (Pró-Governo)
-* **Argumento:** A modernização da Consolidação das Leis do Trabalho (CLT de 1943) alinhou o Brasil às práticas das economias desenvolvidas:
-  1. Consagrou a **prevalência do negociado sobre o legislado** para acordos coletivos, dando flexibilidade aos agentes econômicos;
-  2. Extinguiu o **imposto sindical compulsório**, acabando com o parasitismo de sindicatos de fachada e premiando a representatividade real;
-  3. Regulamentou modalidades modernas como o trabalho intermitente e o teletrabalho (home office);
-  4. Reduziu a insegurança jurídica ao criar parâmetros de sucumbência para a Justiça do Trabalho, reduzindo a indústria de ações trabalhistas aventureiras em mais de 40%.
+## Reforma trabalhista
 
-#### A Visão Keynesiana / Desenvolvimentista (Crítica)
-* **Argumento:** A reforma precarizou os direitos da classe trabalhadora sob a promessa não cumprida de que geraria 6 milhões de empregos formais. 
-* O desemprego recuou de forma exasperadoramente lenta (terminando o mandato ainda em patamar elevado de 11,6%), com substituição de empregos formais estáveis por vagas intermitentes mal remuneradas, expansão da informalidade e pejotização sem direitos previdenciários.
-* A asfixia financeira dos sindicatos enfraqueceu o poder de barganha coletiva dos empregados, contribuindo para o achatamento da renda do trabalho.
+A [Lei 13.467/2017](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/l13467.htm) alterou negociação coletiva, contribuição sindical, teletrabalho, trabalho intermitente e regras processuais. A prevalência de negociação possui matérias permitidas e limites; não significa que todo direito possa ser afastado.
 
----
+Flexibilidade pode reduzir custos de contratação; alterações no poder de barganha e nos riscos processuais podem reduzir proteção e acesso à Justiça. Queda no número de ações, sozinha, não prova queda de litígios sem mérito: exige medir direitos reclamados, êxito, acordos, desistências e renda dos demandantes. Não se conserva a afirmação de redução de 40% de ações aventureiras sem essa classificação e sua fonte.
 
-### Eixo 3: Fim do Subsídio no BNDES (Criação da TLP) e Política de Preços da Petrobras (PPI)
+## BNDES, TLP e preços da Petrobras
 
-#### A Visão Liberal / Ortodoxa (Pró-Governo)
-* **Argumento:** A equipe econômica extinguiu dois dos maiores focos de distorção econômica da história brasileira:
-  * **Criação da TLP (Lei 13.483/2017):** Substituiu a antiga TJLP subsidiada por uma taxa atrelada às Notas do Tesouro Nacional (NTN-B), encerrando os subsídios orçamentários do Tesouro que beneficiavam seletivamente grandes corporações ("campeãs nacionais") e nivelando o custo do crédito para toda a economia.
-  * **Política de Preços da Petrobras (PPI):** Adoção de paridade de preços internacionais com o petróleo e o dólar em outubro de 2016. A medida recuperou a saúde financeira da Petrobras, que esteve à beira da falência em 2015 como a petroleira mais endividada do mundo, restabelecendo a capacidade da estatal de pagar dividendos e atrair investimentos.
+A [Lei 13.483/2017](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/l13483.htm) disciplinou a TLP. A mudança deve ser avaliada distinguindo funding, custo de oportunidade, subsídio explícito e implícito, tipo de projeto e prazo. Ela não demonstra extinção de todos os subsídios nem igualação de todas as taxas de crédito da economia.
 
-#### A Visão Keynesiana / Desenvolvimentista (Crítica)
-* **Argumento:** 
-  * O esvaziamento do BNDES paralisou a política industrial nacional, privando o país de instrumentos soberanos de financiamento da inovação em momentos em que os bancos privados restringiam o crédito de longo prazo.
-  * A fixação do PPI dolarizou os combustíveis consumidos no mercado doméstico com custos de refino e extração majoritariamente em reais (bacia do Pré-Sal), transferindo renda da população e das transportadoras para acionistas da Petrobras.
-  * O ápice do erro do PPI manifestou-se na **Greve dos Caminhoneiros de maio de 2018**, que paralisou as cadeias de abastecimento do país por 11 dias, causou perdas econômicas superiores a R$ 30 bilhões e forçou o governo a subsidiar artificialmente o óleo diesel.
+No combustível, o problema econômico envolve preço internacional, câmbio, tributação, concorrência e regras de reajuste. A greve de caminhoneiros e a resposta pública devem ser examinadas com esses canais, sem atribuir todo o episódio a uma fórmula isolada. A política de subvenção de diesel adotada em 2018 está documentada na [Lei 13.723/2018, arts. 1º, 2º e 7º](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13723.htm): a equalização de custos ficou sujeita a condições, prazo até dezembro de 2018 e limite total de R$ 9,5 bilhões. Esse teto legal não demonstra quanto foi efetivamente pago nem quanto chegou ao consumidor.
 
----
+## FGTS e saída da recessão
 
-### Eixo 4: Desinflação, Juros e a Dinâmica de Saída da Crise
+A liberação extraordinária alcançava contas vinculadas a contratos de trabalho extintos até 31/12/2015, dispensando naquela hipótese a exigência do art. 20, VIII, conforme a [Lei 13.446/2017, art. 1º, novo § 22 do art. 20 da Lei do FGTS](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/l13446.htm). Não era saque irrestrito de toda conta de qualquer trabalhador. Acesso ao saldo pode financiar consumo ou pagamento de dívidas; não constitui automaticamente despesa primária do Tesouro. O estudo não mantém o valor de R$ 44,4 bilhões como desembolso verificado sem conciliação da execução da Caixa.
 
-#### A Visão Liberal / Ortodoxa (Pró-Governo)
-* **Argumento:** O Banco Central comandado por Ilan Goldfajn executou uma desinflação de livro-texto com credibilidade inquestionável. O IPCA desabou de mais de 10% em 2015 para **2,95% em 2017** (abaixo do piso da meta), permitindo que a Selic caísse de 14,25% para 6,50% sem desancoragem cambial.
-* A medida de liberação das contas inativas do FGTS (R$ 44,4 bilhões) destravou a liquidez das famílias e permitiu a desalavancagem financeira do consumidor sem criar um centavo de gasto público para o Tesouro.
+Inflação menor e recuperação da produção não comprovam que o teto, isoladamente, salvou a solvência, nem que a austeridade, isoladamente, causou toda a lentidão da recuperação. Safra, ociosidade, demanda, crédito, expectativas e condições externas precisam entrar na comparação.
 
-#### A Visão Keynesiana / Desenvolvimentista (Crítica)
-* **Argumento:** A queda da inflação em 2017 foi primariamente reflexo do chamado "efeito safra" excepcional da agricultura e da depressão profunda da demanda agregada (capacidade ociosa industrial e milhões de desempregados que não tinham renda para consumir).
-* A saída da recessão de 2015-2016 foi a mais medíocre da história das crises brasileiras: o PIB cresceu apenas 1,3% em 2017 e 1,8% em 2018, caracterizando uma recuperação em forma de "L" (estagnação arrastada) que custou anos de renda estagnada à sociedade.
+## Efeitos distributivos
+
+| Grupo | Canal de impacto | O que falta medir |
+| :--- | :--- | :--- |
+| Usuários de serviços federais | Limites e composição de despesa na [EC 95](https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc95.htm) | Gasto real por usuário e resultado do serviço, por função. |
+| Empregados, empregadores e sindicatos | Mudanças contratuais e processuais da [Lei 13.467](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/l13467.htm) | Qualidade do emprego, salários, informalidade e acesso à Justiça. |
+| Tomadores de financiamento longo | Regra da [TLP](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/l13483.htm) | Custo e adicionalidade por tamanho de empresa e projeto. |
+| Titulares de contas inativas | Possibilidade de saque na [Lei 13.446](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/l13446.htm) | Quem tinha saldo e quanto foi consumido ou usado para quitar dívida. |
+
+## Conclusão e limites da evidência
+
+A desinflação e a queda de juros estão documentadas; os efeitos líquidos das reformas sobre crescimento, emprego e bem-estar não estão identificados por esse antes/depois. A abordagem institucional e a preocupação com demanda e proteção social tratam de mecanismos diferentes, que podem coexistir. O quadro reproduzível complementa atividade e dívida; ainda faltam distribuição e execução fiscal harmonizadas. Não se classificam demandas trabalhistas como fraudulentas nem se presume causalidade exclusiva entre teto e juros.

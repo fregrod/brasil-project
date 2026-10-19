@@ -1,57 +1,65 @@
-# As Forças Armadas, o Artigo 142 e a Tutela Militar na República
+# Forças Armadas, artigo 142 e controle civil
 
-> **Classificação:** Relações Civis-Militares, Direito Constitucional e Segurança Nacional  
-> **Período de Referência:** 1988 – 2026  
-> **Bases Oficiais de Dados:** Supremo Tribunal Federal (Acórdão ADI 6.457), Tribunal de Contas da União (TCU - Auditoria de Militarização da Burocracia), Ministério da Defesa e Polícia Federal (Operação Tempus Veritatis).
+> **Revisão editorial:** 19/10/2026.
+> **Recorte da evidência:** Constituição; ADI 6.457, de abril de 2024; cautelar de dezembro de 2024 sobre a Operação Tempus Veritatis; julgamento do Núcleo 1 na AP 2.668 em setembro de 2025. Não se certifica aqui toda movimentação recursal ou decisão militar posterior.
 
----
+## 1. O que a Constituição estabelece
 
-## 1. O Debate Constitucional: O Artigo 142 e o Fim do Mito do "Poder Moderador"
+O artigo 142 descreve instituições permanentes, organizadas por hierarquia e disciplina, sob autoridade suprema do Presidente, com missões de defesa da Pátria, garantia dos poderes constitucionais e, nas condições previstas, da lei e da ordem. A leitura deve considerar o conjunto constitucional, e não uma expressão isolada. [Fonte: Constituição, art. 142](https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm).
 
-O Artigo 142 da Constituição Federal de 1988 estabelece a missão institucional das Forças Armadas:
-> *"As Forças Armadas, constituídas pela Marinha, pelo Exército e pela Aeronáutica, são instituições nacionais permanentes e regulares, organizadas com base na hierarquia e na disciplina, sob a autoridade suprema do Presidente da República, e destinam-se à defesa da Pátria, à garantia dos poderes constitucionais e, por iniciativa de qualquer destes, da lei e da ordem."*
+No julgamento da **ADI 6.457**, divulgado em **08/04/2024**, o STF decidiu por unanimidade que as Forças Armadas **não exercem poder moderador** entre Executivo, Legislativo e Judiciário. A autoridade presidencial não autoriza emprego militar para interferir no funcionamento independente dos demais Poderes. [Fonte: STF, comunicação do julgamento](https://portal.stf.jus.br/noticias/verNoticiaDetalhe.asp?idConteudo=531731).
 
-### O Julgamento Histórico da ADI 6.457 no STF (Abril de 2024)
-Durante as tensões institucionais do governo Jair Bolsonaro, juristas conservadores e apoiadores governistas difundiram a interpretação de que o Artigo 142 conferiria aos militares um **"Poder Moderador"** para arbitrar conflitos caso um dos Poderes (especialmente o STF) cometesse excessos ou invadisse competências dos demais.
+Esse é um ponto jurídico assentado nas fontes conferidas, não apenas uma posição de uma corrente política. As divergências legítimas sobre desenho da defesa não colocam intervenção militar sobre os Poderes no mesmo plano de uma alternativa constitucional válida.
 
-Em **abril de 2024**, o Plenário do Supremo Tribunal Federal julgou o mérito da **Ação Direta de Inconstitucionalidade (ADI) 6.457** (ajuizada pelo PDT) sob relatoria do ministro Luiz Fux.
-* **Resultado:** **11 votos a 0 (Unanimidade)**.
-* **Tese Constitucional Fixada:**
-  1. A Constituição de 1988 **não instituiu e não autoriza nenhum Poder Moderador militar** na República brasileira;
-  2. As Forças Armadas são órgãos de Estado subordinados à autoridade suprema do Presidente da República, que exerce o comando civil eleito pelo sufrágio popular;
-  3. A atuação em missões de **Garantia da Lei e da Ordem (GLO)** é excepcional, subsidiária e de caráter estritamente policial temporário, jamais conferindo prerrogativas de intervenção sobre as decisões do Poder Judiciário ou do Congresso Nacional.
+## 2. GLO e missões subsidiárias
 
----
+As regras de organização, preparo e emprego das Forças Armadas distinguem defesa, garantia da lei e da ordem e atribuições subsidiárias. Uma operação de GLO não significa transferência geral de governo ou autorização para arbitrar disputas entre Poderes. [Fontes: LC 97/1999](https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp97.htm); [STF, ADI 6.457](https://portal.stf.jus.br/noticias/verNoticiaDetalhe.asp?idConteudo=531731).
 
-## 2. A Presença Militar na Política Recente (2018 – 2026)
+Atuação em catástrofes, logística e apoio humanitário pode ser relevante, mas alegar superioridade absoluta sobre toda instituição civil exige comparação de custos, capacidades e resultados. Apoio militar e fortalecimento de defesa civil podem ser complementares.
 
-```mermaid
-flowchart LR
-    A["Governo Bolsonaro (2019-2022)<br>• Mais de 6.000 militares em cargos civis<br>• Generais na Casa Civil, Saúde e Defesa"] --> B["Crise Pós-Eleitoral e 8 de Janeiro<br>• Tensões de ruptura institucional<br>• Operação Tempus Veritatis da PF"]
-    B --> C["Julgamento ADI 6.457 (2024)<br>• STF sepulta tese de Poder Moderador (11x0)"]
-    C --> D["Transição e Desmilitarização (2023-2026)<br>• Separação formal entre farda e mandato político<br>• Foco em Projetos Estratégicos (Prosub, Gripen)"]
-```
+## 3. Militares em cargos civis: como medir
 
-### 2.1. A Ocupação de Cargos Civis no Governo Bolsonaro
-Auditorias realizadas pelo Tribunal de Contas da União (TCU) apontaram que a presença de militares da ativa e da reserva em cargos comissionados civis na administração pública federal saltou de cerca de 2.700 em 2018 para **mais de 6.100 postos em 2020**:
-* **Primeiro Escalão:** Generais assumiram ministérios estratégicos como a Casa Civil (Walter Braga Netto), a Secretaria de Governo (Carlos Alberto dos Santos Cruz e Luiz Eduardo Ramos), o Gabinete de Segurança Institucional (Augusto Heleno), o Ministério da Defesa (Fernando Azevedo e Silva e Paulo Sérgio Nogueira) e o Ministério da Saúde em plena pandemia (Eduardo Pazuello).
+A presença de militares em funções civis pode afetar profissionalismo, neutralidade, cadeia de comando e responsabilização. Contagens precisam distinguir ativa e reserva, cargo civil e atividade própria da carreira, ocupação temporária e função comissionada, além de manter o mesmo universo entre governos.
 
-### 2.2. A Crise da Sucessão de 2022 e a Operação Tempus Veritatis
-As investigações da Polícia Federal autorizadas pelo STF no âmbito da **Operação Tempus Veritatis** (fevereiro de 2024) revelaram a existência de debates internos no núcleo governamental sobre a edição de minutas de decreto de intervenção e Estado de Sítio para impedir a posse do presidente eleito. 
-* Depoimentos formais do comandante do Exército (General Freire Gomes) e da Aeronáutica (Brigadeiro Baptista Júnior) à Polícia Federal atestaram que eles se posicionaram contrariamente a qualquer aventura golpista, afirmando que cumpririam rigorosamente a ordem constitucional e dariam voz de prisão a quem tentasse violar o resultado eleitoral.
+A versão anterior apresentava uma contagem atribuída ao TCU como se todos os postos fossem comissionados. Sem a tabela e a metodologia primárias anexadas, não se mantém o número como estimativa certificada nesta revisão. Tampouco ocupação de cargo civil equivale automaticamente a ilícito: regra de afastamento, qualificação e responsabilidade precisam ser examinadas em cada caso.
 
----
+“Desmilitarização” pode designar intenção política, redução observada de ocupações ou mudança legal. O antigo diagrama tratava separação formal entre farda e mandato como fato consumado sem norma correspondente; foi substituído por essa distinção.
 
-## 3. Confronto Dialético sobre o Papel dos Militares
+## 4. Ruptura institucional e individualização processual
 
-### A Visão Legalista de Ordem e Reserva Moral (Conservadora / Militarista)
-* **Argumento:** As Forças Armadas são a instituição mais duradoura, disciplinada e com os mais altos índices de confiança pública da sociedade brasileira (atestado em pesquisas Datafolha e Ipec):
-  1. **Capacidade Logística e Eficiência:** Nenhuma instituição civil brasileira possui a capacidade de desdobramento operacional, logística e capilaridade dos militares para atuar em missões críticas de resgate em catástrofes climáticas (como nas inundações do Rio Grande do Sul), em socorro humanitário em terras indígenas isoladas (Terra Yanomami) e na vacinação em rincões remotos da Amazônia.
-  2. **Garantia de Soberania e Dissuasão:** Os militares sustentam a defesa das fronteiras continentais do país contra o narcotráfico internacional e conduzem projetos tecnológicos soberanos de ponta essenciais para a autonomia nacional: o **Programa de Submarinos (PROSUB)** e o desenvolvimento do primeiro submarino de propulsão nuclear da América Latina pela Marinha, os **Caças supersônicos Gripen NG** da Força Aérea e os veículos blindados **Guarani** do Exército.
-  3. **Estabilidade Institucional:** A postura legalista dos altos comandos militares em 2022 comprovou o amadurecimento institucional das Forças Armadas, que recusaram atalhos autoritários e garantiram a transição pacífica do poder.
+Uma decisão do STF de **dezembro de 2024** registra a deflagração da **Operação Tempus Veritatis em 08/02/2024** e examina elementos de investigação e medidas relativas a pessoas determinadas. O documento é uma decisão cautelar no contexto ali descrito; não deve ser resumido como sentença definitiva de todos os militares. [Fonte: STF, Petição 13.299/DF, decisão integral](https://noticias-stf-wp-prd.s3.sa-east-1.amazonaws.com/wp-content/uploads/wpallimport/uploads/2024/12/14095159/Decisao-13299-Assinado.pdf).
 
-### A Visão Republicana e de Subordinação Civil Estrita (Progressista / Democrática)
-* **Argumento:** A presença de militares na política partidária degrada a autoridade do poder civil e corrompe a própria essência da caserna:
-  1. **A Violação do Princípio Republicano:** Numa democracia constitucional madura, quem detém o monopólio das armas não pode disputar o poder político. A ocupação de milhares de cargos civis por generais sem concurso no Executivo subordinou o prestígio das Forças Armadas aos fracassos de gestão política transitória (com destaque para a catastrófica gestão de Eduardo Pazuello na crise do oxigênio em Manaus).
-  2. **A Herança Não Superada de 1964:** A recusa histórica dos quartéis em reconhecer as violações cometidas durante a ditadura militar e a persistência de setores que alimentam fantasias de tutela sobre o Congresso e o STF exigem reformas institucionais profundas.
-  3. **Despolitização Obrigatória:** É imperativo consagrar na Constituição a regra de que qualquer militar que decida concorrer a cargos eletivos ou assumir ministérios políticos seja **automaticamente transferido para a reserva definitiva**, extirpando a contaminação partidária da hierarquia e da tropa ativa.
+Há um marco posterior: em **11/09/2025**, a Primeira Turma do STF condenou integrantes do Núcleo 1 na **AP 2.668**, entre eles Walter Braga Netto, Almir Garnier, Augusto Heleno e Paulo Sérgio Nogueira, com penas individualizadas. Não se pode continuar descrevendo esse conjunto somente pela investigação de 2024. A notícia registra divergência e determinações específicas para futura análise pelo STM; condenação criminal e eventual perda de posto ou patente são atos distintos. [STF — resultado e penas individualizadas](https://noticias.stf.jus.br/postsnoticias/stf-fixa-penas-de-16-a-27-anos-para-condenados-por-tentativa-de-golpe-de-estado/).
+
+| Objeto | O que se pode registrar | O que exige outra fonte |
+| :--- | :--- | :--- |
+| Operação Tempus Veritatis | Data e contexto que constam da decisão conferida | Estado atual de cada ação penal, absolvição, condenação e recursos. |
+| Pessoas citadas na Pet 13.299 | Alegações e medidas nos limites da fundamentação, identificando sua natureza | Generalizar responsabilidade para instituição, tropa ou toda a cúpula. |
+| Depoimentos de comandantes | Somente conteúdo conferido no termo correspondente | Atribuir a ambos a mesma fala ou ameaça de prisão sem os respectivos termos. |
+| AP 2.668, Núcleo 1 | Condenações individualizadas no julgamento de setembro de 2025 | Certificar estado recursal atual, trânsito em julgado ou perda de posto/patente sem os atos correspondentes. |
+
+A versão anterior generalizava a postura legalista de determinados comandantes como demonstração de comportamento uniforme de todos os altos comandos. Essa conclusão foi retirada. Condutas de resistência institucional e condutas investigadas podem coexistir dentro de uma mesma organização.
+
+## 5. Defesa e autonomia tecnológica
+
+Programas de submarinos, aviação e veículos terrestres devem ser avaliados por capacidade entregue, disponibilidade, manutenção, custo de ciclo de vida, integração industrial e dependências externas. A existência de um programa ou contrato não comprova autonomia integral nem eficiência de execução.
+
+A Estratégia Nacional de Defesa é um documento de orientação e não o próprio contrato de transferência de tecnologia de cada programa. Confundir estratégia, compra e resultado industrial pode atribuir capacidades ainda não demonstradas. [Fonte: Decreto 6.703/2008 e estratégia aprovada](https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2008/decreto/d6703.htm).
+
+## 6. Opções institucionais
+
+O debate pode examinar regras para candidatura e cargos políticos, transparência em funções civis, educação militar, compras e controle parlamentar. Propostas de transferência para reserva devem ser distinguidas das condições já existentes de elegibilidade e situação funcional. [Fonte: Constituição, arts. 14, § 8º, e 142](https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm).
+
+Não basta opor uma suposta “reserva moral” a uma condenação coletiva da instituição. A avaliação democrática exige subordinação constitucional, responsabilização individual, capacidade profissional e instrumentos de controle civil que funcionem.
+
+## Efeitos distributivos
+
+Operações de segurança e fronteira podem afetar especialmente moradores de periferias, povos indígenas, comunidades tradicionais e migrantes. Necessidades humanitárias, proteção de direitos e segurança não devem ser confundidas com hostilidade presumida desses grupos.
+
+O orçamento de defesa compete com outros usos e também pode gerar capacidades tecnológicas e empregos. A distribuição de custos, benefícios e riscos por território, renda, gênero e raça não foi medida aqui; deve integrar avaliação de missões e programas, sem presumir impacto positivo ou negativo uniforme.
+
+## Conclusão e limites da evidência
+
+A inexistência de poder moderador militar é uma conclusão jurídica sustentada pelo julgamento conferido. Há espaço para discutir capacidade de defesa e regras de relação civil-militar dentro dessa moldura constitucional.
+
+Não se certificam nesta revisão contagens de cargos, versões integrais de depoimentos ou estados processuais posteriores aos documentos indicados. Controle civil, profissionalismo e responsabilização são critérios de avaliação; nem a eficiência logística nem condutas de indivíduos substituem o exame das instituições e da lei.

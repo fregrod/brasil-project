@@ -1,168 +1,96 @@
-# Comparativo Internacional de Leis Trabalhistas: Brasil vs. Top 25 Economias do Mundo
+# Leis trabalhistas: Brasil e economias selecionadas, com critérios comparáveis
 
-> **Classificação:** Economia do Trabalho, Direito Comparado, Produtividade Sistêmica e Relações Industriais  
-> **Escopo da Análise:** Confronto detalhado entre o modelo trabalhista brasileiro (CLT, Constituição de 1988 e Reforma de 2017) e as legislações das 25 maiores e mais relevantes economias do planeta.  
-> **Eixos de Comparação:** Regime de demissão, jornada e horas extras, férias e benefícios obrigatórios, nível de encargos sobre a folha (*tax wedge*), taxa de litigiosidade judicial e produtividade por hora trabalhada.  
-> **Fontes Primárias:** Organização Internacional do Trabalho (OIT/ILO), Organização para a Cooperação e Desenvolvimento Econômico (OCDE), Banco Mundial (*Doing Business / B-READY*), Tribunal Superior do Trabalho (TST) e compêndios legislativos nacionais.
+> **Revisão editorial:** 19/10/2026.
+> **Recorte da evidência:** consulta em 19/10/2026; Brasil atualizado pela EC 141, publicada em 16/10/2026, com transição; uma regra nacional específica verificada para cada uma das 25 economias; fontes e recortes históricos indicados nas linhas. A verificação desses dispositivos não certifica todo o ordenamento nem sua aplicação efetiva. A seleção não é um ranking das maiores economias.
 
----
+## 1. O que esta comparação pode responder
 
-## 1. O Framework Teórico dos 5 Modelos Globais de Relações de Trabalho
+A comparação deve distinguir proteção legal, cobertura efetiva, negociação coletiva, serviços públicos e desempenho econômico. Países com regras parecidas podem ter resultados diferentes por estrutura produtiva, fiscalização, renda, demografia e instituições.
 
-A ciência econômica e o direito comparado classificam os sistemas trabalhistas mundiais em cinco grandes famílias institucionais:
+As famílias “anglossaxã”, “nórdica”, “renana”, “asiática” e “emergente” são aproximações analíticas. Não significam uma classificação universal única, nem autorizam atribuir emprego livremente rescindível a todos os países de língua inglesa. Cada contratação tem jurisdição, categoria e regras próprias.
 
-```mermaid
-flowchart TD
-    subgraph Modelos ["Os 5 Modelos Globais de Relações de Trabalho"]
-        M1["<b>1. Modelo Anglossaxão (Common Law / At-Will):</b><br>• EUA, Reino Unido, Canadá, Austrália, N. Zelândia<br>• Contratação e rescisão fluidas; baixa rigidez legal estatutária<br>• Foco em salário direto e resolução na Justiça Comum/Arbitragem"]
-        
-        M2["<b>2. Modelo Nórdico (Flexicurity):</b><br>• Dinamarca, Suécia, Noruega<br>• Demissão simplificada para as empresas (Flexibilidade)<br>• Seguro-desemprego de até 90% e requalificação ativa pelo Estado (Segurança)"]
-        
-        M3["<b>3. Modelo Corporativo Renano / Co-determinação:</b><br>• Alemanha, Holanda, Suíça, Áustria<br>• Sindicatos fortes e representação de trabalhadores nos conselhos (Mitbestimmung)<br>• Alta estabilidade, formação técnica dual e baixa litigiosidade"]
-        
-        M4["<b>4. Modelo Desenvolvimentista / Híbrido Asiático:</b><br>• Japão, Coreia do Sul, Cingapura, China, Vietnã<br>• Tradição de lealdade corporativa e longas jornadas<br>• Poupança compulsória (Cingapura) ou transição de jornada rígida (Coreia)"]
-        
-        M5["<b>5. Modelo Dualista de Economias Emergentes:</b><br>• Brasil, México, Índia, África do Sul<br>• Leis formais ultraprotetivas (inspiração getulista/europeia)<br>• Gigantesca informalidade real (35% a 85% fora da lei)<br>• Hiperlitigiosidade e baixa produtividade estrutural"]
-    end
-```
+## 2. Correção principal: custo do emprego não é tax wedge
 
----
+A OCDE define **tax wedge** como tributos sobre a renda do trabalho e contribuições de empregado e empregador, líquidos dos benefícios monetários considerados, divididos pelo **custo total do empregador** para um perfil familiar e salarial definido. [Fonte: OCDE, definição do indicador](https://doi.org/10.1787/cea9eba3-en).
 
-## 2. Matriz Comparativa: Brasil vs. Top 25 Economias do Mundo
+A tabela antiga comparava esse indicador com um acréscimo brasileiro sobre o **salário líquido**, incluindo benefícios e provisões. São numeradores e denominadores diferentes. Contribuições a contas individuais, férias e décimo terceiro tampouco entram automaticamente na mesma classificação de tributos. [Fonte metodológica: OCDE, Taxing Wages 2024](https://www.oecd.org/content/dam/oecd/en/publications/reports/2024/04/taxing-wages-2024_f869da31/dbcbac85-en.pdf).
 
-A tabela abaixo sintetiza os principais indicadores legais e econômicos do Brasil e de 25 economias selecionadas (as maiores economias do G20, potências industriais da OCDE e referências regionais de competitividade).
+**Exemplo puramente didático:** custo do empregador de 200 e renda líquida de 100 produzem diferença de 100% sobre o líquido, mas 50% sobre o custo. Nenhum desses valores descreve o Brasil nesta revisão. A comparação anterior “Brasil 70%–100% versus taxas OCDE” foi retirada.
 
-> **Convenção de Produtividade:** PIB por hora trabalhada em dólares ajustados por Paridade de Poder de Compra (US$ PPP, base OCDE/OIT).
+| Indicador | Denominador e condições que precisam ser iguais |
+| :--- | :--- |
+| Tax wedge | Custo total, perfil familiar, faixa de salário, benefícios e ano. |
+| Encargos patronais | Salário bruto ou base contributiva; separar tributos e poupança compulsória. |
+| Custo de remuneração | Salário, férias, gratificações, contribuições, benefícios e tempo pago não trabalhado. |
+| Produtividade | PIB por hora, mesma base de preços/PPC, ano e população; não confundir com PTF. |
+| Litigiosidade | Casos novos comparáveis por ocupados ou vínculos, mesmo período e cobertura institucional. |
 
-| País | Modelo Trabalhista | Jornada Padrão / Teto | Férias Remuneradas Mínimas | Regime de Rescisão / Proteção ao Emprego | Encargos Médios sobre Salário (*Tax Wedge*) | Disputas Trabalhistas / Litigiosidade | Produtividade por Hora (US$ PPP) |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **🇧🇷 Brasil (Benchmark)** | Dualista / CLT Getulista | 44h semanais (máx. 2h extras/dia) | 30 dias corridos + 1/3 constitucional | Justa causa ou sem justa causa (aviso prévio + multa de 40% do FGTS) | ~70% a 100% (INSS 20%, FGTS 8%, Sist. S 5,8%, RAT) | **Extrema** (>3,5 milhões de novas ações/ano no TST) | **~US$ 18,50** |
-| **🇺🇸 Estados Unidos** | Anglossaxão (*At-Will*) | 40h semanais (sem teto; hora extra 1,5x) | **0 dias legais federais** (médio: 10 a 15 dias negociados) | *Employment-at-will* (demissão imotivada a qualquer momento, sem aviso nem multa) | ~28,3% (Social Security 6,2%, Medicare 1,45%) | Baixa (resolvida na Justiça Comum ou Arbitragem) | **~US$ 87,00** |
-| **🇩🇪 Alemanha** | Corporativo Renano | 38h a 40h semanais (máx. 48h) | 20 dias úteis (para semana de 5 dias) | Lei de Proteção contra Demissão (*KSchG*); aviso proporcional; conselhos de empresa | ~47,8% (Previdência, Saúde, Desemprego e Dependência) | Moderada (*Arbeitsgerichte* tripartite com filtros) | **~US$ 78,50** |
-| **🇯🇵 Japão** | Tradição Corporativa | 40h semanais (teto de 45h extras/mês) | 10 a 20 dias (proporcional à senioridade) | Doutrina do Abuso do Direito de Demissão (demissão justificada estrita) | ~32,6% (Seguro Social, Saúde e Pensão) | Muito Baixa (cultura de consenso e resolução interna) | **~US$ 52,00** |
-| **🇬🇧 Reino Unido** | Anglossaxão Flexível | 48h semanais (com cláusula de *opt-out*) | 28 dias (inclui feriados públicos) | *Unfair Dismissal* exige 2 anos de casa; aviso prévio escalonado; *Redundancy Pay* | ~31,3% (National Insurance contributivo) | Baixa a Moderada (*Employment Tribunals*) | **~US$ 67,50** |
-| **🇫🇷 França** | Europeu Estatutário | 35h semanais (compensações por banco de horas) | 30 dias úteis (5 semanas pagas) | Demissão com motivação econômica ou pessoal real; homologação rigorosa; *Barème Macron* | ~47,0% (Altas contribuições sociais patronais) | Alta para padrões europeus (*Conseils de Prud'hommes*) | **~US$ 76,00** |
-| **🇩🇰 Dinamarca** | *Flexicurity* Nórdica | 37h semanais (pactuadas por acordos) | 25 dias úteis (5 semanas) | Demissão simplificada com aviso prévio; seguro-desemprego de até 90% pago pelo Estado | ~35,5% (Financiado por impostos gerais, não folha) | Praticamente Nula (mediação paritária sindical) | **~US$ 84,00** |
-| **🇸🇪 Suécia** | Nórdico Negociado | 40h semanais (máx. 48h) | 25 dias úteis | Lei *LAS* (regra do "último a entrar, primeiro a sair" - LIFO negociável) | ~42,4% (Taxas de seguridade social universais) | Muito Baixa (*Arbetsdomstolen* - Corte do Trabalho) | **~US$ 74,00** |
-| **🇳🇴 Noruega** | Nórdico Petrolífero | 37,5h a 40h semanais | 25 dias úteis | Forte estabilidade; exigência de plano de recolocação e justificativa sólida | ~36,0% (Forte rede do Fundo Soberano e Estado) | Muito Baixa (negociação quadripartite) | **~US$ 98,00** |
-| **🇰🇷 Coreia do Sul** | Desenvolvimentista Dual | 40h regulares (teto estrito de 52h semanais) | 15 a 25 dias (conforme anos de serviço) | Exigência de "causa justificável"; indenização de rescisão (*Severance Pay* de 1 mês/ano) | ~24,2% (Quatro grandes seguros sociais) | Moderada (Comissões Trabalhistas Regionais) | **~US$ 47,00** |
-| **🇨🇦 Canadá** | Anglossaxão Misto | 40h semanais (varia por província) | 10 a 15 dias úteis (aumenta com o tempo) | Demissão sem justa causa permitida mediante aviso prévio ou indenização razoável | ~31,5% (CPP/QPP, EI e planos de saúde) | Baixa (resolvida administrativamente ou cortes comuns) | **~US$ 60,00** |
-| **🇦🇺 Austrália** | *Modern Awards* Híbrido | 38h semanais (+ horas adicionais razoáveis) | 20 dias úteis (4 semanas acumuláveis) | Regulado pela *Fair Work Commission*; indenização por redundância proporcional | ~28,4% (*Superannuation* compulsória de 11,5%) | Baixa a Moderada (*Fair Work Ombudsman*) | **~US$ 68,00** |
-| **🇸🇬 Cingapura** | Ultraliberal Pro-Mercado | 44h semanais (máx. 12h/dia) | 7 a 14 dias (conforme anos de serviço) | Demissão com aviso prévio contratual; sem justa causa obrigatória; sem multa punitiva | ~37,0% (Direcionado ao *CPF* - poupança individual) | Mínima (Tripartite Alliance *TADM*) | **~US$ 82,00** |
-| **🇨🇭 Suíça** | Liberal Europeu | 42h a 45h semanais (setor fabril/serviços) | 20 dias úteis (4 semanas) | Liberdade de demissão com aviso prévio; proibição apenas de abusos (discriminação) | ~23,4% (Um dos menores encargos da Europa) | Quase Inexistente ("Paz do Trabalho" pactuada) | **~US$ 89,00** |
-| **🇳🇱 Holanda** | Modelo *Polder* Consensual | 36h a 40h (recorde de trabalho *part-time*) | 20 dias úteis (4x os dias semanais) | Demissão pré-aprovada pela Agência Pública (*UWV*) ou Juiz Cantonal; indenização de transição | ~35,8% (Seguridade robusta com incentivo a *part-time*) | Baixa (forte consenso e diálogo corporativo) | **~US$ 77,00** |
-| **🇳🇿 Nova Zelândia** | Anglossaxão Desregulamentado | 40h semanais | 20 dias úteis (4 semanas) | Demissão requer "processo justo e substantivo"; sem indenização legal obrigatória | ~18,1% (Impostos de renda diretos, sem taxa de folha) | Baixa (*Employment Relations Authority*) | **~US$ 54,00** |
-| **🇮🇹 Itália** | Europeu Mediterrâneo | 40h semanais (máx. 48h com extras) | 20 dias úteis + feriados patronais | *Jobs Act* reduziu reintegração; indenização crescente; *TFR* (rescisão acumulada) | ~45,9% (Carga tributária pesada sobre o trabalho) | Moderada a Alta (Tribunais de Trabalho regionais) | **~US$ 61,00** |
-| **🇪🇸 Espanha** | Mediterrâneo em Reforma | 40h semanais em média anual | 30 dias naturais (ou 22 dias úteis) | Reforma de 2021 restringiu contratos temporários; demissão improcedente custa 33 dias/ano | ~39,5% (Cotizações de seguridade social elevadas) | Alta (Comissões de Mediação e Tribunais Sociais) | **~US$ 58,00** |
-| **🇨🇳 China** | Estatal Autoritário | 40h semanais (cultura fabril/tech "996") | 5 a 15 dias (conforme tempo de serviço total) | Lei de Contrato de Trabalho de 2008; indenização de 1 mês/ano; sindicato único oficial | ~36,0% (Cinco seguros sociais compulsórios + fundo moradia) | Moderada a Alta (Comitês de Arbitragem Trabalhista) | **~US$ 23,00** |
-| **🇮🇳 Índia** | Emergente de Hiper-Informalidade | 48h semanais (reforma dos 4 Códigos) | 15 a 18 dias anuais | Demissão facilitada para empresas até 300 empregados; antes exigia aval do governo | ~25,0% (Fundo de Providência dos Empregados *EPFO*) | Baixa formalmente, com 85% de informalidade total | **~US$ 11,00** |
-| **🇲🇽 México** | Latino-Americano Reformista | 48h semanais (6 dias de 8h; em debate 40h) | 12 a 20 dias (reforma *Vacaciones Dignas*) | Demissão sem justa causa paga 3 meses de salário + 20 dias por ano trabalhado | ~20,0% (Proibição rígida de terceirização de atividade-fim) | Média (Centros de Conciliação e Juizados) | **~US$ 24,00** |
-| **🇨🇱 Chile** | Latino-Americano em Transição | 40h semanais (transição gradual da Lei 21.561) | 15 dias úteis | Demissão por "necessidade da empresa" paga 1 mês por ano (teto de 11 anos) | ~7,0% patronal (+ contribuição do trabalhador para AFP) | Moderada (Inspección del Trabajo e Juzgados) | **~US$ 34,00** |
-| **🇮🇪 Irlanda** | Anglossaxão Pró-Investimento | 39h a 40h semanais (máx. 48h) | 20 dias úteis (4 semanas) | Demissão com aviso proporcional; indenização legal em demissão em massa (*redundancy*) | ~34,7% (Seguro social Pay-Related Social Insurance) | Baixa (*Workplace Relations Commission*) | **~US$ 99,00** |
-| **🇮🇱 Israel** | Híbrido Tech / Proteção | 42h semanais (reduzida de 43h) | 12 a 24 dias úteis | Demissão exige audiência formal prévia (*hearing*); fundo compensatório compulsório | ~22,1% (Bituach Leumi e fundos previdenciários) | Baixa a Moderada (Tribunais Regionais do Trabalho) | **~US$ 53,00** |
-| **🇵🇱 Polônia** | Pós-Comunista Europeu | 40h semanais (máx. 48h com extras) | 20 a 26 dias úteis | Código do Trabalho da UE; rescisão com aviso prévio; proliferação de contratos B2B | ~33,6% (ZUS - Previdência e saúde estatal) | Moderada (Tribunais de Trabalho distritais) | **~US$ 45,00** |
-| **🇻🇳 Vietnã** | Fabril Competitivo de Exportação | 48h semanais (recomendação de 40h) | 12 a 16 dias úteis | Rescisão facilitada; novo Código autoriza organizações independentes | ~22,0% (Seguridade social, saúde e desemprego) | Muito Baixa (arbitragem administrativa) | **~US$ 10,50** |
+## 3. O Brasil como referência jurídica
 
----
+A **EC 141/2026, publicada em 16/10/2026**, alterou a Constituição para prever oito horas diárias, 40 semanais e dois dias de repouso semanal remunerado, sem redução salarial. A implantação é progressiva: **42 horas após dois meses da publicação e 40 horas um ano depois desse primeiro prazo**; o novo repouso entra em vigor após dois meses. Assim, em **19/10/2026**, não se deve descrever 40 horas e dois dias como obrigação geral já integralmente operacional: o primeiro prazo ainda não decorreu. Há compensação coletiva, regimes e exceções nos arts. 7º–9º, inclusive trabalhadores de alta remuneração qualificados e contratos da administração. [Fonte: EC 141/2026, arts. 1º–10](https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc141.htm).
 
-## 3. Análise Detalhada dos Modelos Globais e Seus Contextos
+As férias têm acréscimo constitucional de **um terço**. Na CLT, o direito a **30 dias corridos após cada período de 12 meses** depende, entre outras condições, de não ultrapassar cinco faltas computáveis; o art. 130 prevê períodos menores nas demais faixas, e o art. 133 contém hipóteses de perda do direito. Não se deve comparar esses dias corridos diretamente com dias de trabalho contados por outros países. Direitos de empregados não abrangem automaticamente todos os ocupados. [Fontes: CF, art. 7º, XVII](https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm); [CLT, arts. 130–133](https://www.planalto.gov.br/ccivil_03/decreto-lei/del5452.htm).
 
-A comparação direta entre legislações trabalhistas exige compreender **por que cada modelo se sustenta economicamente** em seu respectivo país e por que o transplante mecânico de regras sem a contrapartida estrutural gera distorções severas.
+Informalidade não é sinônimo de ausência de toda contribuição previdenciária. O denominador usual da taxa de informalidade é a população **ocupada**, não toda a população economicamente ativa. A mensuração deve seguir as categorias da pesquisa e o trimestre utilizado, sem somar autônomos, plataformas e empregados sem carteira como categorias necessariamente exclusivas.
 
----
+## 4. Matriz internacional e alcance da verificação
 
-### 3.1. O Modelo Anglossaxão (EUA, Reino Unido, Canadá, Austrália, Nova Zelândia)
-* **O Encaixe Estrutural:** O pilar norte-americano do *Employment-at-will* (emprego por vontade mútua) apoia-se em um mercado com **dinamismo de contratação sem paralelo**: a perda de um emprego é compensada por um tempo médio de recolocação inferior a 12 semanas. O trabalhador norte-americano prefere **salário direto no contracheque** a benefícios diferidos ou tutelados pelo Estado;
-* **Produtividade e Salários:** Com uma produtividade média superior a **US$ 87 por hora**, as empresas americanas conseguem remunerar a hora trabalhada em níveis elevados sem necessidade de leis federais impondo férias ou 13º salário (práticas que são concedidas voluntariamente pelo mercado corporativo para atrair talentos);
-* **A Fragilidade Social:** Sem uma rede pública universal de saúde, a perda do emprego nos EUA frequentemente implica a perda instantânea do plano de saúde familiar, gerando vulnerabilidade em períodos de recessão profunda.
+O Brasil é a referência acima. As **25 economias selecionadas** abaixo possuem ao menos uma regra nacional específica conferida em fonte oficial ou texto nacional disponibilizado pela OIT. As linhas não medem o mesmo benefício: identificam dispositivos e cobertura, sem produzir pontuação agregada. A data da consulta não transforma um documento histórico em consolidação de 2026; o recorte é explicitado quando necessário.
 
----
+| Economia | Regra específica comprovada e fonte | Cobertura, exceções e limite de comparação |
+| :--- | :--- | :--- |
+| Estados Unidos | A FLSA exige pagamento de pelo menos **1,5 vez** a taxa regular por hora que exceder **40 horas na semana**. [DOL, perguntas e respostas, seção Overtime](https://www.dol.gov/agencies/whd/flsa/faq). | Empregados cobertos e não isentos; há regimes especiais. É limiar de adicional, não teto absoluto; leis estaduais podem proteger mais. |
+| Alemanha | O **§ 3 do ArbZG** limita a jornada a **oito horas por dia de trabalho**, ampliáveis a **dez** se a média permanecer em oito no período de **seis meses ou 24 semanas**. [Texto legal federal](https://www.gesetze-im-internet.de/arbzg/__3.html). | Regra do ArbZG, com exceções e derrogações próprias; não descreve jornada contratual típica nem prova baixa litigiosidade. |
+| Japão | O **art. 39** concede **dez dias de férias remuneradas** após **seis meses de emprego contínuo** e presença de ao menos **80%** dos dias de trabalho. [MHLW, Labour Standards Act](https://www.mhlw.go.jp/web/t_doc?dataId=73022000). | A duração aumenta com o serviço; o próprio artigo prevê proporcionalidade para certas jornadas parciais. Não é dez dias para toda situação. |
+| Reino Unido | Quase todos os trabalhadores classificados como *workers* têm **5,6 semanas** de férias remuneradas, com teto legal de **28 dias**. [GOV.UK, entitlement](https://www.gov.uk/holiday-entitlement-rights/entitlement). | Feriados podem integrar o total. Trabalho parcial e horas irregulares exigem cálculo proporcional/acumulação; não somar feriados automaticamente. |
+| França | Para empregado privado adulto em tempo integral, a duração legal de referência é **35 horas semanais**; horas além dela entram, em regra, no regime extraordinário. [Service Public, ficha verificada em 25/09/2025](https://www.service-public.gouv.fr/particuliers/vosdroits/F1911?lang=fr). | Não é teto absoluto: a ficha distingue limites máximos e exceções; dirigentes e regimes especiais não se confundem com o caso geral. |
+| Dinamarca | O empregado abrangido acumula **2,08 dias de férias remuneradas por mês de emprego**. [Borger.dk, Holiday allowance](https://lifeindenmark.borger.dk/working/holiday-allowance-ny/holiday-allowance). | É aquisição mensal conforme o regime dinamarquês, não seguro-desemprego universal nem direito idêntico para autônomos. |
+| Suécia | A **Semesterlag, § 4**, prevê **25 dias de férias por ano de férias**; ingresso depois de **31 de agosto** dá direito a cinco naquele ano. [Riksdagen, lei 1977:480](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/semesterlag-1977480_sfs-1977-480/). | Dias de afastamento e dias pagos são distintos: remuneração depende de aquisição, conforme § 7; convenções e situações especiais precisam de exame próprio. |
+| Noruega | Regra geral de **25 dias**, contando sábados, normalmente **quatro semanas e um dia**. [Arbeidstilsynet, Holiday](https://www.arbeidstilsynet.no/en/holiday/). | O pagamento de férias é adquirido separadamente e pode faltar no primeiro ano; entrada tardia e acordos alteram condições. Não são 25 dias de uma semana útil de cinco dias. |
+| Coreia do Sul | O Ministério indica **40 horas semanais e oito diárias**, excluídos intervalos, e até **12 horas extras semanais por acordo**. [MOEL, FAQ, arts. 50 e 53](https://www.moel.go.kr/faq/faqView.do?seqRepeat=63). | A orientação delimita estabelecimentos que empregam regularmente **cinco ou mais pessoas**; não se aplica indistintamente a todos os portes e regimes. |
+| Canadá | No regime **federal**, férias mínimas de **duas semanas após um ano**, **três após cinco** e **quatro após dez anos** com o mesmo empregador. [Canada.ca, federal labour standards](https://www.canada.ca/en/services/jobs/workplace/federal-labour-standards/vacations-holidays.html). | Recorte de setores sob competência federal; províncias e territórios possuem normas próprias. Não é uma regra de todo emprego canadense. |
+| Austrália | **Super Guarantee de 12% desde 01/07/2025**, sobre a base contributiva aplicável aos empregados elegíveis. [ATO, tabela de percentuais](https://www.ato.gov.au/tax-rates-and-codes/key-superannuation-rates-and-thresholds/super-guarantee?trk=public_post_main-feed-card-text). | Aposentadoria compulsória, com elegibilidade e base próprias; não equivale isoladamente a tax wedge nem a todo custo patronal. |
+| Cingapura | A Parte IV do Employment Act prevê, nos arranjos comuns, até **44 horas semanais**; o limite diário depende dos dias trabalhados. [MOM, normal hours e coverage](https://www.mom.gov.sg/employment-practices/hours-of-work-overtime-and-rest-days). | A Parte IV não cobre gerentes e executivos; há arranjos de média e turnos. Não generalizar a regra ou equiparar CPF a imposto sem ajuste. |
+| Suíça | O **art. 28** permite greve ligada às relações de emprego, respeitadas obrigações de paz laboral e conciliação. [Parlamento, Constituição, art. 28](https://www.parlament.ch/centers/documents/_layouts/15/DocIdRedir.aspx?ID=DOCID-1239417530-352). | Compilação em inglês com posição em **01/01/2024**, tradução informativa sem força jurídica; a lei pode excluir categorias. Não significa proibição de litígios. |
+| Países Baixos | O mínimo anual de férias em horas é **quatro vezes as horas contratuais semanais**. [Government.nl, Taking holiday hours](https://www.government.nl/themes/work/working-hours/taking-holiday-hours). | Direito proporcional à jornada; acordos podem ampliar. Não converter automaticamente em 20 dias para quem trabalha outra distribuição. |
+| Nova Zelândia | Empregados adquirem ao menos **quatro semanas de férias anuais pagas após 12 meses contínuos** com o empregador. [Employment New Zealand](https://www.employment.govt.nz/leave-and-holidays/annual-holidays). | Cálculo, antecipação e situações de término têm regras próprias. A fonte não fundamenta o antigo rótulo de rescisão livre *at-will*. |
+| Itália | O mínimo legal é **quatro semanas de férias remuneradas**, sem substituição por dinheiro durante o vínculo, salvo término. [Ministério do Trabalho, férias anuais, D.Lgs. 66/2003, art. 10](https://lavoro.gov.it/sportello-unico-digitale/termini-e-condizioni-di-impiego/ferie-annuali). | Fonte administrativa atualizada em **05/10/2023**; convenções e calendários de fruição podem ampliar/detalhar. Não certifica todas as regras de rescisão em 2026. |
+| Espanha | O **Estatuto de los Trabajadores, art. 34.1**, estabelece máximo ordinário de **40 horas semanais em média no cômputo anual**. [BOE, texto consolidado](https://www.boe.es/buscar/pdf/2015/BOE-A-2015-11430-consolidado.pdf). | Não equivale a teto de 40 em cada semana isolada; negociação e distribuição irregular têm condições. Não se toma debate de redução adicional como lei. |
+| China | O regulamento nacional prevê férias pagas de **cinco, dez ou 15 dias**, conforme serviço acumulado de **um a menos de dez anos**, **dez a menos de vinte**, ou **vinte ou mais**. [Ministério da Justiça, Decreto 514, arts. 2º–4º](https://xzfg.moj.gov.cn/front/law/detail?LawID=208&Query=%E5%B9%B4%E4%BC%91%E5%81%87). | Exige trabalho contínuo por ao menos um ano, com exclusões no art. 4º. Descansos semanais e feriados não integram esses dias; norma não mede cumprimento. |
+| Índia | FAQ oficial do **OSH & WC Code** informa jornada normal de **oito horas por dia** e adicional em dobro além de **oito diárias ou 48 semanais**. [Ministério do Trabalho, FAQ de março/2026, pergunta 24](https://www.labour.gov.in/static/uploads/2026/03/a4ccf4c6d97c4f1f36a6d83f8c64213d.pdf). | Refere-se a *workers* abrangidos pelo código, não a todo ocupado; a própria FAQ ressalva prevalência do texto legal. Regras estaduais, cobertura e execução precisam de análise adicional. |
+| México | A **LFT, art. 76**, prevê férias pagas mínimas de **12 dias de trabalho** após mais de um ano de serviço, com aumentos por antiguidade. [Câmara dos Deputados, LFT, art. 76](https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf). | Texto consolidado com última reforma indicada de **14/05/2026**; serviço descontínuo/sazonal tem proporcionalidade no art. 77. Não é indenização universal por demissão. |
+| Chile | Limites de **44 horas desde 26/04/2024, 42 desde 26/04/2026 e 40 desde 26/04/2028**. [Dirección del Trabajo, ORD 253/21](https://dt.gob.cl/legislacion/1624/w3-article-129189.html). | Em outubro/2026, a etapa geral é 42 horas; há trabalhadores excluídos e regimes próprios. Teto semanal e distribuição de dias são distintos. |
+| Irlanda | Um método de aquisição é **8% das horas trabalhadas**, limitado a **quatro semanas normais**; aplicam-se o método mais favorável e as demais condições legais. [WRC, annual leave, seção Calculating](https://www.workplacerelations.ie/en/what_you_should_know/leave/annual-leave/). | A fonte também contém métodos por horas anuais/mensais. Não são quatro semanas integrais adquiridas imediatamente nem quatro semanas de jornada integral para todo emprego parcial. |
+| Israel | Na proteção por desemprego, quem pede demissão sem justificativa aceita só pode iniciar recebimento após **90 dias da interrupção do trabalho**. [National Insurance Institute, work termination grounds](https://www.btl.gov.il/English%20Homepage/Benefits/Unemployment%20Insurance/Pages/workterminationgrounds.aspx). | Sujeito aos demais critérios do seguro; demissão justificada pode dispensar a espera. Esta linha verifica uma regra de seguro, sem inferir duração de férias ou facilidade de rescisão. |
+| Polônia | Férias de **20 dias** com serviço reconhecido inferior a **dez anos**, ou **26 dias** a partir desse patamar. [Governo, The duration of annual leave](https://www.gov.pl/web/family/the-duration-of-annual-leave). | Tempo reconhecido pode incluir educação e períodos legalmente computáveis; jornada parcial é proporcional. Não se restringe a dez anos no último empregador. |
+| Vietnã | O **Código do Trabalho de 2019, art. 113**, prevê **12 dias de trabalho de férias pagas** após 12 meses com o empregador em condições normais. [Texto nacional disponibilizado pela OIT, pp. 68–69](https://natlex.ilo.org/dyn/natlex2/natlex2/files/download/110469/VNM110469%20Eng.pdf). | Tradução inglesa não oficial; menores, deficiência e certas atividades têm mínimos de 14 ou 16 dias; antes de 12 meses há proporcionalidade. Não é taxa de produtividade ou contribuição. |
 
-### 3.2. A *Flexicurity* Nórdica (Dinamarca, Suécia, Noruega)
-* **O Encaixe Estrutural:** A Dinamarca não possui sequer lei fixando salário mínimo nacional — o piso salarial é definido 100% por acordos coletivos setoriais entre sindicatos e associações patronais. A empresa pode **demitir o empregado com facilidade extrema**, sem pagar multas punitivas rescisórias (como os 40% do FGTS brasileiro);
-* **A Contrapartida do Estado:** O trabalhador desempregado recebe do Estado um seguro-desemprego que pode atingir **até 90% do salário anterior**, condicionado à frequência obrigatória em programas estatais de requalificação profissional ativa (*active labor market policies*);
-* **Por que o Brasil não pode simplesmente copiar a Dinamarca?**
-  * O modelo dinamarquês é sustentado por uma **arrecadação fiscal colossal de impostos gerais** (IVA de 25% sem isenções e imposto de renda que atinge 50%), direcionada a um Estado com eficiência nórdica e taxa de corrupção próxima de zero;
-  * O Brasil possui restrição fiscal severa, orçamento engessado e não dispõe de espaço orçamentário para sustentar seguros-desemprego de 90% para dezenas de milhões de trabalhadores.
+Não há uma série harmonizada de produtividade, tax wedge e litigiosidade para todo esse conjunto nesta revisão. A matriz é uma comparação de conceitos e cobertura de evidência, **não um ranking de eficiência dos países**. Sua expansão requer extração documentada, metadados e revisão nacional de cada campo; preencher células com aproximações inventaria precisão.
 
----
+## 5. Justiça do Trabalho, negociação e causalidade
 
-### 3.3. O Modelo Corporativo Renano (Alemanha, Suíça, Holanda)
-* **A Co-determinação (*Mitbestimmung*):** Na Alemanha, a legislação impõe que empresas com mais de 2.000 funcionários reservem **metade dos assentos do Conselho de Administração (*Aufsichtsrat*) para representantes eleitos pelos próprios empregados e sindicatos**. As decisões estratégicas de demissão em massa ou fechamento de plantas são pactuadas internamente com anos de antecedência;
-* **O Ensino Técnico Dual:** A formação profissional ocorre dentro das fábricas desde os 16 anos (*Duale Ausbildung*), gerando mão de obra hiperqualificada para a indústria manufatureira de alta complexidade;
-* **A Suíça e a "Paz do Trabalho":** Desde o histórico acordo de 1937 entre a indústria de máquinas e os sindicatos metalúrgicos, a Suíça baniu greves selvagens e litígios judiciais, resolvendo controvérsias via negociação interna, sustentando uma das maiores rendas per capita do planeta com encargos sobre folha de apenas 23%.
+A afirmação antiga de que o Brasil concentraria “70% a 80% de todas as ações trabalhistas do planeta” foi retirada: não havia base mundial comparável. Também não se deve atribuir todo o movimento do ramo trabalhista ao TST, tribunal superior. Casos novos, recursos, processos recebidos e estoque são indicadores diferentes.
 
----
+Litigar pode sinalizar descumprimento de direitos, acesso à justiça, incentivos processuais, complexidade normativa ou baixa capacidade de acordo. Uma quantidade elevada não identifica sozinha o mecanismo nem prova que extinguir a justiça especializada resolveria o problema.
 
-### 3.4. O Modelo Desenvolvimentista e Híbrido Asiático (Japão, Coreia do Sul, Cingapura, China)
-* **Japão e a Transição do "Emprego Vitalício":** O modelo tradicional do *Shūshin koyō* (lealdade recíproca onde a corporação jamais demitia o trabalhador e este dedicava sua vida à empresa) sustentou o milagre japonês do pós-guerra. Hoje, o país enfrenta envelhecimento demográfico extremo, introduzindo tetos legais rigorosos para horas extras com o objetivo de combater as mortes por estresse laboral (*Karoshi*);
-* **Cingapura e o *Central Provident Fund* (CPF):** Cingapura adota intervenção regulatória quase nula na rotina de contratação, mas impõe um dos sistemas de capitalização compulsória mais rigorosos do mundo: empregado e empregador depositam até 37% dos rendimentos em contas individuais intangíveis, utilizadas para financiar a casa própria pública (*HDB*), saúde de ponta e aposentadoria integral sem onerar o caixa do Tesouro;
-* **Coreia do Sul e a Batalha das 52 Horas:** O país asiático enfrentava jornadas médias de 68 horas semanais nos grandes conglomerados industriais (*Chaebols*). Em 2018, o governo aprovou lei impondo teto estrito de 52 horas semanais (40h regulares + 12h extras), gerando debates intensos sobre impactos na produtividade industrial e na natalidade.
+A reforma trabalhista modificou regras de negociação e processo. Seus efeitos devem ser separados de recessão, recuperação econômica, composição do emprego e decisões judiciais posteriores. [Fonte: Lei 13.467/2017](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/l13467.htm).
 
----
+A OIT distingue horas normais, efetivamente trabalhadas e arranjos de jornada; suas estatísticas não permitem converter automaticamente menos horas em maior produtividade ou mais empregos. [Fontes: OIT, relatório de 2022](https://researchrepository.ilo.org/esploro/outputs/report/Working-time-and-work-life-balance-around/995264841602676); [ILOSTAT, conceitos de horas](https://ilostat.ilo.org/methods/concepts-and-definitions/description-wages-and-working-time-statistics/).
 
-### 3.5. O Modelo Dualista Latino-Americano e Emergente (Brasil, México, Índia)
-* **A Falácia do Garantismo sem Base Material:** O Brasil e a Índia compartilham legislações trabalhistas desenhadas no século XX com alto grau de prescrição burocrática estatal (a CLT de 1943 no Brasil e o *Industrial Disputes Act* de 1947 na Índia);
-* **A Fuga para a Informalidade:** Quando o custo legal, previdenciário e litigioso de um funcionário formal excede em 70% a 100% o seu salário base líquido, e a produtividade média do trabalhador é de apenas US$ 18/h, o mercado expulsa estruturalmente as empresas e trabalhadores de menor qualificação para o setor informal;
-* **A Reforma Trabalhista Mexicana (2021):** O México realizou uma das reformas mais agressivas da região ao proibir formalmente a terceirização de mão de obra para atividades-fim das empresas, ao mesmo tempo em que substituiu as antigas *Juntas de Conciliación y Arbitraje* (conhecidas por lentidão e corrupção) por novos tribunais do Poder Judiciário, acompanhados de saltos reais no salário mínimo.
+## 6. Pejotização e trabalho em plataformas
 
----
+Forma contratual, autonomia efetiva, subordinação e dependência econômica devem ser examinadas separadamente. Terceirização, prestação empresarial legítima e fraude no vínculo não são expressões equivalentes. Não se mantém a antiga faixa tributária universal para PJ nem a conclusão de licitude irrestrita para toda contratação.
 
-## 4. O Paradoxo Brasileiro: Por que a CLT Gera Tanta Litigiosidade?
+Propostas sobre plataformas precisam identificar número, versão, categoria abrangida e estágio legislativo. O texto anterior confundia debate sobre motoristas com regras para todos os entregadores. Sem conferir o texto vigente e o último andamento, não se apresenta um piso proposto como direito já aplicável.
 
-O Brasil é um caso anômalo no cenário global de relações laborais. Embora represente cerca de 2% a 3% do PIB mundial, o país historicamente **concentra entre 70% e 80% de todas as ações judiciais trabalhistas de todo o planeta**:
+## Efeitos distributivos
 
-```mermaid
-flowchart TD
-    subgraph Circulo ["O Círculo Vicioso da Litigiosidade no Brasil"]
-        A["CLT Prolixa e Detalhista (Quase 1.000 Artigos)"] --> B["Normas Abertas e Interpretações Conflitantes nos TRTs"]
-        B --> C["Justiça do Trabalho como Ramo Especializado e Gratuito"]
-        C --> D["Incentivo Perverso à Ação Judicial ('Risco Zero' Pré-2017)"]
-        D --> E["<b>Mais de 3,5 Milhões de Processos/Ano:</b><br>Horas extras, dano moral, equiparação, periculosidade"]
-        E --> F["Aumento do Risco Jurídico e Custo de Conformidade das Empresas"]
-        F --> G["Pressão por Informalidade, Terceirização e 'Pejotização'"]
-        G --> A
-    end
-```
+A análise deve incluir empregados cobertos, trabalhadores informais, autônomos, cuidadores e pessoas fora do emprego. Flexibilidade pode favorecer quem tem poder de negociação e prejudicar quem depende de renda imediata; proteção formal pode não alcançar quem não consegue entrar no regime. Saúde pública, cuidado, seguro e fiscalização modificam esses efeitos.
 
-### Principais Fatores Estruturais da Hiperjudicialização Brasileira:
-1. **Existência de um Ramo Judicial Autônomo e Hipertrofiado:** O Brasil é uma das pouquíssimas democracias a manter uma estrutura judiciária inteira dedicada com exclusividade ao direito laboral (Varas do Trabalho, 24 Tribunais Regionais do Trabalho e o TST), com orçamento anual superior a **R$ 22 bilhões** custeado pelo contribuinte geral;
-2. **A Cultura do "Risco Zero" Pré-Reforma de 2017:** Até a vigência da [Lei nº 13.467/2017](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/l13467.htm), o empregado que ingressava com reclamação trabalhista desfrutava de gratuidade judiciária irrestrita e não pagava honorários sucumbenciais caso perdesse a causa, estimulando petições iniciais infladas com pedidos infundados de horas extras e danos morais;
-3. **Complexidade e Insegurança das Normas Regulamentadoras (NRs):** O Ministério do Trabalho mantém dezenas de NRs com exigências minuciosas e subjetivas sobre adicionais de periculosidade e insalubridade, frequentemente arbitradas por laudos periciais divergentes.
+Gênero, raça, escolaridade, região, migração e porte da empresa podem mudar exposição e acesso a direitos. Não foi calculada uma distribuição por grupo nem demonstrado que benefícios europeus causem inevitavelmente uma taxa específica de informalidade no Brasil.
 
----
+## Conclusão e limites da evidência
 
-## 5. A Fronteira Moderna: "Pejotização", *Gig Economy* e Produtividade
+A tabela anterior não sustentava sua conclusão principal: comparava medidas incompatíveis e usava classificações de litigiosidade sem base. A revisão passa a documentar uma regra específica em cada uma das 25 economias, corrige o calendário brasileiro recém-promulgado, Austrália, Chile e as unidades de férias. Esse avanço não certifica cada ordenamento por inteiro: faltam comparação de benefícios equivalentes, cobertura efetiva e resultados.
 
-### 5.1. O Fenômeno da "Pejotização"
-Diante do peso dos encargos sobre a folha formal (INSS patronal de 20%, FGTS de 8%, Sistema S de até 5,8%, além de provisões para 13º salário e férias), milhões de profissionais liberais e trabalhadores qualificados no Brasil migraram voluntária ou compulsoriamente para o modelo de **Pessoa Jurídica (PJ)**:
-* **Vantagem Econômica Direta:** Pelo regime do Simples Nacional ou Lucro Presumido, a tributação sobre a renda corporativa do prestador PJ oscila entre 6% e 15%, viabilizando uma remuneração líquida imediata sensivelmente maior do que o teto celetista após retenções de IR e INSS;
-* **O Risco Jurídico:** O STF tem consolidado jurisprudência reconhecendo a licitude da terceirização ampla e irrestrita (ADPF 324 e RE 958.252) e derrubando decisões da Justiça do Trabalho que tentavam reconhecer vínculo celetista de executivos, médicos e advogados contratados como PJ.
-
-### 5.2. O Trabalho por Aplicativos (*Gig Economy*) e o PLP 12/2024
-O crescimento exponencial de motoristas e entregadores por plataformas (Uber, 99, iFood) expôs o descompasso entre a CLT de 1943 e o trabalho digital intermediado por algoritmos:
-* **O Projeto de Lei Complementar nº 12/2024:** O governo federal tentou regulamentar a atividade de motoristas de quatro rodas criando uma terceira categoria jurídica (*"trabalhador autônomo com plataforma"*):
-  * Piso de remuneração por hora trabalhada em corrida (R$ 32,10/h);
-  * Contribuição previdenciária obrigatória de 7,5% para o motorista e 20% para a plataforma sobre uma base presumida;
-* **A Reação dos Trabalhadores:** O projeto enfrentou forte resistência da base dos próprios motoristas e de entregadores de motos (excluídos do texto original), temerosos de que a tributação previdenciária e as regras de controle de jornada reduzissem seus ganhos líquidos diários e a flexibilidade de horários.
-
----
-
-## 6. Conclusões e Lições para o Desenvolvimento Brasileiro
-
-1. **A Produtividade é o Teto Real dos Direitos:** Não é a lei escrita que garante salários altos ou bem-estar social, mas sim a capacidade de uma economia gerar valor por hora trabalhada. Uma hora de trabalho nos EUA ou Suíça produz de quatro a cinco vezes mais riqueza real do que uma hora de trabalho no Brasil. Tentar impor benefícios europeus sobre uma base de produtividade latino-americana inevitavelmente empurra 40% da população para a informalidade;
-2. **A Centralidade da Negociação Coletiva:** Os países mais prósperos do mundo (especialmente os nórdicos e da Europa Central) confiam nos acordos diretos entre sindicatos representativos e empresas (*prevalência do negociado sobre o legislado*), em vez de depender de códigos estatais de milhares de artigos ou da tutela judicial constante;
-3. **A Necessidade de Desoneração da Folha:** Tributar a contratação de mão de obra formal com alíquotas que chegam a dobrar o custo salarial funciona como uma punição fiscal explícita à criação de empregos com carteira assinada, mantendo o Brasil preso na armadilha da baixa qualificação e do litígio crônico.
-
----
-
-## 7. Catálogo de Fontes Oficiais Primárias
-
-* *Organização Internacional do Trabalho (OIT):* [ILOSTAT Database](https://ilostat.ilo.org/) (Labor Productivity, Minimum Wage Regulations, Working Hours and Dismissal Protections).
-* *Organização para a Cooperação e Desenvolvimento Econômico (OCDE):* [OECD Employment Outlook 2024](https://www.oecd.org/employment/outlook/) e [Taxing Wages 2024](https://www.oecd.org/tax/taxing-wages-20725124.htm) (Comparative Tax Wedge on Labor).
-* *Tribunal Superior do Trabalho (TST):* [Relatório Geral da Justiça do Trabalho](https://www.tst.jus.br/) (Movimentação Processual, Litigiosidade e Custos Institucionais).
-* *Presidência da República do Brasil:* [Consolidação das Leis do Trabalho - Decreto-Lei nº 5.452/1943](https://www.planalto.gov.br/ccivil_03/decreto-lei/del5452.htm) e [Lei da Reforma Trabalhista - Lei nº 13.467/2017](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/l13467.htm).
-* *Câmara dos Deputados:* [Projeto de Lei Complementar nº 12/2024](https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2422026) (Regulamentação do Trabalho em Plataformas Digitais de Transporte).
-* *Supremo Tribunal Federal:* [ADPF nº 324](https://portal.stf.jus.br/) e [Tema nº 725 da Repercussão Geral (RE 958.252)](https://portal.stf.jus.br/) (Licitude da Terceirização Ampla e Irrestrita de Atividades).
-* *United States Department of Labor (DOL):* [Fair Labor Standards Act (FLSA)](https://www.dol.gov/agencies/whd/flsa) (Regulations on Minimum Wage, Overtime and Child Labor).
-* *Bundesministerium für Arbeit und Soziales (Alemanha):* [Kündigungsschutzgesetz (KSchG)](https://www.gesetze-im-internet.de/kschg/) e [Betriebsverfassungsgesetz (BetrVG)](https://www.gesetze-im-internet.de/betrvg/) (German Dismissal Protection and Works Council Acts).
+Produtividade, proteção e formalização são interdependentes; não há um “teto dos direitos” demonstrado por uma divisão simples. Investimento, estrutura produtiva, tributação, cumprimento e proteção social oferecem explicações alternativas. Não se conclui daqui qual país tem o melhor modelo nem qual pacote produziria determinado efeito causal no Brasil.

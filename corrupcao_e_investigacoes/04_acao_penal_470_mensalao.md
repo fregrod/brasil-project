@@ -1,54 +1,56 @@
-# O Escândalo do "Mensalão" (Ação Penal 470 do STF)
+# Mensalão: Ação Penal 470 e execução penal
 
-> **Classificação:** Escândalo Político e Ação Penal Originária no STF  
-> **Período de Julgamento Principal:** 2005 (Denúncia) / 2012 – 2014 (Julgamento e Execução Penal)  
-> **Órgão Julgador:** Plenário do Supremo Tribunal Federal (STF)  
-> **Relatoria:** Ministro Joaquim Barbosa (Revisão: Ministro Ricardo Lewandowski)
+> **Revisão editorial:** 19/10/2026.
+> **Recorte da evidência:** julgamento histórico da AP 470 e marcos de execução selecionados até maio de 2022; não há certificação do saldo penal ou dos direitos políticos de todos os condenados em 2026.
 
----
+## 1. O que é documentado
 
-## 1. Origem e Fatos Comprovados
+A **AP 470**, julgada pelo Plenário do STF, tratou de acusações envolvendo recursos, operadores financeiros e apoio parlamentar no primeiro governo Lula. O acórdão e seus recursos são a fonte adequada para distinguir fatos reconhecidos, participação individual e absolvições. Não se pode transferir automaticamente a responsabilidade dos condenados a qualquer filiado ou ao presidente da República, que não foi réu nesta ação. [STF — AP 470](https://portal.stf.jus.br/processos/detalhe.asp?incidente=11541).
 
-Em **junho de 2005**, em entrevista concedida à jornalista Renata Lo Prete no jornal *Folha de S.Paulo*, o então deputado federal e presidente do PTB, **Roberto Jefferson**, revelou a existência de um esquema regular de pagamento de mesadas em dinheiro vivo (apelidado de "mensalão", girando em torno de R$ 30 mil mensais por parlamentar) a deputados de partidos da base aliada (PP, PL, PTB e PMDB) para assegurar a aprovação de matérias e reformas de interesse do primeiro governo Lula na Câmara dos Deputados.
+A CPMI dos Correios produziu investigação parlamentar que deve ser distinguida do julgamento criminal. Depoimentos e conclusões de uma CPI são elementos de apuração; a responsabilidade penal depende do processo e da prova individualizada. [Senado — relatório final, volume II, capa e sumário](https://www.senado.leg.br/comissoes/CPI/relatoriofinalVol2.pdf); [Constituição, art. 58, §3º](https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm).
 
-A revelação foi precipitada pelo vazamento de uma gravação em que o funcionário dos Correios Maurício Marinho era flagrado recebendo R$ 3 mil em propina, afirmando agir sob o aval político de Jefferson.
+## 2. Acusações, recursos e pessoas
 
-### O Mecanismo Financeiro do Esquema:
-As investigações da **CPMI dos Correios**, da Polícia Federal e da Procuradoria-Geral da República (sob comando de Antonio Fernando de Souza) comprovaram a engenharia de desvio de recursos públicos:
-1. **Recursos Públicos:** Verbas desviadas do **Fundo Visanet** (Banco do Brasil) mediante autorização do diretor de marketing Henrique Pizzolato, somadas a contratos superfaturados de publicidade da Câmara dos Deputados.
-2. **Operador Financeiro:** Agências de publicidade **SMP&B Comunicação** e **DNA Propaganda**, pertencentes ao empresário e publicitário mineiro **Marcos Valério de Souza**.
-3. **Empréstimos Simulados:** Empréstimos fictícios tomados junto ao **Banco Rural** e ao **Banco BMG** para justificar contabilmente a origem dos recursos distribuídos pelo Partido dos Trabalhadores a parlamentares.
+| Pessoa / grupo | O que conferir no processo |
+| :--- | :--- |
+| José Dirceu, José Genoino e Delúbio Soares | Condenações por corrupção ativa e respectivos recursos; não confundir AP 470 com ações posteriores da Lava Jato. [AP 470](https://portal.stf.jus.br/processos/detalhe.asp?incidente=11541). |
+| Marcos Valério | Condenação e execução na EP 4; há fontes específicas para progressões, abaixo. [STF — EP 4](https://portal.stf.jus.br/processos/detalhe.asp?incidente=4499850). |
+| Roberto Jefferson e Valdemar Costa Neto | Examinar imputações, penas e extinção de punibilidade individualmente; nenhum indulto posterior deve ser aplicado genericamente a todos os réus. [AP 470](https://portal.stf.jus.br/processos/detalhe.asp?incidente=11541). |
+| Henrique Pizzolato | Distinguir condenação na AP 470, extradição e execução; este recorte não revisa integralmente os autos italianos ou a execução posterior. [AP 470](https://portal.stf.jus.br/processos/detalhe.asp?incidente=11541). |
+| Operadores e instituições financeiras | Identificar em cada capítulo do acórdão as operações, a pessoa responsabilizada e a prova; empréstimo bancário e simulação não são categorias intercambiáveis. [AP 470](https://portal.stf.jus.br/processos/detalhe.asp?incidente=11541). |
 
----
+**Limite dos totais:** contagens de réus e condenados devem dizer se correspondem ao resultado inicial ou aos recursos. Não se mantém uma soma fechada de condenações depois de embargos sem reproduzir sua base de cálculo. O processo contém fases e resultados diferentes por delito e pessoa. [AP 470 e recursos](https://portal.stf.jus.br/processos/detalhe.asp?incidente=11541).
 
-## 2. O Julgamento no STF (Ação Penal 470)
+**Defesas e fundamentação:** as teses defensivas e os votos divergentes integram o processo. A teoria do domínio do fato não deve ser resumida como autorização para condenar alguém apenas por ocupar posição de comando; a responsabilidade penal exige vincular a conduta individual ao delito. Para reconstruir a aplicação concreta, é necessário citar o capítulo e o voto correspondente, e não apenas mencionar o nome da teoria. [Código Penal, arts. 13, 18 e 29](https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm); [AP 470](https://portal.stf.jus.br/processos/detalhe.asp?incidente=11541).
 
-Entre agosto e dezembro de 2012, o Plenário do STF realizou o julgamento mais longo e televisionado de sua história até então. Dos 38 réus julgados (dois haviam falecido ou tido o caso desmembrado), **25 foram condenados**, consolidando a tese jurídica do "domínio do fato" para responsabilização dos articuladores políticos.
+## 3. Marcos Valério: correção da cronologia
 
-Em 2013 e 2014, o julgamento de **embargos infringentes** (recursos cabíveis para condenações com pelo menos 4 votos divergentes) absolveu os réus da acusação autônoma de *formação de quadrilha*, mantendo as condenações por **corrupção ativa, corrupção passiva, peculato, lavagem de dinheiro e evasão de divisas**.
+| Data | Ato / instância | Alcance |
+| :--- | :--- | :--- |
+| Setembro de 2019 | Roberto Barroso, STF, **EP 4** | Progressão ao semiaberto. A notícia informa pena da AP 470 de 37 anos, cinco meses e seis dias, incluindo crime contra o sistema financeiro. [STF — 05/09/2019](https://noticias.stf.jus.br/postsnoticias/ap-470-ministro-autoriza-regime-semiaberto-para-marcos-valerio/). |
+| Março–dezembro de 2020 | Justiça de Minas Gerais e manutenção pelo STF | Domiciliar temporária por medidas sanitárias de prevenção à Covid-19; não era nova progressão automática de regime. [STF — manutenção da domiciliar](https://noticias.stf.jus.br/postsnoticias/ministro-mantem-prisao-domiciliar-de-marcos-valerio/). |
+| Maio de 2022 | Roberto Barroso, STF, **EP 4** | Progressão ao aberto e manutenção da domiciliar pela falta de estabelecimento adequado em Nova Lima. Não foi concessão inicial do semiaberto em setembro de 2022. [STF — 18/05/2022](https://noticias.stf.jus.br/postsnoticias/barroso-aplica-nova-lei-e-concede-regime-aberto-a-marcos-valerio/). |
 
----
+Esses marcos não sustentam a afirmação de permanência contínua em fechado por quase nove anos. Também não demonstram quitação de toda pena, de multas ou reparação. [STF — EP 4](https://portal.stf.jus.br/processos/detalhe.asp?incidente=4499850).
 
-## 3. Prisões, Cumprimento de Pena e Desfechos Judiciais
+## 4. Indulto, progressão e extinção
 
-| Réu Condenado | Cargo / Função | Pena Final e Delitos | Prisão e Execução Penal | Como e Por Que Saiu da Prisão? |
-| :--- | :--- | :--- | :--- | :--- |
-| **José Dirceu** | Ex-Ministro-Chefe da Casa Civil e ex-Presidente do PT | **7 anos e 11 meses** (regime semiaberto) por Corrupção Ativa. | Preso em 15 de novembro de 2013 na Papuda (DF). | Progrediu para regime aberto/domiciliar em novembro de 2014 após trabalhar em escritório de advocacia. Em março de 2016, teve a **pena do Mensalão formalmente extinta por indulto natalino** concedido com base no decreto presidencial de 2015 (havia cumprido os requisitos de tempo e remição por trabalho). Permaneceu preso posteriormente por mandados distintos da Lava Jato. |
-| **José Genoino** | Ex-Presidente do PT e Deputado Federal | **4 anos e 8 meses** (regime semiaberto) por Corrupção Ativa. | Preso em 15 de novembro de 2013 na Papuda. | Obteve prisão domiciliar humanitária devido a problemas cardíacos graves. Teve a pena totalmente extinta por **indulto natalino** pelo STF em março de 2015. |
-| **Delúbio Soares** | Ex-Tesoureiro do PT | **6 anos e 8 meses** (regime semiaberto) por Corrupção Ativa. | Preso em novembro de 2013. | Progrediu para prisão domiciliar em 2014 por cumprimento de prazo e trabalho externo; recebeu indulto natalino pelo STF em março de 2016 com extinção de punibilidade. |
-| **Marcos Valério** | Empresário e Operador Financeiro do Esquema | **37 anos, 5 meses e 6 dias** de reclusão por Peculato, Corrupção Ativa e Lavagem. | Preso em novembro de 2013; cumpriu pena no Complexo Penitenciário Nelson Hungria (MG). | Permaneceu preso em regime fechado por quase 9 anos. Em setembro de 2022, a Vara de Execuções Penais de Minas Gerais deferiu progressão para o **regime semiaberto com prisão domiciliar e tornozeleira eletrônica**, considerando remição de pena por trabalho, estudo e colaboração judicial. |
-| **Roberto Jefferson** | Ex-Deputado Federal e Delator do Esquema (PTB) | **7 anos e 14 dias** por Corrupção Passiva e Lavagem de Dinheiro. | Preso em fevereiro de 2014 em Niterói (RJ). | Obteve progressão para regime aberto domiciliar em 2015 devido a tratamento oncológico. Em março de 2016, o ministro Luís Roberto Barroso declarou **extinta a sua punibilidade por indulto natalino** presidencial. (Voltou a ser preso em 2021 e 2022 por atos antidemocráticos e ataque armado a policiais federais). |
-| **Valdemar Costa Neto** | Deputado Federal e Líder do PL (à época PR) | **7 anos e 10 meses** por Corrupção Passiva e Lavagem de Dinheiro. | Preso em dezembro de 2013 na Papuda. Renunciou ao mandato parlamentar. | Progrediu para regime domiciliar em novembro de 2014 e teve a pena extinta por **indulto natalino** pelo STF em maio de 2016. Retomou formalmente a presidência do Partido Liberal (PL). |
-| **Henrique Pizzolato** | Ex-Diretor de Marketing do Banco do Brasil | **12 anos e 7 meses** por Peculato, Corrupção Passiva e Lavagem. | Fugiu do Brasil em 2013 antes da prisão, utilizando o passaporte do irmão falecido na Itália. | Foi preso pela polícia italiana em Maranello em fevereiro de 2014. O governo brasileiro obteve sua **extradição** após disputa nos tribunais italianos em outubro de 2015. Preso na Papuda até 2017, quando progrediu para semiaberto e, posteriormente, livramento condicional. |
+Progressão altera o regime; indulto pode extinguir pena nos termos do decreto e da decisão que verifica seus requisitos; prescrição é outro instituto. Para cada beneficiário, é necessário registrar número da execução, decreto aplicado e data da decisão. Os Decretos 8.380/2014 e 8.615/2015 não dispensam essa verificação individual. [Decreto 8.380/2014](https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/decreto/d8380.htm); [Decreto 8.615/2015](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/decreto/d8615.htm); [LEP](https://www.planalto.gov.br/ccivil_03/leis/l7210.htm).
 
----
+### Indultos individualizados confirmados
 
-## 4. Catálogo de Fontes Oficiais Primárias e Acórdãos do STF
+| Pessoa / execução | Marco histórico e alcance |
+| :--- | :--- |
+| **José Genoino — EP 1** | Em **04/03/2015**, o Plenário, por unanimidade, extinguiu a punibilidade por cumprimento dos requisitos do Decreto 8.380/2014. A notícia registra condenação de 4 anos e 8 meses, multa paga e progressão ao aberto em agosto de 2014. Indulto não transforma a condenação em absolvição. [STF — decisão e cronologia](https://noticias.stf.jus.br/postsnoticias/stf-extigue-punibilidade-de-jose-genoino-por-cumprimento-de-requisitos-para-indulto/). |
+| **Delúbio Soares — EP 3** | Em **10/03/2016**, Barroso concedeu indulto com base no Decreto 8.615/2015, após parecer favorável do MPF. A condenação na AP 470 era de 6 anos e 8 meses por corrupção ativa. [STF — EP 3](https://noticias.stf.jus.br/postsnoticias/ministro-luis-roberto-barroso-concede-o-indulto-a-delubio-soares/). |
+| **Roberto Jefferson — EP 23** | Em **22/03/2016**, recebeu indulto e declaração de extinção da punibilidade, junto de outros cinco condenados, sob o Decreto 8.615/2015. Esse resultado da AP 470 não se estende a processos posteriores de Jefferson. [STF — execuções individualizadas](https://noticias.stf.jus.br/postsnoticias/stf-concede-indulto-a-seis-condenados-da-ap-470/). |
 
-| Órgão / Tribunal | Identificador / Processo | Objeto / Decisão Oficial | Acesso / Fonte Oficial |
-| :--- | :--- | :--- | :--- |
-| **Supremo Tribunal Federal (STF)** | **Ação Penal nº 470/MG** | Acórdão de Condenação e Execução Penal (Rel. Min. Joaquim Barbosa, Revisor Min. Ricardo Lewandowski. Acórdão com mais de 8.400 páginas). | [STF - AP 470](https://portal.stf.jus.br/processos/detalhe.asp?incidente=2535032) |
-| **Supremo Tribunal Federal (STF)** | **Inquérito nº 2.245/MG** | Inquérito originário instaurado a partir da denúncia formal da Procuradoria-Geral da República (PGR) em 2006. | [STF - Inq 2245](https://portal.stf.jus.br/processos/detalhe.asp?incidente=2377319) |
-| **Congresso Nacional** | **Relatório Final da CPMI dos Correios** | Comissão Parlamentar Mista de Inquérito que investigou e comprovou o fluxo financeiro das agências de Marcos Valério e recursos do Visanet (Relator: Dep. Osmar Serraglio). | [Senado Federal - CPMI Correios](https://legis.senado.leg.br/comissoes/comissao?codcol=805) |
-| **Procuradoria-Geral da República (PGR)** | **Denúncia Criminal AP 470 (2006)** | Peça acusatória de 136 páginas assinada pelo Procurador-Geral Antonio Fernando de Souza, tipificando o núcleo político, operacional e financeiro. | [MPF - Acervo Histórico](https://www.mpf.mp.br/) |
-| **Presidência da República** | **Decretos de Indulto Natalino** | Decretos nº 8.380/2014 e nº 8.615/2015 que fundamentaram a extinção de punibilidade pelo STF para réus com cumprimento de fração de pena e trabalho. | [Planalto - Legislação](https://www.planalto.gov.br/) |
+**Pendência documental:** faltam reconciliação das execuções de Dirceu, Valdemar e Pizzolato e inventário de eventuais obrigações extrapenais. Os indultos acima estão datados e vinculados a execuções específicas; não são uma declaração sobre todas as situações jurídicas dessas pessoas em 2026.
+
+## Efeitos distributivos
+
+**Avaliação editorial:** corrupção na relação Executivo–Legislativo pode distorcer representação e uso do orçamento. Isso não permite concluir que todo voto de um partido foi comprado ou que o Congresso perdeu integralmente sua autonomia. Recursos e benefícios legais de execução protegem garantias comuns a condenados e devem ser avaliados pelo mesmo critério, independentemente de filiação política.
+
+## Conclusão e limites da evidência
+
+A AP 470 registra responsabilizações penais relevantes; elas não são equivalentes a rumores ou simples indiciamentos. É igualmente necessário informar recursos e execução corretamente. O estudo confirma marcos de Marcos Valério e indultos de Genoino, Delúbio e Jefferson, mas ainda não fornece inventário de todas as execuções. Explicações sobre governabilidade, publicidade do julgamento ou efeitos eleitorais são hipóteses analíticas, não conclusões penais do acórdão.

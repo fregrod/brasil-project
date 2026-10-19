@@ -97,7 +97,7 @@ export const Logo: React.FC<LogoProps> = ({
     <div className={`flex items-center gap-3 ${className}`}>
       <LogoIcon size={size} />
       {showText && (
-        <div className="flex flex-col leading-none">
+        <div className="hidden sm:flex flex-col leading-none">
           <div className="flex items-center gap-1.5">
             <span className="font-bold text-sm tracking-tight text-zinc-900 dark:text-zinc-100">
               BRASIL
@@ -107,7 +107,7 @@ export const Logo: React.FC<LogoProps> = ({
             </span>
           </div>
           <span className="text-[10px] uppercase font-mono tracking-widest text-zinc-400 dark:text-zinc-500 mt-0.5">
-            Base Analítica Primária
+            Estudos sobre o Brasil
           </span>
         </div>
       )}

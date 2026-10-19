@@ -1,4 +1,3 @@
-@import 'katex/dist/katex.min.css';
 
 @tailwind base;
 @tailwind components;
@@ -157,6 +156,8 @@
   border-collapse: collapse;
   font-size: 0.875rem;
   text-align: left;
+  /* Keep values such as 10.381 intact; narrow tables scroll in their wrapper. */
+  overflow-wrap: normal;
 }
 
 .markdown-body th {
@@ -257,4 +258,39 @@
 .mermaid-container svg {
   max-width: 100%;
   height: auto;
+}
+
+.markdown-body h1, .markdown-body h2, .markdown-body h3 { scroll-margin-top: 5rem; overflow-wrap: anywhere; }
+.markdown-body { overflow-wrap: anywhere; min-width: 0; }
+.markdown-body pre { max-width: 100%; overflow-x: auto; }
+
+/* Crisp, high-contrast text selection across light and dark modes */
+::selection {
+  background-color: #2563eb !important;
+  color: #ffffff !important;
+}
+
+::-moz-selection {
+  background-color: #2563eb !important;
+  color: #ffffff !important;
+}
+
+.dark ::selection {
+  background-color: #3b82f6 !important;
+  color: #ffffff !important;
+}
+
+.dark ::-moz-selection {
+  background-color: #3b82f6 !important;
+  color: #ffffff !important;
+}
+
+/* Ensure document text and reader articles are explicitly selectable */
+.markdown-body,
+.markdown-body *,
+article,
+article *,
+main {
+  -webkit-user-select: text;
+  user-select: text;
 }

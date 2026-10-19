@@ -1,63 +1,60 @@
-# Governos Lula 1 & 2 e Dilma Rousseff (2003 – 2016): Análise Econômica e Indicadores Reais
+# Governos Lula 1 e 2 e Dilma Rousseff (2003–2016): ciclos, instituições e crise
 
-> **Período de Gestão:** 2003 – 2016 (A Era dos Governos do PT e a Crise da Nova Matriz Econômica)  
-> **Comando Econômico:** Antonio Palocci (2003–2006), Guido Mantega (2006–2014), Joaquim Levy (2015), Nelson Barbosa (2015–2016) e Henrique Meirelles / Alexandre Tombini (Banco Central).  
-> **Bases Oficiais de Dados:** IBGE (Contas Nacionais, IPCA, PME/PNADC), Banco Central (SGS Fiscais, Reservas Internacionais), Secretaria do Tesouro Nacional (RTN) e Tribunal de Contas da União (TCU).
+> **Revisão editorial:** 19/10/2026.
+> **Recorte da evidência:** decisões de 2003–2016; estatísticas históricas com universos explicitados. O ano civil de 2016 inclui a gestão Temer e não equivale ao período integral de Dilma.
 
----
 
-## 1. Tabela-Síntese de Indicadores Oficiais
+Para uma comparação descritiva uniforme de IPCA, PIB e DBGG, consulte o [quadro reproduzível de períodos de governo](../COMPARACOES_GOVERNOS.md), com durações, fórmulas e lacunas explícitas. Ele complementa este estudo e não identifica efeitos causais.
 
-| Indicador Macroeconômico | Lula 1 (2003–2006) | Lula 2 (2007–2010) | Dilma 1 (2011–2014) | Dilma 2 / Crise (2015–2016) |
-| :--- | :--- | :--- | :--- | :--- |
-| **Crescimento Médio do PIB** | +3,5% ao ano | **+4,6% ao ano** (Pico de +7,5% em 2010) | +2,4% ao ano | **-3,5% (2015) / -3,3% (2016)** |
-| **IPCA Anual Médio** | 6,4% a.a. (Pico de 9,3% em 2003) | 5,1% a.a. | 6,0% a.a. | **10,67% (2015) / 6,29% (2016)** |
-| **Taxa Selic Meta (Final do Período)** | 13,25% a.a. | 10,75% a.a. | 11,75% a.a. (Queda forçada a 7,25% em 2012) | **14,25% a.a.** |
-| **Taxa de Desocupação (Média)** | ~10,0% | ~6,7% (Mínima histórica da PME) | ~4,8% (PME) | **Disparada para 11,5%** (PNADC 2016) |
-| **Reservas Internacionais** | De US$ 37 bi para US$ 85 bi | **Salto para US$ 288 bi** | US$ 374 bilhões | **Estáveis em ~US$ 370 bi** |
-| **Resultado Primário Governo Central** | Superávits constantes (+3,0% PIB) | Superávits sólidos (+2,0% a +2,5% PIB) | Deterioração gradual (1º déficit em 2014: -R$ 17,2 bi) | **Déficits recordes: -R$ 116 bi (2015) / -R$ 161 bi (2016)** |
-| **Dívida Líquida (DLSP % do PIB)** | Redução de 60% para 47% | **Queda para 38% do PIB** | Manteve-se em torno de 33% | **Explosão para 46% do PIB** |
-| **Classificação de Risco Soberano** | Grau especulativo | **Conquista do Grau de Investimento (2008)** | Grau de Investimento mantido | **Perda do Grau de Investimento (2015)** |
+## Organização da análise
 
----
+O estudo distingue expansão, resposta à crise internacional e recessão, sem tratar governos e anos civis como unidades intercambiáveis. Progresso social, termos de troca, política macroeconômica e instituições podem contribuir simultaneamente; explicar um resultado exige avaliar pesos e mecanismos, não escolher uma causa única.
 
-## 2. O Ciclo Lula 1 e 2 (2003 – 2010): Ortodoxia Inicial, Boom de Commodities e Inclusão
+## Quadro de evidências e memória de comparação
 
-### A Visão Keynesiana / Desenvolvimentista (Pró-Governo)
-* **Argumento:** Os dois primeiros mandatos de Lula representaram o período de maior florescimento socioeconômico da história moderna brasileira:
-  1. **Redução Histórica da Desigualdade:** O Índice de Gini de rendimento do trabalho desabou de 0,58 para 0,53. Mais de 30 milhões de brasileiros ascenderam à classe média (Classe C), impulsionados pela criação do **Bolsa Família**, expansão do crédito consignado e valorização sistemática do salário mínimo acima da inflação.
-  2. **Geração de Emprego e Mercado Interno:** Mais de 15 milhões de empregos formais criados, transformando o consumo das famílias no grande dínamo do crescimento.
-  3. **Soberania Externa:** O país quitou integralmente sua dívida com o FMI em 2005 e acumulou quase US$ 300 bilhões em **reservas cambiais**, blindando a economia de crises de balanço de pagamentos que historicamente quebravam o Brasil.
-  4. **Enfrentamento da Crise Global de 2008:** Enquanto as economias centrais colapsavam, o governo adotou medidas fiscais e monetárias anticíclicas exemplares (redução de IPI para linha branca e automóveis, atuação agressiva de bancos públicos como BB e Caixa ofertando crédito, criação do Minha Casa Minha Vida e investimentos no PAC), resultando em um crescimento espetacular de **7,5% no PIB de 2010**.
+| Evidência | Medida correta | Fonte e limite |
+| :--- | :--- | :--- |
+| Desocupação PME em 2010 | Média anual de 6,7%; dezembro de 5,3% | [IBGE, divulgação de janeiro/2011](https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/13969-asi-desocupacao-fica-em-53-em-dezembro-e-fecha-2010-numa-media-de-67); seis regiões metropolitanas. Não é média de 2007–2010. |
+| Desocupação PME em 2014 | Média anual de 4,8%; dezembro de 4,3% | [IBGE, divulgação de janeiro/2015](https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/15432-em-dezembro-taxa-de-desocupacao-fica-em-4-3-e-fecha-2014-com-media-de-4-8); não é média de 2011–2014. |
+| IPCA anual | 2015: 10,67%; 2016: 6,29% | [IBGE, série histórica](https://sidra.ibge.gov.br/tabela/1737); não é atribuição integral de 2016 a um governo. |
+| Selic | 14,25% em parte de 2015–2016; 13,75% no encerramento de 2016 | [BCB](https://www.bcb.gov.br/controleinflacao/historicotaxasjuros); pico e fechamento são medidas diferentes. |
+| Reforma previdenciária de Lula 1 | EC 41/2003 alterou regras do funcionalismo | [Texto da emenda](https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc41.htm); invalida a afirmação genérica de que não houve reforma previdenciária nesse ciclo. |
 
-### A Visão Liberal / Ortodoxa (Crítica de Mercado)
-* **Argumento:** O sucesso econômico de Lula 1 e 2 derivou da combinação de herança institucional e sorte externa colossal:
-  1. **A Herança do Tripé Macroeconômico:** Lula preservou a política econômica ortodoxa de FHC (Palocci manteve superávit primário elevado, metas de inflação e câmbio flutuante), impedindo o colapso de confiança que ameaçava o país em 2002.
-  2. **O Superciclo Global das Commodities:** A urbanização e industrialização acelerada da China explodiram os preços internacionais de ferro, soja e petróleo a níveis nunca antes vistos. O crescimento brasileiro não decorreu de ganhos internos de produtividade, mas de termos de troca extraordinariamente favoráveis.
-  3. **Desperdício de Reformas Estruturais:** Em vez de aproveitar o mar de dólares para realizar as reformas da Previdência, tributária e administrativa, o governo expandiu os gastos públicos correntes em ritmo superior ao do PIB e iniciou o inchaço do BNDES, plantando as raízes do descontrole fiscal posterior.
+As médias de mandato devem ser calculadas com todos os períodos elegíveis e a mesma definição. Não se calcula uma queda nacional do desemprego ligando diretamente PME e PNADC: diferenças de cobertura e metodologia impedem tal interpretação. A documentação da [PME antiga](https://www.ibge.gov.br/estatisticas/sociais/trabalho/9183-pesquisa-mensal-de-emprego-antiga-metodologia.html) e os releases acima identificam essa limitação.
 
----
+## Lula 1 e 2: continuidade, expansão e proteção social
 
-## 3. O Ciclo Dilma Rousseff (2011 – 2016): A "Nova Matriz Econômica" e a Maior Recessão da História
+A [Lei 10.836/2004](https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l10.836.htm) instituiu o Bolsa Família; a [EC 41/2003](https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc41.htm) modificou a Previdência pública. Esses atos mostram combinação de políticas sociais e mudanças institucionais, não adesão integral a uma única escola econômica.
 
-```mermaid
-flowchart TD
-    A["Nova Matriz Econômica (2011-2014)<br>• Baixa de Juros na marra (Selic a 7,25%)<br>• Desonerações setoriais da folha<br>• Subsídios maciços no BNDES (PSI)<br>• Congelamento de tarifas e combustíveis"] --> B["Deterioração das Contas Públicas<br>• Queda de Arrecadação<br>• Primeiro Déficit Primário em 2014"]
-    B --> C["Pedaladas Fiscais<br>• Maquiagem orçamentária via bancos públicos"]
-    C --> D["Colapso e Reversão Forçada (2015)<br>• Represamento liberado: IPCA a 10,67%<br>• Selic forçada a subir para 14,25%<br>• Perda do Grau de Investimento"]
-    D --> E["Recessão Histórica (2015-2016)<br>• PIB encolhe quase 7% em 2 anos<br>• Desemprego dispara para 11,5%"]
-```
+A quitação antecipada de obrigações com o FMI em 2005 está registrada pelo [BCB, Relatório Anual 2005, cap. 5, p. 155 (p. 59 do PDF)](https://www.bcb.gov.br/pec/boletim/ingles/banual2005/rel2005cap5i.pdf). Quitar o FMI não extinguiu toda a dívida externa do país nem a consulta regular decorrente da participação no Fundo.
 
-### A Visão Liberal / Ortodoxa (Crítica de Mercado)
-* **Argumento:** A gestão Dilma Rousseff e Guido Mantega implementou a **Nova Matriz Econômica (NME)**, um experimento heterodoxo e intervencionista que gerou o pior colapso econômico desde a redemocratização:
-  1. **Intervencionismo de Preços e Destruição de Setores:** A **Medida Provisória 579/2012** forçou a redução artificial de 20% nas tarifas de energia elétrica, descapitalizando e quebrando as empresas do setor elétrico. O represamento forçado dos preços da gasolina e diesel para segurar o IPCA impôs prejuízos de dezenas de bilhões de reais à Petrobras.
-  2. **Capitalismo de Compadrio e Desonerações Seletivas:** A renúncia fiscal generalizada da folha de pagamento e os subsídios do Programa de Sustentação do Investimento (PSI) custearam mais de R$ 100 bilhões a grandes grupos empresariais sem exigir contrapartidas de investimento ou produtividade.
-  3. **A Ruína Fiscal e as Pedaladas:** Para esconder o rombo orçamentário na eleição de 2014, o governo atrasou repasses a bancos públicos (Banco do Brasil, Caixa e FGTS), cometendo crime de responsabilidade contra a Lei de Responsabilidade Fiscal (as "pedaladas fiscais" condenadas pelo TCU).
-  4. **A Conta da Crise:** Em 2015, com as contas esgotadas, as represas de preços estouraram: o IPCA disparou para 10,67%, o Banco Central foi obrigado a elevar a Selic para 14,25%, o Brasil perdeu o Grau de Investimento e a economia mergulhou em uma contração acumulada de quase 7% do PIB no biênio 2015-2016, destruindo milhões de empregos formais.
+A demanda externa por commodities e a resposta à crise financeira são fatores relevantes. O canal externo envolve preços e quantidades exportadas; o interno envolve crédito, renda, investimento e expectativas. A recuperação de atividade não permite dizer que todo crescimento decorreu de sorte externa ou, alternativamente, apenas de política doméstica. O [estudo global](06_cenario_global_crises_e_impactos_no_brasil.md) separa os canais e o grau de evidência.
 
-### A Visão Keynesiana / Desenvolvimentista (Pró-Governo / Heterodoxa)
-* **Argumento:** A crise enfrentada no governo Dilma decorreu do esgotamento do ciclo externo e de sabotagem política interna que paralisou a capacidade de governar:
-  1. **Queda das Commodities e Crise Global Prolongada:** Os preços do minério de ferro e do petróleo despencaram mais de 50% no mercado internacional a partir de 2013-2014, reduzindo drasticamente as receitas de exportação e a arrecadação tributária da União e dos estados.
-  2. **Intenção Desenvolvimentista Legítima:** A Nova Matriz buscava desonerar o custo do capital para a indústria brasileira, baixar os spreads bancários predatórios e baratear a energia elétrica para dar competitividade à manufatura nacional perante a desindustrialização precoce.
-  3. **O Erro da Austeridade Pro-cíclica em 2015:** Ao nomear o banqueiro Joaquim Levy para o Ministério da Fazenda no início do segundo mandato, Dilma cometeu o erro de aplicar um choque recessivo de corte de gastos e elevação de juros em plena desaceleração econômica, transformando uma desaceleração controlável em uma depressão aberta.
-  4. **Pautas-Bomba e Paralisia Parlamentar:** A oposição liderada pelo presidente da Câmara, Eduardo Cunha, aprovou sucessivas "pautas-bomba" para elevar despesas do governo e impedir o reequilíbrio fiscal, instrumentalizando as pedaladas contábeis (prática comum em gestões anteriores) como pretexto político para deflagrar o processo de impeachment.
+Os antigos totais de pessoas que ascenderam à classe média, empregos formais, Gini e reservas não permanecem como números demonstrados sem série, população, conceito e data. Devem ser reconstruídos com PNAD/RAIS e balanço externo, distinguindo vínculos, pessoas e classificações de renda. Reservas de períodos posteriores não podem ser atribuídas a 2003–2010.
+
+## Dilma: preços administrados, incentivos e crise
+
+A mudança nas concessões elétricas decorreu da MP 579, convertida na [Lei 12.783/2013](https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/lei/l12783.htm). A desoneração da folha está na [Lei 12.546/2011](https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12546.htm). A existência dos instrumentos é verificável; seus custos, distribuição e efeitos em investimento requerem avaliação específica.
+
+Uma leitura crítica enfatiza distorções de preços relativos, custo fiscal de incentivos e deterioração de expectativas. Uma leitura favorável à intervenção enfatiza emprego, crédito de longo prazo e reação ao ambiente internacional. Nenhuma dessas formulações demonstra que os incentivos não produziram benefício algum, nem que eram necessariamente o melhor desenho disponível.
+
+A aceleração do IPCA em 2015 ocorreu junto de correções de preços administrados e outros choques; a [série de inflação](https://sidra.ibge.gov.br/tabela/1737) documenta o índice, não a contribuição causal de cada decisão. A reação monetária pode ser examinada no [histórico do Copom](https://www.bcb.gov.br/controleinflacao/historicotaxasjuros). A análise da recessão precisa controlar preços externos, crise política, crédito, investimentos e políticas de 2015. Há evidência específica do realinhamento: preços administrados subiram 18,07% em 2015 e 5,50% em 2016; preços livres, 8,51% e 6,54%, respectivamente. Essa decomposição descritiva do [BCB, Relatório de Inflação de março/2017, pp. 49–50](https://www.bcb.gov.br/content/ri/relatorioinflacao/201703/RELINF201703-ri201703b6p.pdf) sustenta a heterogeneidade dos preços; não estima sozinha a parcela da recessão causada por cada política.
+
+## Responsabilidade fiscal e situação jurídica
+
+A análise das chamadas pedaladas deve distinguir achados de auditoria, atos de 2014, atos julgados no processo de 2016 e responsabilização de agentes. A [nota do TCU de 23/12/2015 sobre o Acórdão 825/2015, processo TC 021.643/2014-8](https://portal.tcu.gov.br/imprensa/noticias/nota-a-imprensa-2015-12-23) trata de operações examinadas pelo Tribunal; não substitui a leitura do objeto do julgamento político. A decisão do Senado é identificada na [Resolução 35/2016](https://legis.senado.leg.br/norma/562339/publicacao/15634840).
+
+Não se apresenta uma cadeia automática “subsídio → pedalada → impeachment → recessão” como modelo demonstrado. Também não se presume que todo ato tivesse a mesma legalidade de práticas anteriores ou que sabotagem política explique integralmente a contração.
+
+## Efeitos distributivos
+
+| Grupo | Mecanismo ou evidência institucional | Limite |
+| :--- | :--- | :--- |
+| Famílias de baixa renda | Transferências do [Bolsa Família](https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l10.836.htm) | Valor transferido e mudança de pobreza exigem decomposição entre benefícios e trabalho. |
+| Servidores e aposentados | Regras e contribuição da [EC 41](https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc41.htm) | Separar ingresso, faixa de renda e regra de transição. |
+| Empresas elegíveis e contribuintes | Incentivos da [Lei 12.546](https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12546.htm) | Renúncia não equivale automaticamente a ganho líquido ou investimento adicional. |
+| Consumidores e setor elétrico | Concessões e tarifas na [Lei 12.783](https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/lei/l12783.htm) | Separar alívio inicial, indenizações, hidrologia e encargos posteriores. |
+
+## Conclusão e limites da evidência
+
+O período reúne expansão e crise, além de políticas sociais, ortodoxas e intervencionistas em combinações distintas. A leitura factual não comporta sucesso integral de um modelo seguido de fracasso causado por uma única decisão. As fontes documentam medidas e indicadores delimitados; não quantificam o peso causal relativo de commodities, políticas domésticas e crise política. O quadro reproduzível supre a comparação descritiva de inflação, PIB e dívida nos períodos com dados homogêneos. Permanecem ausentes distribuição de renda comparável e avaliação de adicionalidade dos incentivos. Esses limites impedem rankings categóricos entre governos e afirmações de inevitabilidade da crise.

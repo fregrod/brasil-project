@@ -1,0 +1,121 @@
+{
+  "reviewedAt": "2026-10-19",
+  "reportingPeriod": "1999–2025; anos civis encerrados",
+  "sources": [
+    "https://apisidra.ibge.gov.br/values/t/1737/n1/1/v/2266/p/199812,199912,200012,200112,200212,200312,200412,200512,200612,200712,200812,200912,201012,201112,201212,201312,201412,201512,201612,201712,201812,201912,202012,202112,202212,202312,202412,202512",
+    "https://apisidra.ibge.gov.br/values/t/5932/n1/1/v/6563/p/199904,200004,200104,200204,200304,200404,200504,200604,200704,200804,200904,201004,201104,201204,201304,201404,201504,201604,201704,201804,201904,202004,202104,202204,202304,202404,202504/c11255/90707",
+    "https://api.bcb.gov.br/dados/serie/bcdata.sgs.13762/dados?formato=json&dataInicial=01/12/2006&dataFinal=31/12/2025"
+  ],
+  "notes": [
+    "PIB composto a partir das taxas anuais publicadas com a precisão disponibilizada.",
+    "Recortes têm durações diferentes; médias geométricas anualizadas reduzem o efeito mecânico da duração, sem identificar causalidade.",
+    "2015–2016 é período misto, não atribuído integralmente a um presidente.",
+    "DBGG na mesma metodologia disponível desde dezembro de 2006; ausências preservadas como nulo."
+  ],
+  "rows": [
+    {
+      "label": "FHC 2",
+      "start": 1999,
+      "end": 2002,
+      "years": 4,
+      "ipcaAccumulated": 39.883417912494856,
+      "ipcaAnnualized": 8.75307833711867,
+      "gdpAccumulated": 9.689026147999957,
+      "gdpAnnualized": 2.3389119171790096,
+      "debtStart": null,
+      "debtEnd": null,
+      "debtChangePP": null
+    },
+    {
+      "label": "Lula 1",
+      "start": 2003,
+      "end": 2006,
+      "years": 4,
+      "ipcaAccumulated": 28.202551255527574,
+      "ipcaAnnualized": 6.407972191283395,
+      "gdpAccumulated": 14.802107263999975,
+      "gdpAnnualized": 3.5112289829963172,
+      "debtStart": null,
+      "debtEnd": 55.48,
+      "debtChangePP": null
+    },
+    {
+      "label": "Lula 2",
+      "start": 2007,
+      "end": 2010,
+      "years": 4,
+      "ipcaAccumulated": 22.211429991778342,
+      "ipcaAnnualized": 5.142417035605984,
+      "gdpAccumulated": 19.754558067499993,
+      "gdpAnnualized": 4.609954476415656,
+      "debtStart": 55.48,
+      "debtEnd": 51.77,
+      "debtChangePP": -3.7099999999999937
+    },
+    {
+      "label": "Dilma 1",
+      "start": 2011,
+      "end": 2014,
+      "years": 4,
+      "ipcaAccumulated": 27.033784016345997,
+      "ipcaAnnualized": 6.164619781048009,
+      "gdpAccumulated": 9.701056400000008,
+      "gdpAnnualized": 2.3417178320238374,
+      "debtStart": 51.77,
+      "debtEnd": 56.28,
+      "debtChangePP": 4.509999999999998
+    },
+    {
+      "label": "Crise e transição Dilma–Temer",
+      "start": 2015,
+      "end": 2016,
+      "years": 2,
+      "ipcaAccumulated": 17.632135098254608,
+      "ipcaAnnualized": 8.458349193713355,
+      "gdpAccumulated": -6.684500000000004,
+      "gdpAnnualized": -3.4000517598482327,
+      "debtStart": 56.28,
+      "debtEnd": 69.84,
+      "debtChangePP": 13.560000000000002
+    },
+    {
+      "label": "Temer, anos completos",
+      "start": 2017,
+      "end": 2018,
+      "years": 2,
+      "ipcaAccumulated": 6.803400548610683,
+      "ipcaAnnualized": 3.3457307045678952,
+      "gdpAccumulated": 3.1233999999999984,
+      "gdpAnnualized": 1.5496922693515547,
+      "debtStart": 69.84,
+      "debtEnd": 75.27,
+      "debtChangePP": 5.429999999999993
+    },
+    {
+      "label": "Bolsonaro",
+      "start": 2019,
+      "end": 2022,
+      "years": 4,
+      "ipcaAccumulated": 26.9277596209081,
+      "ipcaAnnualized": 6.142461178991976,
+      "gdpAccumulated": 5.634430176000005,
+      "gdpAnnualized": 1.3797867791357499,
+      "debtStart": 75.27,
+      "debtEnd": 71.68,
+      "debtChangePP": -3.589999999999989
+    },
+    {
+      "label": "Lula 3, recorte parcial",
+      "start": 2023,
+      "end": 2025,
+      "years": 3,
+      "ipcaAccumulated": 14.352596272217411,
+      "ipcaAnnualized": 4.571982873964675,
+      "gdpAccumulated": 9.1631024,
+      "gdpAnnualized": 2.965553064509474,
+      "debtStart": 71.68,
+      "debtEnd": 78.64,
+      "debtChangePP": 6.959999999999994
+    }
+  ]
+}

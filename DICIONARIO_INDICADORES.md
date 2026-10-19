@@ -1,0 +1,50 @@
+# Dicionário de indicadores e regras de comparação
+
+> **Revisão editorial:** 19/10/2026.
+> **Recorte da evidência:** conceitos e metadados das fontes identificadas; os anos das medições aparecem nos estudos e nas respostas preservadas.
+
+Este dicionário evita que números com nomes semelhantes sejam comparados como se medissem a mesma coisa. O [método editorial](METODOLOGIA.md) define como citar e interpretar cada indicador.
+
+## Preços, atividade e dívida
+
+| Indicador | Unidade e definição | Regra e fonte exata |
+| :--- | :--- | :--- |
+| IPCA número-índice | Nível de preços; base dezembro de 1993 = 100. | [SIDRA 1737, variável 2266](https://apisidra.ibge.gov.br/values/t/1737/n1/1/v/2266/p/202512). Acumulado entre dois meses = índice final / índice inicial − 1; multiplicar por 100. |
+| IPCA em 12 meses | Variação percentual sobre o mesmo mês do ano anterior. | [SIDRA 7060, variável 2265](https://apisidra.ibge.gov.br/values/t/7060/n1/1/v/2265/p/202512). Em dezembro coincide com o acumulado do ano, não com o acumulado de um mandato. |
+| PIB real | Variação do volume de produção, não do PIB nominal em reais correntes. | [SIDRA 5932, variável 6563 e categoria 90707](https://apisidra.ibge.gov.br/values/t/5932/n1/1/v/6563/p/202504/c11255/90707). No quarto trimestre, a variação acumulada no ano representa o ano completo. |
+| PIB por habitante | PIB dividido pela população; real ou nominal precisam ser especificados. | [Metadados SIDRA 6784](https://servicodados.ibge.gov.br/api/v3/agregados/6784/metadados). Não é renda mediana nem medida de distribuição. |
+| DBGG | Dívida bruta do governo geral, percentual do PIB. | [BCB SGS 13762](https://dadosabertos.bcb.gov.br/dataset/13762-divida-bruta-do-governo-geral--pib---metodologia-utilizada-a-partir-de-2008). A série 4505 não mede DBGG. Estoque em dezembro não é soma anual. |
+| Selic meta e efetiva | Taxas anualizadas distintas. | Meta: SGS 432; efetiva base 252: [SGS 1178](https://dadosabertos.bcb.gov.br/dataset/1178-taxa-de-juros---selic-anualizada-base-252). Informar data, não apenas governo. |
+| Resultado primário | Receita menos despesa primária, em R$ ou percentual do PIB. | [Resultado do Tesouro Nacional](https://www.gov.br/tesouronacional/pt-br/estatisticas-fiscais-e-planejamento/resultado-do-tesouro-nacional-rtn). Governo central e setor público consolidado têm coberturas diferentes. |
+
+## Trabalho, renda e pobreza
+
+| Indicador | População e denominador | Fonte e cuidado |
+| :--- | :--- | :--- |
+| Desocupação | Desocupados / força de trabalho, dentro dos conceitos da pesquisa. | [SIDRA 4099, variável 4099](https://servicodados.ibge.gov.br/api/v3/agregados/4099/metadados), periodicidade trimestral civil. Separar média anual, trimestre fixo e trimestre móvel; não apresentar essa extração como mensal. |
+| Subutilização composta | Inclui desocupação, subocupação por insuficiência de horas e força de trabalho potencial. | SIDRA 4099, variável 4118. A tabela 6433 é de inovação empresarial, não de mercado de trabalho. |
+| Informalidade | Pessoas ocupadas em situações definidas pelo IBGE / população ocupada. | [SIDRA 4093, variável 12466](https://servicodados.ibge.gov.br/api/v3/agregados/4093/metadados). Não dividir pela população total nem pela força de trabalho. |
+| Rendimento real habitual | Rendimento habitual, a preços de uma base declarada, trabalho principal ou todos os trabalhos. | [SIDRA 5436, variável 5933 para todos os trabalhos](https://servicodados.ibge.gov.br/api/v3/agregados/5436/metadados). A tabela 5434 mede ocupados por atividade, não esse rendimento. |
+| Vínculo formal e pessoa ocupada | Um vínculo é uma relação de emprego; uma pessoa pode ter mais de um vínculo. | [Novo CAGED, metodologia e publicações](https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/acoes-e-programas/programas-projetos-acoes-obras-e-atividades/estatisticas-trabalho/novo-caged). Saldo de admissões e desligamentos não deve ser usado para explicar automaticamente a diferença de estoques da PNADC. |
+| Pobreza monetária | Pessoas abaixo de uma linha de renda; registrar PPC, ano, fonte, cobertura e período. | [IBGE Síntese de Indicadores Sociais](https://www.ibge.gov.br/estatisticas/sociais/populacao/9221-sintese-de-indicadores-sociais.html). Não juntar séries UCA/INDEC, nem trocar pobreza monetária por fome. |
+| Fome e insegurança alimentar | Subalimentação populacional da FAO e experiência domiciliar da EBIA são medidas distintas. | [FAO SOFI](https://www.fao.org/publications/sofi/en/). Resultado abaixo do limiar de 2,5% não autoriza inventar uma estimativa pontual de 2,4%. |
+
+## Empresas, orçamento e comparações internacionais
+
+| Conceito | Regra |
+| :--- | :--- |
+| Recuperação judicial | Separar processo e CNPJ. A [Serasa, divulgação de abril de 2026](https://www.serasaexperian.com.br/sala-de-imprensa/indicadores/recuperacoes-judiciais-avancam-no-brasil-e-atingem-25-mil-empresas-em-2025-maior-nivel-da-serie-aponta-serasa-experian/), distingue 977 processos e 2.466 CNPJs em 2025 e informa revisão metodológica. |
+| Tax wedge | Tributos e contribuições líquidos de benefícios em relação ao custo total do empregador, para um perfil familiar e salarial especificado. A definição da [OCDE Taxing Wages](https://doi.org/10.1787/cea9eba3-en) não é o mesmo que encargos sobre salário líquido ou somente contribuição patronal. |
+| Execução orçamentária | Autorizado, empenhado, liquidado, pago e restos a pagar são estágios diferentes. Usar mesma cobertura e estágio ao comparar períodos no [Siga Brasil](https://www12.senado.leg.br/orcamento/sigabrasil). |
+| Rating | Informar agência, data e escala nacional/internacional. Uma classificação nacional elevada não prova grau de investimento internacional. |
+| Percentual e ponto percentual | Uma taxa de 10% para 12% aumenta 2 pontos percentuais, ou 20% em termos relativos. |
+| Cotação e valor da moeda | Se ARS/USD sobe de 365 para 800, o dólar sobe 119,18%; o peso perde 54,375% do valor em dólares. Denominadores inversos não produzem a mesma variação. |
+| Medida distributiva | Renda média, mediana, Gini e percentis respondem a perguntas diferentes. Informar ponderação, população, deflator e ano-base; não estimar distribuição a partir da média. |
+
+## Efeitos distributivos
+
+Indicadores nacionais precisam ser complementados por grupos e territórios. Uma diferença de média não demonstra discriminação causal nem informa a experiência de todas as pessoas. Mediana, dispersão, composição e cobertura ajudam a distinguir ganho agregado de distribuição do ganho.
+
+## Conclusão e limites da evidência
+
+Este dicionário padroniza conceitos utilizados nesta edição. Cada aplicação ainda deve conferir variável, unidade e versão na resposta da fonte. Indicadores com nomes parecidos podem ter denominadores diferentes; onde não houver compatibilidade, o projeto deve preservar a lacuna em vez de publicar uma comparação artificial.

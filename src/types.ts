@@ -5,6 +5,11 @@ export interface Heading {
 }
 
 export interface DocumentItem {
+  reviewedAt: string;
+  evidencePeriod: string;
+  contentHash: string;
+  contentUrl: string;
+  sources: { url: string; label: string; line?: number }[];
   id: string;
   path: string;
   fileName: string;
@@ -38,6 +43,7 @@ export interface CategoryItem {
   name: string;
   order: number;
   icon: string;
+  readmePath?: string | null;
   documents: CategorySummary[];
 }
 
@@ -80,3 +86,5 @@ export interface GraphData {
   nodes: GraphNode[];
   edges: GraphEdge[];
 }
+
+export type DocumentMetadata = Omit<DocumentItem, 'rawContent' | 'plainText'>;

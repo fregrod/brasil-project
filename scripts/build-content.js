@@ -1,5 +1,10 @@
 import fs from 'fs';
 import path from 'path';
+import crypto from 'node:crypto';
+import MiniSearch from 'minisearch';
+import { extractHeadings, extractLinks, resolveDocumentLink } from '../shared/content.mjs';
+import { searchOptions } from '../shared/search.mjs';
+import { extractPassages } from '../shared/passages.mjs';
 import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -18,34 +23,8 @@ const CATEGORY_MAP = {
   'geopolitica_e_energia': { name: 'Geopolítica & Soberania', order: 9, icon: 'Globe' },
   'ideologia_e_discursos': { name: 'Ideologia & Discursos', order: 10, icon: 'MessageSquareText' },
   'economias_internacionais': { name: 'Economias Internacionais', order: 11, icon: 'BarChart3' },
+  'desenvolvimento_humano_e_territorio': { name: 'Desenvolvimento Humano & Território', order: 12, icon: 'Users' },
 };
-
-function slugify(text) {
-  return text
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .replace(/[^\w\s-]/g, '')
-    .trim()
-    .replace(/\s+/g, '-');
-}
-
-function extractHeadings(markdown) {
-  const headings = [];
-  const lines = markdown.split('\n');
-  for (const line of lines) {
-    const match = line.match(/^(#{1,3})\s+(.+)$/);
-    if (match) {
-      const level = match[1].length;
-      let text = match[2].trim();
-      // clean markdown links inside headings like [# text](link)
-      text = text.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').replace(/[`*_]/g, '');
-      const id = slugify(text);
-      headings.push({ level, text, id });
-    }
-  }
-  return headings;
-}
 
 function cleanPlainText(markdown) {
   return markdown
@@ -94,8 +73,9 @@ function getAllMarkdownFiles(dir, fileList = []) {
     }
     const fullPath = path.join(dir, item.name);
     if (item.isDirectory()) {
-      getAllMarkdownFiles(fullPath, fileList);
-    } else if (item.isFile() && item.name.endsWith('.md')) {
+      const relativeDir = path.relative(rootDir, fullPath);
+      if (Object.keys(CATEGORY_MAP).some(key => key === relativeDir || key.startsWith(relativeDir + '/'))) getAllMarkdownFiles(fullPath, fileList);
+    } else if (item.isFile() && item.name.endsWith('.md') && (dir !== rootDir || ['README.md', 'BASE_FONTES_OFICIAIS.md', 'METODOLOGIA.md', 'DICIONARIO_INDICADORES.md', 'COMPARACOES_GOVERNOS.md', 'VERIFICACAO_INCREMENTOS.md'].includes(item.name))) {
       fileList.push(fullPath);
     }
   }
@@ -109,6 +89,10 @@ function run() {
   for (const filePath of mdFiles) {
     const relPath = path.relative(rootDir, filePath);
     const content = fs.readFileSync(filePath, 'utf-8');
+    const contentHash = crypto.createHash('sha256').update(content).digest('hex').slice(0, 16);
+    const reviewedAt = content.match(/\*\*Revisão editorial:\*\*\s*([^\n]+)/)?.[1]?.trim() || '';
+    const evidencePeriod = content.match(/\*\*Recorte da evidência:\*\*\s*([^\n]+)/)?.[1]?.trim() || '';
+    const sources = extractLinks(content).filter(link => /^https?:/.test(link.url));
 
     const dirName = path.dirname(relPath) === '.' ? '' : path.dirname(relPath);
     const fileName = path.basename(relPath);
@@ -155,6 +139,7 @@ function run() {
       categoryIcon: categoryInfo.icon,
       itemOrder,
       headings,
+      reviewedAt, evidencePeriod, sources, contentHash, contentUrl: `/content/${contentHash}.json`,
       excerpt: extractFirstParagraph(content).slice(0, 240),
       wordCount,
       readTimeMinutes,
@@ -183,8 +168,12 @@ function run() {
         name: doc.category,
         order: doc.categoryOrder,
         icon: doc.categoryIcon,
+        readmePath: null,
         documents: [],
       };
+    }
+    if (doc.fileName.toLowerCase() === 'readme.md') {
+      categories[doc.categoryKey].readmePath = doc.path;
     }
     categories[doc.categoryKey].documents.push({
       id: doc.id,
@@ -212,6 +201,7 @@ function run() {
     'geopolitica_e_energia': '#14B8A6',
     'ideologia_e_discursos': '#E11D48',
     'economias_internacionais': '#6366F1',
+    'desenvolvimento_humano_e_territorio': '#84CC16',
   };
 
   const docPaths = new Set(documents.map((d) => d.path));
@@ -269,31 +259,9 @@ function run() {
 
   // 2. Extract explicit markdown links inside content
   for (const doc of documents) {
-    const linkMatches = [...doc.rawContent.matchAll(/\[([^\]]+)\]\(([^)]+)\)/g)];
-    for (const match of linkMatches) {
-      const rawHref = match[2];
-      if (!rawHref.includes('.md')) continue;
-
-      let cleanTarget = rawHref.split('#')[0];
-      // strip file:///.../brasil-project/
-      cleanTarget = cleanTarget.replace(/file:\/\/\/.*?\/brasil-project\//, '');
-
-      // resolve relative path
-      const pathParts = doc.path.split('/');
-      pathParts.pop();
-      const hrefParts = cleanTarget.split('/');
-      for (const seg of hrefParts) {
-        if (seg === '.' || seg === '') continue;
-        if (seg === '..') {
-          if (pathParts.length > 0) pathParts.pop();
-        } else {
-          pathParts.push(seg);
-        }
-      }
-      const resolved = pathParts.join('/');
-      if (docPaths.has(resolved)) {
-        addEdge(doc.path, resolved, 'explicit');
-      }
+    for (const link of extractLinks(doc.rawContent)) {
+      const resolved = resolveDocumentLink(doc.path, link.url);
+      if (resolved && docPaths.has(resolved.path)) addEdge(doc.path, resolved.path, 'explicit');
     }
   }
 
@@ -380,6 +348,34 @@ function run() {
 
   const graphData = { nodes, edges };
 
+  // Reader payloads are immutable and requested one document at a time.
+  const publicDir = path.join(rootDir, 'public', 'content');
+  fs.mkdirSync(publicDir, { recursive: true });
+  const expected = new Set();
+  for (const doc of documents) {
+    const filename = `${doc.contentHash}.json`;
+    expected.add(filename);
+    fs.writeFileSync(path.join(publicDir, filename), JSON.stringify({ rawContent: doc.rawContent }));
+  }
+  const metadata = documents.map(({ rawContent, plainText, ...doc }) => doc);
+  fs.writeFileSync(path.join(outDir, 'documents.json'), JSON.stringify(metadata));
+  const search = new MiniSearch(searchOptions);
+  search.addAll(documents.map(doc => ({
+    id: doc.id, title: doc.title, category: doc.category, path: doc.path,
+    plainText: doc.plainText, headingsText: doc.headings.map(h => h.text).join(' '),
+    passages: extractPassages(doc.rawContent), evidencePeriod: doc.evidencePeriod,
+    isIndex: doc.fileName === 'README.md' || doc.fileName === 'VERIFICACAO_INCREMENTOS.md',
+  })));
+  const searchJSON = JSON.stringify(search);
+  const searchHash = crypto.createHash('sha256').update(searchJSON).digest('hex').slice(0, 16);
+  const searchFilename = `search-${searchHash}.json`;
+  expected.add(searchFilename);
+  fs.writeFileSync(path.join(publicDir, searchFilename), searchJSON);
+  fs.writeFileSync(path.join(outDir, 'search.json'), JSON.stringify({ url: `/content/${searchFilename}`, count: documents.length }));
+  for (const name of fs.readdirSync(publicDir)) {
+    if (/^(?:search-)?[a-f0-9]{16}\.json$/.test(name) && !expected.has(name)) fs.unlinkSync(path.join(publicDir, name));
+  }
+  // Full source retained only for audit tooling, never imported by the app.
   fs.writeFileSync(path.join(outDir, 'content.json'), JSON.stringify(documents, null, 2), 'utf-8');
   fs.writeFileSync(path.join(outDir, 'categories.json'), JSON.stringify(categoryList, null, 2), 'utf-8');
   fs.writeFileSync(path.join(outDir, 'graph.json'), JSON.stringify(graphData, null, 2), 'utf-8');

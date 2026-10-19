@@ -3,13 +3,17 @@ import { Heading } from '../types';
 import { AlignLeft, Clock, FileText } from 'lucide-react';
 
 interface TableOfContentsProps {
+  embedded?: boolean;
   headings: Heading[];
+  onNavigateAnchor: (id: string) => void;
   wordCount: number;
   readTimeMinutes: number;
 }
 
 export const TableOfContents: React.FC<TableOfContentsProps> = ({
+  embedded = false,
   headings,
+  onNavigateAnchor,
   wordCount,
   readTimeMinutes,
 }) => {
@@ -30,21 +34,27 @@ export const TableOfContents: React.FC<TableOfContentsProps> = ({
       }
     );
 
-    const elements = headings
-      .map((h) => document.getElementById(h.id))
-      .filter((el): el is HTMLElement => el !== null);
-
-    elements.forEach((el) => observer.observe(el));
-
-    return () => {
-      elements.forEach((el) => observer.unobserve(el));
+    const observed = new Set<HTMLElement>();
+    setActiveId('');
+    const attach = () => {
+      for (const el of observed) {
+        if (!el.isConnected) { observer.unobserve(el); observed.delete(el); }
+      }
+      for (const heading of headings) {
+        const el = document.getElementById(heading.id);
+        if (el && !observed.has(el)) { observer.observe(el); observed.add(el); }
+      }
     };
+    attach();
+    const mutation = new MutationObserver(attach);
+    mutation.observe(document.getElementById('root')!, { childList: true, subtree: true });
+    return () => { mutation.disconnect(); observer.disconnect(); };
   }, [headings]);
 
   const filteredHeadings = headings.filter((h) => h.level === 2 || h.level === 3);
 
   return (
-    <aside className="w-64 shrink-0 hidden xl:block sticky top-24 self-start max-h-[calc(100vh-8rem)] overflow-y-auto pr-4 text-xs">
+    <aside className={embedded ? 'w-full text-xs' : 'w-56 shrink-0 hidden 2xl:block sticky top-24 self-start max-h-[calc(100vh-8rem)] overflow-y-auto pr-4 text-xs'}>
       <div className="flex items-center gap-3 text-zinc-400 dark:text-zinc-500 pb-3 mb-4 border-b border-border-light dark:border-border-dark font-mono">
         <span className="flex items-center gap-1.5">
           <Clock size={12} />
@@ -72,10 +82,7 @@ export const TableOfContents: React.FC<TableOfContentsProps> = ({
                   href={`#${h.id}`}
                   onClick={(e) => {
                     e.preventDefault();
-                    const el = document.getElementById(h.id);
-                    if (el) {
-                      el.scrollIntoView({ behavior: 'smooth' });
-                    }
+                    onNavigateAnchor(h.id);
                   }}
                   className={`block py-1 transition-colors leading-relaxed ${
                     h.level === 3 ? 'pl-3' : 'pl-0'

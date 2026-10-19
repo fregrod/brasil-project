@@ -1,105 +1,80 @@
-# A Soberania Nacional no Governo Bolsonaro: Fatos, Decisões e Análise Dialética
+# Soberania no governo Bolsonaro: decisões, continuidade e limites
 
-> **Classificação:** Geopolítica, Estratégia de Defesa e Relações Internacionais  
-> **Período Coberto:** 2019 – 2022 (Gestão Jair Bolsonaro)  
-> **Objetivo:** Avaliar de forma estritamente factual as principais decisões executivas, tratados, disputas internacionais, acordos de defesa e políticas de recursos estratégicos do governo Jair Bolsonaro sob o prisma da **Soberania Nacional**.  
-> **Estrutura:** (1) A Doutrina Bolsonarista de Soberania; (2) As Grandes Decisões e Fatos Concretos; (3) Análise Favorável (O Nacionalismo Territorial e Pragmático); (4) Análise Crítica (O Isolamento Diplomático e a Perda de Ativos); (5) Fontes Oficiais Primárias.
+> **Revisão editorial:** 19/10/2026.
+> **Recorte da evidência:** Acordo de Alcântara de 2019 promulgado em 2020; Lei da Eletrobras de 2021; alienações da NTS em 2017 e 2021; início da interiorização da Acolhida em 2018 e marco divulgado em março de 2023. Episódios sem ato ou documento primário conferido não são certificados como resultados causais.
 
----
+## 1. Critérios de avaliação
 
-## 1. A Doutrina Bolsonarista de Soberania: Nacionalismo Territorial e Antiglobalismo
+Soberania envolve capacidade de decisão, defesa, tecnologia, resiliência de suprimento, sustentabilidade e respeito à Constituição. Retórica nacionalista, propriedade pública, parceria externa ou confronto diplomático não demonstram isoladamente aumento ou perda de autonomia.
 
-A concepção de soberania nacional adotada por Jair Bolsonaro, sintetizada na formulação de seu primeiro chanceler, Ernesto Araújo, e na influência do pensamento militar conservador pós-64, estruturou-se em torno de quatro premissas fundamentais:
+Como no estudo dos governos Lula, distinguem-se concepção, autorização, contratação, execução e resultado. Ações anteriores continuadas e marcos posteriores não são apropriados integralmente ao mandato analisado.
 
-```mermaid
-flowchart TD
-    subgraph Doutrina ["Pilares da Soberania segundo o Bolsonarismo"]
-        P1["<b>1. A Amazônia é Soberania Inegociável:</b><br>Recusa veemente à 'internacionalização' da Amazônia,<br>combate à tutela de ONGs estrangeiras e exploração econômica da região."]
-        P2["<b>2. Antiglobalismo e Soberania Civilizatória:</b><br>Rejeição a tratados multilaterais da ONU (Pacto Global de Migração),<br>críticas à OMS e alinhamento à aliança conservadora ocidental (Trump/Orbán)."]
-        P3["<b>3. Soberania Alimentar Global (O 'Celeiro do Mundo'):</b><br>Segurança no suprimento de insumos agrícolas (fertilizantes russos)<br>para garantir a liderança agroexportadora brasileira."]
-        P4["<b>4. Integração Territorial e Controle de Fronteiras:</b><br>Presença ostensiva das Forças Armadas nas fronteiras terrestres<br>e gestão militar do fluxo migratório na fronteira Norte (Operação Acolhida)."]
-    end
-```
+## 2. Alcântara: acordo e condições
 
----
+O acordo de salvaguardas tecnológicas assinado em **2019** foi promulgado pelo **Decreto 10.220/2020**. Seu objeto é proteger tecnologia envolvida em lançamentos, com compromissos e restrições definidos; não se confunde com arrendamento genérico ou cessão automática de território. [Fonte: decreto e acordo integral](https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/decreto/d10220.htm).
 
-## 2. As Grandes Decisões e Fatos Concretos
+A avaliação deve separar possibilidade jurídica de uso comercial, contrato de lançamento, receita realizada e desenvolvimento da tecnologia brasileira. Não se mantém a cifra antiga de participação dos componentes americanos em todos os satélites nem se presume receita obtida apenas pela assinatura.
 
-### 2.1. O Acordo de Salvaguardas Tecnológicas de Alcântara com os EUA (2019)
-* **A Decisão:** Em março de 2019, durante visita oficial à Casa Branca, Bolsonaro assinou o **Acordo de Salvaguardas Tecnológicas (AST)** relativo ao Centro de Lançamento de Alcântara (CLA), no Maranhão, promulgado pelo [Decreto nº 10.220/2020](https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/decreto/d10220.htm) após aprovação no Congresso:
-  * O acordo estava travado havia quase 20 anos devido a resistências de setores que apontavam risco de cessão de território soberano aos EUA;
-  * O tratado viabilizou o uso comercial da base brasileira por empresas globais que utilizam componentes aeroespaciais patenteados nos EUA (cerca de 80% dos satélites mundiais), preservando a jurisdição brasileira e gerando receitas para a Força Aérea Brasileira (FAB).
+Argumentos de acesso ao mercado e de restrições tecnológicas podem coexistir. A conclusão depende do conteúdo do tratado e de seus resultados, além dos efeitos sobre comunidades do entorno, que não foram quantificados neste estudo.
 
-### 2.2. A Crise da Amazônia e o Confronto com Emmanuel Macron (2019)
-* **O Fato:** Em agosto de 2019, durante a disparada dos focos de queimada na floresta amazônica, o presidente da França, Emmanuel Macron, classificou as queimadas como uma *"crise internacional"* e sugeriu discutir a internacionalização da proteção da Amazônia na cúpula do G7:
-* **A Resposta Soberanista:** Bolsonaro rebateu de imediato, denunciando uma *"mentalidade colonialista descabida no século XXI"* e declarando que *"a soberania brasileira sobre a Amazônia é inegociável"*. O governo rejeitou a ajuda financeira de US$ 20 milhões anunciada pelo G7 e suspendeu temporariamente o comitê orientador do **Fundo Amazônia** (paralisando doações da Noruega e Alemanha) por discordar do poder concedido a ONGs internacionais na destinação dos recursos.
+## 3. Amazônia e diplomacia ambiental
 
-### 2.3. A Viagem a Moscou e o Acordo de Fertilizantes com Vladimir Putin (Fevereiro de 2022)
-* **A Decisão Sob Pressão:** Em 16 de fevereiro de 2022 — escassos dias antes da eclosão da invasão russa à Ucrânia —, Bolsonaro manteve sua viagem oficial a Moscou, desconsiderando apelos formais do governo dos Estados Unidos (administração Joe Biden) que exigiam o cancelamento da visita:
-* **O Resultado Estratégico:** Bolsonaro reuniu-se com o presidente russo Vladimir Putin no Kremlin e garantiu a **manutenção ininterrupta do fornecimento de fertilizantes russos (potássio e nitrogenados)** para a safra do agronegócio brasileiro, blindando o setor produtivo nacional do risco iminente de desabastecimento;
-* **Posicionamento na ONU:** O Brasil condenou formalmente a invasão territorial da Ucrânia na Assembleia Geral da ONU, mas **recusou-se terminantemente a aderir às sanções econômicas** unilaterais impostas pelo Ocidente contra a Rússia, preservando seus interesses de soberania agroalimentar.
+A disputa diplomática sobre Amazônia e queimadas é relevante para soberania, cooperação e reputação. Contudo, defender jurisdição territorial não demonstra, por si, que existisse um plano executável de internacionalização, nem que uma resposta tenha impedido tal plano.
 
-### 2.4. A Operação Acolhida e o Controle da Fronteira com a Venezuela (2019–2022)
-* **A Ação Militar:** Diante da catástrofe humanitária e do êxodo em massa de cidadãos venezuelanos que cruzavam a fronteira em Roraima fugindo do colapso do regime de Nicolás Maduro, o governo Bolsonaro estruturou a **Operação Acolhida** sob comando direto do Exército Brasileiro:
-* **Soberania e Segurança Integradas:** As Forças Armadas montaram postos avançados de triagem, controle biométrico, imunização e abrigamento em Pacaraima e Boa Vista, interiorizando mais de **100 mil refugiados** para diversos estados brasileiros e impedindo a sobrecarga caótica dos serviços públicos e a desestabilização da segurança pública na fronteira Norte.
+A versão anterior ligava suspensão de governança do Fundo Amazônia, conflito no G7 e recusas de auxílio como uma sequência causal única. A cadeia completa de acontecimentos não está comprovada pelas fontes reunidas. Também foram retirados juízos sobre dano comercial realizado sem identificar produto, barreira e documento.
 
-### 2.5. A Decisão Soberana no Leilão do 5G e a Tecnologia Chinesa (2021)
-* **A Pressão Geopolítica:** O governo dos EUA (tanto a administração Trump quanto enviados de Biden) realizou intensa pressão diplomática e militar para que o Brasil banisse formalmente a fornecedora chinesa **Huawei** da infraestrutura das futuras redes de quinta geração (5G);
-* **A Decisão Técnica da Anatel:** Apesar de sua retórica ideológica anticomunista, Bolsonaro optou pelo pragmatismo econômico. O edital do 5G, aprovado pela Anatel em novembro de 2021, **não baniu a tecnologia chinesa** do mercado comercial geral (evitando a explosão de custos para as operadoras de telefonia privadas), mas atendeu às Forças Armadas determinando a criação de uma **rede privativa e criptografada de comunicação para o governo federal e a segurança de Estado**.
+Um marco posterior foi conferido no texto original: o **Decreto 11.368, de 01/01/2023**, voltou a prever, no Decreto 6.527/2008, o Comitê Técnico do Fundo Amazônia (CTFA) e o Comitê Orientador (COFA), com funções e composição definidas. O ato documenta a reorganização da governança; não mede, por si, novas doações, execução de projetos ou efeito causal sobre o desmatamento. [Planalto — Decreto 11.368/2023, arts. 3º-A e 4º-A incluídos](https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/d11368.htm).
 
-### 2.6. A Desestatização da Eletrobras e a Alienação de Refinarias da Petrobras
-* **A Decisão:** Em julho de 2021, o Congresso e a Presidência aprovaram a [Lei nº 14.182/2021](https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14182.htm), privatizando a **Eletrobras** (maior geradora e transmissora hidrelétrica da América Latina) via capitalização em bolsa, na qual a União reduziu sua fatia votante para menos de 50% (mantendo uma *golden share*);
-* **Venda de Ativos de Petróleo:** A Petrobras alienou a Refinaria Landulpho Alves (RLAM) na Bahia para o fundo soberano árabe Mubadala e vendeu integralmente a malha de gasodutos estratégicos (NTS e TAG) para consórcios estrangeiros.
+Desmatamento, fiscalização, compromissos ambientais e acesso a mercados devem ser avaliados com séries consistentes e mecanismos específicos. A EUDR não pode ser atribuída causalmente a uma única presidência sem examinar o processo legislativo e as motivações documentadas. [Fonte do instrumento europeu: Regulamento 2023/1115](https://eur-lex.europa.eu/legal-content/EN/LSU/?uri=uriserv%3AOJ.L_.2023.150.01.0206.01.ENG).
 
----
+## 4. Fertilizantes e relações com a Rússia
 
-## 3. Análise Favorável: O Nacionalismo Territorial e a Coragem Pragmática
+Suprimento de fertilizantes é uma dimensão de segurança produtiva. Importação, estoques, preços, logística, crédito e capacidade nacional determinam o risco de desabastecimento; relações diplomáticas são um componente, não explicação suficiente de todo resultado.
 
-Os defensores da estratégia bolsonarista sustentam que suas decisões protegeram a soberania do Brasil em episódios de grave perigo e chantagem internacional:
+O texto anterior afirmava que uma visita presidencial a Moscou teria “garantido fornecimento ininterrupto” e “evitado colapso” da safra. Não foi identificado aqui contrato ou avaliação contrafactual que sustente essa atribuição. O episódio permanece como decisão diplomática a documentar, sem certificar exclusividade causal nem número de pessoas supostamente alimentadas.
 
-1. **Defesa Altiva da Amazônia contra o Neocolonialismo:** Bolsonaro teve a coragem de confrontar diretamente potências europeias que, sob o manto da bandeira ecológica, buscam impor restrições comerciais protecionistas para frear a competitividade mundial do agronegócio brasileiro ou transformar a Amazônia em santuário sob tutela internacional;
-2. **Garantia da Safra e Soberania Alimentar em Moscou:** Ao resistir ao ultimato da Casa Branca e viajar a Moscou às vésperas da guerra em 2022, Bolsonaro garantiu o potássio russo que evitou o colapso da safra agrícola nacional de 2022/2023. Essa decisão preservou o Brasil como o grande garantidor da alimentação de mais de 1 bilhão de pessoas no mundo em meio à crise global;
-3. **Destravamento de Alcântara:** Concluiu o Acordo de Salvaguardas Tecnológicas após duas décadas de paralisia da esquerda, inserindo a Base de Alcântara no mercado aeroespacial comercial privado internacional sem ceder um milímetro de soberania territorial;
-4. **Independência Pragmática no 5G:** Ao não ceder ao veto cego contra a Huawei exigido pelos EUA, o governo impediu um encarecimento bilionário da infraestrutura digital e evitou uma crise diplomática e retaliações comerciais da China, maior parceira comercial do país;
-5. **Comando Militar Exemplar na Fronteira:** A Operação Acolhida demonstrou a capacidade de mobilização das Forças Armadas, afirmando a presença do Estado na Amazônia e gerindo um drama humanitário internacional com ordem, segurança e reconhecimento da ONU.
+Uma avaliação requer comparar importações mensais, fornecedores, sanções e exceções, preços e estoques antes e depois. Diversificar fornecedores e ampliar produção nacional também envolve custo, energia, escala e impacto ambiental; dependência externa não se resolve apenas por anúncio de plano.
 
----
+## 5. Acolhida: origem anterior e continuidade
 
-## 4. Análise Crítica: Subserviência Ideológica, Isolamento e Desnacionalização
+A estratégia de interiorização começou em **abril de 2018**, antes do mandato Bolsonaro. Foi continuada durante sua gestão. A marca de **100 mil pessoas interiorizadas** foi atingida em **30/03/2023**, conforme divulgação do ACNUR de **31/03/2023**, portanto não pode ser integralmente atribuída ao período de 2019–2022. O público inclui pessoas refugiadas e migrantes, categorias que não são sinônimas. [Fonte: ACNUR, comunicado da Assessoria de Comunicação do MDS e histórico](https://www.acnur.org/br/noticias/comunicados-imprensa/operacao-acolhida-atinge-marca-de-100-mil-refugiados-e-migrantes).
 
-Analistas diplomáticos, juristas e correntes desenvolvimentistas apontam graves contradições e perdas substanciais de soberania durante a gestão Bolsonaro:
+A fonte descreve cooperação entre governo, Forças Armadas, organismos internacionais, sociedade civil, estados e municípios. Não se deve reduzir uma política cooperativa à ação exclusiva de um presidente ou corporação. Interiorização voluntária e abrigo também não provam, sozinhos, integração duradoura ou ausência de sobrecarga nos serviços. [Fonte: mesmo comunicado publicado pelo ACNUR](https://www.acnur.org/br/noticias/comunicados-imprensa/operacao-acolhida-atinge-marca-de-100-mil-refugiados-e-migrantes).
 
-1. **Subserviência Unilateral aos Estados Unidos de Trump:**  
-   Em contraste com a tradição de altivez e universalismo do Itamaraty, Bolsonaro adotou um alinhamento automático e acrítico à administração de Donald Trump. O Brasil abriu mão unilateralmente do status de país em desenvolvimento na Organização Mundial do Comércio (OMC) sem obter contrapartidas sólidas e cogitou dar apoio logístico a uma eventual intervenção armada norte-americana na Venezuela, violando o princípio basilar da não-intervenção (Art. 4º da CF/88);
-2. **O Status de "Pária Internacional":**  
-   O antiglobalismo radical pregado pelo chanceler Ernesto Araújo (*"Se isso faz de nós um pária, sejamos esse pária"*) isolou o país das grandes mesas multilaterais. Bolsonaro colecionou atritos públicos infantis com os chefes de Estado dos principais parceiros comerciais do país: França (Macron), Alemanha (Merkel), Argentina (Alberto Fernández) e a própria China, atacada verbalmente por ministros e deputados da base governista;
-3. **Dano à Soberania Comercial pelo Descontrole do Desmatamento:**  
-   O desmonte da fiscalização do Ibama e do ICMBio e o aumento expressivo do desmatamento (que superou 13.000 km² na taxa PRODES de 2021) dinamitaram a reputação internacional do Brasil. Isso forneceu o pretexto perfeito para os protecionistas agrícolas da Europa aprovarem a rigorosa **Lei Antidesmatamento da União Europeia (EUDR)** e congelarem a ratificação do Acordo Mercosul – União Europeia, impondo barreiras diretas às exportações do agronegócio;
-4. **Desnacionalização e Perda de Soberania Energética:**  
-   A privatização da Eletrobras e a entrega de refinarias e gasodutos essenciais (TAG e NTS) a fundos estrangeiros retiraram do Estado brasileiro a capacidade de coordenar investimentos estratégicos em infraestrutura elétrica e de gás natural, convertendo monopólios públicos em monopólios privados desregulados;
-5. **A Dependência Crônica de Fertilizantes Importados:**  
-   Apesar de celebrar o acordo pontual com a Rússia, o governo não executou um plano de reindustrialização para a produção nacional de fertilizantes nitrogenados, mantendo as fábricas de fertilizantes da Petrobras (Fafens) hibernadas ou vendidas, deixando o país com mais de 85% de dependência externa de insumos agrícolas vitais.
+## 6. Redes digitais e autonomia tecnológica
 
----
+Redes comerciais, comunicações privativas de governo, fornecedor, padrões e segurança de dados são decisões distintas. A versão anterior apresentava a opção sobre fornecedores de 5G como resultado pessoal e causal de pragmatismo presidencial, sem os atos regulatórios e critérios técnicos completos.
 
-## 5. Matriz Síntese: As Grandes Decisões e Seus Impactos na Soberania
+A Anatel publicou em **27/09/2021** o **Edital 1/2021-SOR/SPR/CD-Anatel**, para licitar radiofrequências de 700 MHz, 2,3 GHz, 3,5 GHz e 26 GHz. A documentação do Gaispi identifica, entre as obrigações, implantação de rede privativa de comunicação da Administração Pública Federal. Licitação de espectro, escolha de equipamentos pelas operadoras e rede governamental não são o mesmo procedimento. [Anatel — publicação do edital](https://www.gov.br/anatel/pt-br/assuntos/noticias/anatel-publica-edital-do-leilao-do-5g); [Anatel — Gaispi e obrigações](https://www.gov.br/anatel/pt-br/composicao/grupos-de-trabalho/gaispi).
 
-| Decisão de Governo | Dimensão da Soberania | Visão Favorável (Pro-Soberanista) | Visão Crítica (Custos e Vulnerabilidades) |
-| :--- | :--- | :--- | :--- |
-| **Enfrentamento a Macron e Recusa do G7** | Soberania Territorial Amazônica | Barrou a tentativa de internacionalização política e tutela estrangeira da Amazônia. | Enfraqueceu a imagem diplomática e gerou boicote comercial europeu ao agro. |
-| **Viagem a Moscou e Fertilizantes (2022)** | Soberania Agroalimentar | Assegurou o insumo vital para a safra do agro, resistindo à pressão da Casa Branca. | Gerou desconforto diplomático com os países ocidentais democráticos. |
-| **Acordo de Salvaguardas de Alcântara** | Soberania Aeroespacial e Comercial | Destravou a base para lançamentos de satélites comerciais mantendo o comando da FAB. | Críticos alegam concessão de privilégios de sigilo e inspeção a técnicos dos EUA. |
-| **Leilão do 5G e Decisão sobre a Huawei** | Soberania Digital e Tecnológica | Rejeitou o boicote americano, barateando custos e criando rede privativa segura. | Retardou o edital por disputas ideológicas internas antes do consenso técnico. |
-| **Operação Acolhida (Fronteira Norte)** | Soberania e Defesa de Fronteiras | Assegurou a segurança do território e acolhimento humanitário modelar pelo Exército. | Absorveu custos orçamentários substanciais das Forças Armadas no acolhimento. |
-| **Privatização da Eletrobras e Gasodutos** | Soberania Energética e Infraestrutura | Desestatizou ativos caros e atraiu capitais privados para o setor elétrico. | Desnacionalizou infraestruturas vitais e criou monopólios privados de gás e energia. |
+Nesta revisão não se certifica um fornecedor banido ou autorizado em toda categoria nem o custo evitado. A análise deve usar edital, atos da Anatel, obrigações de rede e evidência de implantação; alegações de pressão diplomática e cálculo de custos precisam de documentos próprios.
 
----
+## 7. Eletrobras e gasodutos: autorização não é execução
 
-## 6. Catálogo de Fontes Oficiais Primárias
+A **Lei 14.182/2021** estabeleceu condições para a desestatização da Eletrobras. O ato legislativo não deve ser descrito como se fosse a data de execução integral da operação financeira. Participação acionária, limite de voto, ativos preservados e compromissos precisam ser lidos na regra e nos documentos da operação. [Fonte: Lei 14.182/2021](https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14182.htm).
 
-* *Presidência da República:* [Decreto nº 10.220, de 5 de fevereiro de 2020](https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/decreto/d10220.htm) (Promulga o Acordo de Salvaguardas Tecnológicas de Alcântara com os Estados Unidos).
-* *Congresso Nacional:* [Lei nº 14.182, de 12 de julho de 2021](https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14182.htm) (Desestatização da Eletrobras).
-* *Ministério da Defesa:* [Operação Acolhida - Histórico Oficial](https://www.gov.br/acolhida/) e relatórios operacionais do Exército Brasileiro.
-* *Anatel (Agência Nacional de Telecomunicações):* Acórdão nº 501/2021 e Edital do Leilão do 5G (Redes Privativas de Segurança Nacional).
-* *Ministério das Relações Exteriores (Itamaraty):* Discursos Oficiais na Assembleia Geral da ONU (2019, 2020, 2021 e 2022) e Notas sobre o Conflito Rússia-Ucrânia.
-* *INPE (Instituto Nacional de Pesquisas Espaciais):* Séries Históricas de Desmatamento na Amazônia Legal (PRODES e DETER).
+Na **NTS**, a venda de **90% foi concluída em 04/04/2017** e a dos **10% remanescentes em 30/04/2021**. Logo, atribuir ao governo Bolsonaro a venda integral da empresa apagava a etapa anterior. [Fontes: NTS, histórico](https://www.ntsbrasil.com/a-nts/quem-somos/); [Petrobras, comunicado de aprovação da venda remanescente, 28/04/2021, arquivado na SEC](https://www.sec.gov/Archives/edgar/data/1119639/000129281421001844/pbra20210428_6k1.htm).
+
+Privatização não significa ausência de regulação. A Petrobras registra contratos de acesso ao transporte da NTS aprovados pela ANP em **2022**, em contexto de compromissos com o Cade. Isso contraria a expressão genérica “monopólios privados desregulados”. [Fonte: Petrobras, contratos com a NTS](https://agencia.petrobras.com.br/pt/w/petrobras-informa-sobre-contratos-com-a-nts).
+
+Alienações de TAG e refinarias exigem cronologias e documentos próprios; não se atribui a elas automaticamente o mesmo calendário ou efeito da NTS. A avaliação deve medir preço, investimento, acesso, tarifas, concentração, dividendos e capacidade regulatória, com e sem a operação.
+
+## 8. Relações com EUA, OMC e coerência externa
+
+A aproximação com os EUA pode ser avaliada por compromissos, concessões e resultados. “Subserviência”, “coragem” e “pária” são qualificações políticas, não medidas suficientes de política externa.
+
+Tratamento especial em negociações da OMC, status de desenvolvimento e adesão à OCDE são assuntos distintos. A controvérsia de **2019** foi objeto de audiência parlamentar; sua existência não prova perda de todo direito anterior ou ingresso automático na OCDE. [Fonte: Senado, audiência sobre tratamento especial e diferenciado](https://www12.senado.leg.br/noticias/materias/2019/06/12/renuncia-do-brasil-ao-tratamento-especial-na-omc-sera-debatida-na-cre).
+
+Alegações de violação da não intervenção precisam de atos e fundamentação jurídica; discutir uma hipótese ou manter uma relação diplomática não é, por si, decisão executada. [Fonte dos princípios: Constituição, art. 4º](https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm).
+
+## Efeitos distributivos
+
+Comunidades próximas a bases e projetos, povos indígenas, migrantes, trabalhadores de energia e consumidores podem experimentar efeitos diferentes. Receitas, investimentos e benefícios de infraestrutura não se distribuem automaticamente pelo território.
+
+Acolhimento deve considerar integração, emprego, acesso à saúde, educação, gênero, raça e vulnerabilidades. Política de fertilizantes deve examinar pequenos produtores e custo de alimentos, além de grandes exportadores. Não há cálculo desses efeitos nesta revisão; eles integram os critérios de avaliação.
+
+## Conclusão e limites da evidência
+
+Há decisões verificáveis em acordos e desestatização, além da continuidade de políticas humanitárias. A revisão corrige autoria da Acolhida, seu marco quantitativo, cronologia da NTS e a equivalência indevida entre privatização e desregulação.
+
+Não se demonstra que uma visita tenha evitado colapso agrícola, que retórica territorial tenha impedido internacionalização ou que todas as alienações tenham ampliado ou reduzido autonomia. Esses resultados requerem contratos, séries e comparação com alternativas, aplicando os mesmos critérios usados aos demais governos.

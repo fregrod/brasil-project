@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import type { LucideIcon } from 'lucide-react';
 import { CategoryItem } from '../types';
 import {
   Compass,
@@ -15,7 +16,6 @@ import {
   ChevronDown,
   ChevronRight,
   Folder,
-  FileText,
   BookOpen,
   Network,
 } from 'lucide-react';
@@ -30,7 +30,7 @@ interface SidebarProps {
   onToggleView: (view: 'reader' | 'graph') => void;
 }
 
-const ICON_MAP: Record<string, React.FC<{ size?: number; className?: string }>> = {
+const ICON_MAP: Record<string, LucideIcon> = {
   Compass,
   TrendingUp,
   Building2,
@@ -63,6 +63,21 @@ export const Sidebar: React.FC<SidebarProps> = ({
     return initial;
   });
 
+  // Auto-expand category when active document belongs to it
+  useEffect(() => {
+    const parentCat = categories.find((c) => {
+      const readme =
+        c.readmePath || c.documents.find((d) => d.fileName.toLowerCase() === 'readme.md')?.path;
+      return readme === activePath || c.documents.some((d) => d.path === activePath);
+    });
+    if (parentCat && openCategories[parentCat.key] === false) {
+      setOpenCategories((prev) => ({
+        ...prev,
+        [parentCat.key]: true,
+      }));
+    }
+  }, [activePath, categories]);
+
   const toggleCategory = (key: string) => {
     setOpenCategories((prev) => ({
       ...prev,
@@ -83,7 +98,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
       {/* Sidebar Panel */}
       <aside
         className={`fixed top-14 bottom-0 left-0 z-30 w-72 lg:w-64 xl:w-72 border-r border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark overflow-y-auto transition-transform duration-200 ease-in-out lg:translate-x-0 ${
-          isOpen ? 'translate-x-0' : '-translate-x-full'
+          isOpen ? 'translate-x-0' : '-translate-x-full invisible lg:visible'
         }`}
       >
         {/* View Switcher: Leitor / Grafo */}
@@ -120,29 +135,89 @@ export const Sidebar: React.FC<SidebarProps> = ({
           </div>
         </div>
 
-        <div className="p-4 pt-3 space-y-6">
+        <div className="p-4 pt-3 space-y-5">
           {categories.map((cat) => {
             const Icon = ICON_MAP[cat.icon] || Folder;
             const isCategoryOpen = openCategories[cat.key] !== false;
 
+            // Target README path for this folder (overview / resumão)
+            const targetReadme =
+              cat.readmePath ||
+              cat.documents.find((d) => d.fileName.toLowerCase() === 'readme.md')?.path;
+            const isFolderActive = activePath === targetReadme;
+
+            // Filter out README from the child document list
+            const childDocuments = cat.documents.filter(
+              (doc) => doc.fileName.toLowerCase() !== 'readme.md'
+            );
+
+            const handleFolderClick = () => {
+              // Expand folder so sub-pages are shown
+              setOpenCategories((prev) => ({
+                ...prev,
+                [cat.key]: true,
+              }));
+
+              // Navigate directly to the folder's README (overview / resumão)
+              if (targetReadme) {
+                onSelectDoc(targetReadme);
+                onCloseMobile();
+              } else if (childDocuments.length > 0) {
+                onSelectDoc(childDocuments[0].path);
+                onCloseMobile();
+              }
+            };
+
+            const handleChevronClick = (e: React.MouseEvent) => {
+              e.stopPropagation();
+              toggleCategory(cat.key);
+            };
+
             return (
               <div key={cat.key} className="space-y-1">
-                <button
-                  onClick={() => toggleCategory(cat.key)}
-                  className="w-full flex items-center justify-between text-left text-xs font-semibold text-zinc-900 dark:text-zinc-200 uppercase tracking-wider py-1 px-1 hover:text-zinc-600 dark:hover:text-zinc-400 transition-colors"
+                {/* Folder Header Row: Clicking it navigates to README and expands */}
+                <div
+                  onClick={handleFolderClick}
+                  className={`w-full flex items-center justify-between text-left text-xs font-semibold uppercase tracking-wider py-1.5 px-2 rounded-lg cursor-pointer transition-colors group select-none ${
+                    isFolderActive
+                      ? 'bg-zinc-200/80 dark:bg-zinc-800 text-zinc-950 dark:text-zinc-50 shadow-xs'
+                      : 'text-zinc-800 dark:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800/60'
+                  }`}
+                  title={targetReadme ? `Abrir resumão de ${cat.name}` : cat.name}
                 >
-                  <span className="flex items-center gap-2">
-                    <Icon size={14} className="text-zinc-400 dark:text-zinc-500" />
+                  <span className="flex items-center gap-2 min-w-0 flex-1 pr-1">
+                    <Icon
+                      size={14}
+                      className={`shrink-0 transition-colors ${
+                        isFolderActive
+                          ? 'text-zinc-950 dark:text-zinc-100'
+                          : 'text-zinc-400 dark:text-zinc-500 group-hover:text-zinc-600 dark:group-hover:text-zinc-300'
+                      }`}
+                    />
                     <span className="truncate">{cat.name}</span>
+                    {isFolderActive && (
+                      <span className="text-[9px] font-mono lowercase tracking-normal px-1.5 py-0.5 rounded bg-zinc-300/70 dark:bg-zinc-700 text-zinc-800 dark:text-zinc-200 font-semibold shrink-0">
+                        resumo
+                      </span>
+                    )}
                   </span>
-                  <span className="text-zinc-400">
-                    {isCategoryOpen ? <ChevronDown size={13} /> : <ChevronRight size={13} />}
-                  </span>
-                </button>
 
-                {isCategoryOpen && (
-                  <div className="space-y-0.5 pt-1 pl-2 border-l border-border-light/60 dark:border-border-dark/60 ml-2">
-                    {cat.documents.map((doc) => {
+                  {/* Independent Chevron button to toggle collapse without navigating */}
+                  <button
+                    type="button"
+                    onClick={handleChevronClick}
+                    className="p-1 -mr-1 rounded-md text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 hover:bg-zinc-200/60 dark:hover:bg-zinc-700/60 transition-colors shrink-0"
+                    title={isCategoryOpen ? 'Recolher pasta' : 'Expandir pasta'}
+                    aria-label={isCategoryOpen ? 'Recolher pasta' : 'Expandir pasta'}
+                  >
+                    {isCategoryOpen ? <ChevronDown size={13} /> : <ChevronRight size={13} />}
+                  </button>
+                </div>
+
+                {/* Sub-pages list: Only actual pages, no READMEs */}
+                {isCategoryOpen && childDocuments.length > 0 && (
+                  <div className="space-y-0.5 pt-1 pl-2 border-l border-border-light/60 dark:border-border-dark/60 ml-3">
+                    {childDocuments.map((doc) => {
                       const isActive = activePath === doc.path;
                       return (
                         <button

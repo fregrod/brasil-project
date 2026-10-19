@@ -20,7 +20,7 @@ export const MermaidBlock: React.FC<MermaidBlockProps> = ({ chart }) => {
 
     mermaid.initialize({
       startOnLoad: false,
-      securityLevel: 'loose',
+      securityLevel: 'strict',
       theme: isDark ? 'dark' : 'neutral',
       fontFamily: 'Inter, system-ui, sans-serif',
       themeVariables: isDark
@@ -87,7 +87,7 @@ export const MermaidBlock: React.FC<MermaidBlockProps> = ({ chart }) => {
 
   return (
     <div className="relative my-8 rounded-xl border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark p-4 sm:p-6 transition-all shadow-sm">
-      <div className="flex items-center justify-between pb-3 mb-4 border-b border-border-light dark:border-border-dark text-xs text-zinc-400 dark:text-zinc-500 font-mono">
+      <div className="flex items-center justify-between pb-3 mb-4 border-b border-border-light dark:border-border-dark text-xs text-zinc-400 dark:text-zinc-500 font-mono select-none">
         <span className="flex items-center gap-1.5 uppercase tracking-wider font-medium text-[11px]">
           <span className="w-1.5 h-1.5 rounded-full bg-zinc-400 dark:bg-zinc-600"></span>
           Diagrama Conceitual

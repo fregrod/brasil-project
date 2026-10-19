@@ -1,85 +1,70 @@
-# Governo Jair Bolsonaro (2019 – 2022): Análise Econômica e Indicadores Reais
+# Governo Jair Bolsonaro (2019–2022): reformas, pandemia e contas públicas
 
-> **Período de Gestão:** 2019 – 2022  
-> **Comando Econômico:** Paulo Guedes (Ministério da Economia) e Roberto Campos Neto (Banco Central).  
-> **Bases Oficiais de Dados:** IBGE (Contas Nacionais, IPCA, PNADC), Banco Central (SGS Fiscais, Copom), Secretaria do Tesouro Nacional (RTN), Receita Federal, Rede PENSSAN / FAO e Ministério da Saúde.
+> **Revisão editorial:** 19/10/2026.
+> **Recorte da evidência:** políticas e resultados de 2019–2022, com versões estatísticas identificadas; desdobramentos jurídicos posteriores apenas quando explicitados.
 
----
 
-## 1. Tabela-Síntese de Indicadores Oficiais
+Para uma comparação descritiva uniforme de IPCA, PIB e DBGG, consulte o [quadro reproduzível de períodos de governo](../COMPARACOES_GOVERNOS.md), com durações, fórmulas e lacunas explícitas. Ele complementa este estudo e não identifica efeitos causais.
 
-| Indicador Macroeconômico | Início (2019) | Choque da Pandemia (2020–2021) | Encerramento (2022) | Fonte Oficial Primária |
-| :--- | :--- | :--- | :--- | :--- |
-| **Crescimento do PIB Real** | +1,4% (2019) | -3,3% (2020) / +5,0% (2021) | **+3,0%** (2022) | IBGE - Contas Nacionais |
-| **IPCA Anual** | 4,31% (2019) | 4,52% (2020) / 10,06% (2021) | **5,79%** (2022) | IBGE - Sistema SNIPC |
-| **Taxa de Desemprego (PNADC)** | 11,9% (2019) | 14,9% (Pico da Covid em 2020) | **7,9%** (Fim de 2022) | IBGE - PNAD Contínua (Tabela 4099) |
-| **Taxa Selic Meta** | 4,50% a.a. | 2,00% (Mínima histórica) ➔ 9,25% | **13,75% a.a.** | Banco Central do Brasil (Copom) |
-| **Dívida Bruta (DBGG % do PIB)** | 74,4% (2019) | 87,7% (Pico em 2020) | **71,6% do PIB** (Dez/2022) | Banco Central do Brasil (Série SGS 4505) |
-| **Resultado Primário Governo Central** | -R$ 95,0 bi | -R$ 743,3 bi (2020) / -R$ 35,1 bi (2021) | **+R$ 54,1 bilhões** (Superávit) | Secretaria do Tesouro Nacional (RTN) |
-| **Investimento Público Federal (% PIB)** | 0,6% do PIB | 0,4% do PIB | **~0,3% do PIB** (Mínima histórica) | IFI / Tesouro Transparente |
-| **Insegurança Alimentar Grave (Fome)** | — | Alta expressiva pós-pandemia | **Retorno ao Mapa da Fome** | FAO (SOFI) / Rede PENSSAN (VIGISAN) |
-| **Câmbio Médio (R$ por US$)** | R$ 3,94 (2019) | R$ 5,16 (2020) / R$ 5,39 (2021) | **R$ 5,16** (Dez/2022: R$ 5,21) | Banco Central do Brasil (PTAX) |
+## Pergunta e comparabilidade
 
----
+O período combina reformas institucionais, choque pandêmico, recuperação da atividade e medidas extraordinárias no ano eleitoral. Uma comparação responsável deve separar efeitos da pandemia, resposta pública, preços externos e política doméstica. Não se compara pico trimestral de desemprego com média anual como se fossem medidas equivalentes.
 
-## 2. Confronto Dialético por Eixos Temáticos
+## Quadro de evidências
 
-### Eixo 1: Reformas Microeconômicas e Redução do Papel do Estado
+| Indicador ou decisão | Resultado documentado | Fonte e interpretação |
+| :--- | :--- | :--- |
+| IPCA anual | 2019: 4,31%; 2020: 4,52%; 2021: 10,06%; 2022: 5,79% | [IBGE, série histórica](https://sidra.ibge.gov.br/tabela/1737); inflação não é variação do PIB. |
+| PIB de 2022 | Crescimento real de 3,0% na divulgação de 06/11/2024 | [IBGE, SCN 2022](https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/41763-pib-cresce-3-0-e-totaliza-r-10-trilhoes-em-2022); revisou a primeira divulgação de 2,9%, portanto a versão importa. |
+| Formação bruta de capital fixo | Crescimento de 12,9% em 2021 e 1,1% em 2022 na mesma divulgação | [IBGE](https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/41763-pib-cresce-3-0-e-totaliza-r-10-trilhoes-em-2022); contraria a descrição anterior de ausência absoluta de investimento na recuperação. |
+| Governo Central, primário de 2022 | Superávit de R$ 54,1 bilhões | [IFI, RAF 78](https://www2.senado.leg.br/bdsf/bitstream/handle/id/635756/RAF78_JUL2023.pdf); resultado de caixa não resolve a sustentabilidade futura. |
+| Selic de dezembro de 2022 | 13,75% a.a. | [BCB, Comunicado 39.517, decisão de 07/12/2022](https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?numero=39517&tipo=Comunicado); fechamento, não média do ano. |
+| Auxílio Brasil ampliado | Acréscimo extraordinário de R$ 200 de agosto a dezembro de 2022 | [EC 123, art. 5º, I](https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc123.htm); não tornou permanente o benefício de R$ 600. |
 
-#### A Visão Liberal / Ortodoxa (Pró-Governo)
-* **Argumento:** A gestão de Paulo Guedes promoveu a mais profunda agenda de reformas estruturantes e desregulamentação microeconômica das últimas décadas:
-  1. **Reforma da Previdência (EC 103/2019):** Estabeleceu idade mínima compulsória (65 anos para homens e 62 para mulheres), unificou regimes e gerou economia atuarial projetada em centenas de bilhões de reais em dez anos, estancando a sangria estrutural do déficit da previdência.
-  2. **Marco Legal do Saneamento Básico (Lei 14.026/2020):** Abriu o setor de saneamento à livre concorrência privada mediante leilões competitivos, atraindo mais de R$ 90 bilhões em compromissos de investimentos para universalizar água e esgoto até 2033.
-  3. **Lei da Liberdade Econômica (Lei 13.874/2019):** Eliminou alvarás e licenças para atividades de baixo risco, simplificou a abertura de empresas e limitou o arbítrio regulatório estatal.
-  4. **Autonomia do Banco Central (LC 179/2021):** Blindou a autoridade monetária de interferências político-partidárias com mandatos fixos escalonados.
-  5. **Desestatizações:** Privatização da **Eletrobras** (maior empresa de energia da América Latina), privatização da BR Distribuidora e devolução de bilhões de reais em empréstimos de governos anteriores pelo BNDES ao Tesouro Nacional.
+### Memória de cálculo
 
-#### A Visão Keynesiana / Desenvolvimentista (Crítica)
-* **Argumento:** A agenda liberal focou na desestruturação da capacidade de planejamento do Estado. 
-* A privatização da Eletrobras transferiu um monopólio natural estratégico para o setor privado a preços questionados, embutindo contratações obrigatórias de termelétricas a gás que encareceram a conta de luz dos consumidores.
-* A Reforma da Previdência penalizou severamente os trabalhadores mais pobres e rurais ao dificultar o acesso a pensões e aposentadorias por tempo de contribuição, sem tocar nos privilégios das categorias de elite (militares e cúpula dos poderes).
-* O desmonte do BNDES retirou da indústria brasileira o principal financiador de projetos de longo prazo e transição tecnológica.
+O IPCA acumulado dos quatro anos é `(1,0431 × 1,0452 × 1,1006 × 1,0579 − 1) × 100`, aproximadamente **26,94%**; não é a soma simples dos anuais. Os insumos vêm da [série do IBGE](https://sidra.ibge.gov.br/tabela/1737). Comparações com outro governo precisam do mesmo número de meses e mesmo índice.
 
----
+## Reformas e capacidade do Estado
 
-### Eixo 2: Gestão da Crise da Covid-19 e Desempenho do PIB
+A [EC 103/2019](https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc103.htm) modificou regras previdenciárias, com requisitos gerais, transições e tratamentos específicos. Não unificou todos os regimes nem criou uma única idade compulsória de aposentadoria. O efeito fiscal depende da aplicação ao longo do tempo; projeção atuarial não é economia já realizada.
 
-#### A Visão Liberal / Ortodoxa (Pró-Governo)
-* **Argumento:** O governo federal enfrentou o maior choque sanitário e econômico em um século com resposta fiscal tempestiva e eficiente:
-  * Criação do **Auxílio Emergencial**, que bancou transferências diretas de R$ 600 a R$ 1.200 a mais de 67 milhões de vulneráveis na fase mais aguda da crise, impedindo o colapso do consumo básico.
-  * O **BEm (Programa de Manutenção do Emprego e Renda)** permitiu a suspensão de contratos e redução de jornadas com compensação salarial pela União, preservando mais de 10 milhões de postos de trabalho formais.
-  * Em consequência, o PIB brasileiro caiu apenas 3,3% em 2020 (muito menos que a Alemanha, Reino Unido ou a média da América Latina) e teve uma **recuperação vigorosa em "V"** de 5,0% em 2021 e 3,0% em 2022, desmoralizando projeções internacionais que previam estagnação.
+A [Lei 14.026/2020](https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/lei/l14026.htm) alterou o marco do saneamento, e a [Lei 13.874/2019](https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13874.htm) estabeleceu garantias da liberdade econômica e tratamento de atividades de baixo risco. Concorrência e redução de barreiras podem ampliar investimento; universalização e qualidade exigem contratos, regulação e financiamento, não decorrem automaticamente da aprovação de uma lei.
 
-#### A Visão Keynesiana / Desenvolvimentista (Crítica)
-* **Argumento:** A postura do governo federal durante a pandemia foi de negação da gravidade sanitária e atraso sistemático na aquisição de vacinas, prolongando a incerteza e ceifando centenas de milhares de vidas.
-* O valor de R$ 600 do Auxílio Emergencial não foi proposta do Ministério da Economia — que inicialmente propôs apenas R$ 200 —, tendo sido imposto pelo Congresso Nacional. 
-* A recuperação do PIB em 2021 foi mero rebote estatístico da base deprimida de 2020, impulsionada pelo consumo artificial de poupança e pelas altas temporárias de preços globais de commodities, sem investimento sustentável em capital fixo.
+A [LC 179/2021](https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp179.htm) conferiu autonomia ao Banco Central com mandatos definidos. A desestatização da Eletrobras foi autorizada pela [Lei 14.182/2021](https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14182.htm). Avaliar seu preço, investimento e tarifa requer o [estudo específico](privatizacoes/01_privatizacao_eletrobras_processo_indicadores_corrupcao_e_impactos.md), distinguindo efeitos da propriedade e da modelagem regulatória.
 
----
+## Pandemia, auxílio e recuperação
 
-### Eixo 3: Contas Públicas, Superávit e a "Pedalada dos Precatórios"
+O Auxílio Emergencial foi instituído pela [Lei 13.982/2020](https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/lei/l13982.htm); o programa de redução de jornada e suspensão de contratos com benefício federal foi disciplinado pela [Lei 14.020/2020](https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/lei/l14020.htm). As leis demonstram instrumentos e elegibilidade, não o número contrafactual de empregos ou vidas preservados.
 
-#### A Visão Liberal / Ortodoxa (Pró-Governo)
-* **Argumento:** O governo operou uma consolidação fiscal sem precedentes no mundo pós-pandemia. Em apenas dois anos, o país passou do déficit monumental de R$ 743 bilhões em 2020 (decretado na PEC de Guerra) para o **primeiro superávit primário do Governo Central em 8 anos (+R$ 54,1 bilhões em 2022)**.
-* A **Dívida Bruta (DBGG) recuou de 87,7% para 71,6% do PIB**, fechando o mandato em nível inferior ao que recebeu no início de 2019 (74,4%).
-* O desemprego despencou de 14,9% para 7,9% e as estatais federais geraram lucro recorde conjunto superior a R$ 140 bilhões.
+Transferências e preservação de contratos podem amortecer queda de renda e demanda. A recuperação também envolve reabertura, base estatística, crédito e setor externo. A FBCF registrada pelo IBGE impede tratar todo crescimento posterior como mera ilusão estatística. Por outro lado, a expansão do PIB após uma contração não basta para demonstrar recuperação uniforme do bem-estar. [IBGE, SCN 2022](https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/41763-pib-cresce-3-0-e-totaliza-r-10-trilhoes-em-2022).
 
-#### A Visão Keynesiana / Desenvolvimentista (Crítica)
-* **Argumento:** O suposto superávit de 2022 foi uma **ficção contábil obtida com artifícios eleitoreiros**:
-  1. **A PEC dos Precatórios (ECs 113 e 114/2021):** O governo promoveu um calote institucionalizado ao impor um teto para o pagamento de dívidas judiciais transitadas em julgado da União. Represou dezenas de bilhões de reais em precatórios devidos a aposentados e professores, empurrando essa fatura impagável para o governo seguinte.
-  2. **Asfixia do Investimento Público:** O investimento federal despencou para o menor nível da história (0,3% do PIB), provocando a deterioração das rodovias federais, paralisia de obras de infraestrutura e corte de verbas de merenda e saúde.
-  3. **Desonerações Eleitoreiras de 2022 (LC 194/2022):** Para conter a inflação às vésperas da eleição, o governo cortou o ICMS de combustíveis e energia na marra, confiscando receitas de saúde e educação dos governos estaduais e gerando passivos compensatórios imediatos para a União.
+A avaliação sanitária exige cronologia de vacinação, mortalidade por idade e excesso de mortes, com controle do choque mundial. Não se retém uma contagem de mortes causalmente atribuída à gestão sem esse método.
 
----
+## Inflação e contas públicas
 
-### Eixo 4: Inflação, Fome e Indicadores Sociais
+A invasão russa em larga escala da Ucrânia ocorreu em **fevereiro de 2022**, portanto não explica um IPCA já encerrado em dezembro de 2021. Pode afetar preços de 2022; cadeias globais, câmbio, energia e demanda são mecanismos distintos. [ONU, resolução ES-11/1](https://docs.un.org/en/A/RES/ES-11/1); [IBGE, IPCA](https://sidra.ibge.gov.br/tabela/1737).
 
-#### A Visão Liberal / Ortodoxa (Pró-Governo)
-* **Argumento:** O pico inflacionário de 10,06% em 2021 foi um fenômeno exógeno global gerado pela desarticulação das cadeias de suprimentos mundiais e pela guerra na Ucrânia, que explodiu os preços do petróleo e do trigo.
-* O Banco Central brasileiro foi o mais ágil do mundo: iniciou a alta de juros mais de um ano antes do Federal Reserve dos EUA e do Banco Central Europeu, trazendo a inflação de volta para 5,79% em 2022.
-* No campo social, o governo transformou o antigo Bolsa Família no **Auxílio Brasil permanente de R$ 600**, triplicando o valor médio pago às famílias pobres em relação aos governos do PT.
+As [ECs 113](https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc113.htm) e [114/2021](https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc114.htm) alteraram o regime de precatórios e o teto. Adiar pagamento pode melhorar caixa sem extinguir obrigações; isso não torna inexistente o superávit registrado. A comparação com 2023 deve considerar a quitação de passivos discriminada no [RTN de dezembro/2023](https://cdn.tesouro.gov.br/sistemas-internos/apex/producao/sistemas/thot/arquivos/publicacoes/48787_1551088/anexos/22119_777092/sumario_executivo_dez23.pdf).
 
-#### A Visão Keynesiana / Desenvolvimentista (Crítica)
-* **Argumento:** A desvalorização cambial descontrolada operada na gestão Paulo Guedes (com o dólar saltando para a casa dos R$ 5,50) dolarizou os preços internos de alimentos e combustíveis (via PPI na Petrobras), provocando carestia desumana da cesta básica.
-* Em 2022, o Brasil **retornou oficialmente ao Mapa da Fome da FAO/ONU**. Segundo os relatórios do Inquérito VIGISAN (Rede PENSSAN), mais de 33 milhões de pessoas passaram a conviver com a fome severa no país.
-* O Auxílio Brasil foi turbinado com R$ 600 somente às vésperas da eleição de 2022 mediante a PEC Kamikaze (EC 123/2022), violando a legislação eleitoral e a responsabilidade fiscal em uma tentativa de compra explícita de votos.
+A [LC 194/2022](https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp194.htm) alterou tributação de bens e serviços essenciais. A redução de impostos pode baixar preços, mas também afeta receitas estaduais. A incidência efetiva depende de repasse e compensações; denominar toda a deflação de fictícia confunde redução de preços efetiva com sua possível transitoriedade.
+
+## Pontos que exigem nova apuração
+
+Não se mantêm como fatos: investimento federal de 0,3% do PIB sem definição de universo; estimativa de empregos preservados sem método; e a descrição de compra de votos como decisão judicial definitiva. Intenção eleitoral, investigação e condenação são categorias diferentes. A fome medida por inquérito domiciliar e a subalimentação da FAO também não são a mesma variável.
+
+A DBGG deve ser extraída da [SGS 13762](https://dadosabertos.bcb.gov.br/dataset/13762-divida-bruta-do-governo-geral--pib---metodologia-utilizada-a-partir-de-2008) com uma única revisão do PIB para toda a comparação. A série 4505 anteriormente citada não era dívida bruta do Governo Geral.
+
+## Efeitos distributivos
+
+| Grupo | Canal documentado ou hipótese | Limite |
+| :--- | :--- | :--- |
+| Trabalhadores informais e famílias elegíveis | Transferências previstas na [Lei 13.982](https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/lei/l13982.htm) e na [EC 123](https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc123.htm) | Elegibilidade e gasto não medem efeito causal líquido na pobreza. |
+| Empregados formais | Compensação por redução de jornada/suspensão na [Lei 14.020](https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/lei/l14020.htm) | Número de acordos não equivale a empregos que seriam destruídos sem o programa. |
+| Aposentados e futuros segurados | Mudança de requisitos na [EC 103](https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc103.htm) | Separar sexo, regime, renda, rural/urbano e regra de transição. |
+| Credores judiciais e contribuintes | Mudança de calendário de pagamentos nas [ECs 113](https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc113.htm) e [114](https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc114.htm) | Efeito de caixa não extingue o direito reconhecido. |
+| Consumidores e entes subnacionais | Tributos essenciais alterados pela [LC 194](https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp194.htm) | Repasse ao consumidor e efeito em serviços públicos precisam ser medidos. |
+
+## Conclusão e limites da evidência
+
+Houve resposta fiscal extraordinária e recuperação da atividade, acompanhadas de inflação elevada e mudanças de regras fiscais. Reformas não demonstram por si mesmas todos os resultados prometidos; o choque pandêmico também não elimina a responsabilidade por escolhas de execução. As leituras de eficiência institucional e de proteção social podem ser examinadas conjuntamente. Faltam comparações internacionais ajustadas pelo choque, distribuição da renda e conciliação fiscal estrutural. Não se conclui que o superávit fosse fictício, que todo crescimento fosse mero rebote ou que toda medida extraordinária fosse necessariamente eficaz.

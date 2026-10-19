@@ -1,63 +1,65 @@
-# A Bomba Demográfica, a Previdência Social e o Abismo de Produtividade
+# Demografia, previdência e produtividade: pressões, escolhas e limites
 
-> **Classificação:** Demografia Econômica, Mercado de Trabalho e Sustentabilidade da Seguridade Social  
-> **Período de Referência:** 2000 – 2026 (Com projeções até 2050)  
-> **Bases Oficiais de Dados:** IBGE (Censo Demográfico 2022 e Projeções Populacionais), Secretaria de Previdência (BEPS/RTN), IPEA (Carta de Conjuntura - Produtividade) e FGV IBRE.
+> **Revisão editorial:** 19/10/2026.
+> **Recorte da evidência:** Censo Demográfico 2022, resultados de fecundidade divulgados em 2025; Pisa 2022; Constituição e reforma previdenciária de 2019. Não constitui projeção fiscal atualizada para 2026.
 
----
+## 1. O que a demografia permite afirmar
 
-## 1. O Fim do Bônus Demográfico: Dados do Censo IBGE 2022
+A taxa de fecundidade total obtida pelo **Censo 2022 foi de 1,55 filho por mulher**. O número anteriormente atribuído ao Censo neste estudo, 1,57, não corresponde a esse resultado. Estimativas de uma projeção populacional e resultados censitários devem ser identificados separadamente, pois podem ter procedimentos distintos. [Fonte: IBGE, divulgação de 27/06/2025](https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/43837-censo-2022-mostra-um-pais-com-menos-filhos-e-menos-maes).
 
-O Brasil atravessa a mais rápida transição demográfica do planeta, completando em quatro décadas um processo de envelhecimento que levou mais de um século na Europa ocidental:
-* **População Total Recenseada:** **203,1 milhões de habitantes** em 2022 (ritmo de crescimento anual de apenas 0,52%, o mais baixo desde o primeiro censo de 1872);
-* **Taxa de Fecundidade Total (TFT):** Despencou para **1,57 filho por mulher**, substancialmente abaixo da taxa de reposição populacional (2,1 filhos por mulher);
-* **Explosão do Índice de Envelhecimento:** A proporção de idosos com 65 anos ou mais saltou de 4,8% da população em 1991 para **10,9% em 2022**, devendo ultrapassar 20% antes de 2045.
-* **O Esgotamento do Bônus:** A População em Idade Ativa (PIA - entre 15 e 64 anos), que sustentava o crescimento da força de trabalho, atingiu seu pico e iniciou sua trajetória de contração estrutural permanente.
+Menor fecundidade e aumento da sobrevivência modificam a composição etária. Isso pode reduzir, ao longo do tempo, o crescimento da oferta de trabalhadores e aumentar despesas relacionadas à velhice. Não significa que a população ocupada caia imediatamente: participação feminina, desemprego, migração, escolarização, saúde e idade de saída do mercado também importam.
 
-> [!WARNING]
-> **A Armadilha Histórica:**
-> Países como França, Reino Unido e Japão enriqueceram primeiro para depois envelhecer (quando atingiram a maturidade demográfica, sua renda per capita já superava US$ 30.000). O Brasil está **envelhecendo antes de enriquecer**, com uma renda per capita ainda estagnada na faixa dos US$ 10.000 a US$ 11.000.
+**Não se mantém como fato a afirmação de que o número absoluto de pessoas de 15 a 64 anos já entrou em contração permanente.** Para demonstrá-la seria necessário apresentar a tabela de projeção, a revisão utilizada, o ano de máximo e a distinção entre contingente absoluto e participação na população. A redução de uma participação não prova a redução do número de pessoas.
 
----
+“Envelhecer antes de enriquecer” é uma interpretação útil do desafio, mas comparações com Europa ou Japão exigem definir o marco do envelhecimento e medir renda em uma mesma moeda, ano e paridade de poder de compra. Comparar dólares nominais de épocas diferentes não demonstra a tese.
 
-## 2. A Previdência Social e a Conta Fiscal
+## 2. Como analisar a previdência sem misturar regimes
 
-```mermaid
-flowchart LR
-    A["Envelhecimento Populacional<br>(Mais idosos com 65+ anos)"] --> B["Menor Base Contributiva<br>(Menos jovens ingressando na PIA)"]
-    C["Política de Salário Mínimo Real<br>(Reajuste acima da inflação)"] --> D["Indexação Automática<br>(65% dos benefícios do INSS/BPC)"]
-    B & D --> E["Déficit da Previdência > R$ 300 bilhões/ano"]
-    E --> F["Pressão Estrutural sobre a Dívida Pública e Selic"]
-```
+| Componente | O que deve entrar na análise | Cuidado de interpretação |
+| :--- | :--- | :--- |
+| RGPS | Arrecadação líquida, benefícios, composição urbana e rural, renúncias e período | Resultado financeiro anual não é déficit atuarial de longo prazo. |
+| RPPS | Ente federativo, servidores abrangidos, contribuições patronais e dos segurados | Não somar regimes sem explicitar consolidação e transferências. |
+| Proteção social militar | Receitas, despesas e regras específicas | Comparações por beneficiário precisam controlar remuneração e composição. |
+| BPC | Despesa assistencial e critérios de elegibilidade | É assistência social; não deve ser chamado de aposentadoria contributiva. |
 
-### Números Estruturais do RGPS e RPPS (Tesouro Nacional / Previdência):
-1. **Déficit Anual do RGPS (Setor Privado):** Supera **R$ 300 bilhões anuais** e cresce vegetativamente.
-2. **O Peso da Indexação:** Cada **R$ 1 de aumento real concedido ao Salário Mínimo** acrescenta automaticamente cerca de **R$ 400 milhões em despesas obrigatórias** anuais à Previdência Social e aos cofres do BPC, uma vez que o Artigo 201, § 2º da Constituição Federal proíbe benefícios de valor inferior ao piso nacional.
-3. **Déficit dos Regimes Próprios (RPPS e Militares):** Embora atenda um contingente numérico muito menor de aposentados (servidores públicos federais e militares das Forças Armadas), o rombo per capita é dezenas de vezes superior ao do trabalhador comum do regime geral.
+A Constituição estabelece o piso dos benefícios previdenciários que substituem salário ou rendimento do trabalho; o BPC decorre de outro dispositivo constitucional. Portanto, uma explicação conjunta não deve atribuir ambos exclusivamente ao artigo previdenciário. [Fontes: CF, arts. 201, § 2º, e 203, V](https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm).
 
----
+O efeito orçamentário de um reajuste do mínimo depende da quantidade de benefícios vinculados, duração do pagamento, décimo terceiro onde aplicável e efeitos sobre receitas. A antiga cifra fixa de custo por real de reajuste foi retirada: sem ano, universo e memória de cálculo, não é uma constante utilizável.
 
-## 3. O Abismo da Produtividade Total dos Fatores (PTF)
+A reforma previdenciária alterou requisitos e regras de transição. Avaliar sustentabilidade exige incorporar essas regras, e não projetar indefinidamente a legislação anterior. [Fonte: EC 103/2019](https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc103.htm).
 
-Estudos do IPEA e do FGV IBRE demonstram que a produtividade por trabalhador brasileiro está **estagnada há quatro décadas** (desde o início dos anos 1980):
-* Um trabalhador brasileiro médio produz o equivalente a apenas **25% da riqueza gerada por um trabalhador norte-americano** e cerca de 35% de um trabalhador alemão.
-* **Causas Estruturais do Subdesenvolvimento da Produtividade:**
-  1. **O Apagão Educacional:** Resultados medíocres e estagnados no PISA da OCDE (o Brasil figura na 71ª posição de 89 países em matemática e leitura), somados a um índice de 29% de analfabetismo funcional entre adultos (dados do INAF);
-  2. **O "Custo Brasil" Logístico e Tributário:** Menos de 13% das rodovias brasileiras são pavimentadas, o custo de frete encarece a exportação e empresas gastam mais de 1.500 horas ao ano apenas para calcular e pagar tributos;
-  3. **Insegurança Jurídica e Custo de Capital:** Juros reais médios históricos acima de 6% inviabilizam investimentos privados em maquinário moderno e automação de ponta.
+## 3. Produtividade: três conceitos diferentes
 
----
+- **PIB por pessoa ocupada:** combina eficiência, intensidade de capital e quantidade de horas por ocupado.
+- **PIB por hora trabalhada:** controla horas, mas continua refletindo capital, estrutura produtiva, qualificação e organização.
+- **Produtividade total dos fatores (PTF):** componente estimado a partir de uma função de produção; depende das hipóteses sobre capital, trabalho e sua qualidade.
 
-## 4. Confronto Dialético sobre Demografia e Produtividade
+Não são intercambiáveis. Este estudo não mantém os antigos percentuais de produtividade brasileira em relação aos EUA e à Alemanha: faltavam ano, série, ajuste de preços e conceito homogêneo.
 
-### A Visão Liberal / Ortodoxa (Mercado / Foco na Solvência)
-* **Argumento:** O modelo de seguridade social baseado em repartição simples (*pay-as-you-go*) faliu demograficamente e operará a quebra do Estado se não for reformado:
-  1. **Desvinculação Obrigatória:** É imperativo romper a indexação entre o Salário Mínimo e os benefícios previdenciários e assistenciais (BPC). O salário mínimo deve ser um regulador do mercado de trabalho ativo, enquanto os benefícios previdenciários devem ser reajustados apenas pela inflação passada para estancar a sangria fiscal.
-  2. **Transição para Capitalização:** Os jovens trabalhadores devem poder direcionar parcelas de suas contribuições para contas individuais de previdência privada em seu nome (regime de capitalização), estimulando a poupança interna do país e o mercado de ações.
-  3. **Choque de Produtividade pela Abertura:** A indústria brasileira só elevará sua produtividade quando for exposta à livre concorrência internacional com a redução unilateral de tarifas de importação de máquinas e bens de capital, forçando as empresas a inovar ou fechar.
+O Pisa avalia competências de estudantes, não produtividade de trabalhadores nem qualidade de toda a população adulta. A edição **2022 abrangeu 81 países e economias**; não sustenta o antigo “71º de 89 em matemática e leitura”, que confundia edição e áreas. Resultados e incertezas devem ser apresentados por domínio. [Fontes: Inep, nota sobre o Brasil no Pisa 2022](https://download.inep.gov.br/acoes_internacionais/pisa/resultados/2022/pisa_2022_brazil_prt.pdf); [OCDE, nota oficial do Brasil](https://www.oecd.org/en/publications/pisa-2022-results-volume-i-and-ii-country-notes_ed6fbcc5-en/brazil_61690648-en.html).
 
-### A Visão Keynesiana / Desenvolvimentista (Social / Foco no Bem-Estar)
-* **Argumento:** A Previdência Social é a maior e mais bem-sucedida política de distribuição de renda e coesão social da história do Brasil:
-  1. **Sustentação do Mercado Interno:** Em mais de **70% dos municípios brasileiros** (especialmente no Nordeste e no interior do país), o volume de dinheiro injetado mensalmente pelos benefícios do INSS e BPC é **maior do que o Fundo de Participação dos Municípios (FPM)** e maior do que toda a arrecadação de tributos locais somada. Retirar a vinculação do salário mínimo destruiria o comércio e a economia de milhares de cidades pequenas.
-  2. **A Solução pelo Lado da Receita e do Trabalho Formal:** O déficit da Previdência não deve ser combatido confiscando a renda de aposentados pobres, mas eliminando as desonerações tributárias corporativas bilionárias concedidas a setores empresariais, combatendo a sonegação e formalizando os mais de 38 milhões de trabalhadores que estão na informalidade sem contribuir.
-  3. **Produtividade via Educação Pública:** O salto de produtividade só virá quando o Estado investir massivamente em creches, escolas de tempo integral, universidades públicas e no ensino técnico de qualidade (como os Institutos Federais), transformando o jovem brasileiro em mão de obra de alta qualificação técnica.
+Educação, logística, competição, infraestrutura digital, investimento e gestão são mecanismos plausíveis para melhorar produtividade. Para atribuir uma mudança observada a qualquer um deles, é necessário comparar períodos e grupos, considerando seleção de empresas, ciclo econômico e mudança setorial. Uma lista de entraves não mede a contribuição causal de cada fator.
+
+## 4. Opções de política e seus custos
+
+| Alternativa | Mecanismo esperado | Contrapartida e risco a testar |
+| :--- | :--- | :--- |
+| Aumentar formalização e participação | Ampliar base contributiva e renda | Formalização não elimina automaticamente necessidades futuras de benefícios. |
+| Ajustar regras e combater privilégios | Alterar trajetória da despesa e distribuição | Transição, direitos e capacidade contributiva variam entre grupos. |
+| Alterar indexação | Conter crescimento real de despesas vinculadas | Pode reduzir renda relativa dos beneficiários e demanda local. |
+| Expandir capitalização | Formar ativos para pagamentos futuros | Exige financiar benefícios da geração atual, além de custos, riscos financeiros e cobertura. |
+| Investir em produtividade e cuidado | Aumentar produto, salários e participação | Retornos são heterogêneos e não dispensam escolhas fiscais no curto prazo. |
+
+Não há base nesta revisão para afirmar que desvincular benefícios “destruiria” o comércio municipal ou que capitalização, isoladamente, resolveria a conta pública. O impacto local requer dados municipais de benefícios, FPM, outras transferências e arrecadação própria, com periodicidades iguais.
+
+## Efeitos distributivos
+
+Aposentados de baixa renda são mais sensíveis a mudanças no piso. Trabalhadores informais, pessoas com trajetórias contributivas interrompidas e cuidadores podem ter dificuldades distintas de acesso. Mulheres acumulam trabalho de cuidado; desigualdades de renda, raça, saúde, território e expectativa de vida podem tornar uma regra uniforme desigual em seus efeitos. Esses são mecanismos e grupos a avaliar, não estimativas de impacto calculadas neste capítulo.
+
+Regiões com menor diversificação econômica podem depender mais de transferências; demonstrar quanto exige uma base municipal, não uma generalização nacional. Uma política deve avaliar separadamente cobertura, pobreza, adequação do benefício e custo fiscal.
+
+## Conclusão e limites da evidência
+
+O envelhecimento é um desafio estrutural, mas não demonstra falência inevitável da previdência. Seu efeito depende de emprego, participação, produtividade, desenho de benefícios e tributação. A fecundidade censitária foi corrigida, os conceitos de produtividade foram separados e números sem série verificável foram retirados.
+
+Este capítulo explica mecanismos e escolhas, sem produzir projeção atuarial, decomposição causal da produtividade ou simulação de reforma. Uma conclusão quantitativa sobre solvência requer cenário demográfico datado, receitas e despesas por regime, hipóteses salariais e testes de sensibilidade.

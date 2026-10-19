@@ -1,57 +1,56 @@
-# Segurança Pública e a Nova Geopolítica do Crime Organizado
+# Segurança pública e crime organizado: violência, economia e capacidade estatal
 
-> **Classificação:** Segurança Pública, Criminologia e Economia do Crime  
-> **Período de Referência:** 2000 – 2026  
-> **Bases Oficiais de Dados:** Fórum Brasileiro de Segurança Pública (FBSP - Anuário de Segurança), IPEA (Atlas da Violência), Ministério da Justiça e Segurança Pública (MJSP), COAF e Polícia Federal.
+> **Revisão editorial:** 19/10/2026.
+> **Recorte da evidência:** Atlas da Violência 2019 e seus insumos históricos; Lei de Drogas de 2006; restrições às saídas temporárias de 2024; julgamento do STF de 26/06/2024. Operações policiais mencionadas sem processo primário conferido são tratadas como linhas de investigação, não condenações.
 
----
+## 1. O custo da violência: estimativa histórica, não medição de 2026
 
-## 1. O Custo Macroeconômico da Violência
+O **Atlas da Violência 2019** reuniu estimativas de componentes calculados em anos diferentes e atualizados ao PIB de **2016**. O relatório apresenta esse quadro como aproximação de um limite inferior do custo social, de **5,9% do PIB, ou R$ 373 bilhões**: custos privados de **4,2%**, incluindo custos intangíveis dos homicídios de **2,5%** e segurança privada/seguros de **1,7%**; despesas públicas de **1,7%**. Os valores não representam uma aferição anual contemporânea. [Fonte: Ipea, Atlas 2019, gráfico 1.4, p. 12, e notas metodológicas](https://repositorio.ipea.gov.br/bitstream/11058/9406/1/Atlas%20da%20viol%C3%AAncia_2019.pdf).
 
-A criminalidade no Brasil não é apenas uma tragédia humanitária crônica, mas um dos maiores entraves ao crescimento econômico do país:
-* **Custo Econômico Total da Violência:** Estudos consolidados do IPEA estimam que a violência consome anualmente cerca de **5,9% do Produto Interno Bruto (PIB)** brasileiro (equivalente a mais de **R$ 600 bilhões por ano**);
-* **Composição desse Custo:** Gastos governamentais em segurança pública e sistema penitenciário (~1,5% do PIB); despesas privadas das famílias e empresas com segurança patrimonial armada, blindagem e seguros (~2,0% do PIB); custos hospitalares no SUS com atendimento a feridos por arma de fogo; e a perda de capacidade produtiva de dezenas de milhares de jovens assassinados no auge da vida economicamente ativa.
+Aplicar esse percentual a um PIB posterior é uma **simulação de atualização**, não uma nova estimativa produzida pelo Ipea. Também não equivale a gasto público recuperável: o quadro inclui perdas de bem-estar e custos intangíveis, além de despesas efetivas. Por isso foi retirada a apresentação de “mais de R$ 600 bilhões por ano” como dado atual.
 
----
+## 2. O que significa investigar a economia do crime
 
-## 2. A Mutação do Crime: De Facções Prisionais a Conglomerados Econômicos
+O crime organizado pode combinar controle territorial, comércio ilícito, corrupção, lavagem de dinheiro e participação em negócios legais. A estrutura varia entre facções, milícias, localidades e atividades. Uma empresa investigada não é automaticamente organização criminosa, e uso de um setor para lavagem não autoriza generalizar a acusação a todas as empresas daquele setor.
 
-```mermaid
-flowchart TD
-    A["Origem Prisional (Anos 90/2000)<br>• Rebeliões e controle interno de presídios<br>• Tráfico varejista em favelas e periferias"] --> B["Expansão Logística Transnacional (Anos 2010)<br>• Domínio da rota Solimões e fronteira do Paraguai<br>• Exportação de cocaína via Porto de Santos para Europa"]
-    B --> C["Infiltração na Economia Real Legal (Anos 2020)<br>• Distribuidoras e postos de combustíveis<br>• Concessionárias de transporte público e ônibus<br>• Fintechs, criptoativos e licitações municipais"]
-    D["Milícias Armadas (RJ e periferias)<br>• Controle territorial armado<br>• Monopólio de gás, água, internet e grilagem imobiliária"] -.-> C
-```
+| Frente de investigação | Evidência necessária | Limite da inferência |
+| :--- | :--- | :--- |
+| Portos e rotas transnacionais | Apreensões, investigações e vínculos logísticos identificados | Apreensões dependem de fiscalização e não medem sozinhas o fluxo total. |
+| Combustíveis e distribuição | Beneficiário final, movimentações, documentação fiscal e decisão processual | Movimentação suspeita não equivale integralmente a lucro ou desvio. |
+| Transporte e contratos públicos | Contratos, estrutura societária, pagamentos e decisões individualizadas | Valor contratado não é necessariamente valor lavado. |
+| Fintechs e criptoativos | Rastreamento financeiro e ligação demonstrada com operações ilícitas | A tecnologia não é, por si, clandestina ou criminosa. |
+| Milícias e controle territorial | Coação, domínio de serviços, grilagem e participação de agentes identificados | Não se presume participação de toda uma corporação ou comunidade. |
 
-### 2.1. A Rota Transnacional do Tráfico (PCC e Comando Vermelho)
-As principais facções brasileiras abandonaram o perfil de banditismo tradicional e se transformaram em **multinacionais de logística**:
-* **Rotas de Fronteira:** Domínio das rotas de entrada de pasta-base de cocaína e maconha pelo Rio Solimões (fronteira com Colômbia e Peru) e pela fronteira seca de Pedro Juan Caballero / Ponta Porã com o Paraguai.
-* **O Corredor de Exportação:** Utilização massiva do Porto de Santos, Paranaguá, Itajaí e Salvador para despachar cargas de drogas ocultas em contêineres de exportação legal (soja, café, suco de laranja) em direção a portos da Europa (Antuérpia, Roterdã, Valência) e África Ocidental.
+O texto anterior apresentava a Operação Fim da Linha e aquisições em combustíveis como se todas as responsabilidades já estivessem judicialmente estabelecidas. Nesta revisão, não se reproduzem imputações pessoais ou números de contratos sem a peça primária e a fase processual correspondente. Um acompanhamento de caso deve registrar pessoa ou empresa, conduta imputada, autoridade, processo, data, decisão e eventual recurso.
 
-### 2.2. A Infiltração em Setores Econômicos Legais
-Operações recentes da Polícia Federal, Ministério Público de São Paulo (Gaeco) e Receita Federal desvendaram a colonização de negócios legítimos pelo crime organizado para lavar ativos:
-1. **Setor de Combustíveis:** Aquisição de usinas de etanol, distribuidoras e centenas de postos de gasolina que praticam fraudes volumétricas e sonegação de tributos para circular bilhões de reais ilícitos;
-2. **Transporte Público:** A **Operação Fim da Linha** (abril de 2024 em São Paulo) desarticulou consórcios de ônibus de transporte coletivo municipal controlados pela cúpula do PCC que movimentavam centenas de milhões de reais em contratos públicos de concessão;
-3. **Setor Financeiro Clandestino:** Uso de fintechs não autorizadas e corretoras de criptomoedas para escoar recursos para paraísos fiscais sem alerta aos órgãos de inteligência financeira.
+## 3. Prisão, drogas e distinção entre usuário e traficante
 
-### 2.3. As Milícias e o Controle Territorial Armado
-No Rio de Janeiro e em regiões metropolitanas do país, grupos paramilitares (milícias compostas por agentes públicos corrompidos e criminosos associados) operam como um poder estatal paralelo:
-* Cobrança de taxas de segurança de comerciantes;
-* Monopólio violento na venda de botijões de gás de cozinha, galões de água mineral e sinal clandestino de internet e TV a cabo ("gatonet");
-* Grilagem de terras públicas e construção de edifícios residenciais sem engenharia ou habite-se (como no colapso dos prédios de Muzema em 2019).
+A Lei de Drogas distingue posse para consumo pessoal e tráfico; a primeira não tem o mesmo regime de penas privativas de liberdade do tráfico. Tratar todo encarceramento ligado a drogas como prisão “por posse” confunde enquadramento legal e crítica à forma como ele é aplicado. [Fonte: Lei 11.343/2006, arts. 28 e 33](https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/lei/l11343.htm).
 
----
+Em **26/06/2024**, o STF fixou presunção relativa de uso pessoal de cannabis para até **40 gramas ou seis plantas-fêmeas**. A presunção pode ser afastada por elementos concretos de comércio; quantidades superiores tampouco provam tráfico automaticamente. A decisão não legalizou a venda nem estendeu o mesmo critério a todas as drogas. [Fonte: STF, RE 635.659, Tema 506](https://noticias.stf.jus.br/posts-noticias/stf-define-40-gramas-de-maconha-como-criterio-para-diferenciar-usuario-de-traficante/).
 
-## 3. Confronto Dialético sobre Políticas de Segurança Pública
+O debate sobre encarceramento deve medir prisões provisórias, condenações, tipos penais, duração, reincidência e condições prisionais. Rankings internacionais precisam definir se incluem prisão domiciliar e outras formas de custódia; por isso não se mantém uma contagem sem universo e data.
 
-### A Visão de Lei e Ordem e Punitivismo Penal (Conservadora)
-* **Argumento:** A violência crônica brasileira decorre da sensação de impunidade e da leniência da legislação penal:
-  1. **Endurecimento de Penas e Fim de Benefícios:** O Estado deve extinguir brechas processuais como as "saidinhas temporárias" de presidiários (restringidas pela **Lei nº 14.843/2024**) e aumentar o tempo real de cumprimento de pena em regime fechado para crimes violentos e hediondos.
-  2. **Isolamento Total de Lideranças:** Facções só perdem a capacidade de comandar crimes na rua quando seus líderes são transferidos de forma definitiva e sem contato físico para o Sistema Penitenciário Federal de Segurança Máxima.
-  3. **Retaguarda Jurídica ao Policial:** O policial que arrisca a vida para defender a sociedade contra criminosos armados com fuzis de guerra deve ter proteção jurídica explícita (excludente de ilicitude em serviço), cessando a perseguição judicial a agentes da lei em confrontos armados.
+## 4. Políticas: mecanismos que precisam ser avaliados
 
-### A Visão de Inteligência Financeira e Reformas Estruturais (Progressista)
-* **Argumento:** O modelo histórico de encarceramento em massa e incursões bélicas periódicas em favelas faliu completamente:
-  1. **Os Presídios como Universidades do Crime:** O Brasil já possui a terceira maior população carcerária do mundo (mais de 800 mil presos). Prender jovens pobres por posse de pequenas quantidades de drogas sem arma apenas os joga nos braços das facções nos presídios, fornecendo soldados baratos e vitalícios para o crime organizado.
-  2. **Seguir o Rastro do Dinheiro (Follow the Money):** O crime organizado moderno não será derrotado com tiroteios em becos, mas com **auditoria e inteligência financeira integrada** (Coaf, Receita Federal, PF e Banco Central) bloqueando o patrimônio dos chefes nos setores de combustíveis, transportes, imóveis de luxo e empresas de fachada.
-  3. **Repensar a Política de Drogas:** A proibição cega gera lucros astronômicos para as máfias armadas. O debate sobre regulação de substâncias e foco em saúde pública é indispensável para retirar o financiamento bilionário que sustenta o poder bélico das facções.
+**Investigação e inteligência financeira.** Integrar informação patrimonial, fiscal e policial pode atingir redes de financiamento. A medida depende de qualidade dos dados, capacidade investigativa, cooperação e controle judicial; não substitui proteção cotidiana da população.
+
+**Policiamento e justiça.** Prevenção territorial, atendimento rápido, investigação de homicídios, proteção de testemunhas e execução de penas têm funções diferentes. Aumento de pena só reduz crime se alterar incentivos efetivos; não basta presumir o resultado pela severidade formal.
+
+**Sistema prisional.** Separar lideranças, impedir comunicação ilícita e melhorar governança pode limitar comandos externos, mas também pode deslocar redes e gerar adaptação. Uma afirmação de eficácia exige resultados anteriores e posteriores, com comparação adequada.
+
+**Política de drogas e prevenção.** Mudanças regulatórias devem distinguir substância, produção, venda, consumo, tratamento e mercado ilícito residual. Nem proibição nem regulação têm efeito uniforme sobre violência e saúde.
+
+As restrições às saídas temporárias devem ser descritas pela legislação e por sua aplicação a cada situação; a existência da alteração não comprova redução do crime. [Fonte: Lei 14.843/2024](https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14843.htm).
+
+## Efeitos distributivos
+
+Violência, controle territorial e resposta estatal podem atingir de forma diferente jovens, mulheres, população negra, moradores de periferias, povos indígenas e comunidades de fronteira. A análise deve separar vitimização, exposição, acesso à proteção e consequências de abordagens e prisões. Não há neste capítulo uma mensuração atual por grupo.
+
+Pequenos comerciantes e moradores de áreas dominadas podem enfrentar coerção e custos que não aparecem em registros policiais. Medidas financeiras precisam proteger atividades legítimas e trabalhadores; operações territoriais precisam avaliar segurança de moradores e continuidade de serviços públicos.
+
+## Conclusão e limites da evidência
+
+A violência produz danos humanos e econômicos, mas o custo histórico de 5,9% não é estimativa atual automaticamente transportável. O combate ao crime exige combinar prevenção, investigação, controle patrimonial, justiça e governança prisional, com indicadores de resultados e de danos.
+
+Este capítulo não certifica responsabilidade criminal de entidades, não mede o tamanho atual das economias ilícitas e não estabelece causalmente qual política reduz mais violência. Para avançar, é necessário um painel datado de mortes violentas, esclarecimento, vitimização, prisões e medidas patrimoniais, com definições consistentes e recortes territoriais.

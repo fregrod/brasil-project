@@ -9,9 +9,9 @@ import {
   forceY,
   Simulation,
 } from 'd3-force';
-import { DocumentItem, GraphData, GraphNode, GraphEdge } from '../types';
+import { DocumentMetadata, GraphData, GraphNode, GraphEdge } from '../types';
 import rawGraphData from '../data/graph.json';
-import rawContent from '../data/content.json';
+import rawContent from '../data/documents.json';
 import {
   Search,
   ZoomIn,
@@ -24,33 +24,43 @@ import {
   X,
   Crosshair,
   Network,
+  FileText,
+  ListTree,
 } from 'lucide-react';
 
 interface GraphViewProps {
   onSelectDoc: (path: string) => void;
   onClose: () => void;
   isDarkMode: boolean;
+  activePath?: string;
 }
 
 const initialData = rawGraphData as GraphData;
-const allDocuments = rawContent as DocumentItem[];
+const allDocuments = rawContent as DocumentMetadata[];
 
 export const GraphView: React.FC<GraphViewProps> = ({
   onSelectDoc,
   onClose,
   isDarkMode,
+  activePath,
 }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
+  const initialTargetNode = useMemo(() => {
+    if (!activePath) return null;
+    return initialData.nodes.find((n) => n.id === activePath) || null;
+  }, [activePath]);
+
   const [hoveredNode, setHoveredNode] = useState<GraphNode | null>(null);
-  const [inspectedNode, setInspectedNode] = useState<GraphNode | null>(null);
+  const [inspectedNode, setInspectedNode] = useState<GraphNode | null>(initialTargetNode);
+  const [inspectorTab, setInspectorTab] = useState<'content' | 'connections'>('content');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [zoom, setZoom] = useState(1);
   const [pan, setPan] = useState({ x: 0, y: 0 });
 
-  // Transform ref for continuous render loop without re-triggering simulation
+  // Keep camera changes independent of the physics simulation
   const transformRef = useRef({ x: 0, y: 0, k: 1 });
   const isDraggingNodeRef = useRef(false);
   const isPanningRef = useRef(false);
@@ -58,6 +68,18 @@ export const GraphView: React.FC<GraphViewProps> = ({
   const dragStartPosRef = useRef({ x: 0, y: 0 });
   const activeDraggedNodeRef = useRef<GraphNode | null>(null);
   const hoveredNodeRef = useRef<GraphNode | null>(null);
+  const inspectedNodeRef = useRef<GraphNode | null>(initialTargetNode);
+  const redrawRef = useRef<() => void>(() => {});
+  const simulationRef = useRef<Simulation<GraphNode, any> | null>(null);
+  const viewRef = useRef({ isDarkMode, searchQuery, selectedCategory });
+  useEffect(() => {
+    viewRef.current = { isDarkMode, searchQuery, selectedCategory };
+    redrawRef.current();
+  }, [isDarkMode, searchQuery, selectedCategory, zoom, pan, hoveredNode, inspectedNode]);
+
+  useEffect(() => {
+    inspectedNodeRef.current = inspectedNode;
+  }, [inspectedNode]);
 
   // Deep clone data so D3 mutations don't corrupt raw data
   const { nodes, edges, connectedMap } = useMemo(() => {
@@ -108,12 +130,6 @@ export const GraphView: React.FC<GraphViewProps> = ({
     canvas.style.width = `${width}px`;
     canvas.style.height = `${height}px`;
 
-    // Center transform with expansive initial view
-    const initialZoom = Math.min(0.75, Math.max(0.55, width / 1600));
-    transformRef.current = { x: width / 2, y: height / 2, k: initialZoom };
-    setPan({ x: width / 2, y: height / 2 });
-    setZoom(initialZoom);
-
     // Setup D3 Simulation with spacious, fluid, dynamic physics
     const simulation: Simulation<GraphNode, any> = forceSimulation(nodes)
       .force(
@@ -141,14 +157,48 @@ export const GraphView: React.FC<GraphViewProps> = ({
       .velocityDecay(0.32)
       .alphaDecay(0.014);
 
-    let animationFrameId: number;
+    // Pre-warm simulation so nodes have stable initial positions immediately
+    for (let i = 0; i < 40; ++i) {
+      simulation.tick();
+    }
+
+    // Initial camera positioning: focus on activePath if provided, else expansive view
+    const initialTarget = activePath ? nodes.find((n) => n.id === activePath) : null;
+    if (initialTarget && initialTarget.x != null && initialTarget.y != null) {
+      const isDesktop = width >= 768;
+      const offsetX = isDesktop ? -120 : 0;
+      const targetZoom = 1.35;
+      const targetX = width / 2 + offsetX - initialTarget.x * targetZoom;
+      const targetY = height / 2 - initialTarget.y * targetZoom;
+
+      transformRef.current = { x: targetX, y: targetY, k: targetZoom };
+      setPan({ x: targetX, y: targetY });
+      setZoom(targetZoom);
+      setInspectedNode(initialTarget);
+      inspectedNodeRef.current = initialTarget;
+    } else {
+      const initialZoom = Math.min(0.75, Math.max(0.55, width / 1600));
+      transformRef.current = { x: width / 2, y: height / 2, k: initialZoom };
+      setPan({ x: width / 2, y: height / 2 });
+      setZoom(initialZoom);
+    }
+
+    simulationRef.current = simulation;
+    let animationFrameId = 0;
+    const requestRender = () => {
+      if (animationFrameId || document.hidden) return;
+      animationFrameId = requestAnimationFrame(() => { animationFrameId = 0; render(); });
+    };
+    redrawRef.current = requestRender;
 
     const render = () => {
       const ctx = canvas.getContext('2d');
       if (!ctx) return;
 
       const { x: tx, y: ty, k: tk } = transformRef.current;
+      const { isDarkMode, searchQuery, selectedCategory } = viewRef.current;
       const currentHovered = hoveredNodeRef.current;
+      const currentInspected = inspectedNodeRef.current;
       const filterQuery = searchQuery.toLowerCase().trim();
 
       ctx.save();
@@ -196,6 +246,7 @@ export const GraphView: React.FC<GraphViewProps> = ({
       ctx.fill();
 
       const connectedNeighbors = currentHovered ? connectedMap.get(currentHovered.id) : null;
+      const inspectedNeighbors = currentInspected ? connectedMap.get(currentInspected.id) : null;
 
       // 1. Draw Edges
       edges.forEach((edge: any) => {
@@ -206,12 +257,15 @@ export const GraphView: React.FC<GraphViewProps> = ({
         let isEdgeHighlighted = false;
         let isEdgeDimmed = false;
 
-        if (currentHovered) {
-          if (source.id === currentHovered.id || target.id === currentHovered.id) {
-            isEdgeHighlighted = true;
-          } else {
-            isEdgeDimmed = true;
-          }
+        const isConnectedToHovered =
+          currentHovered && (source.id === currentHovered.id || target.id === currentHovered.id);
+        const isConnectedToInspected =
+          currentInspected && (source.id === currentInspected.id || target.id === currentInspected.id);
+
+        if (isConnectedToHovered || isConnectedToInspected) {
+          isEdgeHighlighted = true;
+        } else if (currentHovered || currentInspected) {
+          isEdgeDimmed = true;
         }
 
         ctx.beginPath();
@@ -219,13 +273,15 @@ export const GraphView: React.FC<GraphViewProps> = ({
         ctx.lineTo(target.x, target.y);
 
         if (isEdgeHighlighted) {
-          ctx.strokeStyle = isDarkMode ? '#FFFFFF' : '#18181B';
-          ctx.lineWidth = 2 / tk;
-          ctx.globalAlpha = 0.9;
+          ctx.strokeStyle = isConnectedToInspected
+            ? (isDarkMode ? '#E4E4E7' : '#18181B')
+            : (isDarkMode ? '#A1A1AA' : '#3F3F46');
+          ctx.lineWidth = isConnectedToInspected ? 2.4 / tk : 2 / tk;
+          ctx.globalAlpha = 0.95;
         } else if (isEdgeDimmed) {
           ctx.strokeStyle = isDarkMode ? '#27272A' : '#E4E4E7';
           ctx.lineWidth = 0.8 / tk;
-          ctx.globalAlpha = 0.15;
+          ctx.globalAlpha = 0.12;
         } else {
           ctx.strokeStyle = isDarkMode ? '#3F3F46' : '#D4D4D8';
           ctx.lineWidth = 1 / tk;
@@ -240,13 +296,17 @@ export const GraphView: React.FC<GraphViewProps> = ({
         if (node.x == null || node.y == null) return;
 
         const isHovered = currentHovered?.id === node.id;
-        const isNeighbor = connectedNeighbors?.has(node.id);
+        const isInspected = currentInspected?.id === node.id;
+        const isNeighborOfHovered = connectedNeighbors?.has(node.id);
+        const isNeighborOfInspected = inspectedNeighbors?.has(node.id);
+        const isConnectedActive = isNeighborOfHovered || isNeighborOfInspected;
+
         const matchesSearch = filterQuery ? node.title.toLowerCase().includes(filterQuery) : true;
         const matchesCategory = selectedCategory ? node.categoryKey === selectedCategory : true;
 
         let alpha = 1;
-        if (currentHovered) {
-          alpha = isHovered || isNeighbor ? 1 : 0.18;
+        if (currentHovered || currentInspected) {
+          alpha = isHovered || isInspected || isConnectedActive ? 1 : 0.2;
         }
         if (filterQuery && !matchesSearch) {
           alpha = Math.min(alpha, 0.12);
@@ -257,12 +317,12 @@ export const GraphView: React.FC<GraphViewProps> = ({
 
         ctx.globalAlpha = alpha;
 
-        // Outer halo / glow for hubs or hovered
-        if (isHovered || (filterQuery && matchesSearch)) {
+        // Outer halo / glow for hubs, hovered, or inspected
+        if (isHovered || isInspected || (filterQuery && matchesSearch)) {
           ctx.beginPath();
-          ctx.arc(node.x, node.y, node.size + 4, 0, 2 * Math.PI);
+          ctx.arc(node.x, node.y, node.size + (isInspected ? 8 : 4), 0, 2 * Math.PI);
           ctx.fillStyle = node.color;
-          ctx.globalAlpha = 0.25;
+          ctx.globalAlpha = isInspected ? 0.35 : 0.25;
           ctx.fill();
           ctx.globalAlpha = alpha;
         }
@@ -276,38 +336,57 @@ export const GraphView: React.FC<GraphViewProps> = ({
         // Border ring
         ctx.beginPath();
         ctx.arc(node.x, node.y, node.size, 0, 2 * Math.PI);
-        ctx.lineWidth = isHovered ? 2 / tk : 1 / tk;
+        ctx.lineWidth = isInspected ? 2.5 / tk : isHovered ? 2 / tk : 1 / tk;
         ctx.strokeStyle = isDarkMode ? '#09090B' : '#FFFFFF';
         ctx.stroke();
+
+        // Distinct selection ring for inspected node
+        if (isInspected) {
+          ctx.beginPath();
+          ctx.arc(node.x, node.y, node.size + 4 + 2 / tk, 0, 2 * Math.PI);
+          ctx.lineWidth = 1.8 / tk;
+          ctx.strokeStyle = isDarkMode ? '#FFFFFF' : '#18181B';
+          ctx.setLineDash([4 / tk, 3 / tk]);
+          ctx.stroke();
+          ctx.setLineDash([]);
+        }
 
         // Node labels
         const shouldShowLabel =
           isHovered ||
-          isNeighbor ||
+          isInspected ||
+          isConnectedActive ||
           node.isHub ||
           (tk > 1.3 && matchesCategory) ||
           (filterQuery && matchesSearch);
 
         if (shouldShowLabel && alpha > 0.4) {
-          ctx.font = `${isHovered ? '600' : '500'} ${Math.max(10, 11 / tk)}px Inter, system-ui, sans-serif`;
+          const isSelectedOrHovered = isHovered || isInspected;
+          ctx.font = `${isSelectedOrHovered ? '600' : '500'} ${Math.max(10, 11 / tk)}px Inter, system-ui, sans-serif`;
           ctx.fillStyle = isDarkMode
-            ? isHovered
+            ? isSelectedOrHovered
               ? '#FFFFFF'
               : '#D4D4D8'
-            : isHovered
+            : isSelectedOrHovered
             ? '#09090B'
             : '#3F3F46';
           ctx.textAlign = 'center';
           ctx.textBaseline = 'top';
-          ctx.fillText(node.title, node.x, node.y + node.size + 4);
+          ctx.fillText(node.title, node.x, node.y + node.size + (isInspected ? 8 : 4));
         }
       });
 
       ctx.restore();
-      animationFrameId = requestAnimationFrame(render);
+
     };
 
-    render();
+    simulation.on('tick', requestRender);
+    requestRender();
+    const handleVisibility = () => {
+      if (document.hidden) simulation.stop();
+      else { if (simulation.alpha() > simulation.alphaMin()) simulation.restart(); requestRender(); }
+    };
+    document.addEventListener('visibilitychange', handleVisibility);
 
     const handleResize = () => {
       if (!container || !canvas) return;
@@ -317,6 +396,7 @@ export const GraphView: React.FC<GraphViewProps> = ({
       canvas.height = height * dpr;
       canvas.style.width = `${width}px`;
       canvas.style.height = `${height}px`;
+      requestRender();
     };
 
     window.addEventListener('resize', handleResize);
@@ -324,9 +404,12 @@ export const GraphView: React.FC<GraphViewProps> = ({
     return () => {
       cancelAnimationFrame(animationFrameId);
       simulation.stop();
+      simulationRef.current = null;
+      redrawRef.current = () => {};
+      document.removeEventListener('visibilitychange', handleVisibility);
       window.removeEventListener('resize', handleResize);
     };
-  }, [nodes, edges, isDarkMode, searchQuery, selectedCategory, connectedMap]);
+  }, [nodes, edges, connectedMap]);
 
   // Pointer & Drag Handlers
   const findNodeAtPos = (clientX: number, clientY: number): GraphNode | null => {
@@ -353,7 +436,8 @@ export const GraphView: React.FC<GraphViewProps> = ({
     return null;
   };
 
-  const handlePointerDown = (e: React.PointerEvent) => {
+  const handlePointerDown = (e: React.PointerEvent<HTMLCanvasElement>) => {
+    e.currentTarget.setPointerCapture(e.pointerId);
     lastMousePosRef.current = { x: e.clientX, y: e.clientY };
     dragStartPosRef.current = { x: e.clientX, y: e.clientY };
 
@@ -363,6 +447,7 @@ export const GraphView: React.FC<GraphViewProps> = ({
       activeDraggedNodeRef.current = targetNode;
       targetNode.fx = targetNode.x;
       targetNode.fy = targetNode.y;
+      simulationRef.current?.alphaTarget(0.12).restart();
     } else {
       isPanningRef.current = true;
     }
@@ -396,23 +481,34 @@ export const GraphView: React.FC<GraphViewProps> = ({
 
     if (isDraggingNodeRef.current && activeDraggedNodeRef.current) {
       if (moveDist < 5) {
-        // Was a click on a node -> Open Document Map & Structure modal
-        setInspectedNode(activeDraggedNodeRef.current);
+        // Was a click on a node -> Open Document Map & Structure inspector
+        const clicked = activeDraggedNodeRef.current;
+        setInspectedNode(clicked);
+        inspectedNodeRef.current = clicked;
       }
       activeDraggedNodeRef.current.fx = null;
       activeDraggedNodeRef.current.fy = null;
       activeDraggedNodeRef.current = null;
       isDraggingNodeRef.current = false;
+    } else if (!isDraggingNodeRef.current && isPanningRef.current && moveDist < 5) {
+      // Clicked on empty space on the canvas -> deselect node
+      setInspectedNode(null);
+      inspectedNodeRef.current = null;
     }
 
     isPanningRef.current = false;
+    simulationRef.current?.alphaTarget(0);
+    redrawRef.current();
   };
 
   const focusOnNode = (node: GraphNode) => {
     const container = containerRef.current;
     if (!container || node.x == null || node.y == null) return;
+    const isDesktop = container.clientWidth >= 768;
+    // Offset center slightly to the left so the node stays visible beside the right inspector panel
+    const offsetX = isDesktop ? -120 : 0;
     const targetZoom = 1.35;
-    const targetX = container.clientWidth / 2 - node.x * targetZoom;
+    const targetX = container.clientWidth / 2 + offsetX - node.x * targetZoom;
     const targetY = container.clientHeight / 2 - node.y * targetZoom;
 
     transformRef.current = { x: targetX, y: targetY, k: targetZoom };
@@ -437,14 +533,29 @@ export const GraphView: React.FC<GraphViewProps> = ({
   }, [inspectedNode, connectedMap, nodes]);
 
   useEffect(() => {
+    if (!activePath) return;
+    const target = nodes.find((n) => n.id === activePath);
+    if (target && target.x != null && target.y != null) {
+      setInspectedNode(target);
+      inspectedNodeRef.current = target;
+      focusOnNode(target);
+    }
+  }, [activePath, nodes]);
+
+  useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape' && inspectedNode) {
-        setInspectedNode(null);
+      if (e.key === 'Escape') {
+        if (inspectedNode) {
+          setInspectedNode(null);
+          inspectedNodeRef.current = null;
+        } else {
+          onClose();
+        }
       }
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [inspectedNode]);
+  }, [inspectedNode, onClose]);
 
   const handleWheel = (e: React.WheelEvent) => {
     e.preventDefault();
@@ -501,8 +612,10 @@ export const GraphView: React.FC<GraphViewProps> = ({
         onPointerDown={handlePointerDown}
         onPointerMove={handlePointerMove}
         onPointerUp={handlePointerUp}
+        onPointerCancel={() => { const node = activeDraggedNodeRef.current; if (node) { node.fx = null; node.fy = null; } activeDraggedNodeRef.current = null; isDraggingNodeRef.current = false; isPanningRef.current = false; simulationRef.current?.alphaTarget(0); }}
+        aria-label="Mapa de navegação temática. Use a lista de documentos para navegação por teclado."
         onWheel={handleWheel}
-        className="w-full h-full cursor-grab active:cursor-grabbing"
+        className="w-full h-full touch-none cursor-grab active:cursor-grabbing"
       />
 
       {/* Top Floating Bar: Search & View Toggle */}
@@ -563,9 +676,9 @@ export const GraphView: React.FC<GraphViewProps> = ({
         })}
       </div>
 
-      {/* Floating HUD Tooltip when a node is hovered */}
-      {hoveredNode && (
-        <div className="absolute bottom-6 left-6 max-w-xs sm:max-w-sm rounded-xl border border-border-light dark:border-border-dark bg-surface-light/95 dark:bg-surface-dark/95 backdrop-blur-md p-4 shadow-xl pointer-events-none transition-all animate-in fade-in slide-in-from-bottom-2 duration-150">
+      {/* Floating HUD Tooltip when a node is hovered (only if not currently inspecting this same node) */}
+      {hoveredNode && (!inspectedNode || hoveredNode.id !== inspectedNode.id) && (
+        <div className="absolute bottom-24 left-6 max-w-xs sm:max-w-sm rounded-xl border border-border-light dark:border-border-dark bg-surface-light/95 dark:bg-surface-dark/95 backdrop-blur-md p-4 shadow-xl pointer-events-none transition-all animate-in fade-in slide-in-from-bottom-2 duration-150 z-20">
           <div className="flex items-center gap-2 mb-1.5">
             <span
               className="w-2 h-2 rounded-full shrink-0"
@@ -584,14 +697,14 @@ export const GraphView: React.FC<GraphViewProps> = ({
             <span>{connectedMap.get(hoveredNode.id)?.size || 0} conexões</span>
           </div>
           <div className="mt-2.5 flex items-center gap-1 text-[11px] font-medium text-zinc-700 dark:text-zinc-300">
-            <span>Clique para abrir o documento</span>
+            <span>Clique para inspecionar</span>
             <ArrowRight size={11} />
           </div>
         </div>
       )}
 
-      {/* Zoom and Navigation Controls */}
-      <div className="absolute bottom-6 right-6 flex flex-col gap-1.5 pointer-events-auto">
+      {/* Zoom and Navigation Controls (Bottom-Left) */}
+      <div className="absolute bottom-6 left-6 flex flex-row sm:flex-col gap-1.5 pointer-events-auto z-20">
         <button
           onClick={handleZoomIn}
           className="p-2 rounded-lg border border-border-light dark:border-border-dark bg-surface-light/90 dark:bg-surface-dark/90 backdrop-blur-md text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 hover:bg-zinc-100 dark:hover:bg-zinc-800 shadow-sm transition-colors"
@@ -616,156 +729,251 @@ export const GraphView: React.FC<GraphViewProps> = ({
       </div>
 
       {/* Graph Info Badge (Bottom Center) */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 hidden lg:flex items-center gap-2 px-3 py-1 rounded-full border border-border-light/80 dark:border-border-dark/80 bg-surface-light/75 dark:bg-surface-dark/75 backdrop-blur text-[11px] text-zinc-400 font-mono pointer-events-none">
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 hidden xl:flex items-center gap-2 px-3 py-1 rounded-full border border-border-light/80 dark:border-border-dark/80 bg-surface-light/75 dark:bg-surface-dark/75 backdrop-blur text-[11px] text-zinc-400 font-mono pointer-events-none z-10">
         <Info size={11} />
-        <span>Arraste os nós • Use o scroll para zoom • Clique no nó para ver o mapa</span>
+        <span>Conexões editoriais; não demonstram causalidade.</span>
       </div>
 
-      {/* Modal / Inspector: Mapa do Documento & Estrutura Filtrada */}
+      {/* Floating Document Inspector Sheet (Obsidian / Notion style) */}
       {inspectedNode && inspectedDoc && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/55 backdrop-blur-sm animate-in fade-in duration-150"
-          onClick={() => setInspectedNode(null)}
+          className="absolute top-4 right-4 sm:top-5 sm:right-6 bottom-4 sm:bottom-6 w-full max-w-[calc(100vw-2rem)] sm:max-w-[420px] md:max-w-[440px] z-40 flex flex-col rounded-2xl border border-border-light dark:border-border-dark bg-surface-light/95 dark:bg-surface-dark/95 backdrop-blur-xl shadow-2xl overflow-hidden animate-in fade-in slide-in-from-right-4 duration-200"
+          onClick={(e) => e.stopPropagation()}
         >
-          <div
-            className="w-full max-w-2xl max-h-[85vh] flex flex-col rounded-2xl border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark shadow-2xl overflow-hidden"
-            onClick={(e) => e.stopPropagation()}
-          >
-            {/* Modal Header */}
-            <div className="p-5 pb-4 border-b border-border-light dark:border-border-dark flex items-start justify-between gap-4">
-              <div className="space-y-1.5 flex-1 min-w-0">
-                <div className="flex flex-wrap items-center gap-2">
-                  <span
-                    className="w-2.5 h-2.5 rounded-full shrink-0"
-                    style={{ backgroundColor: inspectedNode.color }}
-                  />
-                  <span className="text-[11px] uppercase tracking-wider font-semibold text-zinc-500 dark:text-zinc-400">
-                    {inspectedNode.category}
-                  </span>
-                  <span className="text-zinc-400">•</span>
-                  <span className="text-[11px] font-mono text-zinc-400">
-                    {inspectedDoc.readTimeMinutes} min de leitura ({inspectedDoc.wordCount.toLocaleString('pt-BR')} palavras)
-                  </span>
-                </div>
-                <h3 className="text-base sm:text-lg font-bold text-zinc-950 dark:text-zinc-50 leading-snug">
-                  {inspectedDoc.title}
-                </h3>
+          {/* Inspector Header */}
+          <div className="p-4 sm:p-5 pb-3 border-b border-border-light dark:border-border-dark bg-zinc-50/50 dark:bg-zinc-900/40">
+            {/* Category Badge + Top Controls */}
+            <div className="flex items-center justify-between gap-3 mb-2">
+              <div className="flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-white dark:bg-zinc-800 border border-border-light dark:border-border-dark shadow-xs">
+                <span
+                  className="w-2 h-2 rounded-full shrink-0"
+                  style={{ backgroundColor: inspectedNode.color }}
+                />
+                <span className="text-[10px] uppercase tracking-wider font-semibold text-zinc-600 dark:text-zinc-300">
+                  {inspectedNode.category}
+                </span>
               </div>
-              <button
-                onClick={() => setInspectedNode(null)}
-                className="p-1.5 rounded-lg text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
-                aria-label="Fechar"
-              >
-                <X size={18} />
-              </button>
+
+              <div className="flex items-center gap-1">
+                <button
+                  onClick={() => focusOnNode(inspectedNode)}
+                  className="p-1.5 rounded-lg text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-200 hover:bg-zinc-200/60 dark:hover:bg-zinc-800 transition-colors"
+                  title="Centralizar câmera neste nó no grafo"
+                >
+                  <Crosshair size={15} />
+                </button>
+                <button
+                  onClick={() => {
+                    setInspectedNode(null);
+                    inspectedNodeRef.current = null;
+                  }}
+                  className="p-1.5 rounded-lg text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-200 hover:bg-zinc-200/60 dark:hover:bg-zinc-800 transition-colors"
+                  title="Fechar painel (Esc)"
+                >
+                  <X size={16} />
+                </button>
+              </div>
             </div>
 
-            {/* Modal Content - Scrollable */}
-            <div className="p-5 overflow-y-auto space-y-5 text-xs text-zinc-600 dark:text-zinc-400">
-              {/* Contexto / Excerpt */}
-              {inspectedDoc.excerpt && (
-                <div className="p-3.5 rounded-xl bg-zinc-50 dark:bg-zinc-900/60 border border-border-light dark:border-border-dark leading-relaxed">
-                  <span className="block font-semibold text-[11px] uppercase tracking-wider text-zinc-500 dark:text-zinc-400 mb-1">
-                    Contexto do Documento
-                  </span>
-                  <p className="text-zinc-800 dark:text-zinc-200 text-xs">{inspectedDoc.excerpt}</p>
-                </div>
-              )}
+            {/* Document Title */}
+            <h3 className="text-base sm:text-lg font-bold text-zinc-950 dark:text-zinc-50 leading-snug tracking-tight mb-2">
+              {inspectedDoc.title}
+            </h3>
 
-              {/* Estrutura de Tópicos (Outline / Headings) */}
-              {inspectedDoc.headings.length > 0 && (
-                <div>
-                  <h4 className="font-semibold text-zinc-900 dark:text-zinc-100 uppercase tracking-wider text-[11px] mb-2 flex items-center gap-1.5">
-                    <Layers size={13} />
-                    Estrutura de Tópicos ({inspectedDoc.headings.filter((h) => h.level <= 3).length} seções)
-                  </h4>
-                  <div className="p-3 rounded-xl border border-border-light dark:border-border-dark bg-surface-light dark:bg-zinc-900/30 space-y-1.5 max-h-44 overflow-y-auto">
-                    {inspectedDoc.headings
-                      .filter((h) => h.level === 2 || h.level === 3)
-                      .map((h, i) => (
-                        <div
-                          key={i}
-                          className={`flex items-start gap-2 py-0.5 ${
-                            h.level === 3 ? 'pl-4 text-zinc-500' : 'text-zinc-800 dark:text-zinc-200 font-medium'
-                          }`}
-                        >
-                          <span className="text-zinc-400 shrink-0 text-[10px] font-mono mt-0.5">
-                            {h.level === 2 ? '§' : '•'}
-                          </span>
-                          <span className="leading-snug">{h.text}</span>
-                        </div>
-                      ))}
+            {/* Metadata Badges */}
+            <div className="flex flex-wrap items-center gap-2 text-[11px] text-zinc-500 dark:text-zinc-400 mb-3">
+              <span className="px-2 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800/80 font-mono">
+                ⏱️ {inspectedDoc.readTimeMinutes} min
+              </span>
+              <span className="px-2 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800/80 font-mono">
+                📄 {inspectedDoc.wordCount.toLocaleString('pt-BR')} palavras
+              </span>
+              <span className="px-2 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800/80 font-mono">
+                🔗 {connectedNeighborNodes.length} conexões
+              </span>
+            </div>
+
+            {/* Primary Action Button */}
+            <button
+              onClick={() => onSelectDoc(inspectedDoc.path)}
+              className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-zinc-950 dark:bg-zinc-100 text-white dark:text-zinc-950 text-xs font-semibold hover:opacity-90 active:scale-[0.99] transition-all shadow-sm group"
+            >
+              <BookOpen size={14} />
+              <span>Ler Documento Completo</span>
+              <ArrowRight size={13} className="group-hover:translate-x-0.5 transition-transform" />
+            </button>
+          </div>
+
+          {/* Segmented View Mode Tabs */}
+          <div className="px-4 py-2 border-b border-border-light dark:border-border-dark bg-zinc-100/50 dark:bg-zinc-900/60">
+            <div className="flex items-center p-1 rounded-xl bg-zinc-200/60 dark:bg-zinc-800/80 text-xs font-medium">
+              <button
+                onClick={() => setInspectorTab('content')}
+                className={`flex-1 flex items-center justify-center gap-1.5 py-1.5 rounded-lg transition-all ${
+                  inspectorTab === 'content'
+                    ? 'bg-white dark:bg-zinc-900 text-zinc-950 dark:text-zinc-50 shadow-xs font-semibold'
+                    : 'text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-300'
+                }`}
+              >
+                <Layers size={13} />
+                <span>Estrutura & Resumo</span>
+              </button>
+              <button
+                onClick={() => setInspectorTab('connections')}
+                className={`flex-1 flex items-center justify-center gap-1.5 py-1.5 rounded-lg transition-all ${
+                  inspectorTab === 'connections'
+                    ? 'bg-white dark:bg-zinc-900 text-zinc-950 dark:text-zinc-50 shadow-xs font-semibold'
+                    : 'text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-300'
+                }`}
+              >
+                <Network size={13} />
+                <span>Rede ({connectedNeighborNodes.length})</span>
+              </button>
+            </div>
+          </div>
+
+          {/* Scrollable Inspector Body */}
+          <div className="p-4 sm:p-5 overflow-y-auto space-y-5 flex-1 text-xs">
+            {inspectorTab === 'content' ? (
+              <>
+                {/* Resumo / Tese Central */}
+                {inspectedDoc.excerpt && (
+                  <div className="space-y-1.5">
+                    <div className="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">
+                      <FileText size={12} />
+                      <span>Tese & Contexto Central</span>
+                    </div>
+                    <div className="p-3.5 rounded-xl bg-zinc-50 dark:bg-zinc-900/70 border border-border-light dark:border-border-dark leading-relaxed text-zinc-700 dark:text-zinc-300">
+                      {inspectedDoc.excerpt}
+                    </div>
                   </div>
-                </div>
-              )}
+                )}
 
-              {/* Mapa de Conexões no Grafo */}
-              <div>
-                <h4 className="font-semibold text-zinc-900 dark:text-zinc-100 uppercase tracking-wider text-[11px] mb-2 flex items-center justify-between">
-                  <span className="flex items-center gap-1.5">
-                    <Network size={13} />
-                    Documentos Conectados ({connectedNeighborNodes.length})
-                  </span>
-                  <span className="text-[10px] text-zinc-400 font-normal">
-                    Clique em qualquer um para explorar
-                  </span>
-                </h4>
+                {/* Mapa Estrutural de Seções */}
+                <div className="space-y-2">
+                  <div className="flex items-center justify-between text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">
+                    <div className="flex items-center gap-1.5">
+                      <ListTree size={12} />
+                      <span>Mapa de Seções ({inspectedDoc.headings.filter((h) => h.level <= 3).length})</span>
+                    </div>
+                    <span className="text-zinc-400 font-normal">Clique para ler</span>
+                  </div>
+
+                  {inspectedDoc.headings.length === 0 ? (
+                    <p className="text-zinc-400 italic text-xs py-2">
+                      Documento em formato contínuo sem sub-seções.
+                    </p>
+                  ) : (
+                    <div className="relative pl-3 border-l-2 border-zinc-200 dark:border-zinc-800 space-y-2 py-1">
+                      {inspectedDoc.headings
+                        .filter((h) => h.level === 2 || h.level === 3)
+                        .map((h, i) => (
+                          <button
+                            key={i}
+                            onClick={() => onSelectDoc(`${inspectedDoc.path}#${h.id}`)}
+                            className={`w-full group text-left transition-colors flex items-start gap-2 ${
+                              h.level === 3 ? 'pl-3' : ''
+                            }`}
+                          >
+                            <span
+                              className={`shrink-0 rounded-full mt-1.5 transition-colors ${
+                                h.level === 2
+                                  ? 'w-2 h-2 -ml-[17px] bg-zinc-400 dark:bg-zinc-500 group-hover:bg-zinc-950 dark:group-hover:bg-zinc-100'
+                                  : 'w-1.5 h-1.5 -ml-[16px] border border-zinc-300 dark:border-zinc-600 bg-surface-light dark:bg-surface-dark group-hover:border-zinc-800'
+                              }`}
+                            />
+                            <div className="min-w-0 flex-1">
+                              <span
+                                className={`block leading-snug truncate transition-colors ${
+                                  h.level === 2
+                                    ? 'font-medium text-zinc-800 dark:text-zinc-200 group-hover:text-zinc-950 dark:group-hover:text-white'
+                                    : 'text-zinc-500 dark:text-zinc-400 group-hover:text-zinc-700 dark:group-hover:text-zinc-200'
+                                }`}
+                              >
+                                {h.text}
+                              </span>
+                            </div>
+                            <ArrowRight
+                              size={11}
+                              className="opacity-0 group-hover:opacity-100 text-zinc-400 shrink-0 transition-opacity mt-0.5"
+                            />
+                          </button>
+                        ))}
+                    </div>
+                  )}
+                </div>
+              </>
+            ) : (
+              /* Tab: Conexões na Rede */
+              <div className="space-y-3">
+                <div className="space-y-1">
+                  <div className="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">
+                    <Network size={12} />
+                    <span>Navegação pela Teia de Conexões</span>
+                  </div>
+                  <p className="text-[11px] text-zinc-500 dark:text-zinc-400">
+                    Passe o cursor sobre um documento para iluminá-lo no grafo ou clique para navegar diretamente até ele.
+                  </p>
+                </div>
 
                 {connectedNeighborNodes.length === 0 ? (
-                  <p className="text-zinc-400 text-xs italic">Nenhuma conexão direta mapeada para este nó.</p>
+                  <div className="p-6 text-center text-zinc-400 italic rounded-xl border border-dashed border-border-light dark:border-border-dark">
+                    Nenhuma conexão direta mapeada para este documento.
+                  </div>
                 ) : (
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 max-h-48 overflow-y-auto">
+                  <div className="space-y-2">
                     {connectedNeighborNodes.map((neighbor) => (
-                      <button
+                      <div
                         key={neighbor.id}
-                        onClick={() => setInspectedNode(neighbor)}
-                        className="p-2.5 rounded-xl border border-border-light dark:border-border-dark hover:border-zinc-400 dark:hover:border-zinc-600 bg-surface-light dark:bg-zinc-900/40 text-left transition-all group flex items-start gap-2.5"
+                        onMouseEnter={() => {
+                          setHoveredNode(neighbor);
+                          hoveredNodeRef.current = neighbor;
+                        }}
+                        onMouseLeave={() => {
+                          setHoveredNode(null);
+                          hoveredNodeRef.current = null;
+                        }}
+                        className="p-3 rounded-xl border border-border-light dark:border-border-dark hover:border-zinc-400 dark:hover:border-zinc-600 bg-surface-light dark:bg-zinc-900/50 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-all flex items-start justify-between gap-3 group"
                       >
-                        <span
-                          className="w-2 h-2 rounded-full shrink-0 mt-1"
-                          style={{ backgroundColor: neighbor.color }}
-                        />
                         <div className="min-w-0 flex-1">
-                          <span className="text-[10px] uppercase tracking-wider text-zinc-400 block truncate">
-                            {neighbor.category}
-                          </span>
-                          <span className="text-xs font-semibold text-zinc-800 dark:text-zinc-200 group-hover:text-zinc-950 dark:group-hover:text-white line-clamp-1">
+                          <div className="flex items-center gap-1.5 mb-1">
+                            <span
+                              className="w-2 h-2 rounded-full shrink-0"
+                              style={{ backgroundColor: neighbor.color }}
+                            />
+                            <span className="text-[10px] uppercase tracking-wider font-semibold text-zinc-400">
+                              {neighbor.category}
+                            </span>
+                            <span className="text-zinc-400">•</span>
+                            <span className="text-[10px] font-mono text-zinc-400">
+                              {neighbor.readTimeMinutes} min
+                            </span>
+                          </div>
+                          <h5 className="font-semibold text-zinc-900 dark:text-zinc-100 text-xs leading-snug group-hover:text-zinc-950 dark:group-hover:text-white">
                             {neighbor.title}
-                          </span>
+                          </h5>
                         </div>
-                      </button>
+
+                        <div className="flex items-center gap-1 shrink-0 mt-1">
+                          <button
+                            onClick={() => {
+                              setInspectedNode(neighbor);
+                              inspectedNodeRef.current = neighbor;
+                              focusOnNode(neighbor);
+                            }}
+                            className="px-2.5 py-1.5 rounded-lg border border-border-light dark:border-border-dark bg-white dark:bg-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-700 text-zinc-700 dark:text-zinc-200 text-[11px] font-medium transition-colors flex items-center gap-1 shadow-2xs"
+                            title="Inspecionar no grafo"
+                          >
+                            <span>Explorar</span>
+                            <ArrowRight size={11} />
+                          </button>
+                        </div>
+                      </div>
                     ))}
                   </div>
                 )}
               </div>
-            </div>
-
-            {/* Modal Actions Footer */}
-            <div className="p-4 bg-zinc-50 dark:bg-zinc-900/50 border-t border-border-light dark:border-border-dark flex items-center justify-between gap-3">
-              <button
-                onClick={() => {
-                  focusOnNode(inspectedNode);
-                  setInspectedNode(null);
-                }}
-                className="flex items-center gap-1.5 px-3 py-2 rounded-xl border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark hover:bg-zinc-100 dark:hover:bg-zinc-800 text-xs font-medium text-zinc-700 dark:text-zinc-300 transition-colors"
-                title="Centralizar e aproximar a câmera neste nó no grafo"
-              >
-                <Crosshair size={14} />
-                <span>Focar no Grafo</span>
-              </button>
-
-              <button
-                onClick={() => {
-                  onSelectDoc(inspectedNode.id);
-                  setInspectedNode(null);
-                }}
-                className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-zinc-950 dark:bg-zinc-100 text-white dark:text-zinc-950 text-xs font-semibold hover:opacity-90 transition-opacity shadow-sm"
-              >
-                <BookOpen size={14} />
-                <span>Ler Documento Completo</span>
-                <ArrowRight size={13} />
-              </button>
-            </div>
+            )}
           </div>
         </div>
       )}

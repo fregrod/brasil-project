@@ -1,119 +1,74 @@
-# Relatório Econômico e Setorial: O Caso da Suspensão de Rotas da GOL e a Crise do QAV
+# GOL, cortes de rotas e QAV: fatos, hipóteses e evidência necessária
 
-> **Classificação:** Economia Setorial, Infraestrutura Aérea e Finanças Corporativas  
-> **Objeto de Estudo:** Suspensão em massa de rotas internacionais diretas (Brasília/Belém/Fortaleza/Rio para EUA e América do Sul) e eixos nacionais pela GOL Linhas Aéreas.  
-> **Motivação Oficial Declarada:** Disparada de custos operacionais puxada pelo Querosene de Aviação (QAV), que dobrou de preço e atingiu 40% dos custos totais da companhia.  
-> **Fontes e Dados:** ANAC, ABEAR (Associação Brasileira das Empresas Aéreas), IATA, Petrobras, CVM e Tribunal de Falências de Nova York (Processo de Chapter 11 da GOL).
+> **Revisão editorial:** 19/10/2026.
+> **Recorte da evidência:** anúncio de ajustes de malha noticiado em outubro de 2026 para 2027; encerramento do Chapter 11 em junho de 2025 e anúncio de operação com A330 em julho de 2026. Estrutura da distribuição de QAV: dados de 2023 no AIR da ANP de 2025. Calendários de cada rota não foram confirmados em comunicado primário integral.
 
----
+## O episódio e a força das fontes
 
-## 1. O Caso: As Rotas Cortadas e o Comunicado Oficial
+Reportagens de outubro de 2026 reproduzem uma manifestação da GOL associando ajustes de malha a aumentos sucessivos do QAV. A lista inclui ligações de Brasília e Belém com Miami, Brasília e Fortaleza com Orlando, além de rotas sul-americanas e domésticas. A fonte acessada para a relação é **secundária**, não uma listagem oficial completa da empresa. [InvestNews, 14/10/2026](https://investnews.com.br/negocios/gol-corte-rotas-alta-querosene-2026/).
 
-A GOL Linhas Aéreas confirmou uma ampla reestruturação de sua malha com a suspensão de voos internacionais de longa distância e rotas regionais:
+Isso permite tratar o anúncio como objeto de investigação, mas não declarar todas as suspensões já realizadas ou estabelecer a mesma data de vigência para cada trecho. A confirmação futura deve usar reserva/comunicado da companhia e dados de operação efetiva, distinguindo suspensão anunciada, alteração sazonal, redução de frequência e encerramento permanente.
 
-```mermaid
-flowchart TD
-    subgraph Internacionais ["Rotas Internacionais Suspensas"]
-        I1["Brasília (BSB) ➔ Miami (MIA)"]
-        I2["Belém (BEL) ➔ Miami (MIA)"]
-        I3["Brasília (BSB) ➔ Orlando (MCO)"]
-        I4["Fortaleza (FOR) ➔ Orlando (MCO)"]
-        I5["Fortaleza (FOR) ➔ Montevidéu (MVD)"]
-        I6["Rio de Janeiro (GIG) ➔ Montevidéu (MVD)"]
-        I7["Rio de Janeiro (GIG) ➔ Assunção (ASU)"]
-        I8["São Paulo (GRU) ➔ Punta Cana (PUJ)"]
-    end
+## Quadro de evidências
 
-    subgraph Nacionais ["Rotas Nacionais / Regionais Suspensas"]
-        N1["São Paulo (CGH) ➔ Ribeirão Preto (RAO) e Palmas (PMW)"]
-        N2["Brasília (BSB) ➔ Goiânia (GYN)"]
-        N3["Salvador (SSA) ➔ Aracaju (AJU) e Campina Grande (CPV)"]
-        N4["Rio de Janeiro (GIG) ➔ Ilhéus (IOS)"]
-        N5["Goiânia (GYN) ➔ Cuiabá (CGB) e Petrolina (PNZ) ➔ Salvador (SSA)"]
-    end
-```
+| Alegação | Classificação | Evidência e limite |
+| :--- | :--- | :--- |
+| Ajuste de malha associado ao combustível | Declaração da empresa reproduzida por imprensa | [InvestNews](https://investnews.com.br/negocios/gol-corte-rotas-alta-querosene-2026/); não quantifica o efeito de cada fator por rota. |
+| QAV teria dobrado e representaria cerca de 40% do custo | Alegação atribuída à empresa, com período-base não identificado no material acessado | Mesma reportagem; não convertida aqui em estatística independente ou valor permanente. |
+| GOL ainda estaria sob Chapter 11 no anúncio de 2026 | Incorreto como descrição atual | A GOL anunciou conclusão da reestruturação em junho de 2025; [comunicado oficial](https://www.voegol.com.br/es/w/sobre-a-gol/imprensa/gol-conclui-processo-de-reestruturacao-financeira-nos-estados-unidos-e-inicia-nova-fase-como-uma-companhia-mais-forte-e-competitiva). |
+| Operação seria exclusivamente de Boeing 737 | Desatualizado para a operação anunciada em 2026 | A GOL anunciou A330 para Rio–Nova York em julho de 2026; distinguir operação temporária, operador e frota própria; [GOL](https://www.voegol.com.br/w/sobre-a-gol/imprensa/primeira-aeronave-de-longo-alcance-com-marca-gol-decola-rumo-ao-riogaleao-para-voos-internacionais). |
+| Distância, sozinha, provaria inviabilidade do 737-8 | Não demonstrado | Alcance nominal de até 6.480 km na especificação do [fabricante](https://www.boeing.com/Commercial/737MAX); operação real depende de configuração e condições. |
 
----
+## Hipóteses econômicas: seis vetores a investigar
 
-## 2. Anatomia da Crise: Os 6 Vetores que Geraram Esse Impacto
+### Combustível, refino, distribuição e tributos
 
-Embora a nota oficial cite genericamente a alta do QAV, a suspensão decorre de uma **tempestade perfeita de seis fatores econômicos, cambiais, operacionais e regulatórios**:
+A alta do combustível pode pressionar margem, mas é necessário separar preço de produtor, distribuição, tributos e preço efetivo pago nos aeroportos. A série deve ter unidade, local e período-base. A antiga afirmação de sobrepreço universal de 20%–30% ante EUA/Europa não está demonstrada com cestas e tributos comparáveis.
 
-```mermaid
-flowchart TD
-    V1["<b>1. O Preço do QAV:</b><br>Fórmula de paridade de importação da Petrobras + petróleo global em alta."] --> C["<b>CRISE DE RENTABILIDADE E CORTE DE ROTAS DA GOL</b>"]
-    V2["<b>2. Exposição Cambial:</b><br>Dólar a R$ 5,50-5,80. 60% dos custos em dólar vs. receitas em reais."] --> C
-    V3["<b>3. Reestruturação do Chapter 11:</b><br>Recuperação judicial nos EUA exigindo corte de rotas deficitárias."] --> C
-    V4["<b>4. Limite Operacional do 737 MAX:</b><br>Voos de longo curso (BSB/BEL para EUA) no limite de combustível."] --> C
-    V5["<b>5. Gargalo Global da Boeing:</b><br>Atrasos de entregas e manutenção de motores CFM LEAP forçando redução de frota."] --> C
-    V6["<b>6. O Custo Brasil da Judicialização:</b><br>Brasil concentra 90% das ações judiciais contra aéreas no mundo."] --> C
-```
+Uma descrição genérica de PPI não basta para estabelecer a fórmula contratual atual do QAV nem o preço efetivamente negociado pela empresa. Para reconstruir o custo, usar os [dados e análises da ANP sobre combustíveis de aviação](https://www.gov.br/anp/pt-br/assuntos/consultas-e-audiencias-publicas/consulta-previa/2025/cp-02-2025/relatorio-analise-impacto-regulatorio.pdf), documentos da Petrobras e notas financeiras da companhia, sem presumir repasse integral.
 
----
+O [AIR da ANP, pp. 6–7 e 21](https://www.gov.br/anp/pt-br/assuntos/consultas-e-audiencias-publicas/consulta-previa/2025/cp-02-2025/relatorio-analise-impacto-regulatorio.pdf) documenta concentração e barreiras de acesso à infraestrutura: nas retiradas de QAV de 2023, Vibra tinha 57,17%, Raízen 23,70% e Air BP Brasil 18,40%. Esses três percentuais somam 99,27%, na base indicada pelo relatório. O dado sustenta investigar concorrência e acesso a dutos, mas não mede sobrepreço de 2026 nem prova a causa de um corte de rota.
 
-### Vetor 1: A Estrutura de Preços do QAV no Brasil (Petrobras e Geopolítica)
-* **O Peso no Caixa:** O combustível de aviação é o insumo isolado mais oneroso da aviação comercial. Historicamente oscilava entre 25% e 30% dos custos totais; com a alta recente, **saltou para 40% a 42% dos custos operacionais** das aéreas brasileiras;
-* **A Fórmula da Petrobras:** Mesmo sendo refinado majoritariamente em refinarias nacionais, a Petrobras precifica o QAV adotando uma fórmula de **Preço de Paridade de Importação (PPI)**: simula a cotação internacional do Golfo do México (EUA) somada a custos teóricos de frete marítimo internacional, taxas portuárias e margens de importação.
-  * *Resultado:* O QAV abastecido nos aeroportos brasileiros chega a ser **20% a 30% mais caro do que a média dos aeroportos norte-americanos e europeus**;
-* **Choques Geopolíticos do Petróleo:** A instabilidade militar no Oriente Médio (tensões envolvendo Israel, Irã e rotas marítimas no Estreito de Ormuz) e a Guerra na Ucrânia mantiveram a cotação do barril de petróleo Brent sob pressão, encarecendo os derivados no refino mundial.
+### Câmbio e proteção financeira
 
----
+Leasing, peças, manutenção e combustível podem criar exposição cambial. A magnitude líquida depende também de receita internacional, proteção cambial, caixa e dívida em moeda estrangeira. Não se conserva 60% como parcela fixa dos custos da GOL sem nota financeira e data. Um dólar de um episódio não deve ser usado como cotação atual de todo o estudo.
 
-### Vetor 2: O Descompasso Cambial Estrutural (Dólar vs. Real)
-A indústria da aviação comercial opera sob um dos maiores descasamentos de moeda da economia:
+### Reestruturação financeira
 
-$$\text{Estrutura de Custos Típica de Aérea Brasileira: } \begin{cases} \mathbf{60\% \text{ Dolarizados:}} & \text{Combustível (QAV), leasing de aeronaves, peças, manutenção e seguros.} \\ \mathbf{40\% \text{ em Reais:}} & \text{Salários de tripulantes, taxas locais e serviços de solo.} \end{cases}$$
+A reestruturação pode deixar compromissos financeiros relevantes depois da saída judicial, mas o anúncio da conclusão em 2025 impede usar supervisão corrente do Chapter 11 como explicação automática em 2026. Não há regra geral citada que obrigue legalmente o encerramento de toda rota com margem baixa; isso dependeria de plano, contratos e estratégia. [GOL, conclusão do processo](https://www.voegol.com.br/es/w/sobre-a-gol/imprensa/gol-conclui-processo-de-reestruturacao-financeira-nos-estados-unidos-e-inicia-nova-fase-como-uma-companhia-mais-forte-e-competitiva).
 
-* Enquanto **60% dos custos da GOL são cotados em dólares**, a maior parte de sua receita de bilhetes é faturada em **reais**.
-* Com a taxa de câmbio operando em patamares elevados (entre R$ 5,50 e R$ 5,80), qualquer desvalorização do real encarece instantaneamente as despesas contratuais de *leasing* (aluguel de aeronaves pago a multinacionais na Irlanda e nos EUA) e as peças de reposição da Boeing, comprimindo a margem operacional (*EBITDAR*) da empresa.
+### Alcance, configuração e economia da rota
 
----
+Alcance nominal não é limite operacional universal nem prova de lucratividade. A avaliação requer payload, ventos, reservas, pistas, restrições de alternado, ocupação, tarifa e receita de carga. Comparar narrow-body com wide-body sem demanda e frequência também não identifica a opção mais econômica. A referência técnica é a [Boeing, características de planejamento do 737 MAX](https://www.boeing.com/commercial/airports/plan-manuals).
 
-### Vetor 3: O Processo de Chapter 11 nos Estados Unidos
-* Em **janeiro de 2024**, a GOL ingressou formalmente com pedido de **Recuperação Judicial nos Estados Unidos (Chapter 11)** perante o Tribunal de Falências de Nova York, com um passivo consolidado superior a **R$ 20 bilhões**;
-* Sob as regras do Chapter 11 e o monitoramento rigoroso dos comitês de credores e bancos financiadores (empréstimo *DIP - Debtor-in-Possession*), a companhia aérea é legalmente obrigada a **eliminar operações deficitárias**:
-  * Rotas que operavam no "ponto de equilíbrio" (*breakeven*) ou com margem líquida marginal não podem mais ser mantidas por razões de marketing ou posicionamento institucional;
-  * O plano de voo passa a ser focado estritamente em **rotas de alta densidade e retorno garantido (*yield*)**.
+### Entregas, motores e disponibilidade da frota
 
----
+Atrasos e indisponibilidade são hipóteses a confrontar com cronogramas e horas disponíveis da companhia. Não se retêm como causa provada de cada corte nem se confundem programas de motores de fabricantes distintos. O anúncio de A330 em 2026 mostra que a análise da capacidade precisa identificar modelo, operador e fase da operação. [GOL](https://www.voegol.com.br/w/sobre-a-gol/imprensa/primeira-aeronave-de-longo-alcance-com-marca-gol-decola-rumo-ao-riogaleao-para-voos-internacionais).
 
-### Vetor 4: O Limite Técnico e Operacional do Boeing 737 MAX 8
-A escolha das rotas internacionais cortadas não foi aleatória:
-* A GOL opera uma frota monomarca padronizada de **Boeing 737 (NG e MAX 8)**. O Boeing 737 é uma aeronave de fuselagem estreita (*narrow-body*, de corredor único), projetada primordialmente para rotas domésticas de curta e média distância;
-* As rotas diretas **Brasília–Miami (5.790 km)** e **Brasília–Orlando (6.079 km)** operavam no **limite máximo de autonomia (*range*) do Boeing 737 MAX 8**:
-  * Em voos dessa distância com ventos de proa contrários (*headwinds*), o avião queima combustível em taxa máxima e frequentemente enfrenta restrições de peso de decolagem (*payload penalty*), não podendo viajar com lotação completa de carga ou passageiros para levar combustível extra de segurança;
-  * Com o QAV em alta, o custo por assento-quilômetro oferecido (ASK) dessa rota explode, tornando o voo economicamente inviável quando comparado a aeronaves de dois corredores (*wide-body*, como o Boeing 777 ou Airbus A350/A330) utilizadas por concorrentes como Latam e American Airlines.
+### Judicialização e direitos dos passageiros
 
----
+A proporção de 90%–95% de todas as ações do mundo não é mantida como estatística estabelecida: faltam universo, países, cobertura e método de coleta. A existência de litígio não demonstra automaticamente abuso, assim como cancelamento por evento externo não resolve todas as obrigações de assistência e reacomodação. A referência normativa é a [Resolução ANAC 400/2016](https://www.anac.gov.br/assuntos/legislacao/legislacao-1/resolucoes/resolucoes-2016/resolucao-no-400-13-12-2016).
 
-### Vetor 5: Gargalos na Cadeia Global de Suprimentos da Boeing
-* A indústria aeroespacial global enfrenta uma crise de entregas sem precedentes. A fabricante norte-americana **Boeing** atrasou o cronograma de entrega de dezenas de novas aeronaves 737 MAX encomendadas pela GOL devido a auditorias de segurança da FAA (pós-incidentes industriais);
-* Somam-se a isso as revisões obrigatórias prematuras e a escassez de peças de reposição nos **motores CFM LEAP-1B**.
-* **O Efeito Prático:** Com menos aeronaves ativas na frota do que o planejado no plano de negócios, a diretoria da GOL foi forçada a **deslocar aeronaves de rotas internacionais arriscadas para alimentar o mercado doméstico principal** (a ponte aérea Congonhas–Santos Dumont e hubs lucrativos de Brasília, Confins e Salvador).
+## Definições e memória de cálculo
 
----
+| Medida | Fórmula | Uso correto |
+| :--- | :--- | :--- |
+| ASK | Soma, sobre os voos, de assentos oferecidos × distância de cada voo | Medida de oferta, não de custo. |
+| CASK | Custo operacional ÷ ASK | Comparar com igual perímetro contábil, moeda e inclusão de combustível. |
+| RASK | Receita operacional ÷ ASK | Comparar com CASK na mesma base. |
+| Ocupação | Passageiro-quilômetro transportado ÷ ASK | Não equivale a margem ou retorno garantido. |
 
-### Vetor 6: A Hiperjudicialização e o "Custo Brasil" da Aviação
-* O Brasil detém uma anomalia jurídica global: segundo dados oficiais da IATA (Associação Internacional de Transportes Aéreos) e da ABEAR, **o Brasil concentra entre 90% e 95% de todas as ações judiciais movidas por passageiros contra empresas aéreas no planeta**;
-* Esse ecossistema de litígios em massa (estimulado por *lawtechs* e juizados especiais cíveis) impõe ao setor aéreo um custo anual que **ultrapassa R$ 1 bilhão em indenizações e honorários advocatícios**;
-* Rotas regionais de baixa frequência (como CGH-Ribeirão Preto, BSB-Goiânia ou SSA-Aracaju) são especialmente vulneráveis: se um voo é cancelado por razões meteorológicas ou manutenção, o custo de reacomodação e as indenizações judiciais por "dano moral" superam a receita obtida com a venda das passagens do voo inteiro.
+As definições operacionais e estatísticas devem seguir a [documentação dos dados de transporte aéreo da ANAC](https://www.gov.br/anac/pt-br/assuntos/dados-e-estatisticas/mercado-do-transporte-aereo). Nenhum CASK de uma rota foi calculado aqui porque não foram apresentados insumos financeiros por trecho. Portanto, a cadeia causal dos seis vetores permanece uma agenda de investigação.
 
----
+## Efeitos distributivos
 
-## 3. Os Impactos Econômicos para os Passageiros e para o País
+| Grupo | Canal plausível | O que está documentado e o que falta |
+| :--- | :--- | :--- |
+| Passageiros das rotas afetadas | Menos voos diretos, conexões e possível mudança de preço | Anúncio reportado; faltam alternativas por aeroporto, calendário e tarifas efetivas. |
+| Destinos turísticos e fornecedores locais | Alteração de fluxo e gasto turístico | Hipótese; não há perda de receita estimada neste estudo. |
+| Empregados, credores e acionistas | Realocação de capacidade e margem | Reestruturação é documentada; efeito marginal do corte exige dados. |
+| Contribuintes e usuários | Crédito ou subsídio público pode repartir risco | Não se apresenta teto de R$ 5 bilhões como desembolso executado sem contrato e execução. |
 
-1. **Perda de Conectividade do Interior e Fora do Eixo Rio-SP:**  
-   Passageiros de capitais estratégicas fora do Sudeste (como **Brasília, Belém e Fortaleza**) perdem suas opções diretas de conexão internacional para os Estados Unidos. Os viajantes são forçados a realizar conexões lentas em São Paulo (Guarulhos) ou em hubs estrangeiros (como a Cidade do Panamá via Copa Airlines);
-2. **Pressão de Alta nas Tarifas Aéreas (Menor Oferta):**  
-   Com a suspensão das rotas da GOL, a oferta de assentos internacionais e regionais cai. Pela lei da oferta e da procura, as companhias remanescentes (Latam, Azul, American Airlines, TAP, Copa) operam com maior taxa de ocupação e **preços médios mais altos para o consumidor final**;
-3. **Impacto no Turismo Receptivo e Negócios:**  
-   O cancelamento de rotas internacionais diretas reduz a chegada de turistas estrangeiros com moeda forte a polos turísticos do Nordeste e Amazônia, prejudicando a hotelaria e a arrecadação de serviços locais.
+## Conclusão e limites da evidência
 
----
-
-## 4. Medidas e Soluções em Debate no Brasil
-
-Para enfrentar o estrangulamento financeiro do setor aéreo, governo e agências reguladoras discutem:
-* **Fundo Nacional de Aviação Civil (FNAC):** Projeto aprovado no Congresso autorizando o uso de recursos do FNAC para fornecer **linhas de crédito garantidas pelo BNDES de até R$ 5 bilhões** para socorrer as companhias aéreas na reestruturação de dívidas e compra de combustível;
-* **Revisão da Precificação do QAV:** Pressão do Ministério de Portos e Aeroportos sobre a Petrobras para flexibilizar a fórmula do PPI e reduzir os custos de distribuição de combustível nos aeroportos;
-* **Reforma da Resolução 400 da ANAC:** Atualização das normas regulatórias em parceria com o CNJ para coibir a judicialização abusiva e limitar indenizações por danos morais quando os atrasos decorrerem de eventos externos comprovados (mau tempo ou falha de infraestrutura aeroportuária).
+A associação declarada entre QAV e ajuste de malha é relevante, mas não demonstra os seis fatores como causas medidas. A narrativa anterior misturava um episódio recente com Chapter 11 já encerrado, composição de operação desatualizada e erro entre ASK e custo. A análise deve comparar contribuição de cada rota, capacidade disponível e alternativas ao corte. Não se conclui que voos longos em 737 sejam necessariamente inviáveis, que judicialização explique as suspensões ou que menor oferta cause aumento obrigatório de toda tarifa. Permanecem pendentes o comunicado primário integral de malha e uma base financeira e operacional por trecho.
