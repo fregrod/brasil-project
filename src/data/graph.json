@@ -1,0 +1,985 @@
+{
+  "nodes": [
+    {
+      "id": "README.md",
+      "title": "Brasil Project: Repositório de Política, Economia e Instituições Brasileiras",
+      "category": "Visão Geral & Fontes",
+      "categoryKey": "",
+      "categoryOrder": 1,
+      "color": "#A1A1AA",
+      "wordCount": 196,
+      "readTimeMinutes": 1,
+      "isHub": true,
+      "size": 14
+    },
+    {
+      "id": "BASE_FONTES_OFICIAIS.md",
+      "title": "Base Definitiva de Fontes Oficiais, Indicadores e Fatos Econômicos do Brasil",
+      "category": "Visão Geral & Fontes",
+      "categoryKey": "",
+      "categoryOrder": 1,
+      "color": "#A1A1AA",
+      "wordCount": 2632,
+      "readTimeMinutes": 14,
+      "isHub": false,
+      "size": 8
+    },
+    {
+      "id": "economia/README.md",
+      "title": "Repositório de Economia Brasileira: Análise Dialética dos Governos Recentes",
+      "category": "Macroeconomia",
+      "categoryKey": "economia",
+      "categoryOrder": 2,
+      "color": "#10B981",
+      "wordCount": 1306,
+      "readTimeMinutes": 7,
+      "isHub": true,
+      "size": 10
+    },
+    {
+      "id": "economia/01_governo_lula_3_analise_economica.md",
+      "title": "Governo Lula 3 (2023 – 2026): Análise Econômica e Indicadores Reais",
+      "category": "Macroeconomia",
+      "categoryKey": "economia",
+      "categoryOrder": 2,
+      "color": "#10B981",
+      "wordCount": 1793,
+      "readTimeMinutes": 9,
+      "isHub": false,
+      "size": 5
+    },
+    {
+      "id": "economia/02_governo_bolsonaro_analise_economica.md",
+      "title": "Governo Jair Bolsonaro (2019 – 2022): Análise Econômica e Indicadores Reais",
+      "category": "Macroeconomia",
+      "categoryKey": "economia",
+      "categoryOrder": 2,
+      "color": "#10B981",
+      "wordCount": 1402,
+      "readTimeMinutes": 8,
+      "isHub": false,
+      "size": 5
+    },
+    {
+      "id": "economia/03_governo_temer_analise_economica.md",
+      "title": "Governo Michel Temer (2016 – 2018): Análise Econômica e Indicadores Reais",
+      "category": "Macroeconomia",
+      "categoryKey": "economia",
+      "categoryOrder": 2,
+      "color": "#10B981",
+      "wordCount": 1140,
+      "readTimeMinutes": 6,
+      "isHub": false,
+      "size": 5
+    },
+    {
+      "id": "economia/04_governos_lula_1_2_e_dilma_analise_economica.md",
+      "title": "Governos Lula 1 & 2 e Dilma Rousseff (2003 – 2016): Análise Econômica e Indicadores Reais",
+      "category": "Macroeconomia",
+      "categoryKey": "economia",
+      "categoryOrder": 2,
+      "color": "#10B981",
+      "wordCount": 1191,
+      "readTimeMinutes": 6,
+      "isHub": false,
+      "size": 5
+    },
+    {
+      "id": "economia/05_fundacao_tripe_macroeconomico_e_plano_real.md",
+      "title": "O Marco Fundacional: Plano Real e o Tripé Macroeconômico (1994 – 2002)",
+      "category": "Macroeconomia",
+      "categoryKey": "economia",
+      "categoryOrder": 2,
+      "color": "#10B981",
+      "wordCount": 1133,
+      "readTimeMinutes": 6,
+      "isHub": false,
+      "size": 5
+    },
+    {
+      "id": "economia/06_cenario_global_crises_e_impactos_no_brasil.md",
+      "title": "Ultradocumento: O Cenário Econômico Global, Grandes Crises e Seus Impactos no Brasil (1994 – 2026)",
+      "category": "Macroeconomia",
+      "categoryKey": "economia",
+      "categoryOrder": 2,
+      "color": "#10B981",
+      "wordCount": 3038,
+      "readTimeMinutes": 16,
+      "isHub": false,
+      "size": 9
+    },
+    {
+      "id": "economia/07_decisoes_economicas_contraditorias_pt_e_bolsonaro.md",
+      "title": "Decisões Econômicas Contraditórias: Governos do PT e Governo Bolsonaro",
+      "category": "Macroeconomia",
+      "categoryKey": "economia",
+      "categoryOrder": 2,
+      "color": "#10B981",
+      "wordCount": 4871,
+      "readTimeMinutes": 25,
+      "isHub": false,
+      "size": 9
+    },
+    {
+      "id": "economia/08_crise_aviacao_caso_gol_rotas_qav.md",
+      "title": "Relatório Econômico e Setorial: O Caso da Suspensão de Rotas da GOL e a Crise do QAV",
+      "category": "Macroeconomia",
+      "categoryKey": "economia",
+      "categoryOrder": 2,
+      "color": "#10B981",
+      "wordCount": 1321,
+      "readTimeMinutes": 7,
+      "isHub": false,
+      "size": 5
+    },
+    {
+      "id": "economia/privatizacoes/README.md",
+      "title": "Privatizações, Concessões e Desestatizações no Brasil",
+      "category": "Privatizações & Concessões",
+      "categoryKey": "economia/privatizacoes",
+      "categoryOrder": 3,
+      "color": "#06B6D4",
+      "wordCount": 662,
+      "readTimeMinutes": 4,
+      "isHub": true,
+      "size": 10
+    },
+    {
+      "id": "economia/privatizacoes/01_privatizacao_eletrobras_processo_indicadores_corrupcao_e_impactos.md",
+      "title": "A Privatização da Eletrobras: Processo Histórico, Indicadores, Corrupção e Impactos Setoriais",
+      "category": "Privatizações & Concessões",
+      "categoryKey": "economia/privatizacoes",
+      "categoryOrder": 3,
+      "color": "#06B6D4",
+      "wordCount": 3629,
+      "readTimeMinutes": 19,
+      "isHub": false,
+      "size": 9
+    },
+    {
+      "id": "corrupcao_e_investigacoes/README.md",
+      "title": "Repositório de Investigações, Corrupção e Fatos Judiciais da Política Brasileira",
+      "category": "Corrupção & Operações Judiciais",
+      "categoryKey": "corrupcao_e_investigacoes",
+      "categoryOrder": 4,
+      "color": "#F43F5E",
+      "wordCount": 1165,
+      "readTimeMinutes": 6,
+      "isHub": true,
+      "size": 10
+    },
+    {
+      "id": "corrupcao_e_investigacoes/01_operacao_lava_jato_e_petrolao.md",
+      "title": "Operação Lava Jato e o \"Petrolão\"",
+      "category": "Corrupção & Operações Judiciais",
+      "categoryKey": "corrupcao_e_investigacoes",
+      "categoryOrder": 4,
+      "color": "#F43F5E",
+      "wordCount": 2035,
+      "readTimeMinutes": 11,
+      "isHub": false,
+      "size": 6
+    },
+    {
+      "id": "corrupcao_e_investigacoes/02_governo_bolsonaro_e_investigacoes.md",
+      "title": "Investigações, Inquéritos e Fatos Judiciais: Governo Jair Bolsonaro e Aliados",
+      "category": "Corrupção & Operações Judiciais",
+      "categoryKey": "corrupcao_e_investigacoes",
+      "categoryOrder": 4,
+      "color": "#F43F5E",
+      "wordCount": 1837,
+      "readTimeMinutes": 10,
+      "isHub": false,
+      "size": 5
+    },
+    {
+      "id": "corrupcao_e_investigacoes/03_governo_temer_e_mdb.md",
+      "title": "Investigações, Prisões e Desfechos Judiciais: Governo Michel Temer e MDB",
+      "category": "Corrupção & Operações Judiciais",
+      "categoryKey": "corrupcao_e_investigacoes",
+      "categoryOrder": 4,
+      "color": "#F43F5E",
+      "wordCount": 1235,
+      "readTimeMinutes": 7,
+      "isHub": false,
+      "size": 5
+    },
+    {
+      "id": "corrupcao_e_investigacoes/04_acao_penal_470_mensalao.md",
+      "title": "O Escândalo do \"Mensalão\" (Ação Penal 470 do STF)",
+      "category": "Corrupção & Operações Judiciais",
+      "categoryKey": "corrupcao_e_investigacoes",
+      "categoryOrder": 4,
+      "color": "#F43F5E",
+      "wordCount": 1173,
+      "readTimeMinutes": 6,
+      "isHub": false,
+      "size": 5
+    },
+    {
+      "id": "corrupcao_e_investigacoes/05_centrao_orcamento_secreto_e_codevasf.md",
+      "title": "O Centrão, o \"Orçamento Secreto\" e a Codevasf",
+      "category": "Corrupção & Operações Judiciais",
+      "categoryKey": "corrupcao_e_investigacoes",
+      "categoryOrder": 4,
+      "color": "#F43F5E",
+      "wordCount": 1025,
+      "readTimeMinutes": 6,
+      "isHub": false,
+      "size": 5
+    },
+    {
+      "id": "corrupcao_e_investigacoes/06_casos_em_aberto_e_instabilidades_recentes.md",
+      "title": "Casos em Aberto, Instabilidades Recentes e Procedimentos Não Julgados",
+      "category": "Corrupção & Operações Judiciais",
+      "categoryKey": "corrupcao_e_investigacoes",
+      "categoryOrder": 4,
+      "color": "#F43F5E",
+      "wordCount": 1200,
+      "readTimeMinutes": 6,
+      "isHub": false,
+      "size": 5
+    },
+    {
+      "id": "corrupcao_e_investigacoes/07_stf_casos_historicos_e_conexoes.md",
+      "title": "Casos Históricos do STF: Linha do Tempo e Conexão de Fatores",
+      "category": "Corrupção & Operações Judiciais",
+      "categoryKey": "corrupcao_e_investigacoes",
+      "categoryOrder": 4,
+      "color": "#F43F5E",
+      "wordCount": 3508,
+      "readTimeMinutes": 18,
+      "isHub": false,
+      "size": 9
+    },
+    {
+      "id": "corrupcao_e_investigacoes/08_escandalos_bndes_operacoes_e_vinculos_lula.md",
+      "title": "Os Escândalos do BNDES: Investigações, Financiamentos Externos e os Vínculos com Lula",
+      "category": "Corrupção & Operações Judiciais",
+      "categoryKey": "corrupcao_e_investigacoes",
+      "categoryOrder": 4,
+      "color": "#F43F5E",
+      "wordCount": 3007,
+      "readTimeMinutes": 16,
+      "isHub": false,
+      "size": 9
+    },
+    {
+      "id": "politica_e_instituicoes/README.md",
+      "title": "Política e Instituições: O Poder Real na República Brasileira",
+      "category": "Política & Instituições",
+      "categoryKey": "politica_e_instituicoes",
+      "categoryOrder": 5,
+      "color": "#F59E0B",
+      "wordCount": 282,
+      "readTimeMinutes": 2,
+      "isHub": true,
+      "size": 10
+    },
+    {
+      "id": "politica_e_instituicoes/01_presidencialismo_de_coalizao_e_orcamento_impositivo.md",
+      "title": "A Mutação do Congresso: Do Presidencialismo de Coalizão ao Orçamento Impositivo",
+      "category": "Política & Instituições",
+      "categoryKey": "politica_e_instituicoes",
+      "categoryOrder": 5,
+      "color": "#F59E0B",
+      "wordCount": 896,
+      "readTimeMinutes": 5,
+      "isHub": false,
+      "size": 5
+    },
+    {
+      "id": "politica_e_instituicoes/02_forcas_armadas_e_tutela_militar.md",
+      "title": "As Forças Armadas, o Artigo 142 e a Tutela Militar na República",
+      "category": "Política & Instituições",
+      "categoryKey": "politica_e_instituicoes",
+      "categoryOrder": 5,
+      "color": "#F59E0B",
+      "wordCount": 915,
+      "readTimeMinutes": 5,
+      "isHub": false,
+      "size": 5
+    },
+    {
+      "id": "pecs_e_propostas/README.md",
+      "title": "PECs, Propostas Legislativas e Reformas Estruturais do Brasil",
+      "category": "PECs & Marcos Fiscais",
+      "categoryKey": "pecs_e_propostas",
+      "categoryOrder": 6,
+      "color": "#8B5CF6",
+      "wordCount": 449,
+      "readTimeMinutes": 3,
+      "isHub": true,
+      "size": 10
+    },
+    {
+      "id": "pecs_e_propostas/01_pec_fim_escala_6x1_jornada_trabalho.md",
+      "title": "Proposta de Emenda à Constituição: Fim da Escala 6x1 e Redução da Jornada",
+      "category": "PECs & Marcos Fiscais",
+      "categoryKey": "pecs_e_propostas",
+      "categoryOrder": 6,
+      "color": "#8B5CF6",
+      "wordCount": 1792,
+      "readTimeMinutes": 9,
+      "isHub": false,
+      "size": 5
+    },
+    {
+      "id": "pecs_e_propostas/02_linha_historica_teto_orcamento_secreto_arcabouco.md",
+      "title": "A Linha Histórica do Orçamento Federal: Do Teto de Gastos ao Orçamento Secreto e ao Novo Arcabouço Fiscal",
+      "category": "PECs & Marcos Fiscais",
+      "categoryKey": "pecs_e_propostas",
+      "categoryOrder": 6,
+      "color": "#8B5CF6",
+      "wordCount": 1931,
+      "readTimeMinutes": 10,
+      "isHub": false,
+      "size": 6
+    },
+    {
+      "id": "sociedade_e_desenvolvimento/README.md",
+      "title": "Sociedade e Desenvolvimento: Estrutura Social, Demografia e Desafios Estruturais",
+      "category": "Sociedade & Indicadores",
+      "categoryKey": "sociedade_e_desenvolvimento",
+      "categoryOrder": 7,
+      "color": "#3B82F6",
+      "wordCount": 366,
+      "readTimeMinutes": 2,
+      "isHub": true,
+      "size": 10
+    },
+    {
+      "id": "sociedade_e_desenvolvimento/01_demografia_previdencia_e_produtividade.md",
+      "title": "A Bomba Demográfica, a Previdência Social e o Abismo de Produtividade",
+      "category": "Sociedade & Indicadores",
+      "categoryKey": "sociedade_e_desenvolvimento",
+      "categoryOrder": 7,
+      "color": "#3B82F6",
+      "wordCount": 926,
+      "readTimeMinutes": 5,
+      "isHub": false,
+      "size": 5
+    },
+    {
+      "id": "sociedade_e_desenvolvimento/02_seguranca_publica_e_crime_organizado.md",
+      "title": "Segurança Pública e a Nova Geopolítica do Crime Organizado",
+      "category": "Sociedade & Indicadores",
+      "categoryKey": "sociedade_e_desenvolvimento",
+      "categoryOrder": 7,
+      "color": "#3B82F6",
+      "wordCount": 838,
+      "readTimeMinutes": 5,
+      "isHub": false,
+      "size": 5
+    },
+    {
+      "id": "sociedade_e_desenvolvimento/03_tributacao_regressiva_e_reforma_da_renda.md",
+      "title": "Tributação Regressiva, Imposto sobre a Renda e Desigualdade Estrutural",
+      "category": "Sociedade & Indicadores",
+      "categoryKey": "sociedade_e_desenvolvimento",
+      "categoryOrder": 7,
+      "color": "#3B82F6",
+      "wordCount": 931,
+      "readTimeMinutes": 5,
+      "isHub": false,
+      "size": 5
+    },
+    {
+      "id": "trabalho_e_leis_trabalhistas/README.md",
+      "title": "Trabalho, Legislação Trabalhista e Previdência Social no Brasil",
+      "category": "Trabalho & Previdência",
+      "categoryKey": "trabalho_e_leis_trabalhistas",
+      "categoryOrder": 8,
+      "color": "#EC4899",
+      "wordCount": 533,
+      "readTimeMinutes": 3,
+      "isHub": true,
+      "size": 10
+    },
+    {
+      "id": "trabalho_e_leis_trabalhistas/01_escandalo_inss_fraudes_descontos_associativos_e_investigacoes.md",
+      "title": "O Escândalo dos Descontos Indevidos no INSS: Fraudes, Auditorias e Repercussões Políticas",
+      "category": "Trabalho & Previdência",
+      "categoryKey": "trabalho_e_leis_trabalhistas",
+      "categoryOrder": 8,
+      "color": "#EC4899",
+      "wordCount": 1910,
+      "readTimeMinutes": 10,
+      "isHub": false,
+      "size": 5
+    },
+    {
+      "id": "trabalho_e_leis_trabalhistas/02_comparativo_leis_trabalhistas_brasil_vs_top25_mundo.md",
+      "title": "Comparativo Internacional de Leis Trabalhistas: Brasil vs. Top 25 Economias do Mundo",
+      "category": "Trabalho & Previdência",
+      "categoryKey": "trabalho_e_leis_trabalhistas",
+      "categoryOrder": 8,
+      "color": "#EC4899",
+      "wordCount": 3286,
+      "readTimeMinutes": 17,
+      "isHub": false,
+      "size": 9
+    },
+    {
+      "id": "geopolitica_e_energia/README.md",
+      "title": "Geopolítica, Energia e Comércio Exterior: O Brasil no Tabuleiro Global",
+      "category": "Geopolítica & Soberania",
+      "categoryKey": "geopolitica_e_energia",
+      "categoryOrder": 9,
+      "color": "#14B8A6",
+      "wordCount": 538,
+      "readTimeMinutes": 3,
+      "isHub": true,
+      "size": 10
+    },
+    {
+      "id": "geopolitica_e_energia/01_transicao_energetica_agro_e_margem_equatorial.md",
+      "title": "Transição Energética, Agronegócio e o Dilema da Margem Equatorial",
+      "category": "Geopolítica & Soberania",
+      "categoryKey": "geopolitica_e_energia",
+      "categoryOrder": 9,
+      "color": "#14B8A6",
+      "wordCount": 960,
+      "readTimeMinutes": 5,
+      "isHub": false,
+      "size": 5
+    },
+    {
+      "id": "geopolitica_e_energia/02_politica_externa_brics_e_desdolarizacao.md",
+      "title": "Geopolítica, BRICS e o Debate da Desdolarização",
+      "category": "Geopolítica & Soberania",
+      "categoryKey": "geopolitica_e_energia",
+      "categoryOrder": 9,
+      "color": "#14B8A6",
+      "wordCount": 934,
+      "readTimeMinutes": 5,
+      "isHub": false,
+      "size": 5
+    },
+    {
+      "id": "geopolitica_e_energia/03_soberania_nacional_lula_analise_fatos_e_decisoes.md",
+      "title": "A Soberania Nacional no Governo Lula: Fatos, Decisões e Análise Dialética",
+      "category": "Geopolítica & Soberania",
+      "categoryKey": "geopolitica_e_energia",
+      "categoryOrder": 9,
+      "color": "#14B8A6",
+      "wordCount": 1830,
+      "readTimeMinutes": 10,
+      "isHub": false,
+      "size": 5
+    },
+    {
+      "id": "geopolitica_e_energia/04_soberania_nacional_bolsonaro_analise_fatos_e_decisoes.md",
+      "title": "A Soberania Nacional no Governo Bolsonaro: Fatos, Decisões e Análise Dialética",
+      "category": "Geopolítica & Soberania",
+      "categoryKey": "geopolitica_e_energia",
+      "categoryOrder": 9,
+      "color": "#14B8A6",
+      "wordCount": 1845,
+      "readTimeMinutes": 10,
+      "isHub": false,
+      "size": 5
+    },
+    {
+      "id": "ideologia_e_discursos/README.md",
+      "title": "Ideologia, Discursos e Conexões Históricas: Lula e Bolsonaro",
+      "category": "Ideologia & Discursos",
+      "categoryKey": "ideologia_e_discursos",
+      "categoryOrder": 10,
+      "color": "#E11D48",
+      "wordCount": 902,
+      "readTimeMinutes": 5,
+      "isHub": true,
+      "size": 10
+    },
+    {
+      "id": "ideologia_e_discursos/01_lula_discursos_e_conexoes_comunistas.md",
+      "title": "Luiz Inácio Lula da Silva: Conexões, Declarações e Paralelos com Regimes de Esquerda",
+      "category": "Ideologia & Discursos",
+      "categoryKey": "ideologia_e_discursos",
+      "categoryOrder": 10,
+      "color": "#E11D48",
+      "wordCount": 1607,
+      "readTimeMinutes": 9,
+      "isHub": false,
+      "size": 5
+    },
+    {
+      "id": "ideologia_e_discursos/02_bolsonaro_discursos_e_conexoes_fascistas_autoritarias.md",
+      "title": "Jair Messias Bolsonaro: Discursos, Simbologias e Conexões Autoritárias",
+      "category": "Ideologia & Discursos",
+      "categoryKey": "ideologia_e_discursos",
+      "categoryOrder": 10,
+      "color": "#E11D48",
+      "wordCount": 1660,
+      "readTimeMinutes": 9,
+      "isHub": false,
+      "size": 5
+    },
+    {
+      "id": "ideologia_e_discursos/03_analise_comparativa_ciencia_politica.md",
+      "title": "Ciência Política Comparada: Retórica Radical vs. Realidade Institucional",
+      "category": "Ideologia & Discursos",
+      "categoryKey": "ideologia_e_discursos",
+      "categoryOrder": 10,
+      "color": "#E11D48",
+      "wordCount": 1614,
+      "readTimeMinutes": 9,
+      "isHub": false,
+      "size": 5
+    },
+    {
+      "id": "ideologia_e_discursos/04_lula_e_aliados_casos_autoritarios_instituicoes_imprensa.md",
+      "title": "Levantamento Histórico: Atos, Declarações e Posturas Autoritárias de Lula e Aliados",
+      "category": "Ideologia & Discursos",
+      "categoryKey": "ideologia_e_discursos",
+      "categoryOrder": 10,
+      "color": "#E11D48",
+      "wordCount": 5490,
+      "readTimeMinutes": 28,
+      "isHub": false,
+      "size": 9
+    },
+    {
+      "id": "economias_internacionais/README.md",
+      "title": "Economias Internacionais e Estudos de Caso Comparados",
+      "category": "Economias Internacionais",
+      "categoryKey": "economias_internacionais",
+      "categoryOrder": 11,
+      "color": "#6366F1",
+      "wordCount": 411,
+      "readTimeMinutes": 3,
+      "isHub": true,
+      "size": 10
+    },
+    {
+      "id": "economias_internacionais/01_argentina_analise_economica_pre_e_pos_milei.md",
+      "title": "A Grande Análise da Economia Argentina: O Colapso Pré-Milei, o Choque Libertário e os Impactos na População",
+      "category": "Economias Internacionais",
+      "categoryKey": "economias_internacionais",
+      "categoryOrder": 11,
+      "color": "#6366F1",
+      "wordCount": 3290,
+      "readTimeMinutes": 17,
+      "isHub": false,
+      "size": 9
+    }
+  ],
+  "edges": [
+    {
+      "source": "BASE_FONTES_OFICIAIS.md",
+      "target": "README.md",
+      "type": "hub"
+    },
+    {
+      "source": "economia/README.md",
+      "target": "README.md",
+      "type": "hub"
+    },
+    {
+      "source": "economia/01_governo_lula_3_analise_economica.md",
+      "target": "economia/README.md",
+      "type": "category"
+    },
+    {
+      "source": "economia/02_governo_bolsonaro_analise_economica.md",
+      "target": "economia/README.md",
+      "type": "category"
+    },
+    {
+      "source": "economia/03_governo_temer_analise_economica.md",
+      "target": "economia/README.md",
+      "type": "category"
+    },
+    {
+      "source": "economia/04_governos_lula_1_2_e_dilma_analise_economica.md",
+      "target": "economia/README.md",
+      "type": "category"
+    },
+    {
+      "source": "economia/05_fundacao_tripe_macroeconomico_e_plano_real.md",
+      "target": "economia/README.md",
+      "type": "category"
+    },
+    {
+      "source": "economia/06_cenario_global_crises_e_impactos_no_brasil.md",
+      "target": "economia/README.md",
+      "type": "category"
+    },
+    {
+      "source": "economia/07_decisoes_economicas_contraditorias_pt_e_bolsonaro.md",
+      "target": "economia/README.md",
+      "type": "category"
+    },
+    {
+      "source": "economia/08_crise_aviacao_caso_gol_rotas_qav.md",
+      "target": "economia/README.md",
+      "type": "category"
+    },
+    {
+      "source": "economia/privatizacoes/README.md",
+      "target": "README.md",
+      "type": "hub"
+    },
+    {
+      "source": "economia/privatizacoes/01_privatizacao_eletrobras_processo_indicadores_corrupcao_e_impactos.md",
+      "target": "economia/privatizacoes/README.md",
+      "type": "category"
+    },
+    {
+      "source": "corrupcao_e_investigacoes/README.md",
+      "target": "README.md",
+      "type": "hub"
+    },
+    {
+      "source": "corrupcao_e_investigacoes/01_operacao_lava_jato_e_petrolao.md",
+      "target": "corrupcao_e_investigacoes/README.md",
+      "type": "category"
+    },
+    {
+      "source": "corrupcao_e_investigacoes/02_governo_bolsonaro_e_investigacoes.md",
+      "target": "corrupcao_e_investigacoes/README.md",
+      "type": "category"
+    },
+    {
+      "source": "corrupcao_e_investigacoes/03_governo_temer_e_mdb.md",
+      "target": "corrupcao_e_investigacoes/README.md",
+      "type": "category"
+    },
+    {
+      "source": "corrupcao_e_investigacoes/04_acao_penal_470_mensalao.md",
+      "target": "corrupcao_e_investigacoes/README.md",
+      "type": "category"
+    },
+    {
+      "source": "corrupcao_e_investigacoes/05_centrao_orcamento_secreto_e_codevasf.md",
+      "target": "corrupcao_e_investigacoes/README.md",
+      "type": "category"
+    },
+    {
+      "source": "corrupcao_e_investigacoes/06_casos_em_aberto_e_instabilidades_recentes.md",
+      "target": "corrupcao_e_investigacoes/README.md",
+      "type": "category"
+    },
+    {
+      "source": "corrupcao_e_investigacoes/07_stf_casos_historicos_e_conexoes.md",
+      "target": "corrupcao_e_investigacoes/README.md",
+      "type": "category"
+    },
+    {
+      "source": "corrupcao_e_investigacoes/08_escandalos_bndes_operacoes_e_vinculos_lula.md",
+      "target": "corrupcao_e_investigacoes/README.md",
+      "type": "category"
+    },
+    {
+      "source": "politica_e_instituicoes/README.md",
+      "target": "README.md",
+      "type": "hub"
+    },
+    {
+      "source": "politica_e_instituicoes/01_presidencialismo_de_coalizao_e_orcamento_impositivo.md",
+      "target": "politica_e_instituicoes/README.md",
+      "type": "category"
+    },
+    {
+      "source": "politica_e_instituicoes/02_forcas_armadas_e_tutela_militar.md",
+      "target": "politica_e_instituicoes/README.md",
+      "type": "category"
+    },
+    {
+      "source": "pecs_e_propostas/README.md",
+      "target": "README.md",
+      "type": "hub"
+    },
+    {
+      "source": "pecs_e_propostas/01_pec_fim_escala_6x1_jornada_trabalho.md",
+      "target": "pecs_e_propostas/README.md",
+      "type": "category"
+    },
+    {
+      "source": "pecs_e_propostas/02_linha_historica_teto_orcamento_secreto_arcabouco.md",
+      "target": "pecs_e_propostas/README.md",
+      "type": "category"
+    },
+    {
+      "source": "sociedade_e_desenvolvimento/README.md",
+      "target": "README.md",
+      "type": "hub"
+    },
+    {
+      "source": "sociedade_e_desenvolvimento/01_demografia_previdencia_e_produtividade.md",
+      "target": "sociedade_e_desenvolvimento/README.md",
+      "type": "category"
+    },
+    {
+      "source": "sociedade_e_desenvolvimento/02_seguranca_publica_e_crime_organizado.md",
+      "target": "sociedade_e_desenvolvimento/README.md",
+      "type": "category"
+    },
+    {
+      "source": "sociedade_e_desenvolvimento/03_tributacao_regressiva_e_reforma_da_renda.md",
+      "target": "sociedade_e_desenvolvimento/README.md",
+      "type": "category"
+    },
+    {
+      "source": "trabalho_e_leis_trabalhistas/README.md",
+      "target": "README.md",
+      "type": "hub"
+    },
+    {
+      "source": "trabalho_e_leis_trabalhistas/01_escandalo_inss_fraudes_descontos_associativos_e_investigacoes.md",
+      "target": "trabalho_e_leis_trabalhistas/README.md",
+      "type": "category"
+    },
+    {
+      "source": "trabalho_e_leis_trabalhistas/02_comparativo_leis_trabalhistas_brasil_vs_top25_mundo.md",
+      "target": "trabalho_e_leis_trabalhistas/README.md",
+      "type": "category"
+    },
+    {
+      "source": "geopolitica_e_energia/README.md",
+      "target": "README.md",
+      "type": "hub"
+    },
+    {
+      "source": "geopolitica_e_energia/01_transicao_energetica_agro_e_margem_equatorial.md",
+      "target": "geopolitica_e_energia/README.md",
+      "type": "category"
+    },
+    {
+      "source": "geopolitica_e_energia/02_politica_externa_brics_e_desdolarizacao.md",
+      "target": "geopolitica_e_energia/README.md",
+      "type": "category"
+    },
+    {
+      "source": "geopolitica_e_energia/03_soberania_nacional_lula_analise_fatos_e_decisoes.md",
+      "target": "geopolitica_e_energia/README.md",
+      "type": "category"
+    },
+    {
+      "source": "geopolitica_e_energia/04_soberania_nacional_bolsonaro_analise_fatos_e_decisoes.md",
+      "target": "geopolitica_e_energia/README.md",
+      "type": "category"
+    },
+    {
+      "source": "ideologia_e_discursos/README.md",
+      "target": "README.md",
+      "type": "hub"
+    },
+    {
+      "source": "ideologia_e_discursos/01_lula_discursos_e_conexoes_comunistas.md",
+      "target": "ideologia_e_discursos/README.md",
+      "type": "category"
+    },
+    {
+      "source": "ideologia_e_discursos/02_bolsonaro_discursos_e_conexoes_fascistas_autoritarias.md",
+      "target": "ideologia_e_discursos/README.md",
+      "type": "category"
+    },
+    {
+      "source": "ideologia_e_discursos/03_analise_comparativa_ciencia_politica.md",
+      "target": "ideologia_e_discursos/README.md",
+      "type": "category"
+    },
+    {
+      "source": "ideologia_e_discursos/04_lula_e_aliados_casos_autoritarios_instituicoes_imprensa.md",
+      "target": "ideologia_e_discursos/README.md",
+      "type": "category"
+    },
+    {
+      "source": "economias_internacionais/README.md",
+      "target": "README.md",
+      "type": "hub"
+    },
+    {
+      "source": "economias_internacionais/01_argentina_analise_economica_pre_e_pos_milei.md",
+      "target": "economias_internacionais/README.md",
+      "type": "category"
+    },
+    {
+      "source": "economia/01_governo_lula_3_analise_economica.md",
+      "target": "economia/04_governos_lula_1_2_e_dilma_analise_economica.md",
+      "type": "thematic"
+    },
+    {
+      "source": "economia/01_governo_lula_3_analise_economica.md",
+      "target": "corrupcao_e_investigacoes/01_operacao_lava_jato_e_petrolao.md",
+      "type": "thematic"
+    },
+    {
+      "source": "economia/01_governo_lula_3_analise_economica.md",
+      "target": "corrupcao_e_investigacoes/08_escandalos_bndes_operacoes_e_vinculos_lula.md",
+      "type": "thematic"
+    },
+    {
+      "source": "economia/01_governo_lula_3_analise_economica.md",
+      "target": "ideologia_e_discursos/01_lula_discursos_e_conexoes_comunistas.md",
+      "type": "thematic"
+    },
+    {
+      "source": "economia/01_governo_lula_3_analise_economica.md",
+      "target": "geopolitica_e_energia/03_soberania_nacional_lula_analise_fatos_e_decisoes.md",
+      "type": "thematic"
+    },
+    {
+      "source": "economia/04_governos_lula_1_2_e_dilma_analise_economica.md",
+      "target": "corrupcao_e_investigacoes/01_operacao_lava_jato_e_petrolao.md",
+      "type": "thematic"
+    },
+    {
+      "source": "economia/04_governos_lula_1_2_e_dilma_analise_economica.md",
+      "target": "corrupcao_e_investigacoes/08_escandalos_bndes_operacoes_e_vinculos_lula.md",
+      "type": "thematic"
+    },
+    {
+      "source": "economia/04_governos_lula_1_2_e_dilma_analise_economica.md",
+      "target": "ideologia_e_discursos/01_lula_discursos_e_conexoes_comunistas.md",
+      "type": "thematic"
+    },
+    {
+      "source": "economia/04_governos_lula_1_2_e_dilma_analise_economica.md",
+      "target": "geopolitica_e_energia/03_soberania_nacional_lula_analise_fatos_e_decisoes.md",
+      "type": "thematic"
+    },
+    {
+      "source": "corrupcao_e_investigacoes/01_operacao_lava_jato_e_petrolao.md",
+      "target": "corrupcao_e_investigacoes/08_escandalos_bndes_operacoes_e_vinculos_lula.md",
+      "type": "thematic"
+    },
+    {
+      "source": "corrupcao_e_investigacoes/01_operacao_lava_jato_e_petrolao.md",
+      "target": "ideologia_e_discursos/01_lula_discursos_e_conexoes_comunistas.md",
+      "type": "thematic"
+    },
+    {
+      "source": "corrupcao_e_investigacoes/01_operacao_lava_jato_e_petrolao.md",
+      "target": "geopolitica_e_energia/03_soberania_nacional_lula_analise_fatos_e_decisoes.md",
+      "type": "thematic"
+    },
+    {
+      "source": "corrupcao_e_investigacoes/08_escandalos_bndes_operacoes_e_vinculos_lula.md",
+      "target": "ideologia_e_discursos/01_lula_discursos_e_conexoes_comunistas.md",
+      "type": "thematic"
+    },
+    {
+      "source": "corrupcao_e_investigacoes/08_escandalos_bndes_operacoes_e_vinculos_lula.md",
+      "target": "geopolitica_e_energia/03_soberania_nacional_lula_analise_fatos_e_decisoes.md",
+      "type": "thematic"
+    },
+    {
+      "source": "ideologia_e_discursos/01_lula_discursos_e_conexoes_comunistas.md",
+      "target": "geopolitica_e_energia/03_soberania_nacional_lula_analise_fatos_e_decisoes.md",
+      "type": "thematic"
+    },
+    {
+      "source": "economia/02_governo_bolsonaro_analise_economica.md",
+      "target": "corrupcao_e_investigacoes/02_governo_bolsonaro_e_investigacoes.md",
+      "type": "thematic"
+    },
+    {
+      "source": "economia/02_governo_bolsonaro_analise_economica.md",
+      "target": "ideologia_e_discursos/02_bolsonaro_discursos_e_conexoes_fascistas_autoritarias.md",
+      "type": "thematic"
+    },
+    {
+      "source": "economia/02_governo_bolsonaro_analise_economica.md",
+      "target": "geopolitica_e_energia/04_soberania_nacional_bolsonaro_analise_fatos_e_decisoes.md",
+      "type": "thematic"
+    },
+    {
+      "source": "corrupcao_e_investigacoes/02_governo_bolsonaro_e_investigacoes.md",
+      "target": "ideologia_e_discursos/02_bolsonaro_discursos_e_conexoes_fascistas_autoritarias.md",
+      "type": "thematic"
+    },
+    {
+      "source": "corrupcao_e_investigacoes/02_governo_bolsonaro_e_investigacoes.md",
+      "target": "geopolitica_e_energia/04_soberania_nacional_bolsonaro_analise_fatos_e_decisoes.md",
+      "type": "thematic"
+    },
+    {
+      "source": "ideologia_e_discursos/02_bolsonaro_discursos_e_conexoes_fascistas_autoritarias.md",
+      "target": "geopolitica_e_energia/04_soberania_nacional_bolsonaro_analise_fatos_e_decisoes.md",
+      "type": "thematic"
+    },
+    {
+      "source": "economia/03_governo_temer_analise_economica.md",
+      "target": "corrupcao_e_investigacoes/03_governo_temer_e_mdb.md",
+      "type": "thematic"
+    },
+    {
+      "source": "corrupcao_e_investigacoes/05_centrao_orcamento_secreto_e_codevasf.md",
+      "target": "politica_e_instituicoes/01_presidencialismo_de_coalizao_e_orcamento_impositivo.md",
+      "type": "thematic"
+    },
+    {
+      "source": "corrupcao_e_investigacoes/05_centrao_orcamento_secreto_e_codevasf.md",
+      "target": "pecs_e_propostas/02_linha_historica_teto_orcamento_secreto_arcabouco.md",
+      "type": "thematic"
+    },
+    {
+      "source": "politica_e_instituicoes/01_presidencialismo_de_coalizao_e_orcamento_impositivo.md",
+      "target": "pecs_e_propostas/02_linha_historica_teto_orcamento_secreto_arcabouco.md",
+      "type": "thematic"
+    },
+    {
+      "source": "trabalho_e_leis_trabalhistas/01_escandalo_inss_fraudes_descontos_associativos_e_investigacoes.md",
+      "target": "sociedade_e_desenvolvimento/01_demografia_previdencia_e_produtividade.md",
+      "type": "thematic"
+    },
+    {
+      "source": "pecs_e_propostas/01_pec_fim_escala_6x1_jornada_trabalho.md",
+      "target": "trabalho_e_leis_trabalhistas/02_comparativo_leis_trabalhistas_brasil_vs_top25_mundo.md",
+      "type": "thematic"
+    },
+    {
+      "source": "economia/privatizacoes/01_privatizacao_eletrobras_processo_indicadores_corrupcao_e_impactos.md",
+      "target": "geopolitica_e_energia/01_transicao_energetica_agro_e_margem_equatorial.md",
+      "type": "thematic"
+    },
+    {
+      "source": "corrupcao_e_investigacoes/07_stf_casos_historicos_e_conexoes.md",
+      "target": "corrupcao_e_investigacoes/04_acao_penal_470_mensalao.md",
+      "type": "thematic"
+    },
+    {
+      "source": "corrupcao_e_investigacoes/07_stf_casos_historicos_e_conexoes.md",
+      "target": "corrupcao_e_investigacoes/06_casos_em_aberto_e_instabilidades_recentes.md",
+      "type": "thematic"
+    },
+    {
+      "source": "corrupcao_e_investigacoes/07_stf_casos_historicos_e_conexoes.md",
+      "target": "ideologia_e_discursos/04_lula_e_aliados_casos_autoritarios_instituicoes_imprensa.md",
+      "type": "thematic"
+    },
+    {
+      "source": "corrupcao_e_investigacoes/04_acao_penal_470_mensalao.md",
+      "target": "corrupcao_e_investigacoes/06_casos_em_aberto_e_instabilidades_recentes.md",
+      "type": "thematic"
+    },
+    {
+      "source": "corrupcao_e_investigacoes/04_acao_penal_470_mensalao.md",
+      "target": "ideologia_e_discursos/04_lula_e_aliados_casos_autoritarios_instituicoes_imprensa.md",
+      "type": "thematic"
+    },
+    {
+      "source": "corrupcao_e_investigacoes/06_casos_em_aberto_e_instabilidades_recentes.md",
+      "target": "ideologia_e_discursos/04_lula_e_aliados_casos_autoritarios_instituicoes_imprensa.md",
+      "type": "thematic"
+    },
+    {
+      "source": "economias_internacionais/01_argentina_analise_economica_pre_e_pos_milei.md",
+      "target": "geopolitica_e_energia/02_politica_externa_brics_e_desdolarizacao.md",
+      "type": "thematic"
+    },
+    {
+      "source": "economias_internacionais/01_argentina_analise_economica_pre_e_pos_milei.md",
+      "target": "economia/06_cenario_global_crises_e_impactos_no_brasil.md",
+      "type": "thematic"
+    },
+    {
+      "source": "geopolitica_e_energia/02_politica_externa_brics_e_desdolarizacao.md",
+      "target": "economia/06_cenario_global_crises_e_impactos_no_brasil.md",
+      "type": "thematic"
+    }
+  ]
+}

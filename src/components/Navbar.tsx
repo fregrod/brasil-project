@@ -1,5 +1,5 @@
 import React from 'react';
-import { Search, Moon, Sun, Menu, X, Github } from 'lucide-react';
+import { Search, Moon, Sun, Menu, X, Github, BookOpen, Network } from 'lucide-react';
 import { Logo } from './Logo';
 
 interface NavbarProps {
@@ -9,6 +9,8 @@ interface NavbarProps {
   onToggleSidebar: () => void;
   isSidebarOpen: boolean;
   onNavigateHome: () => void;
+  currentView: 'reader' | 'graph';
+  onToggleView: (view: 'reader' | 'graph') => void;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({
@@ -18,6 +20,8 @@ export const Navbar: React.FC<NavbarProps> = ({
   onToggleSidebar,
   isSidebarOpen,
   onNavigateHome,
+  currentView,
+  onToggleView,
 }) => {
   return (
     <header className="sticky top-0 z-30 w-full backdrop-blur-md bg-surface-light/85 dark:bg-surface-dark/85 border-b border-border-light dark:border-border-dark transition-colors">
@@ -58,7 +62,35 @@ export const Navbar: React.FC<NavbarProps> = ({
         </div>
 
         {/* Right: Actions */}
-        <div className="flex items-center gap-1 sm:gap-2">
+        <div className="flex items-center gap-1.5 sm:gap-2">
+          {/* View Mode Toggle: Leitor / Grafo */}
+          <div className="flex items-center p-0.5 rounded-lg border border-border-light dark:border-border-dark bg-zinc-100/70 dark:bg-zinc-800/60 text-xs mr-0.5">
+            <button
+              onClick={() => onToggleView('reader')}
+              className={`flex items-center gap-1.5 px-2.5 py-1 rounded-md transition-all ${
+                currentView === 'reader'
+                  ? 'bg-surface-light dark:bg-zinc-900 text-zinc-950 dark:text-zinc-50 font-medium shadow-xs'
+                  : 'text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-300'
+              }`}
+              title="Modo Leitura"
+            >
+              <BookOpen size={13} />
+              <span className="hidden md:inline text-[11px]">Leitor</span>
+            </button>
+            <button
+              onClick={() => onToggleView('graph')}
+              className={`flex items-center gap-1.5 px-2.5 py-1 rounded-md transition-all ${
+                currentView === 'graph'
+                  ? 'bg-surface-light dark:bg-zinc-900 text-zinc-950 dark:text-zinc-50 font-medium shadow-xs'
+                  : 'text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-300'
+              }`}
+              title="Grafo de Conhecimento (Estilo Obsidian)"
+            >
+              <Network size={13} />
+              <span className="hidden md:inline text-[11px]">Grafo</span>
+            </button>
+          </div>
+
           <button
             onClick={onToggleDarkMode}
             className="p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 text-zinc-600 dark:text-zinc-400 transition-colors"

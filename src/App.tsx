@@ -16,7 +16,9 @@ import {
   Calendar,
   Layers,
   ArrowUp,
+  Network,
 } from 'lucide-react';
+import { GraphView } from './components/GraphView';
 
 const documents = rawDocuments as DocumentItem[];
 const categories = rawCategories as CategoryItem[];
@@ -28,9 +30,14 @@ export function App() {
     return window.matchMedia('(prefers-color-scheme: dark)').matches;
   });
 
+  const [currentView, setCurrentView] = useState<'reader' | 'graph'>(() => {
+    const hash = window.location.hash.replace(/^#/, '');
+    return hash === 'grafo' ? 'graph' : 'reader';
+  });
+
   const [currentPath, setCurrentPath] = useState<string>(() => {
     const hash = window.location.hash.replace(/^#/, '');
-    if (hash && documents.some((d) => d.path === hash)) {
+    if (hash && hash !== 'grafo' && documents.some((d) => d.path === hash)) {
       return hash;
     }
     return 'README.md';
@@ -61,8 +68,11 @@ export function App() {
   useEffect(() => {
     const handleHashChange = () => {
       const hash = window.location.hash.replace(/^#/, '');
-      if (hash && documents.some((d) => d.path === hash)) {
+      if (hash === 'grafo') {
+        setCurrentView('graph');
+      } else if (hash && documents.some((d) => d.path === hash)) {
         setCurrentPath(hash);
+        setCurrentView('reader');
       }
     };
 
@@ -98,6 +108,7 @@ export function App() {
 
   const navigateTo = (path: string) => {
     setCurrentPath(path);
+    setCurrentView('reader');
     window.location.hash = path;
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -129,63 +140,90 @@ export function App() {
         onToggleSidebar={() => setIsSidebarOpen((prev) => !prev)}
         isSidebarOpen={isSidebarOpen}
         onNavigateHome={() => navigateTo('README.md')}
+        currentView={currentView}
+        onToggleView={(view) => {
+          setCurrentView(view);
+          window.location.hash = view === 'graph' ? 'grafo' : currentPath;
+        }}
       />
 
-      <div className="flex-1 max-w-7xl w-full mx-auto flex">
-        {/* Sidebar */}
-        <Sidebar
-          categories={categories}
-          activePath={currentDoc.path}
+      {currentView === 'graph' ? (
+        <GraphView
           onSelectDoc={navigateTo}
-          isOpen={isSidebarOpen}
-          onCloseMobile={() => setIsSidebarOpen(false)}
+          onClose={() => {
+            setCurrentView('reader');
+            window.location.hash = currentPath;
+          }}
+          isDarkMode={isDarkMode}
         />
+      ) : (
+        <div className="flex-1 max-w-7xl w-full mx-auto flex">
+          {/* Sidebar */}
+          <Sidebar
+            categories={categories}
+            activePath={currentDoc.path}
+            onSelectDoc={navigateTo}
+            isOpen={isSidebarOpen}
+            onCloseMobile={() => setIsSidebarOpen(false)}
+          />
 
-        {/* Main Content Area */}
-        <main className="flex-1 lg:pl-64 xl:pl-72 flex justify-center w-full min-w-0">
-          <div className="w-full max-w-4xl px-4 sm:px-8 py-8 sm:py-12">
-            {/* Minimalist Breadcrumb & Category Tag */}
-            <div className="flex flex-wrap items-center justify-between gap-3 pb-6 mb-8 border-b border-border-light dark:border-border-dark text-xs">
-              <div className="flex items-center gap-2 text-zinc-500 dark:text-zinc-400 font-medium">
-                <span className="flex items-center gap-1.5 uppercase tracking-wider text-[11px] font-semibold text-zinc-400 dark:text-zinc-500">
-                  <Layers size={13} />
-                  {currentDoc.category}
-                </span>
-                <span>/</span>
-                <span className="text-zinc-700 dark:text-zinc-300 truncate max-w-[200px] sm:max-w-xs">
-                  {currentDoc.fileName}
-                </span>
+          {/* Main Content Area */}
+          <main className="flex-1 lg:pl-64 xl:pl-72 flex justify-center w-full min-w-0">
+            <div className="w-full max-w-4xl px-4 sm:px-8 py-8 sm:py-12">
+              {/* Minimalist Breadcrumb & Category Tag */}
+              <div className="flex flex-wrap items-center justify-between gap-3 pb-6 mb-8 border-b border-border-light dark:border-border-dark text-xs">
+                <div className="flex items-center gap-2 text-zinc-500 dark:text-zinc-400 font-medium">
+                  <span className="flex items-center gap-1.5 uppercase tracking-wider text-[11px] font-semibold text-zinc-400 dark:text-zinc-500">
+                    <Layers size={13} />
+                    {currentDoc.category}
+                  </span>
+                  <span>/</span>
+                  <span className="text-zinc-700 dark:text-zinc-300 truncate max-w-[200px] sm:max-w-xs">
+                    {currentDoc.fileName}
+                  </span>
+                </div>
+
+                <div className="flex items-center gap-2">
+                  <button
+                    onClick={() => {
+                      setCurrentView('graph');
+                      window.location.hash = 'grafo';
+                    }}
+                    className="flex items-center gap-1.5 px-2.5 py-1 rounded-md border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark hover:bg-zinc-100 dark:hover:bg-zinc-800 text-zinc-600 dark:text-zinc-300 transition-colors text-xs"
+                    title="Ver este e outros documentos no Grafo de Conhecimento"
+                  >
+                    <Network size={13} />
+                    <span className="hidden sm:inline">Ver no Grafo</span>
+                  </button>
+
+                  <button
+                    onClick={handleShare}
+                    className="flex items-center gap-1.5 px-2.5 py-1 rounded-md border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark hover:bg-zinc-100 dark:hover:bg-zinc-800 text-zinc-600 dark:text-zinc-300 transition-colors text-xs"
+                    title="Copiar link direto para este documento"
+                  >
+                    {copiedLink ? (
+                      <>
+                        <Check size={13} className="text-emerald-500" />
+                        <span className="text-emerald-600 dark:text-emerald-400">Link copiado</span>
+                      </>
+                    ) : (
+                      <>
+                        <Share2 size={13} />
+                        <span>Compartilhar</span>
+                      </>
+                    )}
+                  </button>
+                </div>
               </div>
 
-              <div className="flex items-center gap-2">
-                <button
-                  onClick={handleShare}
-                  className="flex items-center gap-1.5 px-2.5 py-1 rounded-md border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark hover:bg-zinc-100 dark:hover:bg-zinc-800 text-zinc-600 dark:text-zinc-300 transition-colors text-xs"
-                  title="Copiar link direto para este documento"
-                >
-                  {copiedLink ? (
-                    <>
-                      <Check size={13} className="text-emerald-500" />
-                      <span className="text-emerald-600 dark:text-emerald-400">Link copiado</span>
-                    </>
-                  ) : (
-                    <>
-                      <Share2 size={13} />
-                      <span>Compartilhar</span>
-                    </>
-                  )}
-                </button>
-              </div>
-            </div>
-
-            {/* Document Body */}
-            <article className="min-w-0">
-              <MarkdownRenderer
-                content={currentDoc.rawContent}
-                currentPath={currentDoc.path}
-                onNavigate={navigateTo}
-              />
-            </article>
+              {/* Document Body */}
+              <article className="min-w-0">
+                <MarkdownRenderer
+                  content={currentDoc.rawContent}
+                  currentPath={currentDoc.path}
+                  onNavigate={navigateTo}
+                />
+              </article>
 
             {/* Next / Previous Document Navigation */}
             <div className="mt-16 pt-8 border-t border-border-light dark:border-border-dark grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -235,6 +273,7 @@ export function App() {
           />
         </main>
       </div>
+      )}
 
       {/* Floating Scroll to Top button */}
       {showScrollTop && (

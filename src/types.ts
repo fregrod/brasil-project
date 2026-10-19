@@ -50,3 +50,33 @@ export interface SearchResult {
   score: number;
   headings: Heading[];
 }
+
+export interface GraphNode {
+  id: string;
+  title: string;
+  category: string;
+  categoryKey: string;
+  categoryOrder: number;
+  color: string;
+  wordCount: number;
+  readTimeMinutes: number;
+  isHub: boolean;
+  size: number;
+  x?: number;
+  y?: number;
+  vx?: number;
+  vy?: number;
+  fx?: number | null;
+  fy?: number | null;
+}
+
+export interface GraphEdge {
+  source: string | GraphNode;
+  target: string | GraphNode;
+  type: 'explicit' | 'category' | 'thematic' | 'hub';
+}
+
+export interface GraphData {
+  nodes: GraphNode[];
+  edges: GraphEdge[];
+}
