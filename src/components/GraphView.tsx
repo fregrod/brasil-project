@@ -103,26 +103,38 @@ export const GraphView: React.FC<GraphViewProps> = ({
     canvas.style.width = `${width}px`;
     canvas.style.height = `${height}px`;
 
-    // Center transform
-    transformRef.current = { x: width / 2, y: height / 2, k: 0.95 };
+    // Center transform with expansive initial view
+    const initialZoom = Math.min(0.75, Math.max(0.55, width / 1600));
+    transformRef.current = { x: width / 2, y: height / 2, k: initialZoom };
     setPan({ x: width / 2, y: height / 2 });
-    setZoom(0.95);
+    setZoom(initialZoom);
 
-    // Setup D3 Simulation
+    // Setup D3 Simulation with spacious, fluid, dynamic physics
     const simulation: Simulation<GraphNode, any> = forceSimulation(nodes)
       .force(
         'link',
         forceLink(edges)
           .id((d: any) => d.id)
-          .distance((d: any) => (d.type === 'hub' ? 80 : 55))
-          .strength(0.35)
+          .distance((d: any) => {
+            if (d.type === 'hub') return 220;
+            if (d.type === 'thematic') return 175;
+            return 125;
+          })
+          .strength(0.18)
       )
-      .force('charge', forceManyBody().strength(-140).distanceMax(400))
-      .force('collide', forceCollide().radius((d: any) => d.size + 6).iterations(2))
-      .force('center', forceCenter(0, 0).strength(0.06))
-      .force('x', forceX(0).strength(0.03))
-      .force('y', forceY(0).strength(0.03))
-      .alphaDecay(0.02);
+      .force('charge', forceManyBody().strength(-520).distanceMax(950))
+      .force(
+        'collide',
+        forceCollide()
+          .radius((d: any) => d.size * 2.6 + 22)
+          .strength(0.9)
+          .iterations(3)
+      )
+      .force('center', forceCenter(0, 0).strength(0.014))
+      .force('x', forceX(0).strength(0.01))
+      .force('y', forceY(0).strength(0.01))
+      .velocityDecay(0.32)
+      .alphaDecay(0.014);
 
     let animationFrameId: number;
 
@@ -141,6 +153,42 @@ export const GraphView: React.FC<GraphViewProps> = ({
       // Apply Pan & Zoom
       ctx.translate(tx, ty);
       ctx.scale(tk, tk);
+
+      // --- Draw Blueprint / Infinite Canvas Grid (Estilo Figma / Canva / Miro) ---
+      const GRID_SIZE = 50;
+      const startX = -tx / tk;
+      const endX = (width - tx) / tk;
+      const startY = -ty / tk;
+      const endY = (height - ty) / tk;
+
+      const firstGridX = Math.floor(startX / GRID_SIZE) * GRID_SIZE;
+      const firstGridY = Math.floor(startY / GRID_SIZE) * GRID_SIZE;
+
+      ctx.beginPath();
+      for (let x = firstGridX; x <= endX; x += GRID_SIZE) {
+        ctx.moveTo(x, startY);
+        ctx.lineTo(x, endY);
+      }
+      for (let y = firstGridY; y <= endY; y += GRID_SIZE) {
+        ctx.moveTo(startX, y);
+        ctx.lineTo(endX, y);
+      }
+      ctx.strokeStyle = isDarkMode ? 'rgba(255, 255, 255, 0.04)' : 'rgba(0, 0, 0, 0.04)';
+      ctx.lineWidth = 1 / tk;
+      ctx.stroke();
+
+      // Subtle crosshair accent points at every 2nd grid intersection
+      ctx.beginPath();
+      const dotStep = GRID_SIZE * 2;
+      const firstDotX = Math.floor(startX / dotStep) * dotStep;
+      const firstDotY = Math.floor(startY / dotStep) * dotStep;
+      for (let x = firstDotX; x <= endX; x += dotStep) {
+        for (let y = firstDotY; y <= endY; y += dotStep) {
+          ctx.rect(x - 1.2 / tk, y - 1.2 / tk, 2.4 / tk, 2.4 / tk);
+        }
+      }
+      ctx.fillStyle = isDarkMode ? 'rgba(255, 255, 255, 0.12)' : 'rgba(0, 0, 0, 0.1)';
+      ctx.fill();
 
       const connectedNeighbors = currentHovered ? connectedMap.get(currentHovered.id) : null;
 
@@ -380,7 +428,8 @@ export const GraphView: React.FC<GraphViewProps> = ({
   const handleResetZoom = () => {
     const container = containerRef.current;
     if (!container) return;
-    const target = { x: container.clientWidth / 2, y: container.clientHeight / 2, k: 0.95 };
+    const initialZoom = Math.min(0.75, Math.max(0.55, container.clientWidth / 1600));
+    const target = { x: container.clientWidth / 2, y: container.clientHeight / 2, k: initialZoom };
     transformRef.current = target;
     setPan({ x: target.x, y: target.y });
     setZoom(target.k);
