@@ -74,10 +74,14 @@ brasil-project/
 │   ├── 01_pec_fim_escala_6x1_jornada_trabalho.md
 │   └── 02_linha_historica_teto_orcamento_secreto_arcabouco.md
 │
-└── trabalho_e_leis_trabalhistas/         # Mercado de trabalho, previdência e direito comparado
+├── trabalho_e_leis_trabalhistas/         # Mercado de trabalho, previdência e direito comparado
+│   ├── README.md
+│   ├── 01_escandalo_inss_fraudes_descontos_associativos_e_investigacoes.md
+│   └── 02_comparativo_leis_trabalhistas_brasil_vs_top25_mundo.md
+│
+└── economias_internacionais/             # Estudos macroeconômicos e reformas em outros países
     ├── README.md
-    ├── 01_escandalo_inss_fraudes_descontos_associativos_e_investigacoes.md
-    └── 02_comparativo_leis_trabalhistas_brasil_vs_top25_mundo.md
+    └── 01_argentina_analise_economica_pre_e_pos_milei.md
 ```
 
 ---
