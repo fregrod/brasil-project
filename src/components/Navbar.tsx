@@ -1,5 +1,6 @@
 import React from 'react';
-import { Search, Moon, Sun, Menu, X, Github, BookOpen } from 'lucide-react';
+import { Search, Moon, Sun, Menu, X, Github } from 'lucide-react';
+import { Logo } from './Logo';
 
 interface NavbarProps {
   isDarkMode: boolean;
@@ -33,19 +34,10 @@ export const Navbar: React.FC<NavbarProps> = ({
 
           <button
             onClick={onNavigateHome}
-            className="flex items-center gap-2.5 text-left group transition-opacity hover:opacity-80"
+            className="text-left group transition-opacity hover:opacity-85"
+            aria-label="Ir para a página inicial"
           >
-            <div className="w-7 h-7 rounded-lg bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 flex items-center justify-center font-bold text-xs tracking-tight">
-              BR
-            </div>
-            <div>
-              <span className="font-semibold text-sm tracking-tight text-zinc-900 dark:text-zinc-100">
-                Brasil Project
-              </span>
-              <span className="hidden sm:inline-block ml-2 text-[11px] font-mono text-zinc-400 uppercase tracking-widest">
-                v1.0
-              </span>
-            </div>
+            <Logo size={32} />
           </button>
         </div>
 
