@@ -9,8 +9,9 @@ import {
   forceY,
   Simulation,
 } from 'd3-force';
-import { GraphData, GraphNode, GraphEdge } from '../types';
+import { DocumentItem, GraphData, GraphNode, GraphEdge } from '../types';
 import rawGraphData from '../data/graph.json';
+import rawContent from '../data/content.json';
 import {
   Search,
   ZoomIn,
@@ -21,6 +22,8 @@ import {
   ArrowRight,
   Info,
   X,
+  Crosshair,
+  Network,
 } from 'lucide-react';
 
 interface GraphViewProps {
@@ -30,6 +33,7 @@ interface GraphViewProps {
 }
 
 const initialData = rawGraphData as GraphData;
+const allDocuments = rawContent as DocumentItem[];
 
 export const GraphView: React.FC<GraphViewProps> = ({
   onSelectDoc,
@@ -40,6 +44,7 @@ export const GraphView: React.FC<GraphViewProps> = ({
   const containerRef = useRef<HTMLDivElement>(null);
 
   const [hoveredNode, setHoveredNode] = useState<GraphNode | null>(null);
+  const [inspectedNode, setInspectedNode] = useState<GraphNode | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [zoom, setZoom] = useState(1);
@@ -391,8 +396,8 @@ export const GraphView: React.FC<GraphViewProps> = ({
 
     if (isDraggingNodeRef.current && activeDraggedNodeRef.current) {
       if (moveDist < 5) {
-        // Was a click on a node
-        onSelectDoc(activeDraggedNodeRef.current.id);
+        // Was a click on a node -> Open Document Map & Structure modal
+        setInspectedNode(activeDraggedNodeRef.current);
       }
       activeDraggedNodeRef.current.fx = null;
       activeDraggedNodeRef.current.fy = null;
@@ -402,6 +407,44 @@ export const GraphView: React.FC<GraphViewProps> = ({
 
     isPanningRef.current = false;
   };
+
+  const focusOnNode = (node: GraphNode) => {
+    const container = containerRef.current;
+    if (!container || node.x == null || node.y == null) return;
+    const targetZoom = 1.35;
+    const targetX = container.clientWidth / 2 - node.x * targetZoom;
+    const targetY = container.clientHeight / 2 - node.y * targetZoom;
+
+    transformRef.current = { x: targetX, y: targetY, k: targetZoom };
+    setPan({ x: targetX, y: targetY });
+    setZoom(targetZoom);
+    setHoveredNode(node);
+    hoveredNodeRef.current = node;
+  };
+
+  const inspectedDoc = useMemo(() => {
+    if (!inspectedNode) return null;
+    return allDocuments.find((d) => d.path === inspectedNode.id) || null;
+  }, [inspectedNode]);
+
+  const connectedNeighborNodes = useMemo(() => {
+    if (!inspectedNode) return [];
+    const neighborIds = connectedMap.get(inspectedNode.id);
+    if (!neighborIds) return [];
+    return Array.from(neighborIds)
+      .map((id) => nodes.find((n) => n.id === id))
+      .filter((n): n is GraphNode => n !== undefined);
+  }, [inspectedNode, connectedMap, nodes]);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && inspectedNode) {
+        setInspectedNode(null);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [inspectedNode]);
 
   const handleWheel = (e: React.WheelEvent) => {
     e.preventDefault();
@@ -575,8 +618,157 @@ export const GraphView: React.FC<GraphViewProps> = ({
       {/* Graph Info Badge (Bottom Center) */}
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 hidden lg:flex items-center gap-2 px-3 py-1 rounded-full border border-border-light/80 dark:border-border-dark/80 bg-surface-light/75 dark:bg-surface-dark/75 backdrop-blur text-[11px] text-zinc-400 font-mono pointer-events-none">
         <Info size={11} />
-        <span>Arraste os nós • Use o scroll para zoom • Clique no nó para ler</span>
+        <span>Arraste os nós • Use o scroll para zoom • Clique no nó para ver o mapa</span>
       </div>
+
+      {/* Modal / Inspector: Mapa do Documento & Estrutura Filtrada */}
+      {inspectedNode && inspectedDoc && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/55 backdrop-blur-sm animate-in fade-in duration-150"
+          onClick={() => setInspectedNode(null)}
+        >
+          <div
+            className="w-full max-w-2xl max-h-[85vh] flex flex-col rounded-2xl border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark shadow-2xl overflow-hidden"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Modal Header */}
+            <div className="p-5 pb-4 border-b border-border-light dark:border-border-dark flex items-start justify-between gap-4">
+              <div className="space-y-1.5 flex-1 min-w-0">
+                <div className="flex flex-wrap items-center gap-2">
+                  <span
+                    className="w-2.5 h-2.5 rounded-full shrink-0"
+                    style={{ backgroundColor: inspectedNode.color }}
+                  />
+                  <span className="text-[11px] uppercase tracking-wider font-semibold text-zinc-500 dark:text-zinc-400">
+                    {inspectedNode.category}
+                  </span>
+                  <span className="text-zinc-400">•</span>
+                  <span className="text-[11px] font-mono text-zinc-400">
+                    {inspectedDoc.readTimeMinutes} min de leitura ({inspectedDoc.wordCount.toLocaleString('pt-BR')} palavras)
+                  </span>
+                </div>
+                <h3 className="text-base sm:text-lg font-bold text-zinc-950 dark:text-zinc-50 leading-snug">
+                  {inspectedDoc.title}
+                </h3>
+              </div>
+              <button
+                onClick={() => setInspectedNode(null)}
+                className="p-1.5 rounded-lg text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+                aria-label="Fechar"
+              >
+                <X size={18} />
+              </button>
+            </div>
+
+            {/* Modal Content - Scrollable */}
+            <div className="p-5 overflow-y-auto space-y-5 text-xs text-zinc-600 dark:text-zinc-400">
+              {/* Contexto / Excerpt */}
+              {inspectedDoc.excerpt && (
+                <div className="p-3.5 rounded-xl bg-zinc-50 dark:bg-zinc-900/60 border border-border-light dark:border-border-dark leading-relaxed">
+                  <span className="block font-semibold text-[11px] uppercase tracking-wider text-zinc-500 dark:text-zinc-400 mb-1">
+                    Contexto do Documento
+                  </span>
+                  <p className="text-zinc-800 dark:text-zinc-200 text-xs">{inspectedDoc.excerpt}</p>
+                </div>
+              )}
+
+              {/* Estrutura de Tópicos (Outline / Headings) */}
+              {inspectedDoc.headings.length > 0 && (
+                <div>
+                  <h4 className="font-semibold text-zinc-900 dark:text-zinc-100 uppercase tracking-wider text-[11px] mb-2 flex items-center gap-1.5">
+                    <Layers size={13} />
+                    Estrutura de Tópicos ({inspectedDoc.headings.filter((h) => h.level <= 3).length} seções)
+                  </h4>
+                  <div className="p-3 rounded-xl border border-border-light dark:border-border-dark bg-surface-light dark:bg-zinc-900/30 space-y-1.5 max-h-44 overflow-y-auto">
+                    {inspectedDoc.headings
+                      .filter((h) => h.level === 2 || h.level === 3)
+                      .map((h, i) => (
+                        <div
+                          key={i}
+                          className={`flex items-start gap-2 py-0.5 ${
+                            h.level === 3 ? 'pl-4 text-zinc-500' : 'text-zinc-800 dark:text-zinc-200 font-medium'
+                          }`}
+                        >
+                          <span className="text-zinc-400 shrink-0 text-[10px] font-mono mt-0.5">
+                            {h.level === 2 ? '§' : '•'}
+                          </span>
+                          <span className="leading-snug">{h.text}</span>
+                        </div>
+                      ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Mapa de Conexões no Grafo */}
+              <div>
+                <h4 className="font-semibold text-zinc-900 dark:text-zinc-100 uppercase tracking-wider text-[11px] mb-2 flex items-center justify-between">
+                  <span className="flex items-center gap-1.5">
+                    <Network size={13} />
+                    Documentos Conectados ({connectedNeighborNodes.length})
+                  </span>
+                  <span className="text-[10px] text-zinc-400 font-normal">
+                    Clique em qualquer um para explorar
+                  </span>
+                </h4>
+
+                {connectedNeighborNodes.length === 0 ? (
+                  <p className="text-zinc-400 text-xs italic">Nenhuma conexão direta mapeada para este nó.</p>
+                ) : (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 max-h-48 overflow-y-auto">
+                    {connectedNeighborNodes.map((neighbor) => (
+                      <button
+                        key={neighbor.id}
+                        onClick={() => setInspectedNode(neighbor)}
+                        className="p-2.5 rounded-xl border border-border-light dark:border-border-dark hover:border-zinc-400 dark:hover:border-zinc-600 bg-surface-light dark:bg-zinc-900/40 text-left transition-all group flex items-start gap-2.5"
+                      >
+                        <span
+                          className="w-2 h-2 rounded-full shrink-0 mt-1"
+                          style={{ backgroundColor: neighbor.color }}
+                        />
+                        <div className="min-w-0 flex-1">
+                          <span className="text-[10px] uppercase tracking-wider text-zinc-400 block truncate">
+                            {neighbor.category}
+                          </span>
+                          <span className="text-xs font-semibold text-zinc-800 dark:text-zinc-200 group-hover:text-zinc-950 dark:group-hover:text-white line-clamp-1">
+                            {neighbor.title}
+                          </span>
+                        </div>
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </div>
+
+            {/* Modal Actions Footer */}
+            <div className="p-4 bg-zinc-50 dark:bg-zinc-900/50 border-t border-border-light dark:border-border-dark flex items-center justify-between gap-3">
+              <button
+                onClick={() => {
+                  focusOnNode(inspectedNode);
+                  setInspectedNode(null);
+                }}
+                className="flex items-center gap-1.5 px-3 py-2 rounded-xl border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark hover:bg-zinc-100 dark:hover:bg-zinc-800 text-xs font-medium text-zinc-700 dark:text-zinc-300 transition-colors"
+                title="Centralizar e aproximar a câmera neste nó no grafo"
+              >
+                <Crosshair size={14} />
+                <span>Focar no Grafo</span>
+              </button>
+
+              <button
+                onClick={() => {
+                  onSelectDoc(inspectedNode.id);
+                  setInspectedNode(null);
+                }}
+                className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-zinc-950 dark:bg-zinc-100 text-white dark:text-zinc-950 text-xs font-semibold hover:opacity-90 transition-opacity shadow-sm"
+              >
+                <BookOpen size={14} />
+                <span>Ler Documento Completo</span>
+                <ArrowRight size={13} />
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
