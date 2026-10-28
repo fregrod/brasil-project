@@ -22,7 +22,11 @@ Não se opõem função de produção e identidade da demanda como equações ex
 6. [Cenário global e transmissão ao Brasil](06_cenario_global_crises_e_impactos_no_brasil.md) — crises e canais financeiros, comerciais, cambiais e logísticos, sem saldo causal arbitrário por governo.
 7. [Discurso e prática: doze casos de economia política](07_decisoes_economicas_contraditorias_pt_e_bolsonaro.md) — atos verificáveis, tensões programáticas e lacunas para demonstrar contradições.
 8. [GOL, cortes de rotas e QAV](08_crise_aviacao_caso_gol_rotas_qav.md) — anúncio, antecedentes financeiros e hipóteses, distinguindo fontes primárias e imprensa.
-9. [Privatizações e concessões](privatizacoes/README.md) — conceitos e estudo específico da Eletrobras.
+9. [Análise comparada: governos de esquerda vs. governos de direita](09_analise_comparativa_esquerda_vs_direita.md) — trajetórias de PIB, inflação, dívida e emprego de 1995 a 2025, decomposição institucional e limites causais.
+10. [Produtividade, carga tributária e políticas de efeito diferido](10_produtividade_tributos_e_incentivos_diferidos.md) — lado da oferta, FBCF, PTF, custos pós-estímulo (crédito, BNDES, MP 579, folha) e literatura acadêmica.
+11. [Superávits fiscais, gasto público e o boom das commodities](11_superavits_gasto_publico_e_boom_commodities.md) — resultado primário vs. nominal, evolução real da despesa federal, comparação com emergentes e debate "gasto é renda".
+12. [Governo Dilma: Nova Matriz Econômica e o colapso de 2015](12_governo_dilma_nova_matriz_e_crise_2015.md) — incentivo ao investimento privado, desonerações, tarifaço, choques externos, Lava Jato e o ajuste de 2015.
+13. [Privatizações e concessões](privatizacoes/README.md) — conceitos e estudo específico da Eletrobras.
 
 ## Regras de comparação e fontes
 

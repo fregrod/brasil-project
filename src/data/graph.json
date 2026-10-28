@@ -79,8 +79,8 @@
       "categoryKey": "economia",
       "categoryOrder": 2,
       "color": "#10B981",
-      "wordCount": 542,
-      "readTimeMinutes": 3,
+      "wordCount": 649,
+      "readTimeMinutes": 4,
       "isHub": true,
       "size": 10
     },
@@ -179,6 +179,54 @@
       "readTimeMinutes": 7,
       "isHub": false,
       "size": 5
+    },
+    {
+      "id": "economia/09_analise_comparativa_esquerda_vs_direita.md",
+      "title": "Análise Econômica Comparada: Governos de Esquerda vs. Governos de Direita no Brasil",
+      "category": "Macroeconomia",
+      "categoryKey": "economia",
+      "categoryOrder": 2,
+      "color": "#10B981",
+      "wordCount": 6120,
+      "readTimeMinutes": 31,
+      "isHub": false,
+      "size": 9
+    },
+    {
+      "id": "economia/10_produtividade_tributos_e_incentivos_diferidos.md",
+      "title": "Análise Macroeconômica Estrutural: Produtividade, Carga Tributária e Políticas de Efeito Diferido",
+      "category": "Macroeconomia",
+      "categoryKey": "economia",
+      "categoryOrder": 2,
+      "color": "#10B981",
+      "wordCount": 6075,
+      "readTimeMinutes": 31,
+      "isHub": false,
+      "size": 9
+    },
+    {
+      "id": "economia/11_superavits_gasto_publico_e_boom_commodities.md",
+      "title": "Análise Macroeconômica: Superávits Fiscais, Dinâmica do Gasto Público e o Boom das Commodities",
+      "category": "Macroeconomia",
+      "categoryKey": "economia",
+      "categoryOrder": 2,
+      "color": "#10B981",
+      "wordCount": 3402,
+      "readTimeMinutes": 18,
+      "isHub": false,
+      "size": 9
+    },
+    {
+      "id": "economia/12_governo_dilma_nova_matriz_e_crise_2015.md",
+      "title": "Análise Econômica do Governo Dilma Rousseff: A Nova Matriz Econômica, a Tentativa de Estímulo ao Investimento Privado e o Colapso de 2015",
+      "category": "Macroeconomia",
+      "categoryKey": "economia",
+      "categoryOrder": 2,
+      "color": "#10B981",
+      "wordCount": 2685,
+      "readTimeMinutes": 14,
+      "isHub": false,
+      "size": 8
     },
     {
       "id": "economia/privatizacoes/README.md",
@@ -355,8 +403,8 @@
       "categoryKey": "pecs_e_propostas",
       "categoryOrder": 6,
       "color": "#8B5CF6",
-      "wordCount": 192,
-      "readTimeMinutes": 1,
+      "wordCount": 224,
+      "readTimeMinutes": 2,
       "isHub": true,
       "size": 10
     },
@@ -383,6 +431,18 @@
       "readTimeMinutes": 7,
       "isHub": false,
       "size": 5
+    },
+    {
+      "id": "pecs_e_propostas/03_propostas_governo_lula_vs_flavio_bolsonaro_2026.md",
+      "title": "Comparativo Oficial de Planos de Governo: Luiz Inácio Lula da Silva vs. Flávio Bolsonaro (2027–2030)",
+      "category": "PECs & Marcos Fiscais",
+      "categoryKey": "pecs_e_propostas",
+      "categoryOrder": 6,
+      "color": "#8B5CF6",
+      "wordCount": 2530,
+      "readTimeMinutes": 13,
+      "isHub": false,
+      "size": 7
     },
     {
       "id": "sociedade_e_desenvolvimento/README.md",
@@ -749,6 +809,26 @@
       "type": "category"
     },
     {
+      "source": "economia/09_analise_comparativa_esquerda_vs_direita.md",
+      "target": "economia/README.md",
+      "type": "category"
+    },
+    {
+      "source": "economia/10_produtividade_tributos_e_incentivos_diferidos.md",
+      "target": "economia/README.md",
+      "type": "category"
+    },
+    {
+      "source": "economia/11_superavits_gasto_publico_e_boom_commodities.md",
+      "target": "economia/README.md",
+      "type": "category"
+    },
+    {
+      "source": "economia/12_governo_dilma_nova_matriz_e_crise_2015.md",
+      "target": "economia/README.md",
+      "type": "category"
+    },
+    {
       "source": "economia/privatizacoes/README.md",
       "target": "README.md",
       "type": "hub"
@@ -830,6 +910,11 @@
     },
     {
       "source": "pecs_e_propostas/02_linha_historica_teto_orcamento_secreto_arcabouco.md",
+      "target": "pecs_e_propostas/README.md",
+      "type": "category"
+    },
+    {
+      "source": "pecs_e_propostas/03_propostas_governo_lula_vs_flavio_bolsonaro_2026.md",
       "target": "pecs_e_propostas/README.md",
       "type": "category"
     },
@@ -1080,6 +1165,16 @@
     },
     {
       "source": "economia/06_cenario_global_crises_e_impactos_no_brasil.md",
+      "target": "COMPARACOES_GOVERNOS.md",
+      "type": "explicit"
+    },
+    {
+      "source": "economia/09_analise_comparativa_esquerda_vs_direita.md",
+      "target": "economia/10_produtividade_tributos_e_incentivos_diferidos.md",
+      "type": "explicit"
+    },
+    {
+      "source": "economia/09_analise_comparativa_esquerda_vs_direita.md",
       "target": "COMPARACOES_GOVERNOS.md",
       "type": "explicit"
     },

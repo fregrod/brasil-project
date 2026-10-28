@@ -1,0 +1,507 @@
+{
+  "checked_at": "2026-10-23",
+  "scope": "Conferência direta de dados oficiais das duas análises. Não certifica relações causais ou todas as afirmações históricas.",
+  "api_snapshot_checks": [
+    {
+      "indicator": "pib",
+      "url": "https://apisidra.ibge.gov.br/values/t/5932/n1/1/v/6563/p/199904,200004,200104,200204,200304,200404,200504,200604,200704,200804,200904,201004,201104,201204,201304,201404,201504,201604,201704,201804,201904,202004,202104,202204,202304,202404,202504/c11255/90707",
+      "matches_snapshot": true,
+      "snapshot": "data/snapshots/pib.json",
+      "records": 28,
+      "data_sha256": "9cd98bd89176989b81355a4208d75542589e89943c98c2e779e77784fff6ab20"
+    },
+    {
+      "indicator": "ipca",
+      "url": "https://apisidra.ibge.gov.br/values/t/1737/n1/1/v/2266/p/199812,199912,200012,200112,200212,200312,200412,200512,200612,200712,200812,200912,201012,201112,201212,201312,201412,201512,201612,201712,201812,201912,202012,202112,202212,202312,202412,202512",
+      "matches_snapshot": true,
+      "snapshot": "data/snapshots/ipca.json",
+      "records": 29,
+      "data_sha256": "93104708e3d4ee084a17716b4b1f578414d26f2b24fd639eb85dd4db80faf766"
+    },
+    {
+      "indicator": "dbgg",
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.13762/dados?formato=json&dataInicial=01/12/2006&dataFinal=31/12/2025",
+      "matches_snapshot": true,
+      "snapshot": "data/snapshots/dbgg.json",
+      "records": 229,
+      "data_sha256": "ae24b36cfa535128d192fd5c7666b5a5517cb9c369671f941f9f9cade34267a1"
+    }
+  ],
+  "investment": {
+    "url": "https://apisidra.ibge.gov.br/values/t/1846/n1/1/v/585/p/all/c11255/90707,93406",
+    "definition": "SIDRA 1846, variável 585, categorias 90707 e 93406",
+    "formula": "100 * soma anual FBCF / soma anual PIB, ambos em preços correntes",
+    "annual": [
+      {
+        "year": 1996,
+        "gdp_current_million_brl": 854763.0,
+        "gfcf_current_million_brl": 159334.0,
+        "investment_pct_gdp": 18.64072263305735
+      },
+      {
+        "year": 1997,
+        "gdp_current_million_brl": 952089.0,
+        "gfcf_current_million_brl": 182067.0,
+        "investment_pct_gdp": 19.122897124113397
+      },
+      {
+        "year": 1998,
+        "gdp_current_million_brl": 1002351.0,
+        "gfcf_current_million_brl": 185859.0,
+        "investment_pct_gdp": 18.542307036157993
+      },
+      {
+        "year": 1999,
+        "gdp_current_million_brl": 1087711.0,
+        "gfcf_current_million_brl": 185088.0,
+        "investment_pct_gdp": 17.016284656494236
+      },
+      {
+        "year": 2000,
+        "gdp_current_million_brl": 1199093.0,
+        "gfcf_current_million_brl": 219488.0,
+        "investment_pct_gdp": 18.304501819291747
+      },
+      {
+        "year": 2001,
+        "gdp_current_million_brl": 1315756.0,
+        "gfcf_current_million_brl": 242336.0,
+        "investment_pct_gdp": 18.418004554035853
+      },
+      {
+        "year": 2002,
+        "gdp_current_million_brl": 1488788.0,
+        "gfcf_current_million_brl": 266883.0,
+        "investment_pct_gdp": 17.92619231213578
+      },
+      {
+        "year": 2003,
+        "gdp_current_million_brl": 1717951.0,
+        "gfcf_current_million_brl": 285262.0,
+        "investment_pct_gdp": 16.604780927977572
+      },
+      {
+        "year": 2004,
+        "gdp_current_million_brl": 1957750.0,
+        "gfcf_current_million_brl": 339086.0,
+        "investment_pct_gdp": 17.32018899246584
+      },
+      {
+        "year": 2005,
+        "gdp_current_million_brl": 2170584.0,
+        "gfcf_current_million_brl": 370219.0,
+        "investment_pct_gdp": 17.05619317197584
+      },
+      {
+        "year": 2006,
+        "gdp_current_million_brl": 2409450.0,
+        "gfcf_current_million_brl": 414674.0,
+        "investment_pct_gdp": 17.210317707360602
+      },
+      {
+        "year": 2007,
+        "gdp_current_million_brl": 2720263.0,
+        "gfcf_current_million_brl": 489532.0,
+        "investment_pct_gdp": 17.995759968797135
+      },
+      {
+        "year": 2008,
+        "gdp_current_million_brl": 3109803.0,
+        "gfcf_current_million_brl": 602846.0,
+        "investment_pct_gdp": 19.385343701835776
+      },
+      {
+        "year": 2009,
+        "gdp_current_million_brl": 3333039.0,
+        "gfcf_current_million_brl": 636677.0,
+        "investment_pct_gdp": 19.101996706309166
+      },
+      {
+        "year": 2010,
+        "gdp_current_million_brl": 3885847.0,
+        "gfcf_current_million_brl": 797946.0,
+        "investment_pct_gdp": 20.534673650300693
+      },
+      {
+        "year": 2011,
+        "gdp_current_million_brl": 4376382.0,
+        "gfcf_current_million_brl": 901928.0,
+        "investment_pct_gdp": 20.60898705825954
+      },
+      {
+        "year": 2012,
+        "gdp_current_million_brl": 4814760.0,
+        "gfcf_current_million_brl": 997461.0,
+        "investment_pct_gdp": 20.716733544351122
+      },
+      {
+        "year": 2013,
+        "gdp_current_million_brl": 5331619.0,
+        "gfcf_current_million_brl": 1114944.0,
+        "investment_pct_gdp": 20.91192187588798
+      },
+      {
+        "year": 2014,
+        "gdp_current_million_brl": 5778953.0,
+        "gfcf_current_million_brl": 1148453.0,
+        "investment_pct_gdp": 19.87302890333249
+      },
+      {
+        "year": 2015,
+        "gdp_current_million_brl": 5995787.0,
+        "gfcf_current_million_brl": 1069397.0,
+        "investment_pct_gdp": 17.835807042511682
+      },
+      {
+        "year": 2016,
+        "gdp_current_million_brl": 6269327.0,
+        "gfcf_current_million_brl": 973270.0,
+        "investment_pct_gdp": 15.524313853783667
+      },
+      {
+        "year": 2017,
+        "gdp_current_million_brl": 6585479.0,
+        "gfcf_current_million_brl": 958779.0,
+        "investment_pct_gdp": 14.558986521709354
+      },
+      {
+        "year": 2018,
+        "gdp_current_million_brl": 7004141.0,
+        "gfcf_current_million_brl": 1057408.0,
+        "investment_pct_gdp": 15.09689767810214
+      },
+      {
+        "year": 2019,
+        "gdp_current_million_brl": 7389131.0,
+        "gfcf_current_million_brl": 1143186.0,
+        "investment_pct_gdp": 15.471183282580862
+      },
+      {
+        "year": 2020,
+        "gdp_current_million_brl": 7609597.0,
+        "gfcf_current_million_brl": 1260228.0,
+        "investment_pct_gdp": 16.5610347039403
+      },
+      {
+        "year": 2021,
+        "gdp_current_million_brl": 9012142.0,
+        "gfcf_current_million_brl": 1614782.0,
+        "investment_pct_gdp": 17.917849052977637
+      },
+      {
+        "year": 2022,
+        "gdp_current_million_brl": 10079676.0,
+        "gfcf_current_million_brl": 1794223.0,
+        "investment_pct_gdp": 17.800403505033298
+      },
+      {
+        "year": 2023,
+        "gdp_current_million_brl": 10943344.0,
+        "gfcf_current_million_brl": 1795909.0,
+        "investment_pct_gdp": 16.41097090615081
+      },
+      {
+        "year": 2024,
+        "gdp_current_million_brl": 11779251.0,
+        "gfcf_current_million_brl": 1991797.0,
+        "investment_pct_gdp": 16.90936885545609
+      },
+      {
+        "year": 2025,
+        "gdp_current_million_brl": 12738566.0,
+        "gfcf_current_million_brl": 2145050.0,
+        "investment_pct_gdp": 16.8390225398997
+      }
+    ]
+  },
+  "households": {
+    "29034": {
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.29034/dados?formato=json&dataInicial=01/01/2005&dataFinal=31/12/2016",
+      "definition": "Serviço da dívida/renda RNDBF, com ajuste sazonal",
+      "selected": [
+        {
+          "data": "01/12/2005",
+          "valor": "18.68"
+        },
+        {
+          "data": "01/12/2010",
+          "valor": "23.96"
+        },
+        {
+          "data": "01/12/2014",
+          "valor": "23.48"
+        },
+        {
+          "data": "01/12/2015",
+          "valor": "22.99"
+        }
+      ],
+      "maximum_2005_2016": {
+        "data": "01/10/2011",
+        "valor": "24.67"
+      }
+    },
+    "29037": {
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.29037/dados?formato=json&dataInicial=01/01/2005&dataFinal=31/12/2016",
+      "definition": "Estoque de dívida/renda RNDBF acumulada em 12 meses",
+      "selected": [
+        {
+          "data": "01/12/2005",
+          "valor": "19.56"
+        },
+        {
+          "data": "01/12/2010",
+          "valor": "33.97"
+        },
+        {
+          "data": "01/12/2014",
+          "valor": "39.24"
+        },
+        {
+          "data": "01/12/2015",
+          "valor": "40.05"
+        }
+      ],
+      "maximum_2005_2016": {
+        "data": "01/10/2015",
+        "valor": "40.81"
+      }
+    }
+  },
+  "official_publications": [
+    {
+      "id": "gini2025",
+      "url": "https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/01a76679f450b86e5fff76c6887b0b2b.pdf",
+      "sha256_pdf": "a168058601ceb766bffd67f6ae21d4af3915618606eea7856b8c3a6cfa48afa8",
+      "locator": "Página 43: Gini domiciliar per capita de 2019, 2024 e 2025; extração de texto do PDF oficial."
+    },
+    {
+      "id": "pnad2025",
+      "url": "https://agenciadenoticias.ibge.gov.br/media/com_mediaibge/arquivos/a6acae41a1a8457dc588ad09cdcd8924.pdf",
+      "sha256_pdf": "703f51634e72cc8ef83c6e5e1357f0e65abca4ceb638c776988bea5a9d85d2c6",
+      "locator": "Página 75: médias anuais de desocupação, conferidas visualmente; página 82: informalidade."
+    },
+    {
+      "id": "pme2003-2014",
+      "url": "https://ftp.ibge.gov.br/Trabalho_e_Rendimento/Pesquisa_Mensal_de_Emprego/Evolucao_Mercado_Trabalho/retrospectiva2003_2014.pdf",
+      "sha256_pdf": "c0d65af0e6364f19e643662c96e44707e3c1d1f7e75dbf22acd87820e86028b5",
+      "locator": "Página 246, Tabela 115: médias anuais da PME."
+    },
+    {
+      "id": "ctb2024",
+      "url": "https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/estudos/carga-tributaria/carga-tributaria-no-brasil-2024/@@download/file",
+      "sha256_pdf": "ba348410cae9f9d56473d61e847342c02bda9be30fdf4a4fd7edbc2943f3293d",
+      "locator": "Página 6, Gráfico 01: conferência visual das duas séries; páginas 5 e 10: Tabelas 01 e 05."
+    },
+    {
+      "id": "folha2024",
+      "url": "https://www.gov.br/fazenda/pt-br/central-de-conteudo/publicacoes/analises-e-estudos/arquivos/2024/desoneracao_final_3-1.pdf/@@download/file",
+      "sha256_pdf": "9019dc7e062f1b1c764da244be49edcf7f58801ba3e65029280431d65a75c490",
+      "locator": "Página 9, Figura 2: renúncias anuais usadas na soma de 2012–2018."
+    }
+  ],
+  "tax_burden": {
+    "publication": "ctb2024",
+    "locator": "Gráfico 01 e nota da Tabela 01",
+    "years": [
+      2002,
+      2008,
+      2010,
+      2016,
+      2022,
+      2023,
+      2024
+    ],
+    "excluding_fgts_system_s_pct": [
+      30.27,
+      31.63,
+      30.6,
+      29.87,
+      31.19,
+      30.22,
+      32.2
+    ],
+    "including_fgts_system_s_pct": [
+      32.09,
+      33.5,
+      32.51,
+      32.16,
+      33.01,
+      32.11,
+      34.12
+    ],
+    "goods_services_share_2024_pct": 43.49
+  },
+  "bndes_implicit_subsidies": {
+    "url": "https://www.tesourotransparente.gov.br/ckan/dataset/6d99f766-54ec-4dcf-9376-0b297df3ab17/resource/b523eb90-4ccf-4a7c-b0db-0b8a90e29c1a/download/boletim-de-subsidios-5-bimestre-de-2016.pdf",
+    "locator": "Tabela I, valores creditícios de 2009 até outubro de 2016",
+    "verification": "Texto da publicação oficial consultado pela ferramenta de pesquisa; download adicional recebeu HTTP 429.",
+    "inputs_brl": [
+      4576870878,
+      8469245696,
+      10538243041,
+      12343318434,
+      10629385349,
+      21272338349,
+      18969018983,
+      24185111155
+    ],
+    "sum_brl": 110983531885,
+    "future_present_value_credit_brl": 174993228980,
+    "future_present_value_financial_brl": 25135858802
+  },
+  "payroll_waivers": {
+    "publication": "folha2024",
+    "locator": "Figura 2, página 9 do PDF",
+    "period": "2012–2018",
+    "inputs_billion_nominal_brl": [
+      3.6,
+      12.3,
+      22.1,
+      25.2,
+      14.5,
+      13.7,
+      12.4
+    ],
+    "sum_billion_nominal_brl": 103.8
+  },
+  "structural_checks": {
+    "comparison_rows_matched": 8,
+    "five_policy_cases_preserved": true,
+    "all_author_groups_preserved": true
+  },
+  "unemployment_annual": {
+    "publication": "pnad2025",
+    "years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "rates_pct": [
+      7.4,
+      7.3,
+      7.0,
+      8.9,
+      11.6,
+      12.6,
+      12.1,
+      11.8,
+      13.7,
+      14.0,
+      9.6,
+      7.7,
+      6.6,
+      5.6
+    ],
+    "method": "Leitura visual da página 75 do PDF oficial."
+  },
+  "pme_annual": {
+    "publication": "pme2003-2014",
+    "locator": "Tabela 115, página 246",
+    "selected_rates_pct": {
+      "2003": 12.4,
+      "2006": 10.0,
+      "2010": 6.7
+    }
+  },
+  "gini": {
+    "publication": "gini2025",
+    "locator": "Página 43",
+    "income": "Rendimento médio mensal real domiciliar per capita",
+    "values": {
+      "2019": 0.543,
+      "2024": 0.504,
+      "2025": 0.511
+    }
+  },
+  "legacy_assessment": {
+    "checked_at": "2026-10-23",
+    "scope": "Conferência documental dos acréscimos sobre a herança de Lula para Dilma; não altera séries numéricas nem estima responsabilidade causal por presidente.",
+    "documents": [
+      "ANALISE_ESQUERDA_VS_DIREITA_ECONOMIA.md",
+      "ANALISE_EMPRESAS_TRIBUTOS_E_INCENTIVOS_DIFERIDOS.md"
+    ],
+    "sources": [
+      {
+        "institution": "FMI",
+        "type": "Avaliação oficial contemporânea",
+        "title": "Public Information Notice: IMF Executive Board Concludes Article IV Consultation with Brazil",
+        "publication_date": "2009-07-28",
+        "url": "https://www.imf.org/en/news/articles/2015/09/28/04/53/pn0992",
+        "locator": "Background; Executive Board assessment, política fiscal",
+        "supports": "Resiliência macroeconômica; apoio à resposta contracíclica e alerta sobre reversibilidade de despesas.",
+        "limitation": "Não calcula o resultado líquido de 2003–2010 ou a contribuição de políticas para a crise posterior."
+      },
+      {
+        "institution": "Banco Mundial",
+        "type": "Documento oficial contemporâneo; seção de contexto macroeconômico nacional",
+        "title": "Piauí Green Growth and Inclusion Development Policy Loan — Program Document",
+        "report_number": "66496-BR",
+        "publication_date": "2012-02-01",
+        "url": "https://documents1.worldbank.org/curated/en/980931468020932020/pdf/664960PGD0R2010osed0201301200SIMLUT.pdf",
+        "locator": "II.A, parágrafo 8, p. 3 (página 15 do PDF); também Anexo IV, p. 66 (página 78 do PDF)",
+        "supports": "Expansão fiscal mantida em 2010 e fatores associados à dificuldade de retirada do estímulo.",
+        "limitation": "Não estima o impacto causal da política de 2010 sobre a recessão posterior ou intenções pessoais do presidente."
+      },
+      {
+        "institution": "FMI",
+        "type": "Avaliação oficial contemporânea",
+        "title": "Public Information Notice: IMF Executive Board Concludes 2011 Article IV Consultation with Brazil",
+        "publication_date": "2011-08-03",
+        "url": "https://www.imf.org/en/news/articles/2015/09/28/04/53/pn11108",
+        "locator": "Executive Board assessment, overheating, fiscal policy e financial sector",
+        "supports": "Alertas sobre aquecimento e crédito; retirada de estímulos e redução do financiamento excepcional ao BNDES.",
+        "limitation": "Inclui meses de Dilma; não identifica separadamente a herança de Lula ou inevitabilidade da recessão."
+      },
+      {
+        "institution": "Banco Central Europeu",
+        "type": "Análise oficial com decomposição econométrica",
+        "title": "Economic Bulletin Issue 1, 2016 — Box 1: What is driving Brazil’s economic downturn?",
+        "url": "https://www.ecb.europa.eu/press/economic-bulletin/html/eb201601.en.html",
+        "locator": "Box 1; Chart D; nota metodológica 4",
+        "supports": "Interação de commodities, fragilidades estruturais, políticas expansionistas e condições financeiras.",
+        "limitation": "Modelo estimado até o segundo trimestre de 2015; não decompõe responsabilidade presidencial. Estatísticas históricas do boletim não substituem as séries atuais do projeto."
+      },
+      {
+        "authors": [
+          "Sergio G. Lazzarini",
+          "Aldo Musacchio",
+          "Rodrigo Bandeira-de-Mello",
+          "Rosilene Marcon"
+        ],
+        "type": "Artigo revisado por pares; não é fonte oficial estatal",
+        "title": "What Do State-Owned Development Banks Do? Evidence from BNDES, 2002–09",
+        "publication_year": 2015,
+        "journal": "World Development 66, 237–253",
+        "doi": "10.1016/j.worlddev.2014.08.016",
+        "url": "https://dash.harvard.edu/entities/publication/73120379-2d53-6bd4-e053-0100007fdf3b",
+        "locator": "Resumo e resultados para amostra de 2002–2009",
+        "supports": "Redução de despesas financeiras, sem efeitos consistentes sobre investimento e desempenho na amostra.",
+        "limitation": "Não cobre todos os programas e públicos nem estima efeitos na recessão de 2015–2016."
+      },
+      {
+        "institution": "FMI",
+        "type": "Avaliação oficial contemporânea",
+        "title": "Brazil: Staff Concluding Statement of the 2016 Article IV Mission",
+        "publication_date": "2016-09-29",
+        "url": "https://www.imf.org/en/news/articles/2016/09/29/ms092916-brazil-staff-concluding-statement-of-the-2016-article-iv-mission",
+        "locator": "I. Context and Recent Developments; II. Outlook",
+        "supports": "Recessão multicausal e limitações financeiras na recuperação.",
+        "limitation": "Não atribui percentual de responsabilidade a cada presidente."
+      }
+    ],
+    "interpretation": "Custos e vulnerabilidades de políticas do fim de Lula II devem integrar a avaliação do legado, junto aos benefícios, às decisões próprias de Dilma e aos choques posteriores.",
+    "quantified_presidential_causal_shares": false
+  }
+}

@@ -74,7 +74,7 @@
         "path": "economia/README.md",
         "title": "Economia brasileira: estudos, evidências e comparação de políticas",
         "fileName": "README.md",
-        "readTimeMinutes": 3,
+        "readTimeMinutes": 4,
         "itemOrder": 0,
         "headingsCount": 5
       },
@@ -149,6 +149,42 @@
         "readTimeMinutes": 7,
         "itemOrder": 9,
         "headingsCount": 13
+      },
+      {
+        "id": "economia/09_analise_comparativa_esquerda_vs_direita.md",
+        "path": "economia/09_analise_comparativa_esquerda_vs_direita.md",
+        "title": "Análise Econômica Comparada: Governos de Esquerda vs. Governos de Direita no Brasil",
+        "fileName": "09_analise_comparativa_esquerda_vs_direita.md",
+        "readTimeMinutes": 31,
+        "itemOrder": 10,
+        "headingsCount": 21
+      },
+      {
+        "id": "economia/10_produtividade_tributos_e_incentivos_diferidos.md",
+        "path": "economia/10_produtividade_tributos_e_incentivos_diferidos.md",
+        "title": "Análise Macroeconômica Estrutural: Produtividade, Carga Tributária e Políticas de Efeito Diferido",
+        "fileName": "10_produtividade_tributos_e_incentivos_diferidos.md",
+        "readTimeMinutes": 31,
+        "itemOrder": 11,
+        "headingsCount": 20
+      },
+      {
+        "id": "economia/11_superavits_gasto_publico_e_boom_commodities.md",
+        "path": "economia/11_superavits_gasto_publico_e_boom_commodities.md",
+        "title": "Análise Macroeconômica: Superávits Fiscais, Dinâmica do Gasto Público e o Boom das Commodities",
+        "fileName": "11_superavits_gasto_publico_e_boom_commodities.md",
+        "readTimeMinutes": 18,
+        "itemOrder": 12,
+        "headingsCount": 17
+      },
+      {
+        "id": "economia/12_governo_dilma_nova_matriz_e_crise_2015.md",
+        "path": "economia/12_governo_dilma_nova_matriz_e_crise_2015.md",
+        "title": "Análise Econômica do Governo Dilma Rousseff: A Nova Matriz Econômica, a Tentativa de Estímulo ao Investimento Privado e o Colapso de 2015",
+        "fileName": "12_governo_dilma_nova_matriz_e_crise_2015.md",
+        "readTimeMinutes": 14,
+        "itemOrder": 13,
+        "headingsCount": 16
       }
     ]
   },
@@ -317,7 +353,7 @@
         "path": "pecs_e_propostas/README.md",
         "title": "Propostas legislativas e regras do orçamento",
         "fileName": "README.md",
-        "readTimeMinutes": 1,
+        "readTimeMinutes": 2,
         "itemOrder": 0,
         "headingsCount": 4
       },
@@ -338,6 +374,15 @@
         "readTimeMinutes": 7,
         "itemOrder": 3,
         "headingsCount": 10
+      },
+      {
+        "id": "pecs_e_propostas/03_propostas_governo_lula_vs_flavio_bolsonaro_2026.md",
+        "path": "pecs_e_propostas/03_propostas_governo_lula_vs_flavio_bolsonaro_2026.md",
+        "title": "Comparativo Oficial de Planos de Governo: Luiz Inácio Lula da Silva vs. Flávio Bolsonaro (2027–2030)",
+        "fileName": "03_propostas_governo_lula_vs_flavio_bolsonaro_2026.md",
+        "readTimeMinutes": 13,
+        "itemOrder": 4,
+        "headingsCount": 22
       }
     ]
   },

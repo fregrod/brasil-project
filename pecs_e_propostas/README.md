@@ -7,6 +7,7 @@
 
 - [Jornada e escala 6x1: da proposta à EC 141/2026](01_pec_fim_escala_6x1_jornada_trabalho.md): texto original, emenda promulgada, prazos de transição e exceções, diferença entre horas e dias, cenários aritméticos e alcance dos pilotos.
 - [Teto, emendas e arcabouço fiscal](02_linha_historica_teto_orcamento_secreto_arcabouco.md): sequência constitucional, distinções financeiras, transferências especiais, controle de autoria e limites das interpretações sobre corrupção e governabilidade.
+- [Planos de governo 2026: Lula vs. Flávio Bolsonaro](03_propostas_governo_lula_vs_flavio_bolsonaro_2026.md): confronto analítico entre programas registrados no TSE, declarações das equipes econômicas, promessas do 2º turno e dados de fechamento macroeconômico (emprego, inflação e dívida).
 
 ## Critérios editoriais
 
